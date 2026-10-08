@@ -24,4 +24,6 @@ jobs:
       - run: pnpm test
       - run: pnpm build
         env:
+          # The build only needs these to be present; it never connects or signs in.
           APP_PASSWORD: build-only-not-a-real-password
+          DATABASE_URL: postgres://build:build@127.0.0.1:9/build
