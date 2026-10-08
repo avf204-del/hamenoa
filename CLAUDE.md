@@ -26,8 +26,6 @@
 `pnpm` בלבד. `pnpm db:local` (מסד מקומי, רץ ברקע) · `pnpm db:setup` · `pnpm dev` · `pnpm typecheck` · `pnpm lint` · `pnpm test` · `pnpm build`.
 בסביבת ענן: `pnpm cloud:setup` ואז `pnpm cloud:dev`; הסיסמה ב־`pnpm cloud:password`.
 
-גרסת Next כאן חדשה: לפני שימוש ב־API שלא מופיע כבר בקוד, קוראים את המדריך המתאים ב־`node_modules/next/dist/docs/`.
-
 ## איך עובדים
 
 - שינוי אחד קטן בכל פעם, בענף משלו, עם בדיקות ל־`src/core`.
@@ -47,3 +45,5 @@
 ## לא בונים בלי החלטה מפורשת
 
 תשלומים, פיד או רכיבים חברתיים, וידאו, תזונה, חיבור לשעונים, מודל שפה בזמן ריצה, מטבעות או כלכלה בתוך האפליקציה.
+
+@AGENTS.md
