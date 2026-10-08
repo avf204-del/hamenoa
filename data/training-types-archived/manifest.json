@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "archivedOn": "2026-09-17",
+  "reasonHe": "לבקשת המשתמש: הוצאת תרגילי יוגה, קאפוארה וריקוד מהמאגר הפעיל ושמירתם בארכיון.",
+  "files": [
+    {
+      "file": "data/training-types-archived/yoga.yaml",
+      "sha256": "d9ceb3ffd5a50f2400130914f5b8e6026e2758f40cefd5ea50045c6680f50fcc"
+    },
+    {
+      "file": "data/training-types-archived/capoeira-minghelli.yaml",
+      "sha256": "e4a8f135a01737102dfd58cfa817d183780e18bb00827fc79053d44ed45e528a"
+    },
+    {
+      "file": "data/training-types-archived/dance.yaml",
+      "sha256": "179246641239e32508aecf14ed5b4a2546565eb7c44524b96a1ff5b00fa03401"
+    }
+  ],
+  "exercises": {
+    "yoga-supported-wrist-stretch": {
+      "nameHe": "יוגה בישיבה — מתיחת שורשי כפות הידיים",
+      "trainingType": "yoga",
+      "provenanceId": "gandolfi-2023-office-yoga"
+    },
+    "yoga-seated-neck-tilt": {
+      "nameHe": "יוגה בישיבה — הטיית ראש לצד",
+      "trainingType": "yoga",
+      "provenanceId": "gandolfi-2023-office-yoga"
+    },
+    "yoga-seated-chest-opening": {
+      "nameHe": "יוגה בישיבה — פתיחת חזה קטנה",
+      "trainingType": "yoga",
+      "provenanceId": "gandolfi-2023-office-yoga"
+    },
+    "yoga-seated-side-bend": {
+      "nameHe": "יוגה בישיבה — כפיפה צידית",
+      "trainingType": "yoga",
+      "provenanceId": "gandolfi-2023-office-yoga"
+    },
+    "yoga-seated-twist": {
+      "nameHe": "יוגה בישיבה — פיתול גו קטן",
+      "trainingType": "yoga",
+      "provenanceId": "gandolfi-2023-office-yoga"
+    },
+    "capoeira-ginga-alternating-step": {
+      "nameHe": "ג׳ינגה — חילוף בסיס בסולו",
+      "trainingType": "capoeira",
+      "provenanceId": "minghelli-2023-capoeira"
+    },
+    "capoeira-martelo-standing": {
+      "nameHe": "מרטלו בעמידה — הכנה ובעיטה נמוכה",
+      "trainingType": "capoeira",
+      "provenanceId": "minghelli-2023-capoeira"
+    },
+    "capoeira-armada-controlled-turn": {
+      "nameHe": "ארמדה — סיבוב ובעיטת קשת בסולו",
+      "trainingType": "capoeira",
+      "provenanceId": "minghelli-2023-capoeira"
+    },
+    "dance-body-shape-exploration": {
+      "nameHe": "מחול יצירתי — שלוש צורות גוף",
+      "trainingType": "dance",
+      "provenanceId": "louis-2022-elements-of-dance"
+    },
+    "dance-energy-contrast-phrase": {
+      "nameHe": "מחול יצירתי — רצף בשתי איכויות",
+      "trainingType": "dance",
+      "provenanceId": "louis-2022-elements-of-dance"
+    },
+    "dance-pathway-levels": {
+      "nameHe": "מחול יצירתי — מסלול ושינויי גובה",
+      "trainingType": "dance",
+      "provenanceId": "louis-2022-elements-of-dance"
+    },
+    "dance-speech-rhythm": {
+      "nameHe": "מחול יצירתי — מקצב של משפט",
+      "trainingType": "dance",
+      "provenanceId": "louis-2022-elements-of-dance"
+    },
+    "dance-out-out-in-in": {
+      "nameHe": "מחול יצירתי בישיבה — החוצה ופנימה",
+      "trainingType": "dance",
+      "provenanceId": "batson-2016-improvment"
+    },
+    "dance-pass-the-gesture": {
+      "nameHe": "מחול יצירתי בקבוצה — מעבירים מחווה",
+      "trainingType": "dance",
+      "provenanceId": "batson-2016-improvment"
+    },
+    "dance-variable-tempo-walk": {
+      "nameHe": "מחול יצירתי — הליכה בקצב משתנה",
+      "trainingType": "dance",
+      "provenanceId": "batson-2016-improvment"
+    }
+  }
+}

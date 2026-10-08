@@ -1,0 +1,211 @@
+{
+  "sourceUrl": "https://www.mdpi.com/2411-5142/8/1/26",
+  "retrievedFrom": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9953400/fullTextXML",
+  "doi": "10.3390/jfmk8010026",
+  "authors": [
+    "Maria Giovanna Gandolfi",
+    "Fausto Zamparini",
+    "Andrea Spinelli",
+    "Carlo Prati"
+  ],
+  "title": "Āsana for Neck, Shoulders, and Wrists to Prevent Musculoskeletal Disorders among Dental Professionals: In-Office Yóga Protocol",
+  "publishedYear": 2023,
+  "changes": "עיבוד עברי מקורי לחמש משפחות תנועת גוף בישיבה מתוך פרוטוקול למרפאת שיניים. נבחרו טווחים קטנים, תמיכה יציבה ונשימה חופשית. הוראות לחץ, כאב, קושי נשימתי, פשיטת צוואר עמוקה והבטחות טיפול הושמטו. רצפים, זמני החזקה, חזרות, הנחיות עצירה, שרירים ותסריטי תמונה נוספו בעריכה; אינם מינון שנבדק במאמר. מנח ידיים מוצלבות על הכתפיים בפיתול הוא בחירת עריכה לצורך תנועה ללא מנוף והדגמה ברורה.",
+  "acquisitionNote": "The source XML was supplied at /tmp/yoga-study.xml from the official Europe PMC API. acquiredAt records ingestion into this archive, not an independently observed original download time.",
+  "scope": "Article instructional prose in the selected sections only. Five broad movement families, no mudras. No source photographs, illustration poses, historical books cited in the article, clinical efficacy statements or identifiable subjects are reused.",
+  "schemaVersion": 1,
+  "id": "gandolfi-2023-office-yoga",
+  "author": "Maria Giovanna Gandolfi, Fausto Zamparini, Andrea Spinelli, Carlo Prati",
+  "license": "CC-BY-4.0",
+  "licenseVersion": "4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "acquiredAt": "2026-09-17T07:48:45.463402+00:00",
+  "acquiredAtMeaning": "UTC time original downloaded bytes were copied into this source archive; not the publication date.",
+  "files": [
+    {
+      "path": "article.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9953400/fullTextXML",
+      "acquiredAt": "2026-09-17T07:48:45.463402+00:00",
+      "contentType": "application/xml",
+      "bytes": 183928,
+      "sha256": "0eb9993f11a6b8398499a596751e8f8efe09378cf4885750dee15dfcdf09586d",
+      "derivedExtract": false
+    },
+    {
+      "path": "license-legalcode.txt",
+      "url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt",
+      "acquiredAt": "2026-09-17T07:48:45.463402+00:00",
+      "contentType": "text/plain",
+      "bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "derivedExtract": false
+    },
+    {
+      "path": "license-notice.txt",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9953400/fullTextXML",
+      "acquiredAt": "2026-09-17T07:48:45.463402+00:00",
+      "contentType": "text/plain",
+      "bytes": 829,
+      "sha256": "a5c01478b0ce4605099b3642930fbb2c488e7bdac7b4036466ad1a34adf25dd9",
+      "derivedExtract": true
+    },
+    {
+      "path": "instruction-extract.txt",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9953400/fullTextXML",
+      "acquiredAt": "2026-09-17T07:48:45.463402+00:00",
+      "contentType": "text/plain",
+      "bytes": 6315,
+      "sha256": "6c899496610473eb420fc2acbab81b981d63947d687bd6ff42ef2fe7ed72e220",
+      "derivedExtract": true
+    }
+  ],
+  "entries": [
+    {
+      "slug": "yoga-supported-wrist-stretch",
+      "sourceLocator": {
+        "researchId": "YA01",
+        "sections": [
+          {
+            "id": "sec3dot1-jfmk-08-00026",
+            "paragraphs": [
+              1,
+              3
+            ]
+          }
+        ]
+      },
+      "dosage": {
+        "unit": "seconds",
+        "holdSeconds": 15,
+        "sets": 2,
+        "restSeconds": 10
+      },
+      "minParticipants": 1
+    },
+    {
+      "slug": "yoga-seated-neck-tilt",
+      "sourceLocator": {
+        "researchId": "YA02",
+        "sections": [
+          {
+            "id": "sec3dot2-jfmk-08-00026",
+            "paragraphs": [
+              1,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      "dosage": {
+        "unit": "seconds",
+        "holdSecondsPerSide": [
+          10,
+          15
+        ],
+        "setsPerSide": [
+          1,
+          2
+        ],
+        "restSeconds": 10
+      },
+      "minParticipants": 1
+    },
+    {
+      "slug": "yoga-seated-chest-opening",
+      "sourceLocator": {
+        "researchId": "YA03",
+        "sections": [
+          {
+            "id": "sec3dot2-jfmk-08-00026",
+            "paragraphs": [
+              7,
+              12,
+              13,
+              16
+            ]
+          }
+        ]
+      },
+      "dosage": {
+        "unit": "repetitions",
+        "repetitions": 5,
+        "secondsPerRepetition": 8
+      },
+      "minParticipants": 1
+    },
+    {
+      "slug": "yoga-seated-side-bend",
+      "sourceLocator": {
+        "researchId": "YA04",
+        "sections": [
+          {
+            "id": "sec3dot3-jfmk-08-00026",
+            "paragraphs": [
+              4,
+              5
+            ]
+          },
+          {
+            "id": "sec3dot5-jfmk-08-00026",
+            "paragraphs": [
+              1,
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      "dosage": {
+        "unit": "seconds",
+        "holdSecondsPerSide": 15,
+        "setsPerSide": [
+          1,
+          2
+        ],
+        "restSeconds": 10
+      },
+      "minParticipants": 1
+    },
+    {
+      "slug": "yoga-seated-twist",
+      "sourceLocator": {
+        "researchId": "YA05",
+        "sections": [
+          {
+            "id": "sec3dot3-jfmk-08-00026",
+            "paragraphs": [
+              4,
+              5
+            ]
+          },
+          {
+            "id": "sec3dot4-jfmk-08-00026",
+            "paragraphs": [
+              1,
+              3
+            ]
+          }
+        ]
+      },
+      "dosage": {
+        "unit": "seconds",
+        "holdSecondsPerSide": 15,
+        "setsPerSide": [
+          1,
+          2
+        ],
+        "restSeconds": 10
+      },
+      "minParticipants": 1
+    }
+  ],
+  "attribution": "Āsana for Neck, Shoulders, and Wrists to Prevent Musculoskeletal Disorders among Dental Professionals: In-Office Yóga Protocol — Maria Giovanna Gandolfi, Fausto Zamparini, Andrea Spinelli, Carlo Prati. CC BY 4.0. Hebrew adaptation by ForceApp; changes documented in this manifest.",
+  "editorialNotes": [
+    "Muscle tags indicate editorially selected movement involvement, not measured muscle activation or a strength-training claim.",
+    "The existing pattern taxonomy has no mobility category. core marks seated axial movement and shapes; pushH is the closest available hand-loading label for the supported wrist movement, not a claim that this is a strength press.",
+    "Substitutes offer a general activity alternative, not anatomical or therapeutic equivalence; no progression relation is asserted when scaling fields are null.",
+    "Timing is an editorial practice suggestion. repPaceSecPerRep=1 denotes seconds for holds and timed continuous movement, not one complete motion each second.",
+    "New captions and English image prompts are original image-generation storyboards. Built-in generated illustrations are archived separately under artifacts/training-types/generated; no external source images were used."
+  ]
+}

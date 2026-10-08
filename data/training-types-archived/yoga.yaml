@@ -1,0 +1,153 @@
+# הוראות עבריות מעובדות מטקסטי CC BY 4.0; פרטי המקור והשינויים במניפסט provenanceId.
+# יחידות זמן ומינון מפורטות בהוראות ובמניפסט. בתרגיל מתוזמן pace=1 מייצג שנייה.
+# substitutes הם חלופות לפעילות כללית בתחום, ללא הבטחת שקילות אנטומית.
+
+yoga-supported-wrist-stretch:
+  source: null
+  trainingType: "yoga"
+  provenanceId: "gandolfi-2023-office-yoga"
+  addedOn: "2026-09-17"
+  nameHe: "יוגה בישיבה — מתיחת שורשי כפות הידיים"
+  nameEn: "Seated Yoga Wrist Stretch"
+  modality: "gymnastics"
+  pattern: "pushH"
+  equipment: ["chair"]
+  stationType: "portable"
+  skillLevel: 1
+  loadClass: "bodyweight"
+  unilateral: false
+  repPaceSecPerRep: 1
+  systemicCost: "low"
+  constraints: []
+  substitutes: ["yoga-seated-chest-opening"]
+  scalingEasier: null
+  scalingHarder: null
+  primaryMuscles: ["forearms"]
+  secondaryMuscles: ["shoulders"]
+  instructionsHe: |-
+    1. שב על כיסא יציב ללא גלגלים, עם מקום פנוי במושב ליד הירכיים. הנח את שתי כפות הרגליים במלואן על הרצפה.
+    2. הנח את כפות הידיים על המושב לצד הירכיים, עם אצבעות מופנות לאחור ככל שנוח. אפשר לסובב מעט את הידיים החוצה כדי להפחית את המתיחה.
+    3. השאר את הישבן על הכיסא ואת המרפקים מעט רכים. העבר רק מעט משקל אל כפות הידיים, עד לתחושת מתיחה קלה באמות.
+    4. נשום כרגיל והישאר 15 שניות. אין צורך להרים את הגוף או ללחוץ בכוח על המושב.
+    5. הפחת את הלחץ לפני הרמת הידיים. הנח אותן על הירכיים, נוח 10 שניות ובצע פעם נוספת אם נוח.
+    שים לב: אל תכפה את סיבוב כף היד ואל תישען על משענות הכיסא. הפסק אם מופיעים כאב, נימול או לחץ חד במפרק. זמן ההחזקה נספר בשניות.
+
+yoga-seated-neck-tilt:
+  source: null
+  trainingType: "yoga"
+  provenanceId: "gandolfi-2023-office-yoga"
+  addedOn: "2026-09-17"
+  nameHe: "יוגה בישיבה — הטיית ראש לצד"
+  nameEn: "Seated Yoga Neck Side Tilt"
+  modality: "gymnastics"
+  pattern: "core"
+  equipment: ["chair"]
+  stationType: "portable"
+  skillLevel: 1
+  loadClass: "bodyweight"
+  unilateral: true
+  repPaceSecPerRep: 1
+  systemicCost: "low"
+  constraints: []
+  substitutes: ["yoga-seated-chest-opening"]
+  scalingEasier: null
+  scalingHarder: null
+  primaryMuscles: ["neck"]
+  secondaryMuscles: ["traps"]
+  instructionsHe: |-
+    1. שב במרכז כיסא יציב ללא גלגלים, הנח כפות רגליים על הרצפה וידיים רפויות על הירכיים.
+    2. התארך דרך קודקוד הראש והשאר את המבט קדימה ואת הכתפיים בגובה דומה.
+    3. הטה באיטיות את אוזן ימין לכיוון כתף ימין בטווח קטן ונוח. אין צורך להגיע אל הכתף, לסובב את הסנטר או להרים את הכתף.
+    4. נשום כרגיל והחזק 10–15 שניות. החזר את הראש למרכז לאט והמתן נשימה אחת.
+    5. בצע אותה החזקה לצד שמאל. סבב אחד לכל צד מספיק להתחלה; אם נוח, נוח 10 שניות וחזור על הסבב.
+    שים לב: אין למשוך את הראש ביד, לבצע סיבוב ראש מלא או לחפש מתיחה חזקה. הפסק אם מופיעים כאב, נימול או סחרחורת. כל החזקה היא סט לצד אחד.
+
+yoga-seated-chest-opening:
+  source: null
+  trainingType: "yoga"
+  provenanceId: "gandolfi-2023-office-yoga"
+  addedOn: "2026-09-17"
+  nameHe: "יוגה בישיבה — פתיחת חזה קטנה"
+  nameEn: "Seated Yoga Chest Opening"
+  modality: "gymnastics"
+  pattern: "core"
+  equipment: ["chair"]
+  stationType: "portable"
+  skillLevel: 1
+  loadClass: "bodyweight"
+  unilateral: false
+  repPaceSecPerRep: 8
+  systemicCost: "low"
+  constraints: []
+  substitutes: ["yoga-seated-side-bend"]
+  scalingEasier: null
+  scalingHarder: null
+  primaryMuscles: ["middle back"]
+  secondaryMuscles: ["chest", "shoulders"]
+  instructionsHe: |-
+    1. שב זקוף על כיסא יציב ללא גלגלים, עם כפות רגליים מלאות על הרצפה. השאר את האגן יציב ואת כפות הידיים על הירכיים.
+    2. בשאיפה נינוחה של כשלוש שניות, הרם מעט את עצם החזה קדימה ולמעלה. אפשר לשכמות להתקרב מעט זו לזו בלי לכווץ אותן בכוח.
+    3. צור קשת קטנה בחלק העליון של הגב. השאר את הסנטר קרוב למנח הרגיל ואת המבט קדימה; הראש אינו נזרק לאחור.
+    4. בנשיפה של כשלוש שניות חזור לגב זקוף וניטרלי. אל תעבור לכפיפה עמוקה קדימה.
+    5. המתן כשתי שניות ובצע בסך הכול 5 חזרות איטיות. אם ספירת הנשימה אינה נוחה, נשום באופן חופשי והקטן את התנועה.
+    שים לב: המטרה היא תנועה קטנה של החזה, ללא דחיפה חזקה בידיים או קשת גדולה במותניים. הפסק בכאב ואל תעצור את הנשימה.
+
+yoga-seated-side-bend:
+  source: null
+  trainingType: "yoga"
+  provenanceId: "gandolfi-2023-office-yoga"
+  addedOn: "2026-09-17"
+  nameHe: "יוגה בישיבה — כפיפה צידית"
+  nameEn: "Seated Yoga Side Bend"
+  modality: "gymnastics"
+  pattern: "core"
+  equipment: ["chair"]
+  stationType: "portable"
+  skillLevel: 1
+  loadClass: "bodyweight"
+  unilateral: true
+  repPaceSecPerRep: 1
+  systemicCost: "low"
+  constraints: []
+  substitutes: ["yoga-seated-twist"]
+  scalingEasier: null
+  scalingHarder: null
+  primaryMuscles: ["abdominals"]
+  secondaryMuscles: ["lats", "lower back", "shoulders"]
+  instructionsHe: |-
+    1. שב במרכז כיסא יציב ללא גלגלים, כפות רגליים על הרצפה ברוחב האגן ושני צדי הישבן נתמכים במושב.
+    2. הנח את יד ימין על צד המושב והעבר את יד שמאל בקשת מעל הראש, עם מרפק מעט כפוף. אם הרמה מעל הראש אינה נוחה, הנח את יד שמאל על המותן.
+    3. התארך כלפי מעלה, ואז הטה מעט את בית החזה לימין בלי לפנות קדימה או לאחור. השאר את שני צדי האגן במגע עם המושב.
+    4. הישאר 15 שניות ונשום באופן רציף. יד ימין מספקת תמיכה קלה בלבד, ללא משיכה של הגוף.
+    5. חזור לאט למרכז והורד את היד. המתן נשימה ובצע את אותה החזקה לצד שמאל. בצע סבב אחד, ואפשר סבב נוסף אחרי 10 שניות מנוחה.
+    שים לב: שמור על טווח שבו הישיבה יציבה והנשימה נוחה. אל תרים צד של הישבן ואל תדחוף דרך כאב. כל החזקה היא סט לצד אחד.
+
+yoga-seated-twist:
+  source: null
+  trainingType: "yoga"
+  provenanceId: "gandolfi-2023-office-yoga"
+  addedOn: "2026-09-17"
+  nameHe: "יוגה בישיבה — פיתול גו קטן"
+  nameEn: "Seated Yoga Gentle Twist"
+  modality: "gymnastics"
+  pattern: "core"
+  equipment: ["chair"]
+  stationType: "portable"
+  skillLevel: 1
+  loadClass: "bodyweight"
+  unilateral: true
+  repPaceSecPerRep: 1
+  systemicCost: "low"
+  constraints: []
+  substitutes: ["yoga-seated-side-bend"]
+  scalingEasier: null
+  scalingHarder: null
+  primaryMuscles: ["abdominals"]
+  secondaryMuscles: ["middle back", "lower back"]
+  instructionsHe: |-
+    1. שב זקוף על כיסא יציב ללא גלגלים, הנח כפות רגליים במלואן על הרצפה והשאר ברכיים ואגן פונים קדימה.
+    2. הצלב את הידיים ברפיון לפני החזה והנח כל כף יד על הכתף הנגדית. התארך דרך הקודקוד בשאיפה נינוחה.
+    3. בנשיפה סובב מעט את בית החזה לימין. הזרועות נעות עם החזה ללא משיכה בכתפיים, והראש פונה עם הגו באותו כיוון ובטווח נוח.
+    4. הישאר 15 שניות תוך נשימה חופשית, בלי להוסיף עוד ועוד סיבוב. האגן וכפות הרגליים נשארים במקומם.
+    5. חזור באיטיות למרכז, המתן נשימה ובצע לצד שמאל. התחל בסבב אחד לכל צד; אפשר סבב שני לאחר מנוחה של 10 שניות.
+    שים לב: אין לאחוז במשענת כדי למנף פיתול עמוק. הקטן את הטווח אם האגן מתחיל להסתובב, והפסק בכאב. כל החזקה היא סט לצד אחד.

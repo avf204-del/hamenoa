@@ -1,0 +1,423 @@
+{
+  "id": "moreira-2017-capoeira",
+  "author": "Sérgio Rodrigues Moreira",
+  "title": "Movimentação básica na Capoeira: uma análise da nomenclatura entre diferentes grupos",
+  "publisher": "Pensar a Prática, Universidade Federal de Goiás",
+  "publishedAt": "2017-12-22",
+  "doi": "10.5216/rpp.v20i4.40171",
+  "license": "UNRESOLVED",
+  "licenseUrl": null,
+  "acquiredAt": "2026-09-17T07:39:52.980464+00:00",
+  "files": [
+    {
+      "path": "article.html",
+      "url": "https://revistas.ufg.br/fef/article/view/40171",
+      "resolvedUrl": "https://revistas.ufg.br/fef/article/view/40171",
+      "acquiredAt": "2026-09-17T07:39:52.980464+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 31426,
+      "sha256": "21641b441efc5759c6614f43d4cfe008094e7793ab9234bccfa8b923edcbe3d1"
+    },
+    {
+      "path": "article.pdf",
+      "url": "https://revistas.ufg.br/fef/article/download/40171/pdf/211680",
+      "resolvedUrl": "https://revistas.ufg.br/fef/article/download/40171/pdf/211680",
+      "acquiredAt": "2026-09-17T07:39:55.447360+00:00",
+      "contentType": "application/pdf",
+      "bytes": 609603,
+      "sha256": "767479d1b84ebdef69fbd424a7387d9451857b2e46bf5a2d1ee3c00d671d3fba"
+    },
+    {
+      "path": "license-deed.html",
+      "url": "https://creativecommons.org/licenses/by/3.0/",
+      "resolvedUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "acquiredAt": "2026-09-17T07:39:55.971260+00:00",
+      "contentType": "text/html",
+      "bytes": 32052,
+      "sha256": "655c0b9134ce2be63356976cf1f8a5ab2ca6f4f32acf280ea01604ebe9a1b0b8"
+    },
+    {
+      "path": "license-legalcode.html",
+      "url": "https://creativecommons.org/licenses/by/3.0/legalcode",
+      "resolvedUrl": "https://creativecommons.org/licenses/by/3.0/legalcode",
+      "acquiredAt": "2026-09-17T07:39:56.650247+00:00",
+      "contentType": "text/html",
+      "bytes": 51333,
+      "sha256": "1575ec5fc503cb90e64fc44656704698266747597fe45ca56b0f38d7dfbec782"
+    }
+  ],
+  "articleUrl": "https://revistas.ufg.br/fef/article/view/40171",
+  "pdfUrl": "https://revistas.ufg.br/fef/article/download/40171/pdf/211680",
+  "licenseEvidence": {
+    "status": "explicit-CC-BY-3.0-text-with-conflicting-license-badge",
+    "chosenBasis": "The Licença paragraph explicitly links the work to CC BY 3.0; selected as the requested adaptation basis, not an assertion that the conflicting badge is resolved.",
+    "articleSnapshot": "article.html",
+    "explicitGrantHref": "http://creativecommons.org/licenses/by/3.0/",
+    "conflictingBadgeHref": "http://creativecommons.org/licenses/by-nc-sa/2.5/br/",
+    "conflictingBadgeRel": "license",
+    "resolution": "Unresolved. Do not represent this archive as unambiguous commercial-reuse clearance. The actual HTML is preserved for publisher/author clarification before publication.",
+    "shareAlikeMaterialUsedAsAdaptationBasis": false,
+    "scope": "Article only; no blanket rights claimed for cited books, external images or linked media."
+  },
+  "attribution": {
+    "text": "Based on the movement figures and naming table in Sérgio Rodrigues Moreira, Movimentação básica na Capoeira: uma análise da nomenclatura entre diferentes grupos, Pensar a Prática 20(4), 2017, DOI 10.5216/rpp.v20i4.40171. The article text links CC BY 3.0; see the recorded conflicting badge. Hebrew instructions and storyboard prompts are original editorial adaptations; no author endorsement is implied.",
+    "changesHe": "נכתבו הוראות מקוריות בעברית, כניסה ויציאה, מינון התנסות, דגשי ביצוע, הכנות נמוכות, מיפוי שרירים ופרומפטים. לא הועתקו הוראות מוויקיפדיה או ממקורות SA, ולא הועתקו תמונות לתרגילים.",
+    "instructorCertified": false
+  },
+  "archiveNotes": [
+    "Downloads are original response bytes, not reconstructed pages or a text summary. SHA256 applies to exactly those archived bytes.",
+    "Figure 1 (PDF page 5, printed 678) and Quadro 2 (PDF page 7, printed 680) were rendered and visually reviewed from the archived PDF.",
+    "The PDF document metadata/title may be stale; the visible first-page title, author and DOI match this record.",
+    "Draft image grids were generated for six exercises before generation was paused. No grid was cleared for publication; no public frame crops or capoeira media manifest were created."
+  ],
+  "contentStatus": "blocked-pending-license-clearance; NOT admissible for active import",
+  "schemaNotes": {
+    "base": "TaggingEntry and validateTagging in scripts/import-exercises.ts; primaryMuscles/secondaryMuscles use MUSCLE_VOCABULARY.",
+    "extensions": [
+      "trainingType",
+      "provenanceId"
+    ],
+    "sourceNullMeaning": "No Free Exercise DB identifier; does not mean no external provenance or Unlicense.",
+    "integration": "Do not use a legacy importer that discards trainingType/provenanceId or labels this source:null content as entirely without external source.",
+    "substitutions": "Within-capoeira technical alternatives; not claims of identical dosage or automatic interchangeability. Cadeira is timed, others count full cycles or one-sided repetitions as stated."
+  },
+  "countBasis": {
+    "exerciseCount": 15,
+    "sourceMovementCount": 15,
+    "familyCount": 13,
+    "sourceMovementIds": [
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "M5",
+      "M6",
+      "M7",
+      "M8",
+      "M9",
+      "M10",
+      "M11",
+      "M14",
+      "M16",
+      "M19",
+      "M22"
+    ],
+    "variantFamilies": {
+      "F02": [
+        "M2",
+        "M4"
+      ],
+      "F11": [
+        "M14",
+        "M19"
+      ]
+    },
+    "excludedPartnerSweeps": [
+      "M18",
+      "M20"
+    ],
+    "aliasesNotAdditionalExercises": true,
+    "leftRightNotAdditionalExercises": true
+  },
+  "editorialAssessments": [
+    "muscle mapping",
+    "skill levels",
+    "repetition pace",
+    "solo-space constraints",
+    "progressions and substitutions",
+    "all step-by-step coaching additions"
+  ],
+  "exerciseMapping": {
+    "capoeira-ginga": {
+      "movementId": "M1",
+      "familyId": "F01",
+      "nameColumn": "G1 (IUNA); Cadeira alias from G2",
+      "figure": {
+        "pdfPage": 5,
+        "printedPage": 678,
+        "label": "Figure 1"
+      },
+      "names": {
+        "pdfPage": 7,
+        "printedPage": 680,
+        "label": "Quadro 2"
+      },
+      "sourceInstructionGrade": 1,
+      "adaptationHe": "ניסוח הוראות, כניסה וחזרה, קצב איטי ומינון מוצע נוספו בעריכה; המקור מספק זיהוי חזותי ומסלול בלבד.",
+      "instructorCertified": false
+    },
+    "capoeira-esquiva-lateral": {
+      "movementId": "M2",
+      "familyId": "F02",
+      "nameColumn": "G1 (IUNA); Cadeira alias from G2",
+      "figure": {
+        "pdfPage": 5,
+        "printedPage": 678,
+        "label": "Figure 1"
+      },
+      "names": {
+        "pdfPage": 7,
+        "printedPage": 680,
+        "label": "Quadro 2"
+      },
+      "sourceInstructionGrade": 1,
+      "adaptationHe": "ניסוח הוראות, כניסה וחזרה, קצב איטי ומינון מוצע נוספו בעריכה; המקור מספק זיהוי חזותי ומסלול בלבד.",
+      "instructorCertified": false
+    },
+    "capoeira-diagonal-step": {
+      "movementId": "M3",
+      "familyId": "F03",
+      "nameColumn": "G1 (IUNA); Cadeira alias from G2",
+      "figure": {
+        "pdfPage": 5,
+        "printedPage": 678,
+        "label": "Figure 1"
+      },
+      "names": {
+        "pdfPage": 7,
+        "printedPage": 680,
+        "label": "Quadro 2"
+      },
+      "sourceInstructionGrade": 1,
+      "adaptationHe": "M3 תומך בכיוון תזוזה אלכסוני; פירוק ליציאה ואיסוף ללא הצלבה ולחזרה הוא עיבוד מקורי לסולו, לא רצף מפורט במאמר.",
+      "instructorCertified": false
+    },
+    "capoeira-esquiva-basica": {
+      "movementId": "M4",
+      "familyId": "F02",
+      "nameColumn": "G1 (IUNA); Cadeira alias from G2",
+      "figure": {
+        "pdfPage": 5,
+        "printedPage": 678,
+        "label": "Figure 1"
+      },
+      "names": {
+        "pdfPage": 7,
+        "printedPage": 680,
+        "label": "Quadro 2"
+      },
+      "sourceInstructionGrade": 1,
+      "adaptationHe": "ניסוח הוראות, כניסה וחזרה, קצב איטי ומינון מוצע נוספו בעריכה; המקור מספק זיהוי חזותי ומסלול בלבד.",
+      "instructorCertified": false
+    },
+    "capoeira-negativa": {
+      "movementId": "M5",
+      "familyId": "F04",
+      "nameColumn": "G1 (IUNA); Cadeira alias from G2",
+      "figure": {
+        "pdfPage": 5,
+        "printedPage": 678,
+        "label": "Figure 1"
+      },
+      "names": {
+        "pdfPage": 7,
+        "printedPage": 680,
+        "label": "Quadro 2"
+      },
+      "sourceInstructionGrade": 1,
+      "adaptationHe": "ניסוח הוראות, כניסה וחזרה, קצב איטי ומינון מוצע נוספו בעריכה; המקור מספק זיהוי חזותי ומסלול בלבד.",
+      "instructorCertified": false
+    },
+    "capoeira-role": {
+      "movementId": "M6",
+      "familyId": "F05",
+      "nameColumn": "G1 (IUNA); Cadeira alias from G2",
+      "figure": {
+        "pdfPage": 5,
+        "printedPage": 678,
+        "label": "Figure 1"
+      },
+      "names": {
+        "pdfPage": 7,
+        "printedPage": 680,
+        "label": "Quadro 2"
+      },
+      "sourceInstructionGrade": 1,
+      "adaptationHe": "M6: מעבר סיבובי בתמיכת ידיים. גרסת צעדים איטית, היקף חצי סיבוב, כניסה מנגטיבה ויציאה לעמידה הם פירוק עריכתי ללמידה; אין במאמר רצף שלבים כזה.",
+      "instructorCertified": false
+    },
+    "capoeira-meia-lua-de-frente": {
+      "movementId": "M7",
+      "familyId": "F06",
+      "nameColumn": "G1 (IUNA); Cadeira alias from G2",
+      "figure": {
+        "pdfPage": 5,
+        "printedPage": 678,
+        "label": "Figure 1"
+      },
+      "names": {
+        "pdfPage": 7,
+        "printedPage": 680,
+        "label": "Quadro 2"
+      },
+      "sourceInstructionGrade": 1,
+      "adaptationHe": "ניסוח הוראות, כניסה וחזרה, קצב איטי ומינון מוצע נוספו בעריכה; המקור מספק זיהוי חזותי ומסלול בלבד.",
+      "instructorCertified": false
+    },
+    "capoeira-armada": {
+      "movementId": "M8",
+      "familyId": "F07",
+      "nameColumn": "G1 (IUNA); Cadeira alias from G2",
+      "figure": {
+        "pdfPage": 5,
+        "printedPage": 678,
+        "label": "Figure 1"
+      },
+      "names": {
+        "pdfPage": 7,
+        "printedPage": 680,
+        "label": "Quadro 2"
+      },
+      "sourceInstructionGrade": 1,
+      "adaptationHe": "ניסוח הוראות, כניסה וחזרה, קצב איטי ומינון מוצע נוספו בעריכה; המקור מספק זיהוי חזותי ומסלול בלבד.",
+      "instructorCertified": false
+    },
+    "capoeira-cadeira": {
+      "movementId": "M9",
+      "familyId": "F08",
+      "nameColumn": "G1 (IUNA); Cadeira alias from G2",
+      "figure": {
+        "pdfPage": 5,
+        "printedPage": 678,
+        "label": "Figure 1"
+      },
+      "names": {
+        "pdfPage": 7,
+        "printedPage": 680,
+        "label": "Quadro 2"
+      },
+      "sourceInstructionGrade": 1,
+      "adaptationHe": "ניסוח הוראות, כניסה וחזרה, קצב איטי ומינון מוצע נוספו בעריכה; המקור מספק זיהוי חזותי ומסלול בלבד.",
+      "instructorCertified": false
+    },
+    "capoeira-au-low-preparation": {
+      "movementId": "M10",
+      "familyId": "F09",
+      "nameColumn": "G1 (IUNA); Cadeira alias from G2",
+      "figure": {
+        "pdfPage": 5,
+        "printedPage": 678,
+        "label": "Figure 1"
+      },
+      "names": {
+        "pdfPage": 7,
+        "printedPage": 680,
+        "label": "Quadro 2"
+      },
+      "sourceInstructionGrade": 1,
+      "adaptationHe": "M10 מציג אאו מלא בהיפוך. כאן נוצרה הכנת קרקע מקורית: מעבר יד–יד ורגל–רגל נמוך בלי חובת מעוף ובלי היפוך. זו אינה וריאציה שהמאמר מלמד, ואין להציג את תמונת המקור כביצוע ההכנה.",
+      "instructorCertified": false
+    },
+    "capoeira-queixada": {
+      "movementId": "M11",
+      "familyId": "F10",
+      "nameColumn": "G1 (IUNA); Cadeira alias from G2",
+      "figure": {
+        "pdfPage": 5,
+        "printedPage": 678,
+        "label": "Figure 1"
+      },
+      "names": {
+        "pdfPage": 7,
+        "printedPage": 680,
+        "label": "Quadro 2"
+      },
+      "sourceInstructionGrade": 1,
+      "adaptationHe": "ניסוח הוראות, כניסה וחזרה, קצב איטי ומינון מוצע נוספו בעריכה; המקור מספק זיהוי חזותי ומסלול בלבד.",
+      "instructorCertified": false
+    },
+    "capoeira-martelo": {
+      "movementId": "M14",
+      "familyId": "F11",
+      "nameColumn": "G1 (IUNA); Cadeira alias from G2",
+      "figure": {
+        "pdfPage": 5,
+        "printedPage": 678,
+        "label": "Figure 1"
+      },
+      "names": {
+        "pdfPage": 7,
+        "printedPage": 680,
+        "label": "Quadro 2"
+      },
+      "sourceInstructionGrade": 1,
+      "adaptationHe": "ניסוח הוראות, כניסה וחזרה, קצב איטי ומינון מוצע נוספו בעריכה; המקור מספק זיהוי חזותי ומסלול בלבד.",
+      "instructorCertified": false
+    },
+    "capoeira-meia-lua-de-compasso-low": {
+      "movementId": "M16",
+      "familyId": "F12",
+      "nameColumn": "G1 (IUNA); Cadeira alias from G2",
+      "figure": {
+        "pdfPage": 5,
+        "printedPage": 678,
+        "label": "Figure 1"
+      },
+      "names": {
+        "pdfPage": 7,
+        "printedPage": 680,
+        "label": "Quadro 2"
+      },
+      "sourceInstructionGrade": 1,
+      "adaptationHe": "M16 תומך בקשת עקב סיבובית בתמיכת ידיים. הגבלת הגובה והקשת, עצירה ברגליים לפני קימה ותרגול תמיכה מקדים הם התאמות מקוריות; זה אינו תיאור של בעיטה מלאה בגובה התרשים.",
+      "instructorCertified": false
+    },
+    "capoeira-martelo-de-chao-supported": {
+      "movementId": "M19",
+      "familyId": "F11",
+      "nameColumn": "G1 (IUNA); Cadeira alias from G2",
+      "figure": {
+        "pdfPage": 5,
+        "printedPage": 678,
+        "label": "Figure 1"
+      },
+      "names": {
+        "pdfPage": 7,
+        "printedPage": 680,
+        "label": "Quadro 2"
+      },
+      "sourceInstructionGrade": 1,
+      "adaptationHe": "M19 מציג מרטלו מהקרקע עם רגליים באוויר. נכתבה הכנה מקורית המוסיפה שתי כפות ידיים ורגל תומכת רצופה, הרמת ברך והארכה קצרה; אין טענה שהמאמר מלמד את ההתקדמות הזאת או שהיא הביצוע המלא.",
+      "instructorCertified": false
+    },
+    "capoeira-ponteira": {
+      "movementId": "M22",
+      "familyId": "F15",
+      "nameColumn": "G1 (IUNA); Cadeira alias from G2",
+      "figure": {
+        "pdfPage": 5,
+        "printedPage": 678,
+        "label": "Figure 1"
+      },
+      "names": {
+        "pdfPage": 7,
+        "printedPage": 680,
+        "label": "Quadro 2"
+      },
+      "sourceInstructionGrade": 1,
+      "adaptationHe": "ניסוח הוראות, כניסה וחזרה, קצב איטי ומינון מוצע נוספו בעריכה; המקור מספק זיהוי חזותי ומסלול בלבד.",
+      "instructorCertified": false
+    }
+  },
+  "clearanceStatus": "unresolved",
+  "admissibleForImport": false,
+  "contentPath": "data/training-types-pending/capoeira.yaml",
+  "imageGenerationStatus": "paused by user pending admissible provenance; no public crops or media manifest created",
+  "claimedLicenses": [
+    {
+      "license": "CC-BY-3.0",
+      "evidence": "article.html:513 explicit prose link"
+    },
+    {
+      "license": "CC-BY-NC-SA-2.5-BR",
+      "evidence": "article.html:517 rel=license badge"
+    }
+  ],
+  "pdfLicenseAudit": {
+    "pagesChecked": 13,
+    "visibleLicenseStatementFound": false,
+    "metadataLicenseFound": false,
+    "metadataTitleMismatch": true,
+    "visibleTitleAuthorDoiMatch": true
+  }
+}

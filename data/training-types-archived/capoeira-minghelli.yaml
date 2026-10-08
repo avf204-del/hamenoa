@@ -1,0 +1,95 @@
+# שלוש רשומות חדשות שנכתבו ישירות מ-Minghelli 2023, CC BY 4.0.
+# אין שימוש בהוראות Moreira; טיוטת Moreira נשארת בנפרד ב-pending.
+# מקור: סעיף Discussion; תיאורי תנועה חלקיים, לא כרטיסי אימון מוכנים במאמר.
+# כניסה/יציאה, תרגול נמוך, מינון, שרירים ודגשי עצירה נוספו בעריכה מקורית.
+# אין אישור מדריך. תחליפים הם חלופות תרגול בתוך התחום, לא שקילות טכנית.
+
+capoeira-ginga-alternating-step:
+  source: null
+  trainingType: "capoeira"
+  provenanceId: "minghelli-2023-capoeira"
+  addedOn: "2026-09-17"
+  nameHe: "ג׳ינגה — חילוף בסיס בסולו"
+  nameEn: "Ginga — Alternating Base Step"
+  modality: "gymnastics"
+  pattern: "locomotion"
+  equipment: []
+  stationType: "none"
+  skillLevel: 1
+  loadClass: "bodyweight"
+  unilateral: false
+  repPaceSecPerRep: 8
+  systemicCost: "low"
+  constraints: ["space"]
+  substitutes: ["capoeira-martelo-standing"]
+  scalingEasier: null
+  scalingHarder: null
+  primaryMuscles: ["quadriceps","glutes"]
+  secondaryMuscles: ["calves","abdominals"]
+  instructionsHe: |-
+    1. בחר רצפה יציבה ומקום לצעד לאחור בכל רגל. התחל בעמידה רחבה ונוחה, כשהברכיים משוחררות והידיים בגובה החזה.
+    2. הסט את המשקל לשמאל והנח את רגל ימין צעד קצר מאחור, על קדמת כף הרגל. במקביל הבא את יד ימין קדימה, עם אמה כפופה מול החזה והפנים; יד שמאל נשארת קרובה לגוף.
+    3. דחוף קלות מהרגל האחורית והחזר את ימין לבסיס הרחב. העבר את הידיים בנחת דרך המרכז תוך שמירה על המבט לפנים.
+    4. כעת השאר את ימין לפנים ושלח את שמאל לאחור. הבא את יד שמאל קדימה ואת ימין קרוב לגוף, תוך החלפת המשקל בלי קפיצה.
+    5. החזר את שמאל למרכז. מעבר לימין לאחור, מרכז, שמאל לאחור ומרכז משלים מחזור; התחל בארבעה מחזורים ובמנוחה קצרה לפני סבב נוסף.
+    שים לב: השאר רוחב בין מסלולי הרגליים כדי שלא יסתבכו. הברכיים נעות עם כפות הרגליים והנשימה נשארת חופשית. אם אתה נאלץ להיתפס או לדלג כדי להתאזן, קצר את הצעד והאט. חילוף היד והרגל מאותו צד הוא בסיס התנועה במקור; הקצב והמינון כאן הם הצעת עריכה.
+
+capoeira-martelo-standing:
+  source: null
+  trainingType: "capoeira"
+  provenanceId: "minghelli-2023-capoeira"
+  addedOn: "2026-09-17"
+  nameHe: "מרטלו בעמידה — הכנה ובעיטה נמוכה"
+  nameEn: "Standing Martelo — Controlled Roundhouse Kick"
+  modality: "gymnastics"
+  pattern: "locomotion"
+  equipment: []
+  stationType: "none"
+  skillLevel: 3
+  loadClass: "bodyweight"
+  unilateral: true
+  repPaceSecPerRep: 7
+  systemicCost: "med"
+  constraints: ["space"]
+  substitutes: ["capoeira-ginga-alternating-step"]
+  scalingEasier: "capoeira-ginga-alternating-step"
+  scalingHarder: null
+  primaryMuscles: ["quadriceps","glutes"]
+  secondaryMuscles: ["abdominals","calves"]
+  instructionsHe: |-
+    1. עמוד בבסיס מדורג ונוח מול שטח ריק מלפנים ומהצד. בחר את ימין כרגל הבועטת; אפשר להתחיל כשהיא מעט לפנים או מעט מאחור. שמור על ידיים ליד הפנים ובדוק שאתה יכול להרים ברך ולעצור בלי להיאחז.
+    2. העבר משקל לרגל שמאל והרם את ברך ימין כפופה לפנים. בשלב הלמידה בחר גובה שנוח לאזן בו את הגוף; הברך וכף הרגל נשארות קרובות זו לזו.
+    3. סובב את הגוף והאגן לכיוון הבעיטה, ובו בזמן אפשר לכף רגל שמאל להסתובב על קדמתה. הברך התומכת פונה עם כף הרגל, והברך המורמת עוברת לכיוון צדדי.
+    4. מתוך הברך הכפופה שלח את השוק בקשת מעגלית קצרה באוויר. גב כף הרגל ממשיך את קו השוק. התחל מתחת לגובה המותן ועצור לפני יישור נוקשה של הברך.
+    5. כופף שוב את ברך ימין, סובב בחזרה במידה הדרושה והנח את הרגל בחזרה לבסיס יציב. זו חזרה אחת. בצע שלוש חזרות, נוח והחלף לרגל השנייה.
+    שים לב: זהו תרגול צורה ללא מגע, לא בעיטה בשק או באדם. אל תסובב את הברך מעל כף רגל תקועה ואל תשתמש בתנופה כדי לפצות על חוסר איזון. תחילה אפשר לתרגל רק הרמת ברך, סיבוב והורדה; ההארכה מתווספת לאחר שהשלבים נשלטים.
+
+capoeira-armada-controlled-turn:
+  source: null
+  trainingType: "capoeira"
+  provenanceId: "minghelli-2023-capoeira"
+  addedOn: "2026-09-17"
+  nameHe: "ארמדה — סיבוב ובעיטת קשת בסולו"
+  nameEn: "Armada — Controlled Spinning Crescent"
+  modality: "gymnastics"
+  pattern: "locomotion"
+  equipment: []
+  stationType: "none"
+  skillLevel: 4
+  loadClass: "bodyweight"
+  unilateral: true
+  repPaceSecPerRep: 12
+  systemicCost: "med"
+  constraints: ["space"]
+  substitutes: ["capoeira-martelo-standing"]
+  scalingEasier: "capoeira-martelo-standing"
+  scalingHarder: null
+  primaryMuscles: ["glutes","quadriceps"]
+  secondaryMuscles: ["abdominals","calves","adductors"]
+  instructionsHe: |-
+    1. פנה סביבך מעגל שלם לרגל מושטת ולעצירה. עמוד עם שמאל לפנים וימין מאחור וידיים ליד הפנים. לפני הוספת בעיטה, תרגל סיבוב ימינה עם שתי רגליים קרובות לרצפה עד שאפשר לשוב ולעצור מול אותה נקודה.
+    2. התחל שוב לפנות ימינה: סובב את הראש, הגו והאגן ותן לכפות הרגליים להסתובב יחד איתם. במהלך ההקפה הגב פונה לזמן קצר לכיוון ההתחלתי.
+    3. המשך לחפש במבט את נקודת ההתחלה מעבר לכתף ימין. כשהמשקל יציב מעל שמאל, שחרר את רגל ימין והמשך את ההקפה באמצעות קשת של הרגל, בברך ארוכה אך לא נעולה.
+    4. התחל בקשת נמוכה מגובה האגן ובמהירות שמאפשרת שליטה. הצד החיצוני של כף רגל ימין פונה למסלול הבעיטה; שמאל מסתובבת עם האגן ואינה מקובעת בכוח לרצפה.
+    5. הנמך את ימין והשלם בסיס של שתי רגליים מול נקודת ההתחלה. עצור, בדוק שיווי משקל ורק אז חזור. התחל בשתי חזרות לצד אחד, נוח ובצע לצד השני בתמונת ראי.
+    שים לב: זו מיומנות סיבובית מתקדמת; אין קפיצה ואין יעד למגע. אם אובד הכיוון או שאתה צריך צעד הצלה, ותר על הבעיטה באותה חזרה, השאר את הרגל נמוכה והשלם עצירה. הגדלת הקשת באה רק לאחר שליטה בסיבוב ובהנחת הרגל; עצור אם מופיעה סחרחורת.

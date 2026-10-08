@@ -1,0 +1,3209 @@
+{
+  "schemaVersion": 1,
+  "exercises": {
+    "hollow-hold": {
+      "frames": [
+        {
+          "file": "/exercises/hollow-hold/1.webp",
+          "captionHe": "החזק כתפיים ורגליים באוויר, עם הגב התחתון צמוד למזרן.",
+          "altHe": "החזקת סירה — החזק כתפיים ורגליים באוויר, עם הגב התחתון צמוד למזרן."
+        }
+      ]
+    },
+    "l-sit": {
+      "frames": [
+        {
+          "file": "/exercises/l-sit/1.webp",
+          "captionHe": "דחוף דרך הידיים והחזק רגליים ישרות לפנים, בגובה שבשליטתך.",
+          "altHe": "החזקת L על מקבילים — דחוף דרך הידיים והחזק רגליים ישרות לפנים, בגובה שבשליטתך."
+        }
+      ]
+    },
+    "plank": {
+      "frames": [
+        {
+          "file": "/exercises/plank/1.webp",
+          "captionHe": "החזק גוף בקו ישר, כשהמרפקים מתחת לכתפיים.",
+          "altHe": "פלאנק — החזק גוף בקו ישר, כשהמרפקים מתחת לכתפיים."
+        }
+      ]
+    },
+    "side-plank": {
+      "frames": [
+        {
+          "file": "/exercises/side-plank/1.webp",
+          "captionHe": "הרם את האגן והחזק את הגוף בקו ישר, בתמיכה על האמה.",
+          "altHe": "פלאנק צד — הרם את האגן והחזק את הגוף בקו ישר, בתמיכה על האמה."
+        }
+      ]
+    },
+    "glute-bridge-hold": {
+      "frames": [
+        {
+          "file": "/exercises/glute-bridge-hold/1.webp",
+          "captionHe": "החזק את האגן מורם בלי להקשית את הגב התחתון.",
+          "altHe": "החזקת גשר אגן — החזק את האגן מורם בלי להקשית את הגב התחתון."
+        }
+      ]
+    },
+    "wall-sit": {
+      "frames": [
+        {
+          "file": "/exercises/wall-sit/1.webp",
+          "captionHe": "הישען על הקיר והחזק ישיבה בגובה נוח, עם הברכיים מעל הקרסוליים.",
+          "altHe": "ישיבה על הקיר — הישען על הקיר והחזק ישיבה בגובה נוח, עם הברכיים מעל הקרסוליים."
+        }
+      ]
+    },
+    "reverse-plank": {
+      "frames": [
+        {
+          "file": "/exercises/reverse-plank/1.webp",
+          "captionHe": "החזק את האגן מורם ואת החזה פתוח, בתמיכה על הידיים והעקבים.",
+          "altHe": "פלאנק הפוך — החזק את האגן מורם ואת החזה פתוח, בתמיכה על הידיים והעקבים."
+        }
+      ]
+    },
+    "copenhagen-plank": {
+      "frames": [
+        {
+          "file": "/exercises/copenhagen-plank/1.webp",
+          "captionHe": "החזק אגן מורם בתמיכה על האמה והרגל העליונה; התחל עם תמיכה קרובה לברך.",
+          "altHe": "פלאנק צד עם רגל על משטח — החזק אגן מורם בתמיכה על האמה והרגל העליונה; התחל עם תמיכה קרובה לברך."
+        }
+      ]
+    },
+    "bear-plank-hold": {
+      "frames": [
+        {
+          "file": "/exercises/bear-plank-hold/1.webp",
+          "captionHe": "החזק ברכיים מעט מעל הרצפה, עם ידיים מתחת לכתפיים.",
+          "altHe": "פלאנק דוב — החזק ברכיים מעט מעל הרצפה, עם ידיים מתחת לכתפיים."
+        }
+      ]
+    },
+    "strap-plank": {
+      "frames": [
+        {
+          "file": "/exercises/strap-plank/1.webp",
+          "captionHe": "החזק גוף ישר כשהרגליים בלולאות; ודא שהעיגון מאובטח.",
+          "altHe": "פלאנק עם רגליים ברצועות — החזק גוף ישר כשהרגליים בלולאות; ודא שהעיגון מאובטח."
+        }
+      ]
+    },
+    "wall-walk": {
+      "frames": [
+        {
+          "file": "/exercises/wall-walk/step-0.webp",
+          "captionHe": "מהשכיבה דחוף לפלאנק, כשהרגליים בבסיס הקיר.",
+          "altHe": "מהשכיבה דחוף לפלאנק, כשהרגליים בבסיס הקיר."
+        },
+        {
+          "file": "/exercises/wall-walk/step-1.webp",
+          "captionHe": "העלה את כפות הרגליים בהדרגה וצעד בידיים לכיוון הקיר.",
+          "altHe": "העלה את כפות הרגליים בהדרגה וצעד בידיים לכיוון הקיר."
+        },
+        {
+          "file": "/exercises/wall-walk/step-2.webp",
+          "captionHe": "עצור בגובה שבשליטתך, כשהחזה פונה לקיר והידיים תומכות בגוף.",
+          "altHe": "עצור בגובה שבשליטתך, כשהחזה פונה לקיר והידיים תומכות בגוף."
+        },
+        {
+          "file": "/exercises/wall-walk/step-3.webp",
+          "captionHe": "לירידה צעד בידיים החוצה וברגליים למטה; חזור לרצפה באיטיות.",
+          "altHe": "לירידה צעד בידיים החוצה וברגליים למטה; חזור לרצפה באיטיות."
+        }
+      ]
+    },
+    "rowing-machine": {
+      "frames": [
+        {
+          "file": "/exercises/rowing-machine/step-0.webp",
+          "captionHe": "התחלה: ברכיים כפופות, ידיים ישרות והגו נוטה מעט קדימה.",
+          "altHe": "התחלה: ברכיים כפופות, ידיים ישרות והגו נוטה מעט קדימה."
+        },
+        {
+          "file": "/exercises/rowing-machine/step-1.webp",
+          "captionHe": "דחוף ברגליים תחילה; הידיים נשארות ישרות.",
+          "altHe": "דחוף ברגליים תחילה; הידיים נשארות ישרות."
+        },
+        {
+          "file": "/exercises/rowing-machine/step-2.webp",
+          "captionHe": "לאחר יישור הרגליים משוך את הידית לצלעות התחתונות.",
+          "altHe": "לאחר יישור הרגליים משוך את הידית לצלעות התחתונות."
+        },
+        {
+          "file": "/exercises/rowing-machine/step-3.webp",
+          "captionHe": "בחזרה: ישר ידיים, הטה גו קדימה ורק אז כופף ברכיים להחלקה להתחלה.",
+          "altHe": "בחזרה: ישר ידיים, הטה גו קדימה ורק אז כופף ברכיים להחלקה להתחלה."
+        }
+      ]
+    },
+    "box-jump": {
+      "frames": [
+        {
+          "file": "/exercises/box-jump/step-0.webp",
+          "captionHe": "התכונן מול ארגז נמוך ויציב, בכיפוף ברכיים קל.",
+          "altHe": "התכונן מול ארגז נמוך ויציב, בכיפוף ברכיים קל."
+        },
+        {
+          "file": "/exercises/box-jump/step-1.webp",
+          "captionHe": "נתר בשתי הרגליים והעבר את כפות הרגליים מעל המשטח.",
+          "altHe": "נתר בשתי הרגליים והעבר את כפות הרגליים מעל המשטח."
+        },
+        {
+          "file": "/exercises/box-jump/step-2.webp",
+          "captionHe": "נחת עם כל כפות הרגליים על הארגז וברכיים רכות.",
+          "altHe": "נחת עם כל כפות הרגליים על הארגז וברכיים רכות."
+        },
+        {
+          "file": "/exercises/box-jump/step-3.webp",
+          "captionHe": "התיישר בשליטה, ואז רד בצעדים; אל תקפוץ מהארגז.",
+          "altHe": "התיישר בשליטה, ואז רד בצעדים; אל תקפוץ מהארגז."
+        }
+      ]
+    },
+    "turkish-getup": {
+      "frames": [
+        {
+          "file": "/exercises/turkish-getup/step-0.webp",
+          "captionHe": "שכב על הגב; היד עם המשקולת ישרה והברך באותו צד כפופה.",
+          "altHe": "שכב על הגב; היד עם המשקולת ישרה והברך באותו צד כפופה."
+        },
+        {
+          "file": "/exercises/turkish-getup/step-1.webp",
+          "captionHe": "הישען על המרפק של היד הפנויה, בלי לכופף את היד עם המשקולת.",
+          "altHe": "הישען על המרפק של היד הפנויה, בלי לכופף את היד עם המשקולת."
+        },
+        {
+          "file": "/exercises/turkish-getup/step-2.webp",
+          "captionHe": "עלה לתמיכה בכף היד הפנויה ושמור על המשקולת מעל הכתף.",
+          "altHe": "עלה לתמיכה בכף היד הפנויה ושמור על המשקולת מעל הכתף."
+        },
+        {
+          "file": "/exercises/turkish-getup/step-3.webp",
+          "captionHe": "הרם את האגן והעבר את הרגל הישרה מתחת לגוף אל כריעה.",
+          "altHe": "הרם את האגן והעבר את הרגל הישרה מתחת לגוף אל כריעה."
+        },
+        {
+          "file": "/exercises/turkish-getup/step-4.webp",
+          "captionHe": "התייצב בחצי כריעה, כשהמשקולת נשארת מעל הראש.",
+          "altHe": "התייצב בחצי כריעה, כשהמשקולת נשארת מעל הראש."
+        },
+        {
+          "file": "/exercises/turkish-getup/step-5.webp",
+          "captionHe": "קום לעמידה מלאה. לירידה בצע את השלבים בסדר הפוך; בסיום הסט החלף צד.",
+          "altHe": "קום לעמידה מלאה. לירידה בצע את השלבים בסדר הפוך; בסיום הסט החלף צד."
+        }
+      ]
+    },
+    "nordic-curl": {
+      "frames": [
+        {
+          "file": "/exercises/nordic-curl/step-0.webp",
+          "captionHe": "כרע על הריפוד, כוונן תמיכת קרסוליים ובדוק את העיגון לפני הביצוע.",
+          "altHe": "כרע על הריפוד, כוונן תמיכת קרסוליים ובדוק את העיגון לפני הביצוע."
+        },
+        {
+          "file": "/exercises/nordic-curl/step-1.webp",
+          "captionHe": "הטה גוף ישר קדימה מהברכיים, רק עד הטווח שבשליטתך.",
+          "altHe": "הטה גוף ישר קדימה מהברכיים, רק עד הטווח שבשליטתך."
+        },
+        {
+          "file": "/exercises/nordic-curl/step-2.webp",
+          "captionHe": "המשך בירידה איטית והכן את הידיים לקליטה; אין חובה להגיע עמוק.",
+          "altHe": "המשך בירידה איטית והכן את הידיים לקליטה; אין חובה להגיע עמוק."
+        },
+        {
+          "file": "/exercises/nordic-curl/step-3.webp",
+          "captionHe": "קבל את הגוף בידיים וסייע בדחיפה לחזרה לכריעה.",
+          "altHe": "קבל את הגוף בידיים וסייע בדחיפה לחזרה לכריעה."
+        }
+      ]
+    },
+    "drop-pushup": {
+      "frames": [
+        {
+          "file": "/exercises/drop-pushup/step-0.webp",
+          "captionHe": "התחל בפלאנק עם יד על כל משטח נמוך, יציב ומונע החלקה.",
+          "altHe": "התחל בפלאנק עם יד על כל משטח נמוך, יציב ומונע החלקה."
+        },
+        {
+          "file": "/exercises/drop-pushup/step-1.webp",
+          "captionHe": "שחרר ידיים פנימה אל הרצפה, כשהמרפקים מוכנים לכיפוף.",
+          "altHe": "שחרר ידיים פנימה אל הרצפה, כשהמרפקים מוכנים לכיפוף."
+        },
+        {
+          "file": "/exercises/drop-pushup/step-2.webp",
+          "captionHe": "ספוג את הנחיתה בכיפוף מרפקים; שמור גוף ישר.",
+          "altHe": "ספוג את הנחיתה בכיפוף מרפקים; שמור גוף ישר."
+        },
+        {
+          "file": "/exercises/drop-pushup/step-3.webp",
+          "captionHe": "דחוף בחוזקה והחזר ידיים למשטחים רק אם הנחיתה בשליטתך.",
+          "altHe": "דחוף בחוזקה והחזר ידיים למשטחים רק אם הנחיתה בשליטתך."
+        }
+      ]
+    },
+    "strap-atomic-pushup": {
+      "frames": [
+        {
+          "file": "/exercises/strap-atomic-pushup/step-0.webp",
+          "captionHe": "התחל בפלאנק ישר, כששתי כפות הרגליים בלולאות והרצועות מעוגנות היטב.",
+          "altHe": "התחל בפלאנק ישר, כששתי כפות הרגליים בלולאות והרצועות מעוגנות היטב."
+        },
+        {
+          "file": "/exercises/strap-atomic-pushup/step-1.webp",
+          "captionHe": "רד לשכיבת סמיכה בשליטה, ואז דחוף חזרה לפלאנק.",
+          "altHe": "רד לשכיבת סמיכה בשליטה, ואז דחוף חזרה לפלאנק."
+        },
+        {
+          "file": "/exercises/strap-atomic-pushup/step-2.webp",
+          "captionHe": "רק אחרי יישור הידיים משוך שתי ברכיים לחזה; ישר שוב רגליים להשלמת החזרה.",
+          "altHe": "רק אחרי יישור הידיים משוך שתי ברכיים לחזה; ישר שוב רגליים להשלמת החזרה."
+        }
+      ]
+    },
+    "sit-through": {
+      "frames": [
+        {
+          "file": "/exercises/sit-through/step-0.webp",
+          "captionHe": "התחל בפלאנק דוב: ברכיים מרחפות מעט מעל הרצפה.",
+          "altHe": "התחל בפלאנק דוב: ברכיים מרחפות מעט מעל הרצפה."
+        },
+        {
+          "file": "/exercises/sit-through/step-1.webp",
+          "captionHe": "הרם יד אחת והעבר את הרגל הנגדית מתחת לגוף.",
+          "altHe": "הרם יד אחת והעבר את הרגל הנגדית מתחת לגוף."
+        },
+        {
+          "file": "/exercises/sit-through/step-2.webp",
+          "captionHe": "פתח את האגן הצידה והארך את הרגל, כשהיד התומכת נשארת על הרצפה.",
+          "altHe": "פתח את האגן הצידה והארך את הרגל, כשהיד התומכת נשארת על הרצפה."
+        },
+        {
+          "file": "/exercises/sit-through/step-3.webp",
+          "captionHe": "חזור לפלאנק הדוב לפני מעבר לצד השני.",
+          "altHe": "חזור לפלאנק הדוב לפני מעבר לצד השני."
+        }
+      ]
+    },
+    "single-leg-push-off": {
+      "frames": [
+        {
+          "file": "/exercises/single-leg-push-off/step-0.webp",
+          "captionHe": "הנח כף רגל שלמה במרכז משטח אימון נמוך ורחב; הרגל בגרב הכתום מדגימה את הרגל העובדת.",
+          "altHe": "הנח כף רגל שלמה במרכז משטח אימון נמוך ורחב; הרגל בגרב הכתום מדגימה את הרגל העובדת."
+        },
+        {
+          "file": "/exercises/single-leg-push-off/step-1.webp",
+          "captionHe": "דחוף דרך הרגל שעל המשטח והרם את הברך השנייה.",
+          "altHe": "דחוף דרך הרגל שעל המשטח והרם את הברך השנייה."
+        },
+        {
+          "file": "/exercises/single-leg-push-off/step-2.webp",
+          "captionHe": "בצע ניתור נמוך מעל המשטח, בלי להחליף את הרגל העובדת.",
+          "altHe": "בצע ניתור נמוך מעל המשטח, בלי להחליף את הרגל העובדת."
+        },
+        {
+          "file": "/exercises/single-leg-push-off/step-3.webp",
+          "captionHe": "נחת על אותה רגל בברך רכה, הורד את הרגל השנייה בשליטה; החלף צד בסיום הסט.",
+          "altHe": "נחת על אותה רגל בברך רכה, הורד את הרגל השנייה בשליטה; החלף צד בסיום הסט."
+        }
+      ]
+    },
+    "wall-handstand-hold": {
+      "frames": [
+        {
+          "file": "/exercises/wall-handstand-hold/step-0.webp",
+          "captionHe": "עמוד מול הקיר והנח ידיים קרוב אליו; תרגל רק אם הכניסה והיציאה כבר בשליטתך.",
+          "altHe": "עמוד מול הקיר והנח ידיים קרוב אליו; תרגל רק אם הכניסה והיציאה כבר בשליטתך."
+        },
+        {
+          "file": "/exercises/wall-handstand-hold/step-1.webp",
+          "captionHe": "העבר משקל לידיים והעלה רגל אחת, ואז את השנייה, בתנופה קטנה ומבוקרת.",
+          "altHe": "העבר משקל לידיים והעלה רגל אחת, ואז את השנייה, בתנופה קטנה ומבוקרת."
+        },
+        {
+          "file": "/exercises/wall-handstand-hold/step-2.webp",
+          "captionHe": "החזק עם עקבים נשענים בעדינות על הקיר, בטן אסופה וכתפיים פעילות.",
+          "altHe": "החזק עם עקבים נשענים בעדינות על הקיר, בטן אסופה וכתפיים פעילות."
+        },
+        {
+          "file": "/exercises/wall-handstand-hold/step-3.webp",
+          "captionHe": "לפני אובדן שליטה הורד רגל אחת, ואחריה את השנייה, אל הרצפה.",
+          "altHe": "לפני אובדן שליטה הורד רגל אחת, ואחריה את השנייה, אל הרצפה."
+        }
+      ]
+    },
+    "dumbbell-clean": {
+      "frames": [
+        {
+          "file": "/exercises/dumbbell-clean/step-0.webp",
+          "captionHe": "הטה את האגן לאחור והחזק משקולות קרוב לרגליים, בגב ניטרלי.",
+          "altHe": "הטה את האגן לאחור והחזק משקולות קרוב לרגליים, בגב ניטרלי."
+        },
+        {
+          "file": "/exercises/dumbbell-clean/step-1.webp",
+          "captionHe": "יישר ירכיים וברכיים והובל את המשקולות קרוב לגוף.",
+          "altHe": "יישר ירכיים וברכיים והובל את המשקולות קרוב לגוף."
+        },
+        {
+          "file": "/exercises/dumbbell-clean/step-2.webp",
+          "captionHe": "כופף מעט ברכיים והיכנס מתחת למשקולות לקליטה בגובה הכתפיים.",
+          "altHe": "כופף מעט ברכיים והיכנס מתחת למשקולות לקליטה בגובה הכתפיים."
+        },
+        {
+          "file": "/exercises/dumbbell-clean/step-3.webp",
+          "captionHe": "התיישר לעמידה, ואז הורד את המשקולות בשליטה לחזרה הבאה.",
+          "altHe": "התיישר לעמידה, ואז הורד את המשקולות בשליטה לחזרה הבאה."
+        }
+      ]
+    },
+    "hang-clean": {
+      "frames": [
+        {
+          "file": "/exercises/hang-clean/step-0.webp",
+          "captionHe": "התחל עם המוט בגובה אמצע הירך, אחיזה ברוחב כתפיים וגב ישר.",
+          "altHe": "התחל עם המוט בגובה אמצע הירך, אחיזה ברוחב כתפיים וגב ישר."
+        },
+        {
+          "file": "/exercises/hang-clean/step-1.webp",
+          "captionHe": "יישר ירכיים וברכיים והובל את המוט קרוב לגוף.",
+          "altHe": "יישר ירכיים וברכיים והובל את המוט קרוב לגוף."
+        },
+        {
+          "file": "/exercises/hang-clean/step-2.webp",
+          "captionHe": "היכנס מתחת למוט בכיפוף ברכיים וקלוט אותו על הכתפיים, עם מרפקים קדימה.",
+          "altHe": "היכנס מתחת למוט בכיפוף ברכיים וקלוט אותו על הכתפיים, עם מרפקים קדימה."
+        },
+        {
+          "file": "/exercises/hang-clean/step-3.webp",
+          "captionHe": "התיישר לעמידה מלאה לפני הורדה מבוקרת.",
+          "altHe": "התיישר לעמידה מלאה לפני הורדה מבוקרת."
+        }
+      ]
+    },
+    "barbell-snatch": {
+      "frames": [
+        {
+          "file": "/exercises/barbell-snatch/step-0.webp",
+          "captionHe": "אחוז במוט באחיזה רחבה, גב ניטרלי והמוט מעל מרכז כף הרגל.",
+          "altHe": "אחוז במוט באחיזה רחבה, גב ניטרלי והמוט מעל מרכז כף הרגל."
+        },
+        {
+          "file": "/exercises/barbell-snatch/step-1.webp",
+          "captionHe": "הרם את המוט קרוב לשוקיים לכיוון הברכיים, עם ידיים ישרות.",
+          "altHe": "הרם את המוט קרוב לשוקיים לכיוון הברכיים, עם ידיים ישרות."
+        },
+        {
+          "file": "/exercises/barbell-snatch/step-2.webp",
+          "captionHe": "יישר את הגוף והובל את המוט קרוב לגוף בתנועה רציפה.",
+          "altHe": "יישר את הגוף והובל את המוט קרוב לגוף בתנועה רציפה."
+        },
+        {
+          "file": "/exercises/barbell-snatch/step-3.webp",
+          "captionHe": "היכנס מתחת למוט וקלוט מעל הראש בכריעה, עם זרועות ישרות.",
+          "altHe": "היכנס מתחת למוט וקלוט מעל הראש בכריעה, עם זרועות ישרות."
+        },
+        {
+          "file": "/exercises/barbell-snatch/step-4.webp",
+          "captionHe": "קום לעמידה מלאה כשהמוט יציב מעל מרכז הגוף.",
+          "altHe": "קום לעמידה מלאה כשהמוט יציב מעל מרכז הגוף."
+        },
+        {
+          "file": "/exercises/barbell-snatch/step-5.webp",
+          "captionHe": "הורד בשליטה, עם ברכיים רכות; אל תנסה לתפוס מוט שנשמט.",
+          "altHe": "הורד בשליטה, עם ברכיים רכות; אל תנסה לתפוס מוט שנשמט."
+        }
+      ]
+    },
+    "barbell-clean-and-jerk": {
+      "frames": [
+        {
+          "file": "/exercises/barbell-clean-and-jerk/step-0.webp",
+          "captionHe": "התחל מהרצפה באחיזה מעט מחוץ לרגליים וגב ניטרלי.",
+          "altHe": "התחל מהרצפה באחיזה מעט מחוץ לרגליים וגב ניטרלי."
+        },
+        {
+          "file": "/exercises/barbell-clean-and-jerk/step-1.webp",
+          "captionHe": "הרם בתנועת קלין וקלוט על הכתפיים עם מרפקים קדימה.",
+          "altHe": "הרם בתנועת קלין וקלוט על הכתפיים עם מרפקים קדימה."
+        },
+        {
+          "file": "/exercises/barbell-clean-and-jerk/step-2.webp",
+          "captionHe": "קום מהקליטה, התייצב ואז כופף מעט ברכיים בלי להטות את הגו.",
+          "altHe": "קום מהקליטה, התייצב ואז כופף מעט ברכיים בלי להטות את הגו."
+        },
+        {
+          "file": "/exercises/barbell-clean-and-jerk/step-3.webp",
+          "captionHe": "דחוף מהרגליים וקלוט מעל הראש בפיצול רגליים, עם זרועות ישרות.",
+          "altHe": "דחוף מהרגליים וקלוט מעל הראש בפיצול רגליים, עם זרועות ישרות."
+        },
+        {
+          "file": "/exercises/barbell-clean-and-jerk/step-4.webp",
+          "captionHe": "אסוף את הרגליים בשליטה לעמידה יציבה מתחת למוט.",
+          "altHe": "אסוף את הרגליים בשליטה לעמידה יציבה מתחת למוט."
+        },
+        {
+          "file": "/exercises/barbell-clean-and-jerk/step-5.webp",
+          "captionHe": "הורד אל הכתפיים בברכיים רכות, ואחר כך מטה בשליטה.",
+          "altHe": "הורד אל הכתפיים בברכיים רכות, ואחר כך מטה בשליטה."
+        }
+      ]
+    },
+    "kettlebell-figure-8": {
+      "frames": [
+        {
+          "file": "/exercises/kettlebell-figure-8/step-0.webp",
+          "captionHe": "החזק קטלבל לצד רגל ימין, בעמידה רחבה ובכיפוף מהירכיים.",
+          "altHe": "החזק קטלבל לצד רגל ימין, בעמידה רחבה ובכיפוף מהירכיים."
+        },
+        {
+          "file": "/exercises/kettlebell-figure-8/step-1.webp",
+          "captionHe": "העבר בין הרגליים ומסור ליד שמאל מאחורי רגל שמאל.",
+          "altHe": "העבר בין הרגליים ומסור ליד שמאל מאחורי רגל שמאל."
+        },
+        {
+          "file": "/exercises/kettlebell-figure-8/step-2.webp",
+          "captionHe": "הוצא את הקטלבל סביב החלק החיצוני של רגל שמאל לפנים.",
+          "altHe": "הוצא את הקטלבל סביב החלק החיצוני של רגל שמאל לפנים."
+        },
+        {
+          "file": "/exercises/kettlebell-figure-8/step-3.webp",
+          "captionHe": "העבר שוב בין הרגליים ומסור לימין מאחורי רגל ימין; המשך בשמונה נשלטת.",
+          "altHe": "העבר שוב בין הרגליים ומסור לימין מאחורי רגל ימין; המשך בשמונה נשלטת."
+        }
+      ]
+    },
+    "kettlebell-snatch": {
+      "frames": [
+        {
+          "file": "/exercises/kettlebell-snatch/step-0.webp",
+          "captionHe": "הטה אגן לאחור והנף את הקטלבל בין הרגליים.",
+          "altHe": "הטה אגן לאחור והנף את הקטלבל בין הרגליים."
+        },
+        {
+          "file": "/exercises/kettlebell-snatch/step-1.webp",
+          "captionHe": "יישר את האגן והרגליים כדי להניע את הקטלבל מעלה.",
+          "altHe": "יישר את האגן והרגליים כדי להניע את הקטלבל מעלה."
+        },
+        {
+          "file": "/exercises/kettlebell-snatch/step-2.webp",
+          "captionHe": "הובל קרוב לגוף והכנס את כף היד דרך הידית, בלי להטיח את המשקולת באמה.",
+          "altHe": "הובל קרוב לגוף והכנס את כף היד דרך הידית, בלי להטיח את המשקולת באמה."
+        },
+        {
+          "file": "/exercises/kettlebell-snatch/step-3.webp",
+          "captionHe": "התייצב עם זרוע ישרה מעל הראש ושורש כף יד ניטרלי.",
+          "altHe": "התייצב עם זרוע ישרה מעל הראש ושורש כף יד ניטרלי."
+        },
+        {
+          "file": "/exercises/kettlebell-snatch/step-4.webp",
+          "captionHe": "הורד בשליטה, עם ברכיים רכות, לקראת הנפה חוזרת. החלף יד רק בסיום הסט.",
+          "altHe": "הורד בשליטה, עם ברכיים רכות, לקראת הנפה חוזרת. החלף יד רק בסיום הסט."
+        }
+      ]
+    },
+    "kettlebell-jerk": {
+      "frames": [
+        {
+          "file": "/exercises/kettlebell-jerk/step-0.webp",
+          "captionHe": "התייצב עם הקטלבל ליד הכתף וכופף מעט ברכיים, בגו זקוף.",
+          "altHe": "התייצב עם הקטלבל ליד הכתף וכופף מעט ברכיים, בגו זקוף."
+        },
+        {
+          "file": "/exercises/kettlebell-jerk/step-1.webp",
+          "captionHe": "דחוף מהרגליים והעבר את הקטלבל מעל הראש.",
+          "altHe": "דחוף מהרגליים והעבר את הקטלבל מעל הראש."
+        },
+        {
+          "file": "/exercises/kettlebell-jerk/step-2.webp",
+          "captionHe": "כופף שוב ברכיים כדי להיכנס מתחת למשקל ולקלוט בזרוע ישרה.",
+          "altHe": "כופף שוב ברכיים כדי להיכנס מתחת למשקל ולקלוט בזרוע ישרה."
+        },
+        {
+          "file": "/exercises/kettlebell-jerk/step-3.webp",
+          "captionHe": "יישר רגליים לעמידה יציבה, ואז הורד בשליטה לכתף. החלף יד בסיום הסט.",
+          "altHe": "יישר רגליים לעמידה יציבה, ואז הורד בשליטה לכתף. החלף יד בסיום הסט."
+        }
+      ]
+    },
+    "kettlebell-clean-and-jerk": {
+      "frames": [
+        {
+          "file": "/exercises/kettlebell-clean-and-jerk/step-0.webp",
+          "captionHe": "התחל עם קטלבל בין הרגליים, אגן לאחור וגב ניטרלי.",
+          "altHe": "התחל עם קטלבל בין הרגליים, אגן לאחור וגב ניטרלי."
+        },
+        {
+          "file": "/exercises/kettlebell-clean-and-jerk/step-1.webp",
+          "captionHe": "הרם בקלין קרוב לגוף וקלוט ברכות לצד הכתף.",
+          "altHe": "הרם בקלין קרוב לגוף וקלוט ברכות לצד הכתף."
+        },
+        {
+          "file": "/exercises/kettlebell-clean-and-jerk/step-2.webp",
+          "captionHe": "התייצב וכופף מעט ברכיים, בלי להטות את הגו.",
+          "altHe": "התייצב וכופף מעט ברכיים, בלי להטות את הגו."
+        },
+        {
+          "file": "/exercises/kettlebell-clean-and-jerk/step-3.webp",
+          "captionHe": "דחוף מהרגליים וכופף שוב ברכיים לקליטה מתחת לקטלבל בזרוע ישרה.",
+          "altHe": "דחוף מהרגליים וכופף שוב ברכיים לקליטה מתחת לקטלבל בזרוע ישרה."
+        },
+        {
+          "file": "/exercises/kettlebell-clean-and-jerk/step-4.webp",
+          "captionHe": "יישר רגליים לעמידה יציבה מתחת למשקל.",
+          "altHe": "יישר רגליים לעמידה יציבה מתחת למשקל."
+        },
+        {
+          "file": "/exercises/kettlebell-clean-and-jerk/step-5.webp",
+          "captionHe": "הורד ברכות לכתף, ואז מטה בשליטה; החלף יד רק בסיום הסט.",
+          "altHe": "הורד ברכות לכתף, ואז מטה בשליטה; החלף יד רק בסיום הסט."
+        }
+      ]
+    },
+    "muscle-up": {
+      "frames": [
+        {
+          "file": "/exercises/muscle-up/step-0.webp",
+          "captionHe": "התחל בתלייה עם כתפיים פעילות ואחיזה יציבה.",
+          "altHe": "התחל בתלייה עם כתפיים פעילות ואחיזה יציבה."
+        },
+        {
+          "file": "/exercises/muscle-up/step-1.webp",
+          "captionHe": "משוך גבוה עד שהחזה מתקרב לגובה המוט.",
+          "altHe": "משוך גבוה עד שהחזה מתקרב לגובה המוט."
+        },
+        {
+          "file": "/exercises/muscle-up/step-2.webp",
+          "captionHe": "העבר את החזה לפנים מעל המוט ואת המרפקים מעליו.",
+          "altHe": "העבר את החזה לפנים מעל המוט ואת המרפקים מעליו."
+        },
+        {
+          "file": "/exercises/muscle-up/step-3.webp",
+          "captionHe": "דחוף עד יישור הידיים; חזור בשליטה בסדר הפוך.",
+          "altHe": "דחוף עד יישור הידיים; חזור בשליטה בסדר הפוך."
+        }
+      ]
+    },
+    "air-bike": {
+      "review": "artifacts/training-types/generated/air-bike/review.json",
+      "frames": [
+        {
+          "file": "/exercises/air-bike/step-0.webp",
+          "captionHe": "שוכבים על הגב עם ברכיים כפופות באוויר",
+          "altHe": "אופניים באוויר — שוכבים על הגב עם ברכיים כפופות באוויר"
+        },
+        {
+          "file": "/exercises/air-bike/step-1.webp",
+          "captionHe": "מסובבים את הגו לכיוון ברך אחת ומיישרים את הרגל הנגדית",
+          "altHe": "אופניים באוויר — מסובבים את הגו לכיוון ברך אחת ומיישרים את הרגל הנגדית"
+        },
+        {
+          "file": "/exercises/air-bike/step-2.webp",
+          "captionHe": "מחליפים צד ומקרבים את המרפק הנגדי לברך השנייה",
+          "altHe": "אופניים באוויר — מחליפים צד ומקרבים את המרפק הנגדי לברך השנייה"
+        }
+      ]
+    },
+    "archer-pushup": {
+      "review": "artifacts/training-types/generated/archer-pushup/review.json",
+      "frames": [
+        {
+          "file": "/exercises/archer-pushup/step-0.webp",
+          "captionHe": "פלאנק עם כפות ידיים רחבות",
+          "altHe": "שכיבות סמיכה קשת — פלאנק עם כפות ידיים רחבות"
+        },
+        {
+          "file": "/exercises/archer-pushup/step-1.webp",
+          "captionHe": "ירידה אל יד אחת כשהיד הנגדית כמעט ישרה",
+          "altHe": "שכיבות סמיכה קשת — ירידה אל יד אחת כשהיד הנגדית כמעט ישרה"
+        },
+        {
+          "file": "/exercises/archer-pushup/step-2.webp",
+          "captionHe": "דחיפה חזרה דרך המרכז לפני החלפת צד",
+          "altHe": "שכיבות סמיכה קשת — דחיפה חזרה דרך המרכז לפני החלפת צד"
+        }
+      ]
+    },
+    "band-assisted-pullup": {
+      "review": "artifacts/training-types/generated/band-assisted-pullup/review.json",
+      "frames": [
+        {
+          "file": "/exercises/band-assisted-pullup/step-0.webp",
+          "captionHe": "נתלים בזרועות ישרות כשהגומייה מעוגנת למוט ותומכת בברכיים",
+          "altHe": "מתח עם גומייה — נתלים בזרועות ישרות כשהגומייה מעוגנת למוט ותומכת בברכיים"
+        },
+        {
+          "file": "/exercises/band-assisted-pullup/step-1.webp",
+          "captionHe": "מושכים את הגוף מעלה בשליטה",
+          "altHe": "מתח עם גומייה — מושכים את הגוף מעלה בשליטה"
+        },
+        {
+          "file": "/exercises/band-assisted-pullup/step-2.webp",
+          "captionHe": "מגיעים עם הסנטר מעל המוט ויורדים לאט ליישור ידיים",
+          "altHe": "מתח עם גומייה — מגיעים עם הסנטר מעל המוט ויורדים לאט ליישור ידיים"
+        }
+      ]
+    },
+    "band-lateral-walk": {
+      "review": "artifacts/training-types/generated/band-lateral-walk/review.json",
+      "frames": [
+        {
+          "file": "/exercises/band-lateral-walk/step-0.webp",
+          "captionHe": "מתחילים בחצי סקוואט עם מתח בגומייה",
+          "altHe": "הליכה צידית עם גומייה — מתחילים בחצי סקוואט עם מתח בגומייה"
+        },
+        {
+          "file": "/exercises/band-lateral-walk/step-1.webp",
+          "captionHe": "צועדים הצידה ושומרים על הברכיים בכיוון האצבעות",
+          "altHe": "הליכה צידית עם גומייה — צועדים הצידה ושומרים על הברכיים בכיוון האצבעות"
+        },
+        {
+          "file": "/exercises/band-lateral-walk/step-2.webp",
+          "captionHe": "מביאים את הרגל העוקבת חלקית בלי לאבד את המתח",
+          "altHe": "הליכה צידית עם גומייה — מביאים את הרגל העוקבת חלקית בלי לאבד את המתח"
+        }
+      ]
+    },
+    "band-thruster": {
+      "review": "artifacts/training-types/generated/band-thruster/review.json",
+      "frames": [
+        {
+          "file": "/exercises/band-thruster/step-0.webp",
+          "captionHe": "עומדים על הגומייה ומחזיקים את הקצוות בגובה הכתפיים",
+          "altHe": "סקוואט עם לחיצה מעל הראש בגומייה — עומדים על הגומייה ומחזיקים את הקצוות בגובה הכתפיים"
+        },
+        {
+          "file": "/exercises/band-thruster/step-1.webp",
+          "captionHe": "יורדים לסקוואט כשהידיים נשארות בגובה הכתפיים",
+          "altHe": "סקוואט עם לחיצה מעל הראש בגומייה — יורדים לסקוואט כשהידיים נשארות בגובה הכתפיים"
+        },
+        {
+          "file": "/exercises/band-thruster/step-2.webp",
+          "captionHe": "עולים בעזרת הרגליים ומתחילים ללחוץ מעלה",
+          "altHe": "סקוואט עם לחיצה מעל הראש בגומייה — עולים בעזרת הרגליים ומתחילים ללחוץ מעלה"
+        },
+        {
+          "file": "/exercises/band-thruster/step-3.webp",
+          "captionHe": "מסיימים בידיים מעל הראש ומורידים בשליטה לכתפיים",
+          "altHe": "סקוואט עם לחיצה מעל הראש בגומייה — מסיימים בידיים מעל הראש ומורידים בשליטה לכתפיים"
+        }
+      ]
+    },
+    "band-woodchop": {
+      "review": "artifacts/training-types/generated/band-woodchop/review.json",
+      "frames": [
+        {
+          "file": "/exercises/band-woodchop/step-0.webp",
+          "captionHe": "מחזיקים את הגומייה מעל הכתף הקרובה לעיגון הגבוה",
+          "altHe": "חיתוך אלכסוני עם גומייה — מחזיקים את הגומייה מעל הכתף הקרובה לעיגון הגבוה"
+        },
+        {
+          "file": "/exercises/band-woodchop/step-1.webp",
+          "captionHe": "מסובבים את הגו והאגן ומושכים באלכסון",
+          "altHe": "חיתוך אלכסוני עם גומייה — מסובבים את הגו והאגן ומושכים באלכסון"
+        },
+        {
+          "file": "/exercises/band-woodchop/step-2.webp",
+          "captionHe": "מסיימים מחוץ לירך הרחוקה וחוזרים לאט",
+          "altHe": "חיתוך אלכסוני עם גומייה — מסיימים מחוץ לירך הרחוקה וחוזרים לאט"
+        }
+      ]
+    },
+    "barbell-walking-lunge": {
+      "review": "artifacts/training-types/generated/barbell-walking-lunge/review.json",
+      "frames": [
+        {
+          "file": "/exercises/barbell-walking-lunge/step-0.webp",
+          "captionHe": "צועדים קדימה עם רגל אחת ויורדים למכרע כשהמוט יציב על הגב העליון",
+          "altHe": "לאנג' הליכה עם מוט — צועדים קדימה עם רגל אחת ויורדים למכרע כשהמוט יציב על הגב העליון"
+        },
+        {
+          "file": "/exercises/barbell-walking-lunge/step-1.webp",
+          "captionHe": "דוחפים דרך הרגל הקדמית ומקדמים את הרגל האחורית",
+          "altHe": "לאנג' הליכה עם מוט — דוחפים דרך הרגל הקדמית ומקדמים את הרגל האחורית"
+        },
+        {
+          "file": "/exercises/barbell-walking-lunge/step-2.webp",
+          "captionHe": "צועדים עם הרגל השנייה ויורדים למכרע הבא",
+          "altHe": "לאנג' הליכה עם מוט — צועדים עם הרגל השנייה ויורדים למכרע הבא"
+        }
+      ]
+    },
+    "bear-crawl": {
+      "review": "artifacts/training-types/generated/bear-crawl/review.json",
+      "frames": [
+        {
+          "file": "/exercises/bear-crawl/step-0.webp",
+          "captionHe": "מתחילים על ארבע עם ידיים מתחת לכתפיים",
+          "altHe": "זחילת דוב — מתחילים על ארבע עם ידיים מתחת לכתפיים"
+        },
+        {
+          "file": "/exercises/bear-crawl/step-1.webp",
+          "captionHe": "מרימים את הברכיים מעט מהרצפה ושומרים על אגן נמוך",
+          "altHe": "זחילת דוב — מרימים את הברכיים מעט מהרצפה ושומרים על אגן נמוך"
+        },
+        {
+          "file": "/exercises/bear-crawl/step-2.webp",
+          "captionHe": "מתקדמים בצעד קטן עם יד ורגל נגדית ושומרים על ברכיים נמוכות",
+          "altHe": "זחילת דוב — מתקדמים בצעד קטן עם יד ורגל נגדית ושומרים על ברכיים נמוכות"
+        }
+      ]
+    },
+    "bird-dog": {
+      "review": "artifacts/training-types/generated/bird-dog/review.json",
+      "frames": [
+        {
+          "file": "/exercises/bird-dog/step-0.webp",
+          "captionHe": "מתחילים על ארבע עם גב שטוח",
+          "altHe": "הושטת יד ורגל נגדית בשש — מתחילים על ארבע עם גב שטוח"
+        },
+        {
+          "file": "/exercises/bird-dog/step-1.webp",
+          "captionHe": "מושיטים יד קדימה ואת הרגל הנגדית אחורה בגובה הגב",
+          "altHe": "הושטת יד ורגל נגדית בשש — מושיטים יד קדימה ואת הרגל הנגדית אחורה בגובה הגב"
+        },
+        {
+          "file": "/exercises/bird-dog/step-2.webp",
+          "captionHe": "מחזירים את היד והברך לרצפה לפני החלפת צד",
+          "altHe": "הושטת יד ורגל נגדית בשש — מחזירים את היד והברך לרצפה לפני החלפת צד"
+        }
+      ]
+    },
+    "bodyweight-reverse-lunge": {
+      "review": "artifacts/training-types/generated/bodyweight-reverse-lunge/review.json",
+      "frames": [
+        {
+          "file": "/exercises/bodyweight-reverse-lunge/step-0.webp",
+          "captionHe": "עומדים זקוף עם הידיים על המותניים",
+          "altHe": "לאנג' לאחור בלי משקל — עומדים זקוף עם הידיים על המותניים"
+        },
+        {
+          "file": "/exercises/bodyweight-reverse-lunge/step-1.webp",
+          "captionHe": "צועדים לאחור ומורידים את הברך האחורית",
+          "altHe": "לאנג' לאחור בלי משקל — צועדים לאחור ומורידים את הברך האחורית"
+        },
+        {
+          "file": "/exercises/bodyweight-reverse-lunge/step-2.webp",
+          "captionHe": "דוחפים מהעקב הקדמי וחוזרים לעמידה לפני החלפת רגל",
+          "altHe": "לאנג' לאחור בלי משקל — דוחפים מהעקב הקדמי וחוזרים לעמידה לפני החלפת רגל"
+        }
+      ]
+    },
+    "burpee": {
+      "review": "artifacts/training-types/generated/burpee/review.json",
+      "frames": [
+        {
+          "file": "/exercises/burpee/step-0.webp",
+          "captionHe": "מתחילים בעמידה",
+          "altHe": "ברפי — מתחילים בעמידה"
+        },
+        {
+          "file": "/exercises/burpee/step-1.webp",
+          "captionHe": "יורדים לכריעה ומניחים ידיים על הרצפה",
+          "altHe": "ברפי — יורדים לכריעה ומניחים ידיים על הרצפה"
+        },
+        {
+          "file": "/exercises/burpee/step-2.webp",
+          "captionHe": "קופצים לאחור ומורידים את החזה לרצפה",
+          "altHe": "ברפי — קופצים לאחור ומורידים את החזה לרצפה"
+        },
+        {
+          "file": "/exercises/burpee/step-3.webp",
+          "captionHe": "דוחפים חזרה לפלאנק",
+          "altHe": "ברפי — דוחפים חזרה לפלאנק"
+        },
+        {
+          "file": "/exercises/burpee/step-4.webp",
+          "captionHe": "מחזירים את הרגליים אל הידיים",
+          "altHe": "ברפי — מחזירים את הרגליים אל הידיים"
+        },
+        {
+          "file": "/exercises/burpee/step-5.webp",
+          "captionHe": "קמים ומסיימים בניתור קטן עם ידיים מעל הראש",
+          "altHe": "ברפי — קמים ומסיימים בניתור קטן עם ידיים מעל הראש"
+        }
+      ]
+    },
+    "cable-russian-twist": {
+      "review": "artifacts/training-types/generated/cable-russian-twist/review.json",
+      "frames": [
+        {
+          "file": "/exercises/cable-russian-twist/step-0.webp",
+          "captionHe": "עומדים לצד הפולי ומחזיקים את הידית בשתי ידיים מול החזה",
+          "altHe": "סיבוב בטן בפולי — עומדים לצד הפולי ומחזיקים את הידית בשתי ידיים מול החזה"
+        },
+        {
+          "file": "/exercises/cable-russian-twist/step-1.webp",
+          "captionHe": "מסובבים את הגו הרחק מהפולי כשהידיים נשארות מול החזה",
+          "altHe": "סיבוב בטן בפולי — מסובבים את הגו הרחק מהפולי כשהידיים נשארות מול החזה"
+        },
+        {
+          "file": "/exercises/cable-russian-twist/step-2.webp",
+          "captionHe": "מסיימים את הסיבוב לצד הרחוק וחוזרים באיטיות",
+          "altHe": "סיבוב בטן בפולי — מסיימים את הסיבוב לצד הרחוק וחוזרים באיטיות"
+        }
+      ]
+    },
+    "cable-woodchop": {
+      "review": "artifacts/training-types/generated/cable-woodchop/review.json",
+      "frames": [
+        {
+          "file": "/exercises/cable-woodchop/step-0.webp",
+          "captionHe": "מחזיקים את ידית הפולי מעל הכתף הקרובה",
+          "altHe": "חיתוך אלכסוני בכבל — מחזיקים את ידית הפולי מעל הכתף הקרובה"
+        },
+        {
+          "file": "/exercises/cable-woodchop/step-1.webp",
+          "captionHe": "מושכים באלכסון תוך סיבוב הגו והאגן",
+          "altHe": "חיתוך אלכסוני בכבל — מושכים באלכסון תוך סיבוב הגו והאגן"
+        },
+        {
+          "file": "/exercises/cable-woodchop/step-2.webp",
+          "captionHe": "מסיימים ליד הירך הרחוקה וחוזרים בשליטה",
+          "altHe": "חיתוך אלכסוני בכבל — מסיימים ליד הירך הרחוקה וחוזרים בשליטה"
+        }
+      ]
+    },
+    "carioca": {
+      "review": "artifacts/training-types/generated/carioca/review.json",
+      "frames": [
+        {
+          "file": "/exercises/carioca/step-0.webp",
+          "captionHe": "חוצים עם רגל ימין מלפנים בתנועה הצדה",
+          "altHe": "צעד צד מוצלב — חוצים עם רגל ימין מלפנים בתנועה הצדה"
+        },
+        {
+          "file": "/exercises/carioca/step-1.webp",
+          "captionHe": "פותחים עם הרגל השנייה לצעד רגיל",
+          "altHe": "צעד צד מוצלב — פותחים עם הרגל השנייה לצעד רגיל"
+        },
+        {
+          "file": "/exercises/carioca/step-2.webp",
+          "captionHe": "חוצים עם רגל ימין מאחור וממשיכים לסירוגין",
+          "altHe": "צעד צד מוצלב — חוצים עם רגל ימין מאחור וממשיכים לסירוגין"
+        }
+      ]
+    },
+    "clock-pushup": {
+      "review": "artifacts/training-types/generated/clock-pushup/review.json",
+      "frames": [
+        {
+          "file": "/exercises/clock-pushup/step-0.webp",
+          "captionHe": "מתחילים בפלאנק בקו גוף ישר",
+          "altHe": "שכיבות סמיכה שעון — מתחילים בפלאנק בקו גוף ישר"
+        },
+        {
+          "file": "/exercises/clock-pushup/step-1.webp",
+          "captionHe": "מורידים את החזה לשכיבת סמיכה",
+          "altHe": "שכיבות סמיכה שעון — מורידים את החזה לשכיבת סמיכה"
+        },
+        {
+          "file": "/exercises/clock-pushup/step-2.webp",
+          "captionHe": "דוחפים מעלה וצועדים מעט סביב המרכז למיקום הבא",
+          "altHe": "שכיבות סמיכה שעון — דוחפים מעלה וצועדים מעט סביב המרכז למיקום הבא"
+        }
+      ]
+    },
+    "cossack-squat": {
+      "review": "artifacts/training-types/generated/cossack-squat/review.json",
+      "frames": [
+        {
+          "file": "/exercises/cossack-squat/step-0.webp",
+          "captionHe": "עומדים בפישוק רחב",
+          "altHe": "סקוואט לצד — עומדים בפישוק רחב"
+        },
+        {
+          "file": "/exercises/cossack-squat/step-1.webp",
+          "captionHe": "יורדים לצד אחד כשהרגל השנייה ישרה והעקב נשאר על הרצפה",
+          "altHe": "סקוואט לצד — יורדים לצד אחד כשהרגל השנייה ישרה והעקב נשאר על הרצפה"
+        },
+        {
+          "file": "/exercises/cossack-squat/step-2.webp",
+          "captionHe": "דוחפים חזרה דרך המרכז לפני הירידה לצד השני",
+          "altHe": "סקוואט לצד — דוחפים חזרה דרך המרכז לפני הירידה לצד השני"
+        }
+      ]
+    },
+    "curtsy-lunge": {
+      "review": "artifacts/training-types/generated/curtsy-lunge/review.json",
+      "frames": [
+        {
+          "file": "/exercises/curtsy-lunge/step-0.webp",
+          "captionHe": "עומדים זקוף ברוחב האגן",
+          "altHe": "לאנג' מוצלב לאחור — עומדים זקוף ברוחב האגן"
+        },
+        {
+          "file": "/exercises/curtsy-lunge/step-1.webp",
+          "captionHe": "צועדים לאחור באלכסון מאחורי הרגל השנייה ויורדים לקידה",
+          "altHe": "לאנג' מוצלב לאחור — צועדים לאחור באלכסון מאחורי הרגל השנייה ויורדים לקידה"
+        },
+        {
+          "file": "/exercises/curtsy-lunge/step-2.webp",
+          "captionHe": "דוחפים מהעקב הקדמי וחוזרים לעמידה",
+          "altHe": "לאנג' מוצלב לאחור — דוחפים מהעקב הקדמי וחוזרים לעמידה"
+        }
+      ]
+    },
+    "double-kettlebell-front-squat": {
+      "review": "artifacts/training-types/generated/double-kettlebell-front-squat/review.json",
+      "frames": [
+        {
+          "file": "/exercises/double-kettlebell-front-squat/step-0.webp",
+          "captionHe": "מתכוננים להרים את שני הקטלבלים לקלין",
+          "altHe": "סקוואט קדמי עם שני קטלבלים — מתכוננים להרים את שני הקטלבלים לקלין"
+        },
+        {
+          "file": "/exercises/double-kettlebell-front-squat/step-1.webp",
+          "captionHe": "מחזיקים את הקטלבלים בגובה הכתפיים בגו זקוף",
+          "altHe": "סקוואט קדמי עם שני קטלבלים — מחזיקים את הקטלבלים בגובה הכתפיים בגו זקוף"
+        },
+        {
+          "file": "/exercises/double-kettlebell-front-squat/step-2.webp",
+          "captionHe": "יורדים לסקוואט עם הקטלבלים בכתפיים ודוחפים חזרה לעמידה",
+          "altHe": "סקוואט קדמי עם שני קטלבלים — יורדים לסקוואט עם הקטלבלים בכתפיים ודוחפים חזרה לעמידה"
+        }
+      ]
+    },
+    "double-leg-butt-kick": {
+      "review": "artifacts/training-types/generated/double-leg-butt-kick/review.json",
+      "frames": [
+        {
+          "file": "/exercises/double-leg-butt-kick/step-0.webp",
+          "captionHe": "מתכוננים עם ברכיים מעט כפופות",
+          "altHe": "קפיצת עקבים לישבן — מתכוננים עם ברכיים מעט כפופות"
+        },
+        {
+          "file": "/exercises/double-leg-butt-kick/step-1.webp",
+          "captionHe": "קופצים ומכופפים את שתי הברכיים לאחור",
+          "altHe": "קפיצת עקבים לישבן — קופצים ומכופפים את שתי הברכיים לאחור"
+        },
+        {
+          "file": "/exercises/double-leg-butt-kick/step-2.webp",
+          "captionHe": "נוחתים על שתי הרגליים וסופגים בברכיים",
+          "altHe": "קפיצת עקבים לישבן — נוחתים על שתי הרגליים וסופגים בברכיים"
+        }
+      ]
+    },
+    "dumbbell-lunge": {
+      "review": "artifacts/training-types/generated/dumbbell-lunge/review.json",
+      "frames": [
+        {
+          "file": "/exercises/dumbbell-lunge/step-0.webp",
+          "captionHe": "עומדים זקוף עם משקולת בכל יד",
+          "altHe": "לאנג' עם משקולות יד — עומדים זקוף עם משקולת בכל יד"
+        },
+        {
+          "file": "/exercises/dumbbell-lunge/step-1.webp",
+          "captionHe": "צועדים קדימה ומורידים את הברך האחורית",
+          "altHe": "לאנג' עם משקולות יד — צועדים קדימה ומורידים את הברך האחורית"
+        },
+        {
+          "file": "/exercises/dumbbell-lunge/step-2.webp",
+          "captionHe": "דוחפים מהעקב הקדמי וחוזרים לעמידה לפני החלפת רגל",
+          "altHe": "לאנג' עם משקולות יד — דוחפים מהעקב הקדמי וחוזרים לעמידה לפני החלפת רגל"
+        }
+      ]
+    },
+    "dumbbell-overhead-carry": {
+      "review": "artifacts/training-types/generated/dumbbell-overhead-carry/review.json",
+      "frames": [
+        {
+          "file": "/exercises/dumbbell-overhead-carry/step-0.webp",
+          "captionHe": "מיישרים יד אחת עם משקולת מעל הראש",
+          "altHe": "הליכה עם משקולת מעל הראש — מיישרים יד אחת עם משקולת מעל הראש"
+        },
+        {
+          "file": "/exercises/dumbbell-overhead-carry/step-1.webp",
+          "captionHe": "צועדים קדימה ושומרים על היד יציבה ואנכית",
+          "altHe": "הליכה עם משקולת מעל הראש — צועדים קדימה ושומרים על היד יציבה ואנכית"
+        },
+        {
+          "file": "/exercises/dumbbell-overhead-carry/step-2.webp",
+          "captionHe": "מורידים את המשקולת בשליטה ונחים לפני החלפת יד",
+          "altHe": "הליכה עם משקולת מעל הראש — מורידים את המשקולת בשליטה ונחים לפני החלפת יד"
+        }
+      ]
+    },
+    "elevated-pike-pushup": {
+      "review": "artifacts/training-types/generated/elevated-pike-pushup/review.json",
+      "frames": [
+        {
+          "file": "/exercises/elevated-pike-pushup/step-0.webp",
+          "captionHe": "מניחים רגליים על כיסא יציב וידיים על הרצפה",
+          "altHe": "שכיבות סמיכה פייק עם רגליים מוגבהות — מניחים רגליים על כיסא יציב וידיים על הרצפה"
+        },
+        {
+          "file": "/exercises/elevated-pike-pushup/step-1.webp",
+          "captionHe": "מקרבים את הידיים לכיסא ומרימים את האגן",
+          "altHe": "שכיבות סמיכה פייק עם רגליים מוגבהות — מקרבים את הידיים לכיסא ומרימים את האגן"
+        },
+        {
+          "file": "/exercises/elevated-pike-pushup/step-2.webp",
+          "captionHe": "מכופפים מרפקים ומורידים את הראש בשליטה לפני הדחיפה מעלה",
+          "altHe": "שכיבות סמיכה פייק עם רגליים מוגבהות — מכופפים מרפקים ומורידים את הראש בשליטה לפני הדחיפה מעלה"
+        }
+      ]
+    },
+    "farmers-walk": {
+      "review": "artifacts/training-types/generated/farmers-walk/review.json",
+      "frames": [
+        {
+          "file": "/exercises/farmers-walk/step-0.webp",
+          "captionHe": "מרימים שתי משקולות בגב ישר וברכיים כפופות",
+          "altHe": "הליכת איכר — מרימים שתי משקולות בגב ישר וברכיים כפופות"
+        },
+        {
+          "file": "/exercises/farmers-walk/step-1.webp",
+          "captionHe": "מזדקפים ומחזיקים משקולת בכל יד",
+          "altHe": "הליכת איכר — מזדקפים ומחזיקים משקולת בכל יד"
+        },
+        {
+          "file": "/exercises/farmers-walk/step-2.webp",
+          "captionHe": "צועדים בצעדים קצרים ויציבים; בסיום מניחים בשליטה",
+          "altHe": "הליכת איכר — צועדים בצעדים קצרים ויציבים; בסיום מניחים בשליטה"
+        }
+      ]
+    },
+    "fast-skipping": {
+      "review": "artifacts/training-types/generated/fast-skipping/review.json",
+      "frames": [
+        {
+          "file": "/exercises/fast-skipping/step-0.webp",
+          "captionHe": "עומדים זקוף עם מרפקים כפופים",
+          "altHe": "סקיפינג מהיר — עומדים זקוף עם מרפקים כפופים"
+        },
+        {
+          "file": "/exercises/fast-skipping/step-1.webp",
+          "captionHe": "מרימים ברך לגובה האגן ומקדמים את היד הנגדית",
+          "altHe": "סקיפינג מהיר — מרימים ברך לגובה האגן ומקדמים את היד הנגדית"
+        },
+        {
+          "file": "/exercises/fast-skipping/step-2.webp",
+          "captionHe": "מחליפים רגליים במהירות על כריות כפות הרגליים",
+          "altHe": "סקיפינג מהיר — מחליפים רגליים במהירות על כריות כפות הרגליים"
+        },
+        {
+          "file": "/exercises/fast-skipping/step-3.webp",
+          "captionHe": "מרימים את הברך השנייה עם היד הנגדית",
+          "altHe": "סקיפינג מהיר — מרימים את הברך השנייה עם היד הנגדית"
+        }
+      ]
+    },
+    "flutter-kicks": {
+      "review": "artifacts/training-types/generated/flutter-kicks/review.json",
+      "frames": [
+        {
+          "file": "/exercises/flutter-kicks/step-0.webp",
+          "captionHe": "מרימים מעט את שתי הרגליים הישרות",
+          "altHe": "בעיטות רפרוף — מרימים מעט את שתי הרגליים הישרות"
+        },
+        {
+          "file": "/exercises/flutter-kicks/step-1.webp",
+          "captionHe": "מרימים רגל אחת מעט יותר ומשאירים את השנייה נמוכה",
+          "altHe": "בעיטות רפרוף — מרימים רגל אחת מעט יותר ומשאירים את השנייה נמוכה"
+        },
+        {
+          "file": "/exercises/flutter-kicks/step-2.webp",
+          "captionHe": "מחליפים את גובה הרגליים בתנועה קטנה",
+          "altHe": "בעיטות רפרוף — מחליפים את גובה הרגליים בתנועה קטנה"
+        },
+        {
+          "file": "/exercises/flutter-kicks/step-3.webp",
+          "captionHe": "מרימים את הרגל הנגדית ושומרים את הגב התחתון צמוד",
+          "altHe": "בעיטות רפרוף — מרימים את הרגל הנגדית ושומרים את הגב התחתון צמוד"
+        }
+      ]
+    },
+    "forward-hops": {
+      "review": "artifacts/training-types/generated/forward-hops/review.json",
+      "frames": [
+        {
+          "file": "/exercises/forward-hops/step-0.webp",
+          "captionHe": "כופפים מעט ברכיים ומניפים את הידיים לאחור",
+          "altHe": "ניתורים קדימה בשתי רגליים — כופפים מעט ברכיים ומניפים את הידיים לאחור"
+        },
+        {
+          "file": "/exercises/forward-hops/step-1.webp",
+          "captionHe": "מנתרים קדימה בשתי הרגליים",
+          "altHe": "ניתורים קדימה בשתי רגליים — מנתרים קדימה בשתי הרגליים"
+        },
+        {
+          "file": "/exercises/forward-hops/step-2.webp",
+          "captionHe": "נוחתים ברכות עם ברכיים כפופות וממשיכים לניתור הבא",
+          "altHe": "ניתורים קדימה בשתי רגליים — נוחתים ברכות עם ברכיים כפופות וממשיכים לניתור הבא"
+        }
+      ]
+    },
+    "frog-jump": {
+      "review": "artifacts/training-types/generated/frog-jump/review.json",
+      "frames": [
+        {
+          "file": "/exercises/frog-jump/step-0.webp",
+          "captionHe": "יורדים לסקוואט רחב עם הידיים בין הרגליים",
+          "altHe": "קפיצת צפרדע — יורדים לסקוואט רחב עם הידיים בין הרגליים"
+        },
+        {
+          "file": "/exercises/frog-jump/step-1.webp",
+          "captionHe": "קופצים קדימה ולמעלה",
+          "altHe": "קפיצת צפרדע — קופצים קדימה ולמעלה"
+        },
+        {
+          "file": "/exercises/frog-jump/step-2.webp",
+          "captionHe": "נוחתים על שתי הרגליים וחוזרים לסקוואט עמוק",
+          "altHe": "קפיצת צפרדע — נוחתים על שתי הרגליים וחוזרים לסקוואט עמוק"
+        }
+      ]
+    },
+    "hamstring-slide": {
+      "review": "artifacts/training-types/generated/hamstring-slide/review.json",
+      "frames": [
+        {
+          "file": "/exercises/hamstring-slide/step-0.webp",
+          "captionHe": "שוכבים עם ברכיים כפופות ועקבים על מגבות",
+          "altHe": "החלקת עקבים — שוכבים עם ברכיים כפופות ועקבים על מגבות"
+        },
+        {
+          "file": "/exercises/hamstring-slide/step-1.webp",
+          "captionHe": "מרימים את האגן לגשר",
+          "altHe": "החלקת עקבים — מרימים את האגן לגשר"
+        },
+        {
+          "file": "/exercises/hamstring-slide/step-2.webp",
+          "captionHe": "מחליקים עקבים קדימה בלי להפיל את האגן ומושכים בחזרה",
+          "altHe": "החלקת עקבים — מחליקים עקבים קדימה בלי להפיל את האגן ומושכים בחזרה"
+        }
+      ]
+    },
+    "hindu-pushup": {
+      "review": "artifacts/training-types/generated/hindu-pushup/review.json",
+      "frames": [
+        {
+          "file": "/exercises/hindu-pushup/step-0.webp",
+          "captionHe": "מתחילים באגן גבוה בצורת וי הפוך",
+          "altHe": "שכיבות סמיכה הודיות — מתחילים באגן גבוה בצורת וי הפוך"
+        },
+        {
+          "file": "/exercises/hindu-pushup/step-1.webp",
+          "captionHe": "מכופפים מרפקים ומעבירים את החזה קדימה קרוב לרצפה",
+          "altHe": "שכיבות סמיכה הודיות — מכופפים מרפקים ומעבירים את החזה קדימה קרוב לרצפה"
+        },
+        {
+          "file": "/exercises/hindu-pushup/step-2.webp",
+          "captionHe": "מיישרים ידיים ומרימים את החזה כשהאגן נמוך",
+          "altHe": "שכיבות סמיכה הודיות — מיישרים ידיים ומרימים את החזה כשהאגן נמוך"
+        },
+        {
+          "file": "/exercises/hindu-pushup/step-3.webp",
+          "captionHe": "מחזירים את הגוף במסלול ההפוך ומרימים שוב את האגן",
+          "altHe": "שכיבות סמיכה הודיות — מחזירים את הגוף במסלול ההפוך ומרימים שוב את האגן"
+        }
+      ]
+    },
+    "inchworm": {
+      "review": "artifacts/training-types/generated/inchworm/review.json",
+      "frames": [
+        {
+          "file": "/exercises/inchworm/step-0.webp",
+          "captionHe": "עומדים זקוף",
+          "altHe": "תולעת — עומדים זקוף"
+        },
+        {
+          "file": "/exercises/inchworm/step-1.webp",
+          "captionHe": "מגיעים עם הידיים לרצפה וברכיים מעט כפופות",
+          "altHe": "תולעת — מגיעים עם הידיים לרצפה וברכיים מעט כפופות"
+        },
+        {
+          "file": "/exercises/inchworm/step-2.webp",
+          "captionHe": "צועדים עם הידיים קדימה עד פלאנק ישר",
+          "altHe": "תולעת — צועדים עם הידיים קדימה עד פלאנק ישר"
+        },
+        {
+          "file": "/exercises/inchworm/step-3.webp",
+          "captionHe": "צועדים עם כפות הרגליים לכיוון הידיים",
+          "altHe": "תולעת — צועדים עם כפות הרגליים לכיוון הידיים"
+        },
+        {
+          "file": "/exercises/inchworm/step-4.webp",
+          "captionHe": "מזדקפים בהדרגה לעמידה מלאה",
+          "altHe": "תולעת — מזדקפים בהדרגה לעמידה מלאה"
+        }
+      ]
+    },
+    "jump-rope": {
+      "review": "artifacts/training-types/generated/jump-rope/review.json",
+      "frames": [
+        {
+          "file": "/exercises/jump-rope/step-0.webp",
+          "captionHe": "מחזיקים את החבל מאחורי הגוף",
+          "altHe": "קפיצה בחבל — מחזיקים את החבל מאחורי הגוף"
+        },
+        {
+          "file": "/exercises/jump-rope/step-1.webp",
+          "captionHe": "מסובבים את החבל קדימה בעזרת שורשי כפות הידיים",
+          "altHe": "קפיצה בחבל — מסובבים את החבל קדימה בעזרת שורשי כפות הידיים"
+        },
+        {
+          "file": "/exercises/jump-rope/step-2.webp",
+          "captionHe": "קופצים נמוך כשהחבל עובר מתחת לכפות הרגליים",
+          "altHe": "קפיצה בחבל — קופצים נמוך כשהחבל עובר מתחת לכפות הרגליים"
+        },
+        {
+          "file": "/exercises/jump-rope/step-3.webp",
+          "captionHe": "נוחתים ברכות על כריות כפות הרגליים וממשיכים בקצב",
+          "altHe": "קפיצה בחבל — נוחתים ברכות על כריות כפות הרגליים וממשיכים בקצב"
+        }
+      ]
+    },
+    "jump-squat": {
+      "review": "artifacts/training-types/generated/jump-squat/review.json",
+      "frames": [
+        {
+          "file": "/exercises/jump-squat/step-0.webp",
+          "captionHe": "יורדים לסקוואט ברוחב כתפיים",
+          "altHe": "סקוואט קפיצה — יורדים לסקוואט ברוחב כתפיים"
+        },
+        {
+          "file": "/exercises/jump-squat/step-1.webp",
+          "captionHe": "מתפרצים מעלה וקופצים מהרצפה",
+          "altHe": "סקוואט קפיצה — מתפרצים מעלה וקופצים מהרצפה"
+        },
+        {
+          "file": "/exercises/jump-squat/step-2.webp",
+          "captionHe": "נוחתים ברכות בברכיים כפופות וזורמים לסקוואט הבא",
+          "altHe": "סקוואט קפיצה — נוחתים ברכות בברכיים כפופות וזורמים לסקוואט הבא"
+        }
+      ]
+    },
+    "jump-squat-180": {
+      "review": "artifacts/training-types/generated/jump-squat-180/review.json",
+      "frames": [
+        {
+          "file": "/exercises/jump-squat-180/step-0.webp",
+          "captionHe": "יורדים לחצי סקוואט בכיוון הראשון",
+          "altHe": "סקוואט קפיצה עם סיבוב — יורדים לחצי סקוואט בכיוון הראשון"
+        },
+        {
+          "file": "/exercises/jump-squat-180/step-1.webp",
+          "captionHe": "קופצים ומסובבים את כל הגוף באוויר",
+          "altHe": "סקוואט קפיצה עם סיבוב — קופצים ומסובבים את כל הגוף באוויר"
+        },
+        {
+          "file": "/exercises/jump-squat-180/step-2.webp",
+          "captionHe": "נוחתים לכיוון ההפוך וסופגים בחצי סקוואט",
+          "altHe": "סקוואט קפיצה עם סיבוב — נוחתים לכיוון ההפוך וסופגים בחצי סקוואט"
+        },
+        {
+          "file": "/exercises/jump-squat-180/step-3.webp",
+          "captionHe": "קופצים שוב ומסתובבים חזרה לכיוון המקורי",
+          "altHe": "סקוואט קפיצה עם סיבוב — קופצים שוב ומסתובבים חזרה לכיוון המקורי"
+        }
+      ]
+    },
+    "kettlebell-arnold-press": {
+      "frames": [
+        {
+          "file": "/exercises/kettlebell-arnold-press/step-0.webp",
+          "captionHe": "הקטלבל בגובה הכתף, כף היד פונה פנימה",
+          "altHe": "לחיצת ארנולד עם קטלבל — הקטלבל בגובה הכתף, כף היד פונה פנימה"
+        },
+        {
+          "file": "/exercises/kettlebell-arnold-press/step-1.webp",
+          "captionHe": "לחיצה כלפי מעלה תוך סיבוב האמה",
+          "altHe": "לחיצת ארנולד עם קטלבל — לחיצה כלפי מעלה תוך סיבוב האמה"
+        },
+        {
+          "file": "/exercises/kettlebell-arnold-press/step-2.webp",
+          "captionHe": "יישור היד מעל הראש, כף היד פונה קדימה",
+          "altHe": "לחיצת ארנולד עם קטלבל — יישור היד מעל הראש, כף היד פונה קדימה"
+        }
+      ]
+    },
+    "kettlebell-halo": {
+      "frames": [
+        {
+          "file": "/exercises/kettlebell-halo/step-0.webp",
+          "captionHe": "אחיזה בשתי ידיים בצדי הידית, הקטלבל הפוך מול החזה",
+          "altHe": "הילה עם קטלבל — אחיזה בשתי ידיים בצדי הידית, הקטלבל הפוך מול החזה"
+        },
+        {
+          "file": "/exercises/kettlebell-halo/step-1.webp",
+          "captionHe": "העברת הקטלבל לצד הראש תוך שמירה על אותה אחיזה בשתי הידיים",
+          "altHe": "הילה עם קטלבל — העברת הקטלבל לצד הראש תוך שמירה על אותה אחיזה בשתי הידיים"
+        },
+        {
+          "file": "/exercises/kettlebell-halo/step-2.webp",
+          "captionHe": "העברת הקטלבל מאחורי הראש באותה אחיזה — מבט מאחור",
+          "altHe": "הילה עם קטלבל — העברת הקטלבל מאחורי הראש באותה אחיזה — מבט מאחור"
+        },
+        {
+          "file": "/exercises/kettlebell-halo/step-3.webp",
+          "captionHe": "המשך סביב הצד השני וחזרה לפנים בלי לשחרר את האחיזה; לאחר סיבוב מלא מחליפים כיוון",
+          "altHe": "הילה עם קטלבל — המשך סביב הצד השני וחזרה לפנים בלי לשחרר את האחיזה; לאחר סיבוב מלא מחליפים כיוון"
+        }
+      ]
+    },
+    "kettlebell-sumo-high-pull": {
+      "frames": [
+        {
+          "file": "/exercises/kettlebell-sumo-high-pull/step-0.webp",
+          "captionHe": "עמידה רחבה וכפיפת ברכיים, הקטלבל בין הרגליים",
+          "altHe": "משיכה גבוהה בסומו עם קטלבל — עמידה רחבה וכפיפת ברכיים, הקטלבל בין הרגליים"
+        },
+        {
+          "file": "/exercises/kettlebell-sumo-high-pull/step-1.webp",
+          "captionHe": "יישור הירכיים והברכיים והרמת הקטלבל",
+          "altHe": "משיכה גבוהה בסומו עם קטלבל — יישור הירכיים והברכיים והרמת הקטלבל"
+        },
+        {
+          "file": "/exercises/kettlebell-sumo-high-pull/step-2.webp",
+          "captionHe": "משיכת הקטלבל לכיוון הסנטר כשהמרפקים מובילים מעלה",
+          "altHe": "משיכה גבוהה בסומו עם קטלבל — משיכת הקטלבל לכיוון הסנטר כשהמרפקים מובילים מעלה"
+        }
+      ]
+    },
+    "kettlebell-swing": {
+      "frames": [
+        {
+          "file": "/exercises/kettlebell-swing/step-0.webp",
+          "captionHe": "אחיזה בשתי ידיים והכנה כשהקטלבל על הרצפה",
+          "altHe": "הנפת קטלבל — אחיזה בשתי ידיים והכנה כשהקטלבל על הרצפה"
+        },
+        {
+          "file": "/exercises/kettlebell-swing/step-1.webp",
+          "captionHe": "הנפה לאחור בין הרגליים ודחיפת האגן לאחור",
+          "altHe": "הנפת קטלבל — הנפה לאחור בין הרגליים ודחיפת האגן לאחור"
+        },
+        {
+          "file": "/exercises/kettlebell-swing/step-2.webp",
+          "captionHe": "יישור האגן והנפת הקטלבל לגובה החזה",
+          "altHe": "הנפת קטלבל — יישור האגן והנפת הקטלבל לגובה החזה"
+        },
+        {
+          "file": "/exercises/kettlebell-swing/step-3.webp",
+          "captionHe": "ירידת הקטלבל והכנה להחזרתו בין הרגליים",
+          "altHe": "הנפת קטלבל — ירידת הקטלבל והכנה להחזרתו בין הרגליים"
+        }
+      ]
+    },
+    "kettlebell-windmill": {
+      "frames": [
+        {
+          "file": "/exercises/kettlebell-windmill/step-0.webp",
+          "captionHe": "קטלבל מעל הראש וכף הרגל הנגדית פונה החוצה",
+          "altHe": "טחנת רוח עם קטלבל — קטלבל מעל הראש וכף הרגל הנגדית פונה החוצה"
+        },
+        {
+          "file": "/exercises/kettlebell-windmill/step-1.webp",
+          "captionHe": "הורדת הגו לכיוון הרגל הנגדית, מבט אל הקטלבל",
+          "altHe": "טחנת רוח עם קטלבל — הורדת הגו לכיוון הרגל הנגדית, מבט אל הקטלבל"
+        },
+        {
+          "file": "/exercises/kettlebell-windmill/step-2.webp",
+          "captionHe": "העמקת הירידה בשליטה, היד נותרת ישרה ואנכית",
+          "altHe": "טחנת רוח עם קטלבל — העמקת הירידה בשליטה, היד נותרת ישרה ואנכית"
+        }
+      ]
+    },
+    "knee-tuck-jump": {
+      "frames": [
+        {
+          "file": "/exercises/knee-tuck-jump/step-0.webp",
+          "captionHe": "כפיפת ברכיים קצרה כהכנה לקפיצה",
+          "altHe": "קפיצה עם קירוב ברכיים לחזה — כפיפת ברכיים קצרה כהכנה לקפיצה"
+        },
+        {
+          "file": "/exercises/knee-tuck-jump/step-1.webp",
+          "captionHe": "ניתור מעלה וניתוק שתי הרגליים מהרצפה",
+          "altHe": "קפיצה עם קירוב ברכיים לחזה — ניתור מעלה וניתוק שתי הרגליים מהרצפה"
+        },
+        {
+          "file": "/exercises/knee-tuck-jump/step-2.webp",
+          "captionHe": "קירוב הברכיים אל החזה באוויר",
+          "altHe": "קפיצה עם קירוב ברכיים לחזה — קירוב הברכיים אל החזה באוויר"
+        },
+        {
+          "file": "/exercises/knee-tuck-jump/step-3.webp",
+          "captionHe": "נחיתה בשתי הרגליים וספיגה בכפיפת הברכיים",
+          "altHe": "קפיצה עם קירוב ברכיים לחזה — נחיתה בשתי הרגליים וספיגה בכפיפת הברכיים"
+        }
+      ]
+    },
+    "lateral-lunge": {
+      "frames": [
+        {
+          "file": "/exercises/lateral-lunge/step-0.webp",
+          "captionHe": "עמידה זקופה ברגליים ברוחב האגן",
+          "altHe": "מכרע צדי — עמידה זקופה ברגליים ברוחב האגן"
+        },
+        {
+          "file": "/exercises/lateral-lunge/step-1.webp",
+          "captionHe": "צעד רחב לצד והורדת האגן לאחור; הרגל הנגדית ישרה",
+          "altHe": "מכרע צדי — צעד רחב לצד והורדת האגן לאחור; הרגל הנגדית ישרה"
+        },
+        {
+          "file": "/exercises/lateral-lunge/step-2.webp",
+          "captionHe": "דחיפה מהרגל הכפופה והחזרתה לכיוון עמידת המוצא",
+          "altHe": "מכרע צדי — דחיפה מהרגל הכפופה והחזרתה לכיוון עמידת המוצא"
+        }
+      ]
+    },
+    "mountain-climbers": {
+      "frames": [
+        {
+          "file": "/exercises/mountain-climbers/step-0.webp",
+          "captionHe": "פלאנק על ידיים ישרות, כפות הידיים מתחת לכתפיים",
+          "altHe": "מטפס הרים — פלאנק על ידיים ישרות, כפות הידיים מתחת לכתפיים"
+        },
+        {
+          "file": "/exercises/mountain-climbers/step-1.webp",
+          "captionHe": "קירוב הברך הראשונה אל החזה",
+          "altHe": "מטפס הרים — קירוב הברך הראשונה אל החזה"
+        },
+        {
+          "file": "/exercises/mountain-climbers/step-2.webp",
+          "captionHe": "החזרת הרגל והתחלת החלפה לרגל הנגדית",
+          "altHe": "מטפס הרים — החזרת הרגל והתחלת החלפה לרגל הנגדית"
+        },
+        {
+          "file": "/exercises/mountain-climbers/step-3.webp",
+          "captionHe": "קירוב הברך הנגדית אל החזה תוך שמירה על אגן נמוך",
+          "altHe": "מטפס הרים — קירוב הברך הנגדית אל החזה תוך שמירה על אגן נמוך"
+        }
+      ]
+    },
+    "one-arm-kettlebell-swing": {
+      "frames": [
+        {
+          "file": "/exercises/one-arm-kettlebell-swing/step-0.webp",
+          "captionHe": "דחיפת האגן לאחור והנפת הקטלבל לאחור ביד אחת",
+          "altHe": "הנפת קטלבל ביד אחת — דחיפת האגן לאחור והנפת הקטלבל לאחור ביד אחת"
+        },
+        {
+          "file": "/exercises/one-arm-kettlebell-swing/step-1.webp",
+          "captionHe": "יישור האגן והאצת הקטלבל לפנים",
+          "altHe": "הנפת קטלבל ביד אחת — יישור האגן והאצת הקטלבל לפנים"
+        },
+        {
+          "file": "/exercises/one-arm-kettlebell-swing/step-2.webp",
+          "captionHe": "הקטלבל בגובה החזה; נותנים לו לרדת לחזרה הבאה",
+          "altHe": "הנפת קטלבל ביד אחת — הקטלבל בגובה החזה; נותנים לו לרדת לחזרה הבאה"
+        }
+      ]
+    },
+    "plank-jack": {
+      "frames": [
+        {
+          "file": "/exercises/plank-jack/step-0.webp",
+          "captionHe": "פלאנק על ידיים ישרות, רגליים צמודות",
+          "altHe": "פתיחת רגליים בפלאנק — פלאנק על ידיים ישרות, רגליים צמודות"
+        },
+        {
+          "file": "/exercises/plank-jack/step-1.webp",
+          "captionHe": "ניתור ופתיחת שתי הרגליים החוצה",
+          "altHe": "פתיחת רגליים בפלאנק — ניתור ופתיחת שתי הרגליים החוצה"
+        },
+        {
+          "file": "/exercises/plank-jack/step-2.webp",
+          "captionHe": "נחיתה בפישוק והכנה לניתור חזרה פנימה",
+          "altHe": "פתיחת רגליים בפלאנק — נחיתה בפישוק והכנה לניתור חזרה פנימה"
+        }
+      ]
+    },
+    "plyo-pushup": {
+      "frames": [
+        {
+          "file": "/exercises/plyo-pushup/step-0.webp",
+          "captionHe": "ירידה בשכיבת סמיכה עם גוף בקו ישר",
+          "altHe": "שכיבת סמיכה מתפרצת — ירידה בשכיבת סמיכה עם גוף בקו ישר"
+        },
+        {
+          "file": "/exercises/plyo-pushup/step-1.webp",
+          "captionHe": "דחיפה מתפרצת עד שכפות הידיים מתנתקות מהרצפה",
+          "altHe": "שכיבת סמיכה מתפרצת — דחיפה מתפרצת עד שכפות הידיים מתנתקות מהרצפה"
+        },
+        {
+          "file": "/exercises/plyo-pushup/step-2.webp",
+          "captionHe": "נחיתה על כפות הידיים וספיגה בכיפוף המרפקים",
+          "altHe": "שכיבת סמיכה מתפרצת — נחיתה על כפות הידיים וספיגה בכיפוף המרפקים"
+        }
+      ]
+    },
+    "pushup-to-side-plank": {
+      "frames": [
+        {
+          "file": "/exercises/pushup-to-side-plank/step-0.webp",
+          "captionHe": "ירידה לשכיבת סמיכה עם גוף בקו ישר",
+          "altHe": "שכיבת סמיכה לפלאנק צד — ירידה לשכיבת סמיכה עם גוף בקו ישר"
+        },
+        {
+          "file": "/exercises/pushup-to-side-plank/step-1.webp",
+          "captionHe": "דחיפה חזרה לפלאנק על ידיים ישרות",
+          "altHe": "שכיבת סמיכה לפלאנק צד — דחיפה חזרה לפלאנק על ידיים ישרות"
+        },
+        {
+          "file": "/exercises/pushup-to-side-plank/step-2.webp",
+          "captionHe": "סיבוב לפלאנק צד והרמת היד הפנויה",
+          "altHe": "שכיבת סמיכה לפלאנק צד — סיבוב לפלאנק צד והרמת היד הפנויה"
+        },
+        {
+          "file": "/exercises/pushup-to-side-plank/step-3.webp",
+          "captionHe": "החזרת היד לרצפה לקראת החזרה הבאה והחלפת צד",
+          "altHe": "שכיבת סמיכה לפלאנק צד — החזרת היד לרצפה לקראת החזרה הבאה והחלפת צד"
+        }
+      ]
+    },
+    "reverse-lunge": {
+      "frames": [
+        {
+          "file": "/exercises/reverse-lunge/step-0.webp",
+          "captionHe": "עמידה זקופה עם משקולת בכל יד",
+          "altHe": "מכרע לאחור עם משקולות — עמידה זקופה עם משקולת בכל יד"
+        },
+        {
+          "file": "/exercises/reverse-lunge/step-1.webp",
+          "captionHe": "צעד לאחור והורדת הברך האחורית כמעט עד הרצפה",
+          "altHe": "מכרע לאחור עם משקולות — צעד לאחור והורדת הברך האחורית כמעט עד הרצפה"
+        },
+        {
+          "file": "/exercises/reverse-lunge/step-2.webp",
+          "captionHe": "דחיפה מהרגל הקדמית והחזרת הרגל האחורית לעמידה",
+          "altHe": "מכרע לאחור עם משקולות — דחיפה מהרגל הקדמית והחזרת הרגל האחורית לעמידה"
+        }
+      ]
+    },
+    "rocket-jump": {
+      "frames": [
+        {
+          "file": "/exercises/rocket-jump/step-0.webp",
+          "captionHe": "חצי סקוואט קצר והכנת הידיים לניתור",
+          "altHe": "קפיצת רקטה — חצי סקוואט קצר והכנת הידיים לניתור"
+        },
+        {
+          "file": "/exercises/rocket-jump/step-1.webp",
+          "captionHe": "ניתור גבוה עם גוף ישר וידיים מעל הראש",
+          "altHe": "קפיצת רקטה — ניתור גבוה עם גוף ישר וידיים מעל הראש"
+        },
+        {
+          "file": "/exercises/rocket-jump/step-2.webp",
+          "captionHe": "נחיתה בשתי הרגליים וספיגה בברכיים",
+          "altHe": "קפיצת רקטה — נחיתה בשתי הרגליים וספיגה בברכיים"
+        }
+      ]
+    },
+    "side-long-jump": {
+      "frames": [
+        {
+          "file": "/exercises/side-long-jump/step-0.webp",
+          "captionHe": "כפיפת ברכיים והכנה לניתור הצדה בשתי הרגליים",
+          "altHe": "קפיצה לרוחק הצידה — כפיפת ברכיים והכנה לניתור הצדה בשתי הרגליים"
+        },
+        {
+          "file": "/exercises/side-long-jump/step-1.webp",
+          "captionHe": "ניתור הצדה כששתי כפות הרגליים באוויר",
+          "altHe": "קפיצה לרוחק הצידה — ניתור הצדה כששתי כפות הרגליים באוויר"
+        },
+        {
+          "file": "/exercises/side-long-jump/step-2.webp",
+          "captionHe": "נחיתה בשתי הרגליים, ספיגה והתייצבות לפני החלפת כיוון",
+          "altHe": "קפיצה לרוחק הצידה — נחיתה בשתי הרגליים, ספיגה והתייצבות לפני החלפת כיוון"
+        }
+      ]
+    },
+    "single-leg-hop": {
+      "frames": [
+        {
+          "file": "/exercises/single-leg-hop/step-0.webp",
+          "captionHe": "עמידה על רגל אחת והכנה לניתור",
+          "altHe": "ניתור קדימה על רגל אחת — עמידה על רגל אחת והכנה לניתור"
+        },
+        {
+          "file": "/exercises/single-leg-hop/step-1.webp",
+          "captionHe": "ניתור קדימה וניתוק הרגל התומכת מהרצפה",
+          "altHe": "ניתור קדימה על רגל אחת — ניתור קדימה וניתוק הרגל התומכת מהרצפה"
+        },
+        {
+          "file": "/exercises/single-leg-hop/step-2.webp",
+          "captionHe": "נחיתה על אותה רגל בכפיפת ברך והתייצבות",
+          "altHe": "ניתור קדימה על רגל אחת — נחיתה על אותה רגל בכפיפת ברך והתייצבות"
+        }
+      ]
+    },
+    "squat-thrust": {
+      "frames": [
+        {
+          "file": "/exercises/squat-thrust/step-0.webp",
+          "captionHe": "עמידה זקופה ברגליים ברוחב הכתפיים",
+          "altHe": "מעבר מכריעה לפלאנק — עמידה זקופה ברגליים ברוחב הכתפיים"
+        },
+        {
+          "file": "/exercises/squat-thrust/step-1.webp",
+          "captionHe": "ירידה לכריעה והנחת שתי כפות הידיים על הרצפה",
+          "altHe": "מעבר מכריעה לפלאנק — ירידה לכריעה והנחת שתי כפות הידיים על הרצפה"
+        },
+        {
+          "file": "/exercises/squat-thrust/step-2.webp",
+          "captionHe": "החזרת הרגליים לפלאנק; לאחר מכן מחזירים אותן לידיים וקמים ללא ניתור",
+          "altHe": "מעבר מכריעה לפלאנק — החזרת הרגליים לפלאנק; לאחר מכן מחזירים אותן לידיים וקמים ללא ניתור"
+        }
+      ]
+    },
+    "standing-long-jump": {
+      "frames": [
+        {
+          "file": "/exercises/standing-long-jump/step-0.webp",
+          "captionHe": "כפיפת הברכיים והנפת הידיים לאחור",
+          "altHe": "קפיצה לרוחק מהמקום — כפיפת הברכיים והנפת הידיים לאחור"
+        },
+        {
+          "file": "/exercises/standing-long-jump/step-1.webp",
+          "captionHe": "ניתור קדימה משתי הרגליים",
+          "altHe": "קפיצה לרוחק מהמקום — ניתור קדימה משתי הרגליים"
+        },
+        {
+          "file": "/exercises/standing-long-jump/step-2.webp",
+          "captionHe": "נחיתה בשתי הרגליים וספיגה בכפיפת הברכיים",
+          "altHe": "קפיצה לרוחק מהמקום — נחיתה בשתי הרגליים וספיגה בכפיפת הברכיים"
+        },
+        {
+          "file": "/exercises/standing-long-jump/step-3.webp",
+          "captionHe": "התייצבות בעמידה והתאוששות לפני הקפיצה הבאה",
+          "altHe": "קפיצה לרוחק מהמקום — התייצבות בעמידה והתאוששות לפני הקפיצה הבאה"
+        }
+      ]
+    },
+    "step-jack": {
+      "frames": [
+        {
+          "file": "/exercises/step-jack/step-0.webp",
+          "captionHe": "עמידה ברגליים צמודות וידיים לצד הגוף",
+          "altHe": "ג׳ק בצעד — עמידה ברגליים צמודות וידיים לצד הגוף"
+        },
+        {
+          "file": "/exercises/step-jack/step-1.webp",
+          "captionHe": "צעד הצדה והרמת שתי הידיים מעל הראש",
+          "altHe": "ג׳ק בצעד — צעד הצדה והרמת שתי הידיים מעל הראש"
+        },
+        {
+          "file": "/exercises/step-jack/step-2.webp",
+          "captionHe": "החזרת הרגל פנימה והורדת הידיים, לפני החלפת צד",
+          "altHe": "ג׳ק בצעד — החזרת הרגל פנימה והורדת הידיים, לפני החלפת צד"
+        }
+      ]
+    },
+    "suitcase-carry": {
+      "frames": [
+        {
+          "file": "/exercises/suitcase-carry/step-0.webp",
+          "captionHe": "הרמת משקולת אחת ביד אחת",
+          "altHe": "הליכת מזוודה — הרמת משקולת אחת ביד אחת"
+        },
+        {
+          "file": "/exercises/suitcase-carry/step-1.webp",
+          "captionHe": "הליכה זקופה בצעדים מבוקרים בלי נטייה לצד",
+          "altHe": "הליכת מזוודה — הליכה זקופה בצעדים מבוקרים בלי נטייה לצד"
+        },
+        {
+          "file": "/exercises/suitcase-carry/step-2.webp",
+          "captionHe": "הנחת המשקולת והכנה לנשיאה ביד הנגדית",
+          "altHe": "הליכת מזוודה — הנחת המשקולת והכנה לנשיאה ביד הנגדית"
+        }
+      ]
+    },
+    "superman-pull": {
+      "frames": [
+        {
+          "file": "/exercises/superman-pull/step-0.webp",
+          "captionHe": "שכיבה על הבטן עם ידיים מתוחות לפנים",
+          "altHe": "משיכת סופרמן — שכיבה על הבטן עם ידיים מתוחות לפנים"
+        },
+        {
+          "file": "/exercises/superman-pull/step-1.webp",
+          "captionHe": "הרמה קלה של הידיים והחזה",
+          "altHe": "משיכת סופרמן — הרמה קלה של הידיים והחזה"
+        },
+        {
+          "file": "/exercises/superman-pull/step-2.webp",
+          "captionHe": "משיכת המרפקים לאחור לכיוון הצלעות, ואז יישור הידיים בשליטה",
+          "altHe": "משיכת סופרמן — משיכת המרפקים לאחור לכיוון הצלעות, ואז יישור הידיים בשליטה"
+        }
+      ]
+    },
+    "thruster": {
+      "frames": [
+        {
+          "file": "/exercises/thruster/step-0.webp",
+          "captionHe": "משקולות בגובה הכתפיים",
+          "altHe": "סקוואט ולחיצת משקולות — משקולות בגובה הכתפיים"
+        },
+        {
+          "file": "/exercises/thruster/step-1.webp",
+          "captionHe": "ירידה לסקוואט עם המשקולות בכתפיים",
+          "altHe": "סקוואט ולחיצת משקולות — ירידה לסקוואט עם המשקולות בכתפיים"
+        },
+        {
+          "file": "/exercises/thruster/step-2.webp",
+          "captionHe": "עלייה מהסקוואט והתחלת הלחיצה בתנועה רציפה",
+          "altHe": "סקוואט ולחיצת משקולות — עלייה מהסקוואט והתחלת הלחיצה בתנועה רציפה"
+        },
+        {
+          "file": "/exercises/thruster/step-3.webp",
+          "captionHe": "יישור הגוף והידיים מעל הראש",
+          "altHe": "סקוואט ולחיצת משקולות — יישור הגוף והידיים מעל הראש"
+        }
+      ]
+    },
+    "wind-sprints": {
+      "frames": [
+        {
+          "file": "/exercises/wind-sprints/step-0.webp",
+          "captionHe": "התארגנות לזינוק בקו המסומן",
+          "altHe": "ספרינטים עם הליכת התאוששות — התארגנות לזינוק בקו המסומן"
+        },
+        {
+          "file": "/exercises/wind-sprints/step-1.webp",
+          "captionHe": "ריצה מהירה לכיוון קו הסיום",
+          "altHe": "ספרינטים עם הליכת התאוששות — ריצה מהירה לכיוון קו הסיום"
+        },
+        {
+          "file": "/exercises/wind-sprints/step-2.webp",
+          "captionHe": "סיום הריצה והאטה מבוקרת",
+          "altHe": "ספרינטים עם הליכת התאוששות — סיום הריצה והאטה מבוקרת"
+        },
+        {
+          "file": "/exercises/wind-sprints/step-3.webp",
+          "captionHe": "הליכה בחזרה לקו ההתחלה להתאוששות",
+          "altHe": "ספרינטים עם הליכת התאוששות — הליכה בחזרה לקו ההתחלה להתאוששות"
+        }
+      ]
+    },
+    "kettlebell-push-press": {
+      "frames": [
+        {
+          "file": "/exercises/kettlebell-push-press/step-0.webp",
+          "captionHe": "קטלבל בגובה הכתף, מרפק סמוך לגוף",
+          "altHe": "לחיצת קטלבל עם דחיפת רגליים — קטלבל בגובה הכתף, מרפק סמוך לגוף"
+        },
+        {
+          "file": "/exercises/kettlebell-push-press/step-1.webp",
+          "captionHe": "כפיפת ברכיים קצרה עם עקבים על הרצפה",
+          "altHe": "לחיצת קטלבל עם דחיפת רגליים — כפיפת ברכיים קצרה עם עקבים על הרצפה"
+        },
+        {
+          "file": "/exercises/kettlebell-push-press/step-2.webp",
+          "captionHe": "יישור הרגליים והתחלת הלחיצה מעל הראש",
+          "altHe": "לחיצת קטלבל עם דחיפת רגליים — יישור הרגליים והתחלת הלחיצה מעל הראש"
+        },
+        {
+          "file": "/exercises/kettlebell-push-press/step-3.webp",
+          "captionHe": "יישור היד מעל מרכז הגוף והורדה מבוקרת לכתף",
+          "altHe": "לחיצת קטלבל עם דחיפת רגליים — יישור היד מעל מרכז הגוף והורדה מבוקרת לכתף"
+        }
+      ]
+    },
+    "lateral-bound": {
+      "frames": [
+        {
+          "file": "/exercises/lateral-bound/step-0.webp",
+          "captionHe": "העמסה על רגל אחת בכפיפת ברך",
+          "altHe": "ניתור צדי מרגל לרגל — העמסה על רגל אחת בכפיפת ברך"
+        },
+        {
+          "file": "/exercises/lateral-bound/step-1.webp",
+          "captionHe": "ניתור הצדה והעברת המשקל באוויר",
+          "altHe": "ניתור צדי מרגל לרגל — ניתור הצדה והעברת המשקל באוויר"
+        },
+        {
+          "file": "/exercises/lateral-bound/step-2.webp",
+          "captionHe": "נחיתה על הרגל הנגדית בכפיפת ברך, הרגל הראשונה נשארת באוויר",
+          "altHe": "ניתור צדי מרגל לרגל — נחיתה על הרגל הנגדית בכפיפת ברך, הרגל הראשונה נשארת באוויר"
+        }
+      ]
+    },
+    "lateral-hops": {
+      "frames": [
+        {
+          "file": "/exercises/lateral-hops/step-0.webp",
+          "captionHe": "כפיפת ברכיים קלה כהכנה לניתור",
+          "altHe": "ניתורים הצדה בשתי רגליים — כפיפת ברכיים קלה כהכנה לניתור"
+        },
+        {
+          "file": "/exercises/lateral-hops/step-1.webp",
+          "captionHe": "ניתור הצדה בשתי הרגליים יחד",
+          "altHe": "ניתורים הצדה בשתי רגליים — ניתור הצדה בשתי הרגליים יחד"
+        },
+        {
+          "file": "/exercises/lateral-hops/step-2.webp",
+          "captionHe": "נחיתה רכה בשתי הרגליים והכנה לניתור חזרה",
+          "altHe": "ניתורים הצדה בשתי רגליים — נחיתה רכה בשתי הרגליים והכנה לניתור חזרה"
+        }
+      ]
+    },
+    "lateral-shuffle": {
+      "frames": [
+        {
+          "file": "/exercises/lateral-shuffle/step-0.webp",
+          "captionHe": "עמידת חצי סקוואט עם חזה מורם",
+          "altHe": "צעדי רדיפה לצדדים — עמידת חצי סקוואט עם חזה מורם"
+        },
+        {
+          "file": "/exercises/lateral-shuffle/step-1.webp",
+          "captionHe": "צעד הצדה ברגל המובילה",
+          "altHe": "צעדי רדיפה לצדדים — צעד הצדה ברגל המובילה"
+        },
+        {
+          "file": "/exercises/lateral-shuffle/step-2.webp",
+          "captionHe": "קירוב הרגל העוקבת בלי להצליב את הרגליים",
+          "altHe": "צעדי רדיפה לצדדים — קירוב הרגל העוקבת בלי להצליב את הרגליים"
+        },
+        {
+          "file": "/exercises/lateral-shuffle/step-3.webp",
+          "captionHe": "עצירה והחלפת כיוון לרגל המובילה הנגדית",
+          "altHe": "צעדי רדיפה לצדדים — עצירה והחלפת כיוון לרגל המובילה הנגדית"
+        }
+      ]
+    },
+    "lying-windshield-wiper": {
+      "frames": [
+        {
+          "file": "/exercises/lying-windshield-wiper/step-0.webp",
+          "captionHe": "שכיבה על הגב, ידיים פרושות ורגליים ישרות מעלה",
+          "altHe": "מגבים בשכיבה — שכיבה על הגב, ידיים פרושות ורגליים ישרות מעלה"
+        },
+        {
+          "file": "/exercises/lying-windshield-wiper/step-1.webp",
+          "captionHe": "הורדת שתי הרגליים יחד לצד אחד בטווח נשלט",
+          "altHe": "מגבים בשכיבה — הורדת שתי הרגליים יחד לצד אחד בטווח נשלט"
+        },
+        {
+          "file": "/exercises/lying-windshield-wiper/step-2.webp",
+          "captionHe": "חזרה דרך המרכז והורדת הרגליים לצד הנגדי",
+          "altHe": "מגבים בשכיבה — חזרה דרך המרכז והורדת הרגליים לצד הנגדי"
+        }
+      ]
+    },
+    "plank-shoulder-tap": {
+      "frames": [
+        {
+          "file": "/exercises/plank-shoulder-tap/step-0.webp",
+          "captionHe": "פלאנק על שתי כפות הידיים עם רגליים פתוחות ליציבות",
+          "altHe": "נגיעת כתף בפלאנק — פלאנק על שתי כפות הידיים עם רגליים פתוחות ליציבות"
+        },
+        {
+          "file": "/exercises/plank-shoulder-tap/step-1.webp",
+          "captionHe": "נגיעה בכתף הנגדית ביד הראשונה",
+          "altHe": "נגיעת כתף בפלאנק — נגיעה בכתף הנגדית ביד הראשונה"
+        },
+        {
+          "file": "/exercises/plank-shoulder-tap/step-2.webp",
+          "captionHe": "החזרת היד לרצפה ונגיעה בכתף השנייה ביד הנגדית",
+          "altHe": "נגיעת כתף בפלאנק — החזרת היד לרצפה ונגיעה בכתף השנייה ביד הנגדית"
+        }
+      ]
+    },
+    "push-press": {
+      "frames": [
+        {
+          "file": "/exercises/push-press/step-0.webp",
+          "captionHe": "מוט על החזה העליון, מרפקים מעט לפנים",
+          "altHe": "לחיצת מוט עם דחיפת רגליים — מוט על החזה העליון, מרפקים מעט לפנים"
+        },
+        {
+          "file": "/exercises/push-press/step-1.webp",
+          "captionHe": "כפיפת ברכיים קצרה עם גו זקוף",
+          "altHe": "לחיצת מוט עם דחיפת רגליים — כפיפת ברכיים קצרה עם גו זקוף"
+        },
+        {
+          "file": "/exercises/push-press/step-2.webp",
+          "captionHe": "יישור הרגליים והמשך הלחיצה מעלה",
+          "altHe": "לחיצת מוט עם דחיפת רגליים — יישור הרגליים והמשך הלחיצה מעלה"
+        },
+        {
+          "file": "/exercises/push-press/step-3.webp",
+          "captionHe": "יישור הידיים מעל הראש והורדה מבוקרת לחזה",
+          "altHe": "לחיצת מוט עם דחיפת רגליים — יישור הידיים מעל הראש והורדה מבוקרת לחזה"
+        }
+      ]
+    },
+    "renegade-row": {
+      "frames": [
+        {
+          "file": "/exercises/renegade-row/step-0.webp",
+          "captionHe": "פלאנק עם תמיכה בשתי משקולות ורגליים פתוחות",
+          "altHe": "חתירה בפלאנק עם משקולות — פלאנק עם תמיכה בשתי משקולות ורגליים פתוחות"
+        },
+        {
+          "file": "/exercises/renegade-row/step-1.webp",
+          "captionHe": "משיכת המשקולת הראשונה לצד הבטן",
+          "altHe": "חתירה בפלאנק עם משקולות — משיכת המשקולת הראשונה לצד הבטן"
+        },
+        {
+          "file": "/exercises/renegade-row/step-2.webp",
+          "captionHe": "החזרת המשקולת לרצפה ומשיכת המשקולת ביד הנגדית",
+          "altHe": "חתירה בפלאנק עם משקולות — החזרת המשקולת לרצפה ומשיכת המשקולת ביד הנגדית"
+        }
+      ]
+    },
+    "russian-twist": {
+      "frames": [
+        {
+          "file": "/exercises/russian-twist/step-0.webp",
+          "captionHe": "ישיבה עם ברכיים כפופות וידיים משולבות מול החזה",
+          "altHe": "פיתול רוסי — ישיבה עם ברכיים כפופות וידיים משולבות מול החזה"
+        },
+        {
+          "file": "/exercises/russian-twist/step-1.webp",
+          "captionHe": "סיבוב הגו לצד אחד כשהאגן והרגליים נשארים יציבים",
+          "altHe": "פיתול רוסי — סיבוב הגו לצד אחד כשהאגן והרגליים נשארים יציבים"
+        },
+        {
+          "file": "/exercises/russian-twist/step-2.webp",
+          "captionHe": "סיבוב הגו לצד הנגדי בתנועה מבוקרת",
+          "altHe": "פיתול רוסי — סיבוב הגו לצד הנגדי בתנועה מבוקרת"
+        }
+      ]
+    },
+    "shoulder-press": {
+      "frames": [
+        {
+          "file": "/exercises/shoulder-press/step-0.webp",
+          "captionHe": "המוט על החזה העליון ואחיזה מעט רחבה מהכתפיים",
+          "altHe": "לחיצת כתפיים עם מוט — המוט על החזה העליון ואחיזה מעט רחבה מהכתפיים"
+        },
+        {
+          "file": "/exercises/shoulder-press/step-1.webp",
+          "captionHe": "לחיצה בקו ישר והזזת הראש לאחור כשהמוט עובר מול הפנים",
+          "altHe": "לחיצת כתפיים עם מוט — לחיצה בקו ישר והזזת הראש לאחור כשהמוט עובר מול הפנים"
+        },
+        {
+          "file": "/exercises/shoulder-press/step-2.webp",
+          "captionHe": "יישור הידיים מעל הראש והורדה מבוקרת חזרה",
+          "altHe": "לחיצת כתפיים עם מוט — יישור הידיים מעל הראש והורדה מבוקרת חזרה"
+        }
+      ]
+    },
+    "plank-up-down": {
+      "frames": [
+        {
+          "file": "/exercises/plank-up-down/step-0.webp",
+          "captionHe": "פלאנק על האמות, מרפקים מתחת לכתפיים",
+          "altHe": "עלייה וירידה בפלאנק — פלאנק על האמות, מרפקים מתחת לכתפיים"
+        },
+        {
+          "file": "/exercises/plank-up-down/step-1.webp",
+          "captionHe": "הנחת כף יד ימין ודחיפה, כשהאמה השמאלית עדיין תומכת",
+          "altHe": "עלייה וירידה בפלאנק — הנחת כף יד ימין ודחיפה, כשהאמה השמאלית עדיין תומכת"
+        },
+        {
+          "file": "/exercises/plank-up-down/step-2.webp",
+          "captionHe": "הנחת כף יד שמאל ועלייה לפלאנק על ידיים ישרות",
+          "altHe": "עלייה וירידה בפלאנק — הנחת כף יד שמאל ועלייה לפלאנק על ידיים ישרות"
+        },
+        {
+          "file": "/exercises/plank-up-down/step-3.webp",
+          "captionHe": "הורדת אמה ימין כשכף יד שמאל תומכת, ואז הורדת אמה שמאל לחזרה לפלאנק על האמות; בחזרה הבאה מתחילים ביד שמאל",
+          "altHe": "עלייה וירידה בפלאנק — אמה ימין על הרצפה וכף יד שמאל תומכת בשלב הירידה"
+        }
+      ]
+    },
+    "running-in-place": {
+      "frames": [
+        {
+          "file": "/exercises/running-in-place/step-0.webp",
+          "captionHe": "עמידה זקופה עם מרפקים כפופים",
+          "altHe": "ריצה במקום — עמידה זקופה עם מרפקים כפופים"
+        },
+        {
+          "file": "/exercises/running-in-place/step-1.webp",
+          "captionHe": "צעד ריצה קטן והרמת הברך לגובה נמוך",
+          "altHe": "ריצה במקום — צעד ריצה קטן והרמת הברך לגובה נמוך"
+        },
+        {
+          "file": "/exercises/running-in-place/step-2.webp",
+          "captionHe": "החלפת רגליים והנעת הידיים בתיאום עם הצעדים",
+          "altHe": "ריצה במקום — החלפת רגליים והנעת הידיים בתיאום עם הצעדים"
+        }
+      ]
+    },
+    "crab-walk": {
+      "frames": [
+        {
+          "file": "/exercises/crab-walk/repair-a-0.webp",
+          "captionHe": "הרם את האגן לתמיכת סרטן: שתי כפות הידיים ושתי כפות הרגליים על הרצפה.",
+          "altHe": "תמיכת סרטן בארבע נקודות עם אגן מורם"
+        },
+        {
+          "file": "/exercises/crab-walk/repair-a-1.webp",
+          "captionHe": "התקדם בצעד קטן של יד ימין ורגל שמאל, כשהיד והרגל האחרות תומכות.",
+          "altHe": "יד ימין ורגל שמאל בצעד קטן מעל הרצפה"
+        },
+        {
+          "file": "/exercises/crab-walk/repair-a-2.webp",
+          "captionHe": "הנח אותן והתקדם עם יד שמאל ורגל ימין, בלי להוריד את האגן.",
+          "altHe": "יד שמאל ורגל ימין בצעד קטן, אגן מורם"
+        },
+        {
+          "file": "/exercises/crab-walk/repair-a-3.webp",
+          "captionHe": "חזור לתמיכה בארבע נקודות; החלף כיוון וחזור בצעדים קטנים.",
+          "altHe": "חזרה לתמיכת סרטן לקראת החלפת כיוון"
+        }
+      ]
+    },
+    "diagonal-bound": {
+      "frames": [
+        {
+          "file": "/exercises/diagonal-bound/repair-a-0.webp",
+          "captionHe": "העבר משקל לרגל הקדמית וכופף מעט את הברך לקראת הדחיפה.",
+          "altHe": "הכנה לניתור עם משקל על רגל ימין המסומנת"
+        },
+        {
+          "file": "/exercises/diagonal-bound/repair-a-1.webp",
+          "captionHe": "דחוף באלכסון קדימה והצידה והנע את הברך הנגדית מעלה.",
+          "altHe": "שלב מעוף עם ברך שמאל מורמת ושתי כפות הרגליים באוויר"
+        },
+        {
+          "file": "/exercises/diagonal-bound/repair-a-2.webp",
+          "captionHe": "נחת על הרגל השנייה בברך כפופה; ספוג את הנחיתה והמשך באלכסון הנגדי.",
+          "altHe": "נחיתה על רגל שמאל בברך כפופה ורגל ימין מורמת מאחור"
+        }
+      ]
+    },
+    "glute-bridge-march": {
+      "frames": [
+        {
+          "file": "/exercises/glute-bridge-march/repair-a-0.webp",
+          "captionHe": "דחוף דרך העקבים והרם את האגן לגשר עם שתי כפות הרגליים על הרצפה.",
+          "altHe": "גשר מורם עם שתי כפות הרגליים על הרצפה"
+        },
+        {
+          "file": "/exercises/glute-bridge-march/repair-a-1.webp",
+          "captionHe": "הרם את ברך ימין לכיוון החזה בלי להוריד או לסובב את האגן.",
+          "altHe": "ברך ימין המסומנת מורמת והאגן נשאר בגשר"
+        },
+        {
+          "file": "/exercises/glute-bridge-march/repair-a-2.webp",
+          "captionHe": "החזר את כף רגל ימין לרצפה והרם את ברך שמאל, כשהגשר נשאר יציב.",
+          "altHe": "ברך שמאל מורמת וכף רגל ימין המסומנת תומכת ברצפה"
+        },
+        {
+          "file": "/exercises/glute-bridge-march/repair-a-3.webp",
+          "captionHe": "החזר את שתי כפות הרגליים לרצפה; רק בסיום הצעדים הורד את האגן.",
+          "altHe": "שתי כפות הרגליים על הרצפה והאגן נח על המזרן בסיום"
+        }
+      ]
+    },
+    "heel-touch": {
+      "frames": [
+        {
+          "file": "/exercises/heel-touch/repair-a-0.webp",
+          "captionHe": "שכב בברכיים כפופות, הרם מעט את הכתפיים והשאר את הידיים לצד הגוף.",
+          "altHe": "כתפיים מורמות מעט, ברכיים כפופות וידיים לצד הגוף"
+        },
+        {
+          "file": "/exercises/heel-touch/repair-a-1.webp",
+          "captionHe": "הטה מעט את הגו ימינה וגע בעקב ימין בקצות אצבעות יד ימין.",
+          "altHe": "הטיית הגו ימינה וקצות אצבעות ימין מגיעות לעקב ימין"
+        },
+        {
+          "file": "/exercises/heel-touch/repair-a-2.webp",
+          "captionHe": "הטה את הגו שמאלה וגע בעקב שמאל; הכתפיים נשארות מורמות לאורך הסט.",
+          "altHe": "הטיית הגו שמאלה וקצות אצבעות שמאל מגיעות לעקב שמאל"
+        }
+      ]
+    },
+    "cross-body-crunch": {
+      "frames": [
+        {
+          "file": "/exercises/cross-body-crunch/repair-a-0.webp",
+          "captionHe": "שכב על הגב, כפות רגליים על הרצפה וידיים בעדינות מאחורי הראש.",
+          "altHe": "שכיבה בברכיים כפופות ושתי כפות רגליים על הרצפה"
+        },
+        {
+          "file": "/exercises/cross-body-crunch/repair-a-1.webp",
+          "captionHe": "הרם את כתף ימין לכיוון ברך שמאל וקרב אותה אל הכתף; רגל ימין נשארת כפופה על הרצפה.",
+          "altHe": "כתף ימין מורמת באלכסון לעבר ברך שמאל המורמת"
+        },
+        {
+          "file": "/exercises/cross-body-crunch/repair-a-2.webp",
+          "captionHe": "חזור למצב ההתחלה עם שתי כפות הרגליים על הרצפה.",
+          "altHe": "חזרה לשכיבה עם שתי כפות הרגליים על הרצפה"
+        },
+        {
+          "file": "/exercises/cross-body-crunch/repair-a-3.webp",
+          "captionHe": "הרם את כתף שמאל לכיוון ברך ימין; הכתף מובילה, בלי למשוך את הראש.",
+          "altHe": "כתף שמאל מורמת באלכסון לעבר ברך ימין המורמת"
+        }
+      ]
+    },
+    "cross-body-mountain-climber": {
+      "frames": [
+        {
+          "file": "/exercises/cross-body-mountain-climber/repair-a-0.webp",
+          "captionHe": "התייצב בעמדת שכיבות סמיכה, ידיים ישרות מתחת לכתפיים.",
+          "altHe": "עמדת שכיבות סמיכה בידיים ישרות"
+        },
+        {
+          "file": "/exercises/cross-body-mountain-climber/repair-a-1.webp",
+          "captionHe": "משוך את ברך ימין באלכסון אל מרפק שמאל, כשהאגן נשאר נמוך.",
+          "altHe": "ברך ימין עוברת מתחת לבטן באלכסון למרפק שמאל"
+        },
+        {
+          "file": "/exercises/cross-body-mountain-climber/repair-a-2.webp",
+          "captionHe": "החזר את רגל ימין לאחור לעמדת המוצא.",
+          "altHe": "שתי הרגליים חוזרות לעמדת שכיבות סמיכה"
+        },
+        {
+          "file": "/exercises/cross-body-mountain-climber/repair-a-3.webp",
+          "captionHe": "משוך את ברך שמאל באלכסון אל מרפק ימין והמשך להחליף צדדים בשליטה.",
+          "altHe": "ברך שמאל עוברת באלכסון למרפק ימין"
+        }
+      ]
+    },
+    "dead-bug": {
+      "frames": [
+        {
+          "file": "/exercises/dead-bug/repair-a-0.webp",
+          "captionHe": "שכב על הגב, ידיים לתקרה וברכיים כפופות מעל האגן.",
+          "altHe": "שכיבה עם ידיים מורמות וברכיים כפופות מעל האגן"
+        },
+        {
+          "file": "/exercises/dead-bug/repair-a-1.webp",
+          "captionHe": "הורד לאט את יד ימין מעבר לראש ואת רגל שמאל קדימה, קרוב לרצפה.",
+          "altHe": "יד ימין נעה מעבר לראש ורגל שמאל מתארכת קדימה"
+        },
+        {
+          "file": "/exercises/dead-bug/repair-a-2.webp",
+          "captionHe": "חזור למרכז עם הידיים מורמות ושתי הברכיים כפופות.",
+          "altHe": "חזרה למרכז עם שתי ברכיים כפופות וידיים מורמות"
+        },
+        {
+          "file": "/exercises/dead-bug/repair-a-3.webp",
+          "captionHe": "הורד את יד שמאל ואת רגל ימין; שמור על הגב התחתון צמוד לרצפה.",
+          "altHe": "יד שמאל נעה מעבר לראש ורגל ימין מתארכת קדימה"
+        }
+      ]
+    },
+    "dumbbell-step-up": {
+      "frames": [
+        {
+          "file": "/exercises/dumbbell-step-up/repair-a-0.webp",
+          "captionHe": "החזק משקולת בכל יד והנח את כל כף הרגל המובילה על המדרגה.",
+          "altHe": "כף רגל ימין המסומנת על המדרגה ומשקולות לצד הגוף"
+        },
+        {
+          "file": "/exercises/dumbbell-step-up/repair-a-1.webp",
+          "captionHe": "דחוף דרך העקב עד לעמידה מלאה על המדרגה.",
+          "altHe": "עמידה מלאה על המדרגה עם המשקולות לצד הגוף"
+        },
+        {
+          "file": "/exercises/dumbbell-step-up/repair-a-2.webp",
+          "captionHe": "כופף בשליטה את הרגל המובילה והורד את הרגל השנייה לעבר הרצפה.",
+          "altHe": "רגל שמאל יורדת לעבר הרצפה ורגל ימין נשארת על המדרגה"
+        },
+        {
+          "file": "/exercises/dumbbell-step-up/repair-a-3.webp",
+          "captionHe": "חזור למצב ההתחלה עם אותה רגל מובילה; החלף רגל רק בסיום הסט.",
+          "altHe": "רגל שמאל חזרה לרצפה, אותה רגל ימין מובילה על המדרגה"
+        }
+      ]
+    },
+    "hanging-pike": {
+      "frames": [
+        {
+          "file": "/exercises/hanging-pike/repair-a-0.webp",
+          "captionHe": "היתלה מהמוט באחיזה מעט רחבה מהכתפיים, רגליים יחד.",
+          "altHe": "תלייה על המוט בשתי ידיים ורגליים יחד"
+        },
+        {
+          "file": "/exercises/hanging-pike/repair-a-1.webp",
+          "captionHe": "כופף את הברכיים לכ־90 מעלות והבא את הירכיים קדימה.",
+          "altHe": "ירכיים קדימה וברכיים כפופות בתלייה"
+        },
+        {
+          "file": "/exercises/hanging-pike/repair-a-2.webp",
+          "captionHe": "משוך את הרגליים הכפופות מעלה עד שהשוקיים מתקרבות למוט.",
+          "altHe": "אגן מתקפל מעלה, הברכיים נשארות כפופות והשוקיים מתקרבות למוט"
+        },
+        {
+          "file": "/exercises/hanging-pike/repair-a-3.webp",
+          "captionHe": "הורד באיטיות חזרה לנקודת ההתחלה, בלי נדנוד.",
+          "altHe": "חזרה מבוקרת לתלייה עם ירכיים קדימה וברכיים כפופות"
+        }
+      ]
+    },
+    "strap-hamstring-curl": {
+      "frames": [
+        {
+          "file": "/exercises/strap-hamstring-curl/step-0.webp",
+          "captionHe": "שכב על הגב, רגליים ישרות ושני העקבים בתוך לולאות הרצועות.",
+          "altHe": "שכב על הגב, רגליים ישרות ושני העקבים בתוך לולאות הרצועות."
+        },
+        {
+          "file": "/exercises/strap-hamstring-curl/step-1.webp",
+          "captionHe": "הרם מעט את האגן עד לקו ישר מהכתפיים לעקבים, בלי להקשית את הגב.",
+          "altHe": "הרם מעט את האגן עד לקו ישר מהכתפיים לעקבים, בלי להקשית את הגב."
+        },
+        {
+          "file": "/exercises/strap-hamstring-curl/step-2.webp",
+          "captionHe": "כופף את הברכיים ומשוך את העקבים אל הישבן, כשהאגן נשאר מורם.",
+          "altHe": "כופף את הברכיים ומשוך את העקבים אל הישבן, כשהאגן נשאר מורם."
+        },
+        {
+          "file": "/exercises/strap-hamstring-curl/step-3.webp",
+          "captionHe": "ישר את הרגליים בחזרה בשליטה; האגן נשאר מורם בקו הגוף.",
+          "altHe": "ישר את הרגליים בחזרה בשליטה; האגן נשאר מורם בקו הגוף."
+        }
+      ]
+    },
+    "strap-reverse-lunge": {
+      "frames": [
+        {
+          "file": "/exercises/strap-reverse-lunge/step-0.webp",
+          "captionHe": "עמוד מול העיגון ואחוז בידיות קלות, עם גוף זקוף.",
+          "altHe": "עמוד מול העיגון ואחוז בידיות קלות, עם גוף זקוף."
+        },
+        {
+          "file": "/exercises/strap-reverse-lunge/step-1.webp",
+          "captionHe": "השאר את רגל ימין המסומנת במקום וצעד לאחור ברגל שמאל.",
+          "altHe": "השאר את רגל ימין המסומנת במקום וצעד לאחור ברגל שמאל."
+        },
+        {
+          "file": "/exercises/strap-reverse-lunge/step-2.webp",
+          "captionHe": "רד עד שברך שמאל כמעט נוגעת ברצפה; הרצועות מסייעות לשיווי משקל.",
+          "altHe": "רד עד שברך שמאל כמעט נוגעת ברצפה; הרצועות מסייעות לשיווי משקל."
+        },
+        {
+          "file": "/exercises/strap-reverse-lunge/step-3.webp",
+          "captionHe": "דחוף דרך עקב ימין וחזור לעמידת ההתחלה; החלף צד רק בסיום הסט.",
+          "altHe": "דחוף דרך עקב ימין וחזור לעמידת ההתחלה; החלף צד רק בסיום הסט."
+        }
+      ]
+    },
+    "step-up": {
+      "frames": [
+        {
+          "file": "/exercises/step-up/step-0.webp",
+          "captionHe": "הנח את כף רגל ימין המסומנת במלואה על המדרגה, ורגל שמאל על הרצפה.",
+          "altHe": "הנח את כף רגל ימין המסומנת במלואה על המדרגה, ורגל שמאל על הרצפה."
+        },
+        {
+          "file": "/exercises/step-up/step-1.webp",
+          "captionHe": "דחוף דרך רגל ימין והתרומם מעליה; רגל שמאל מתרוממת מהרצפה.",
+          "altHe": "דחוף דרך רגל ימין והתרומם מעליה; רגל שמאל מתרוממת מהרצפה."
+        },
+        {
+          "file": "/exercises/step-up/step-2.webp",
+          "captionHe": "התיישר על רגל ימין והרם את ברך שמאל לגובה האגן.",
+          "altHe": "התיישר על רגל ימין והרם את ברך שמאל לגובה האגן."
+        },
+        {
+          "file": "/exercises/step-up/step-3.webp",
+          "captionHe": "רד בשליטה והחזר את רגל שמאל לרצפה; רגל ימין נשארת על המשטח.",
+          "altHe": "רד בשליטה והחזר את רגל שמאל לרצפה; רגל ימין נשארת על המשטח."
+        }
+      ]
+    },
+    "strap-mountain-climber": {
+      "frames": [
+        {
+          "file": "/exercises/strap-mountain-climber/step-0.webp",
+          "captionHe": "התחל בפלאנק על הידיים, כששתי כפות הרגליים בתוך לולאות הרצועות.",
+          "altHe": "התחל בפלאנק על הידיים, כששתי כפות הרגליים בתוך לולאות הרצועות."
+        },
+        {
+          "file": "/exercises/strap-mountain-climber/step-1.webp",
+          "captionHe": "משוך את ברך ימין לכיוון החזה; כף הרגל המסומנת נשארת בתוך הלולאה.",
+          "altHe": "משוך את ברך ימין לכיוון החזה; כף הרגל המסומנת נשארת בתוך הלולאה."
+        },
+        {
+          "file": "/exercises/strap-mountain-climber/step-2.webp",
+          "captionHe": "החזר את רגל ימין לאחור לפלאנק, כשהאגן נשאר יציב.",
+          "altHe": "החזר את רגל ימין לאחור לפלאנק, כשהאגן נשאר יציב."
+        },
+        {
+          "file": "/exercises/strap-mountain-climber/step-3.webp",
+          "captionHe": "משוך את ברך שמאל לכיוון החזה והמשך לסירוגין; שתי הרגליים נשארות ברצועות.",
+          "altHe": "משוך את ברך שמאל לכיוון החזה והמשך לסירוגין; שתי הרגליים נשארות ברצועות."
+        }
+      ]
+    },
+    "single-leg-lateral-hop": {
+      "frames": [
+        {
+          "file": "/exercises/single-leg-lateral-hop/step-0.webp",
+          "captionHe": "עמוד על רגל ימין המסומנת לצד הקו, עם ברך מעט כפופה ורגל שמאל באוויר.",
+          "altHe": "עמוד על רגל ימין המסומנת לצד הקו, עם ברך מעט כפופה ורגל שמאל באוויר."
+        },
+        {
+          "file": "/exercises/single-leg-lateral-hop/step-1.webp",
+          "captionHe": "נתר הצידה מעל הקו; רגל שמאל נשארת מורמת.",
+          "altHe": "נתר הצידה מעל הקו; רגל שמאל נשארת מורמת."
+        },
+        {
+          "file": "/exercises/single-leg-lateral-hop/step-2.webp",
+          "captionHe": "נחת מעבר לקו על אותה רגל ימין וספוג את הנחיתה בכיפוף הברך.",
+          "altHe": "נחת מעבר לקו על אותה רגל ימין וספוג את הנחיתה בכיפוף הברך."
+        },
+        {
+          "file": "/exercises/single-leg-lateral-hop/step-3.webp",
+          "captionHe": "נתר בחזרה ונחת על רגל ימין בצד ההתחלה; החלף רגל רק בסיום הסט.",
+          "altHe": "נתר בחזרה ונחת על רגל ימין בצד ההתחלה; החלף רגל רק בסיום הסט."
+        }
+      ]
+    },
+    "split-jump": {
+      "frames": [
+        {
+          "file": "/exercises/split-jump/step-0.webp",
+          "captionHe": "התחל בלאנג׳ עם רגל ימין המסומנת קדימה וברכיים כפופות.",
+          "altHe": "התחל בלאנג׳ עם רגל ימין המסומנת קדימה וברכיים כפופות."
+        },
+        {
+          "file": "/exercises/split-jump/step-1.webp",
+          "captionHe": "נתר מעלה והחלף את מיקום הרגליים באוויר.",
+          "altHe": "נתר מעלה והחלף את מיקום הרגליים באוויר."
+        },
+        {
+          "file": "/exercises/split-jump/step-2.webp",
+          "captionHe": "נחת רך עם רגל שמאל קדימה ורגל ימין המסומנת מאחור.",
+          "altHe": "נחת רך עם רגל שמאל קדימה ורגל ימין המסומנת מאחור."
+        }
+      ]
+    },
+    "walking-lunge": {
+      "frames": [
+        {
+          "file": "/exercises/walking-lunge/step-0.webp",
+          "captionHe": "עמוד זקוף לפני הצעד הראשון.",
+          "altHe": "עמוד זקוף לפני הצעד הראשון."
+        },
+        {
+          "file": "/exercises/walking-lunge/step-1.webp",
+          "captionHe": "צעד קדימה ברגל ימין המסומנת ורד ללאנג׳, כשהברך האחורית קרובה לרצפה.",
+          "altHe": "צעד קדימה ברגל ימין המסומנת ורד ללאנג׳, כשהברך האחורית קרובה לרצפה."
+        },
+        {
+          "file": "/exercises/walking-lunge/step-2.webp",
+          "captionHe": "דחוף דרך העקב הקדמי, קום והעבר את רגל שמאל קדימה.",
+          "altHe": "דחוף דרך העקב הקדמי, קום והעבר את רגל שמאל קדימה."
+        },
+        {
+          "file": "/exercises/walking-lunge/step-3.webp",
+          "captionHe": "רד ללאנג׳ הבא עם רגל שמאל קדימה ורגל ימין המסומנת מאחור.",
+          "altHe": "רד ללאנג׳ הבא עם רגל שמאל קדימה ורגל ימין המסומנת מאחור."
+        }
+      ]
+    },
+    "spiderman-pushup": {
+      "frames": [
+        {
+          "file": "/exercises/spiderman-pushup/step-0.webp",
+          "captionHe": "התחל בפלאנק גבוה, ידיים ברוחב הכתפיים וגוף בקו ישר.",
+          "altHe": "התחל בפלאנק גבוה, ידיים ברוחב הכתפיים וגוף בקו ישר."
+        },
+        {
+          "file": "/exercises/spiderman-pushup/step-1.webp",
+          "captionHe": "רד לשכיבת סמיכה ובמקביל הבא את ברך ימין החוצה לכיוון מרפק ימין.",
+          "altHe": "רד לשכיבת סמיכה ובמקביל הבא את ברך ימין החוצה לכיוון מרפק ימין."
+        },
+        {
+          "file": "/exercises/spiderman-pushup/step-2.webp",
+          "captionHe": "החזר את רגל ימין ודחוף חזרה לפלאנק גבוה — זהו שלב החזרה.",
+          "altHe": "החזר את רגל ימין ודחוף חזרה לפלאנק גבוה — זהו שלב החזרה."
+        },
+        {
+          "file": "/exercises/spiderman-pushup/step-3.webp",
+          "captionHe": "בחזרה הבאה רד והבא את ברך שמאל לכיוון מרפק שמאל, בלי לסובב את האגן.",
+          "altHe": "בחזרה הבאה רד והבא את ברך שמאל לכיוון מרפק שמאל, בלי לסובב את האגן."
+        }
+      ]
+    },
+    "star-jump": {
+      "frames": [
+        {
+          "file": "/exercises/star-jump/step-0.webp",
+          "captionHe": "התחל בחצי סקוואט, עם ידיים קרובות לגוף.",
+          "altHe": "התחל בחצי סקוואט, עם ידיים קרובות לגוף."
+        },
+        {
+          "file": "/exercises/star-jump/step-1.webp",
+          "captionHe": "קפוץ ופתח את הידיים והרגליים לצדדים לצורת כוכב.",
+          "altHe": "קפוץ ופתח את הידיים והרגליים לצדדים לצורת כוכב."
+        },
+        {
+          "file": "/exercises/star-jump/step-2.webp",
+          "captionHe": "בדרך לנחיתה קרב את הרגליים והורד את הידיים, עם ברכיים רכות.",
+          "altHe": "בדרך לנחיתה קרב את הרגליים והורד את הידיים, עם ברכיים רכות."
+        },
+        {
+          "file": "/exercises/star-jump/step-3.webp",
+          "captionHe": "נחת בחזרה לחצי סקוואט וספוג ברכות את הנחיתה בשתי הרגליים.",
+          "altHe": "נחת בחזרה לחצי סקוואט וספוג ברכות את הנחיתה בשתי הרגליים."
+        }
+      ]
+    },
+    "spider-crawl": {
+      "frames": [
+        {
+          "file": "/exercises/spider-crawl/step-0.webp",
+          "captionHe": "החזק עמדה נמוכה עם מרפקים כפופים בערך בתשעים מעלות וגב ישר.",
+          "altHe": "החזק עמדה נמוכה עם מרפקים כפופים בערך בתשעים מעלות וגב ישר."
+        },
+        {
+          "file": "/exercises/spider-crawl/step-1.webp",
+          "captionHe": "הבא את ברך ימין החוצה לכיוון מרפק ימין, כשכף הרגל המסומנת מורמת.",
+          "altHe": "הבא את ברך ימין החוצה לכיוון מרפק ימין, כשכף הרגל המסומנת מורמת."
+        },
+        {
+          "file": "/exercises/spider-crawl/step-2.webp",
+          "captionHe": "החזר את רגל ימין לאחור והישאר בעמדה הנמוכה.",
+          "altHe": "החזר את רגל ימין לאחור והישאר בעמדה הנמוכה."
+        },
+        {
+          "file": "/exercises/spider-crawl/step-3.webp",
+          "captionHe": "הבא את ברך שמאל החוצה לכיוון מרפק שמאל; רגל ימין נשארת ישרה מאחור.",
+          "altHe": "הבא את ברך שמאל החוצה לכיוון מרפק שמאל; רגל ימין נשארת ישרה מאחור."
+        }
+      ]
+    },
+    "handstand-pushup": {
+      "frames": [
+        {
+          "file": "/exercises/handstand-pushup/step-repair-c-0.webp",
+          "captionHe": "עמידת ידיים — הגב לקיר והעקבים נשענים עליו",
+          "altHe": "שכיבות סמיכה בעמידת ידיים — עמידת ידיים — הגב לקיר והעקבים נשענים עליו"
+        },
+        {
+          "file": "/exercises/handstand-pushup/step-repair-c-1.webp",
+          "captionHe": "כפיפת מרפקים וירידה מבוקרת",
+          "altHe": "שכיבות סמיכה בעמידת ידיים — כפיפת מרפקים וירידה מבוקרת"
+        },
+        {
+          "file": "/exercises/handstand-pushup/step-repair-c-2.webp",
+          "captionHe": "דחיפה חזרה מעלה ויישור המרפקים",
+          "altHe": "שכיבות סמיכה בעמידת ידיים — דחיפה חזרה מעלה ויישור המרפקים"
+        }
+      ]
+    },
+    "hollow-rock": {
+      "frames": [
+        {
+          "file": "/exercises/hollow-rock/step-repair-c-0.webp",
+          "captionHe": "החזקת סירה — ידיים מעבר לראש ורגליים באוויר",
+          "altHe": "נדנוד סירה — החזקת סירה — ידיים מעבר לראש ורגליים באוויר"
+        },
+        {
+          "file": "/exercises/hollow-rock/step-repair-c-1.webp",
+          "captionHe": "נדנוד לכיוון הגב העליון — הרגליים עולות",
+          "altHe": "נדנוד סירה — נדנוד לכיוון הגב העליון — הרגליים עולות"
+        },
+        {
+          "file": "/exercises/hollow-rock/step-repair-c-2.webp",
+          "captionHe": "נדנוד בחזרה — הרגליים יורדות בלי לגעת ברצפה",
+          "altHe": "נדנוד סירה — נדנוד בחזרה — הרגליים יורדות בלי לגעת ברצפה"
+        }
+      ]
+    },
+    "jumping-jacks": {
+      "frames": [
+        {
+          "file": "/exercises/jumping-jacks/step-repair-c-0.webp",
+          "captionHe": "רגליים צמודות וידיים לצד הגוף",
+          "altHe": "ג'אמפינג ג'קס — רגליים צמודות וידיים לצד הגוף"
+        },
+        {
+          "file": "/exercises/jumping-jacks/step-repair-c-1.webp",
+          "captionHe": "קפיצה — הידיים והרגליים נפתחות יחד",
+          "altHe": "ג'אמפינג ג'קס — קפיצה — הידיים והרגליים נפתחות יחד"
+        },
+        {
+          "file": "/exercises/jumping-jacks/step-repair-c-2.webp",
+          "captionHe": "נחיתה בפישוק עם הידיים מעל הראש",
+          "altHe": "ג'אמפינג ג'קס — נחיתה בפישוק עם הידיים מעל הראש"
+        }
+      ]
+    },
+    "yoga-supported-wrist-stretch": {
+      "frames": [
+        {
+          "file": "/exercises/yoga-supported-wrist-stretch/step-0.webp",
+          "captionHe": "ישיבה יציבה וכפות רגליים על הרצפה",
+          "altHe": "יוגה בישיבה — מתיחת שורשי כפות הידיים — ישיבה יציבה וכפות רגליים על הרצפה."
+        },
+        {
+          "file": "/exercises/yoga-supported-wrist-stretch/step-1.webp",
+          "captionHe": "כפות ידיים לצד האגן; לחץ קל בלבד",
+          "altHe": "יוגה בישיבה — מתיחת שורשי כפות הידיים — כפות ידיים לצד האגן; לחץ קל בלבד."
+        }
+      ]
+    },
+    "yoga-seated-neck-tilt": {
+      "frames": [
+        {
+          "file": "/exercises/yoga-seated-neck-tilt/step-0.webp",
+          "captionHe": "מתארכים בישיבה, כתפיים רפויות",
+          "altHe": "יוגה בישיבה — הטיית ראש לצד — מתארכים בישיבה, כתפיים רפויות."
+        },
+        {
+          "file": "/exercises/yoga-seated-neck-tilt/step-1.webp",
+          "captionHe": "הטיה קטנה לצד — בתמונה לשמאל",
+          "altHe": "יוגה בישיבה — הטיית ראש לצד — הטיה קטנה לצד — בתמונה לשמאל."
+        }
+      ]
+    },
+    "yoga-seated-chest-opening": {
+      "frames": [
+        {
+          "file": "/exercises/yoga-seated-chest-opening/step-0.webp",
+          "captionHe": "ישיבה גבוהה וידיים על הירכיים",
+          "altHe": "יוגה בישיבה — פתיחת חזה קטנה — ישיבה גבוהה וידיים על הירכיים."
+        },
+        {
+          "file": "/exercises/yoga-seated-chest-opening/step-1.webp",
+          "captionHe": "מרימים מעט את החזה בשאיפה",
+          "altHe": "יוגה בישיבה — פתיחת חזה קטנה — מרימים מעט את החזה בשאיפה."
+        }
+      ]
+    },
+    "yoga-seated-side-bend": {
+      "frames": [
+        {
+          "file": "/exercises/yoga-seated-side-bend/step-0.webp",
+          "captionHe": "מרימים יד אחת, האגן נשאר יציב",
+          "altHe": "יוגה בישיבה — כפיפה צידית — מרימים יד אחת, האגן נשאר יציב."
+        },
+        {
+          "file": "/exercises/yoga-seated-side-bend/step-1.webp",
+          "captionHe": "כפיפה צידית קטנה לימין",
+          "altHe": "יוגה בישיבה — כפיפה צידית — כפיפה צידית קטנה לימין."
+        },
+        {
+          "file": "/exercises/yoga-seated-side-bend/step-2.webp",
+          "captionHe": "חוזרים למרכז לפני החלפת הצד",
+          "altHe": "יוגה בישיבה — כפיפה צידית — חוזרים למרכז לפני החלפת הצד."
+        }
+      ]
+    },
+    "yoga-seated-twist": {
+      "frames": [
+        {
+          "file": "/exercises/yoga-seated-twist/step-0.webp",
+          "captionHe": "ידיים מוצלבות ברפיון, אגן וברכיים קדימה",
+          "altHe": "יוגה בישיבה — פיתול גו קטן — ידיים מוצלבות ברפיון, אגן וברכיים קדימה."
+        },
+        {
+          "file": "/exercises/yoga-seated-twist/step-1.webp",
+          "captionHe": "מסובבים יחד את בית החזה והראש — בתמונה לשמאל",
+          "altHe": "יוגה בישיבה — פיתול גו קטן — מסובבים יחד את בית החזה והראש — בתמונה לשמאל."
+        }
+      ]
+    },
+    "dance-body-shape-exploration": {
+      "frames": [
+        {
+          "file": "/exercises/dance-body-shape-exploration/step-0.webp",
+          "captionHe": "בוחרים צורה ראשונה: קווים של עץ",
+          "altHe": "מחול יצירתי — שלוש צורות גוף — בוחרים צורה ראשונה: קווים של עץ."
+        },
+        {
+          "file": "/exercises/dance-body-shape-exploration/step-1.webp",
+          "captionHe": "צורה שנייה: קשת מעל הגוף",
+          "altHe": "מחול יצירתי — שלוש צורות גוף — צורה שנייה: קשת מעל הגוף."
+        },
+        {
+          "file": "/exercises/dance-body-shape-exploration/step-2.webp",
+          "captionHe": "צורה שלישית: ידיים פונות זו אל זו",
+          "altHe": "מחול יצירתי — שלוש צורות גוף — צורה שלישית: ידיים פונות זו אל זו."
+        }
+      ]
+    },
+    "dance-energy-contrast-phrase": {
+      "frames": [
+        {
+          "file": "/exercises/dance-energy-contrast-phrase/step-0.webp",
+          "captionHe": "רצף לדוגמה: שני צעדים הצדה",
+          "altHe": "מחול יצירתי — רצף בשתי איכויות — רצף לדוגמה: שני צעדים הצדה."
+        },
+        {
+          "file": "/exercises/dance-energy-contrast-phrase/step-1.webp",
+          "captionHe": "אותה הושטת יד — תחילה רציפה ואחר כך עם עצירה",
+          "altHe": "מחול יצירתי — רצף בשתי איכויות — אותה הושטת יד — תחילה רציפה ואחר כך עם עצירה."
+        },
+        {
+          "file": "/exercises/dance-energy-contrast-phrase/step-2.webp",
+          "captionHe": "חוזרים לעמידה ומתחילים שוב",
+          "altHe": "מחול יצירתי — רצף בשתי איכויות — חוזרים לעמידה ומתחילים שוב."
+        }
+      ]
+    },
+    "dance-pathway-levels": {
+      "frames": [
+        {
+          "file": "/exercises/dance-pathway-levels/step-0.webp",
+          "captionHe": "מתכננים מסלול ומפנים את הרצפה",
+          "altHe": "מחול יצירתי — מסלול ושינויי גובה — מתכננים מסלול ומפנים את הרצפה."
+        },
+        {
+          "file": "/exercises/dance-pathway-levels/step-1.webp",
+          "captionHe": "הולכים במסלול בגובה רגיל",
+          "altHe": "מחול יצירתי — מסלול ושינויי גובה — הולכים במסלול בגובה רגיל."
+        },
+        {
+          "file": "/exercises/dance-pathway-levels/step-2.webp",
+          "captionHe": "משנים לגובה נמוך מעט",
+          "altHe": "מחול יצירתי — מסלול ושינויי גובה — משנים לגובה נמוך מעט."
+        },
+        {
+          "file": "/exercises/dance-pathway-levels/step-3.webp",
+          "captionHe": "מתארכים וחוזרים להליכה זקופה",
+          "altHe": "מחול יצירתי — מסלול ושינויי גובה — מתארכים וחוזרים להליכה זקופה."
+        }
+      ]
+    },
+    "dance-speech-rhythm": {
+      "frames": [
+        {
+          "file": "/exercises/dance-speech-rhythm/step-0.webp",
+          "captionHe": "אומרים משפט ומקשיבים למקצב",
+          "altHe": "מחול יצירתי — מקצב של משפט — אומרים משפט ומקשיבים למקצב."
+        },
+        {
+          "file": "/exercises/dance-speech-rhythm/step-1.webp",
+          "captionHe": "מוחאים בעדינות את מקצב ההברות",
+          "altHe": "מחול יצירתי — מקצב של משפט — מוחאים בעדינות את מקצב ההברות."
+        },
+        {
+          "file": "/exercises/dance-speech-rhythm/step-2.webp",
+          "captionHe": "מחליפים פעימה בצעד והושטת יד",
+          "altHe": "מחול יצירתי — מקצב של משפט — מחליפים פעימה בצעד והושטת יד."
+        }
+      ]
+    },
+    "dance-out-out-in-in": {
+      "frames": [
+        {
+          "file": "/exercises/dance-out-out-in-in/step-0.webp",
+          "captionHe": "יד ראשונה יוצאת למרחב",
+          "altHe": "מחול יצירתי בישיבה — החוצה ופנימה — יד ראשונה יוצאת למרחב."
+        },
+        {
+          "file": "/exercises/dance-out-out-in-in/step-1.webp",
+          "captionHe": "היד השנייה יוצאת בכיוון אחר",
+          "altHe": "מחול יצירתי בישיבה — החוצה ופנימה — היד השנייה יוצאת בכיוון אחר."
+        },
+        {
+          "file": "/exercises/dance-out-out-in-in/step-2.webp",
+          "captionHe": "היד הראשונה חוזרת פנימה",
+          "altHe": "מחול יצירתי בישיבה — החוצה ופנימה — היד הראשונה חוזרת פנימה."
+        },
+        {
+          "file": "/exercises/dance-out-out-in-in/step-3.webp",
+          "captionHe": "גם היד השנייה חוזרת למרכז",
+          "altHe": "מחול יצירתי בישיבה — החוצה ופנימה — גם היד השנייה חוזרת למרכז."
+        }
+      ]
+    },
+    "dance-pass-the-gesture": {
+      "frames": [
+        {
+          "file": "/exercises/dance-pass-the-gesture/step-0.webp",
+          "captionHe": "מתיישבים במעגל עם מרווח לידיים",
+          "altHe": "מחול יצירתי בקבוצה — מעבירים מחווה — מתיישבים במעגל עם מרווח לידיים."
+        },
+        {
+          "file": "/exercises/dance-pass-the-gesture/step-1.webp",
+          "captionHe": "משתתף ראשון יוצר מחווה",
+          "altHe": "מחול יצירתי בקבוצה — מעבירים מחווה — משתתף ראשון יוצר מחווה."
+        },
+        {
+          "file": "/exercises/dance-pass-the-gesture/step-2.webp",
+          "captionHe": "מסמנים למשתתף הבא",
+          "altHe": "מחול יצירתי בקבוצה — מעבירים מחווה — מסמנים למשתתף הבא."
+        },
+        {
+          "file": "/exercises/dance-pass-the-gesture/step-3.webp",
+          "captionHe": "הבא משנה את המחווה ומעביר הלאה",
+          "altHe": "מחול יצירתי בקבוצה — מעבירים מחווה — הבא משנה את המחווה ומעביר הלאה."
+        }
+      ]
+    },
+    "dance-variable-tempo-walk": {
+      "frames": [
+        {
+          "file": "/exercises/dance-variable-tempo-walk/step-0.webp",
+          "captionHe": "צעד קצר בקצב לבחירה",
+          "altHe": "מחול יצירתי — הליכה בקצב משתנה — צעד קצר בקצב לבחירה."
+        },
+        {
+          "file": "/exercises/dance-variable-tempo-walk/step-1.webp",
+          "captionHe": "צעד רחב יותר, ללא ריצה",
+          "altHe": "מחול יצירתי — הליכה בקצב משתנה — צעד רחב יותר, ללא ריצה."
+        },
+        {
+          "file": "/exercises/dance-variable-tempo-walk/step-2.webp",
+          "captionHe": "מסיימים בהאטה ובעמידה יציבה",
+          "altHe": "מחול יצירתי — הליכה בקצב משתנה — מסיימים בהאטה ובעמידה יציבה."
+        }
+      ]
+    },
+    "treadmill-run": {
+      "frames": [
+        {
+          "file": "/exercises/treadmill-run/step-0.webp",
+          "captionHe": "עלה כשהמסילה עצורה והכר את מיקום כפתור העצירה.",
+          "altHe": "עמידה על המסילה והצבעה על כפתור העצירה"
+        },
+        {
+          "file": "/exercises/treadmill-run/step-1.webp",
+          "captionHe": "התחל בהליכה איטית במרכז המסילה.",
+          "altHe": "הליכה זקופה במרכז המסילה"
+        },
+        {
+          "file": "/exercises/treadmill-run/step-2.webp",
+          "captionHe": "העלה מהירות בהדרגה לקצב ריצה נוח, בלי להישען על המעקות.",
+          "altHe": "ריצה על המסילה בידיים חופשיות"
+        },
+        {
+          "file": "/exercises/treadmill-run/step-3.webp",
+          "captionHe": "האט בהדרגה להליכה; רק לאחר ההאטה עצור את המסילה.",
+          "altHe": "הליכה עם יד המגיעה לכפתור העצירה"
+        }
+      ]
+    },
+    "stationary-bike": {
+      "frames": [
+        {
+          "file": "/exercises/stationary-bike/step-0.webp",
+          "captionHe": "כוון מושב כך שהברך נשארת מעט כפופה כשהדוושה למטה.",
+          "altHe": "ישיבה על אופני כושר עם דוושה סמוך לתחתית הסיבוב"
+        },
+        {
+          "file": "/exercises/stationary-bike/step-1.webp",
+          "captionHe": "המשך לדווש כשהדוושה עולה והברך מתכופפת.",
+          "altHe": "ברך מתכופפת כשהדוושה עולה"
+        },
+        {
+          "file": "/exercises/stationary-bike/step-2.webp",
+          "captionHe": "העבר את הדוושה דרך החלק העליון של הסיבוב, בלי להזיז את האגן מהמושב.",
+          "altHe": "דוושה בחלק העליון של הסיבוב"
+        },
+        {
+          "file": "/exercises/stationary-bike/step-3.webp",
+          "captionHe": "דחוף את הדוושה מטה והמשך בסיבוב רציף; הידיים נשענות קלות בלבד.",
+          "altHe": "דוושה נעה קדימה ומטה"
+        }
+      ]
+    },
+    "elliptical-trainer": {
+      "frames": [
+        {
+          "file": "/exercises/elliptical-trainer/step-0.webp",
+          "captionHe": "עמוד זקוף על הדוושות ואחוז בידיות הנעות.",
+          "altHe": "עמידה זקופה על אליפטיקל ואחיזה בידיות"
+        },
+        {
+          "file": "/exercises/elliptical-trainer/step-1.webp",
+          "captionHe": "קדם רגל אחת ואת היד הנגדית בתנועה חלקה.",
+          "altHe": "רגל קרובה עם פס כתום קדימה והיד הנגדית קדימה"
+        },
+        {
+          "file": "/exercises/elliptical-trainer/step-2.webp",
+          "captionHe": "החלף בין הרגליים והידיים והמשך במחזור רציף, בלי להישען על הידיות.",
+          "altHe": "הרגל הקרובה עם הפס הכתום לאחור והיד הקרובה קדימה"
+        }
+      ]
+    },
+    "stair-climber-machine": {
+      "frames": [
+        {
+          "file": "/exercises/stair-climber-machine/step-0.webp",
+          "captionHe": "התחל בקצב איטי, עם גוף זקוף ומגע קל במעקה לאיזון.",
+          "altHe": "כף רגל ימין במדרגה העליונה וכף רגל שמאל בתחתונה"
+        },
+        {
+          "file": "/exercises/stair-climber-machine/step-1.webp",
+          "captionHe": "העבר את המשקל לרגל התומכת והרם את הרגל השנייה אל המדרגה הבאה.",
+          "altHe": "עמידה על רגל ימין והרמת רגל שמאל אל המדרגה הבאה"
+        },
+        {
+          "file": "/exercises/stair-climber-machine/step-2.webp",
+          "captionHe": "העבר את המשקל לרגל השנייה והמשך לטפס בלי להישען על המעקות.",
+          "altHe": "כף רגל שמאל במדרגה העליונה וכף רגל ימין בתחתונה"
+        }
+      ]
+    },
+    "capoeira-ginga-alternating-step": {
+      "frames": [
+        {
+          "file": "/exercises/capoeira-ginga-alternating-step/step-0.webp",
+          "captionHe": "רגל ימין לאחור ויד ימין לפנים",
+          "altHe": "ג׳ינגה — חילוף בסיס בסולו — רגל ימין לאחור ויד ימין לפנים"
+        },
+        {
+          "file": "/exercises/capoeira-ginga-alternating-step/step-1.webp",
+          "captionHe": "מעבר בבסיס רחב",
+          "altHe": "ג׳ינגה — חילוף בסיס בסולו — מעבר בבסיס רחב"
+        },
+        {
+          "file": "/exercises/capoeira-ginga-alternating-step/step-2.webp",
+          "captionHe": "רגל שמאל לאחור ויד שמאל לפנים",
+          "altHe": "ג׳ינגה — חילוף בסיס בסולו — רגל שמאל לאחור ויד שמאל לפנים"
+        }
+      ]
+    },
+    "capoeira-martelo-standing": {
+      "frames": [
+        {
+          "file": "/exercises/capoeira-martelo-standing/step-0.webp",
+          "captionHe": "בסיס מדורג וידיים בהגנה",
+          "altHe": "מרטלו בעמידה — בסיס מדורג וידיים בהגנה"
+        },
+        {
+          "file": "/exercises/capoeira-martelo-standing/step-1.webp",
+          "captionHe": "ברך שמאל כפופה ורגל ימין מסתובבת בתמיכה",
+          "altHe": "מרטלו בעמידה — ברך שמאל כפופה ורגל ימין מסתובבת בתמיכה"
+        },
+        {
+          "file": "/exercises/capoeira-martelo-standing/step-2.webp",
+          "captionHe": "הארכת שוק שמאל — גב כף הרגל ממשיך את השוק",
+          "altHe": "מרטלו בעמידה — הארכת שוק שמאל — גב כף הרגל ממשיך את השוק"
+        }
+      ]
+    },
+    "capoeira-armada-controlled-turn": {
+      "frames": [
+        {
+          "file": "/exercises/capoeira-armada-controlled-turn/step-0.webp",
+          "captionHe": "בסיס מול נקודת ההתחלה",
+          "altHe": "ארמדה — סיבוב ובעיטת קשת בסולו — בסיס מול נקודת ההתחלה"
+        },
+        {
+          "file": "/exercises/capoeira-armada-controlled-turn/step-1.webp",
+          "captionHe": "הגב עובר מול הכיוון המקורי",
+          "altHe": "ארמדה — סיבוב ובעיטת קשת בסולו — הגב עובר מול הכיוון המקורי"
+        },
+        {
+          "file": "/exercises/capoeira-armada-controlled-turn/step-2.webp",
+          "captionHe": "קשת נמוכה עם המשך הסיבוב",
+          "altHe": "ארמדה — סיבוב ובעיטת קשת בסולו — קשת נמוכה עם המשך הסיבוב"
+        }
+      ]
+    }
+  },
+  "warmup": {
+    "deep-squat-hold": {
+      "frames": [
+        {
+          "file": "/warmup/deep-squat-hold/1.webp",
+          "captionHe": "החזק כריעה בעומק נוח, עם עקבים על הרצפה וגב ארוך.",
+          "altHe": "סקוואט עמוק בהחזקה — החזק כריעה בעומק נוח, עם עקבים על הרצפה וגב ארוך."
+        }
+      ]
+    },
+    "standing-quad": {
+      "frames": [
+        {
+          "file": "/warmup/standing-quad/1.webp",
+          "captionHe": "החזק את הקרסול מאחור וברכיים סמוכות; היעזר בקיר לשיווי משקל.",
+          "altHe": "מתיחת ארבע ראשי בעמידה — החזק את הקרסול מאחור וברכיים סמוכות; היעזר בקיר לשיווי משקל."
+        }
+      ]
+    },
+    "seated-hamstring": {
+      "frames": [
+        {
+          "file": "/warmup/seated-hamstring/1.webp",
+          "captionHe": "הטה את הגו קדימה מהאגן עד מתיחה עדינה בצד האחורי של הירכיים.",
+          "altHe": "מתיחת אחורי ירך בישיבה — הטה את הגו קדימה מהאגן עד מתיחה עדינה בצד האחורי של הירכיים."
+        }
+      ]
+    },
+    "figure-four": {
+      "frames": [
+        {
+          "file": "/warmup/figure-four/1.webp",
+          "captionHe": "הנח קרסול על הירך הנגדית וקרב בעדינות את הרגל התומכת אליך.",
+          "altHe": "מתיחת ישבן בשכיבה (ארבע) — הנח קרסול על הירך הנגדית וקרב בעדינות את הרגל התומכת אליך."
+        }
+      ]
+    },
+    "kneeling-hip-flexor": {
+      "frames": [
+        {
+          "file": "/warmup/kneeling-hip-flexor/1.webp",
+          "captionHe": "מחצי כריעה העבר מעט משקל קדימה בלי להקשית את הגב.",
+          "altHe": "מתיחת כופפי ירך בכריעה — מחצי כריעה העבר מעט משקל קדימה בלי להקשית את הגב."
+        }
+      ]
+    },
+    "wall-calf": {
+      "frames": [
+        {
+          "file": "/warmup/wall-calf/1.webp",
+          "captionHe": "השאר את העקב האחורי על הרצפה והטה את הגוף בעדינות לקיר.",
+          "altHe": "מתיחת תאומים מול קיר — השאר את העקב האחורי על הרצפה והטה את הגוף בעדינות לקיר."
+        }
+      ]
+    },
+    "doorway-chest": {
+      "frames": [
+        {
+          "file": "/warmup/doorway-chest/1.webp",
+          "captionHe": "הנח אמה על המשקוף והתקדם בעדינות עד מתיחה בחזה.",
+          "altHe": "מתיחת חזה במשקוף — הנח אמה על המשקוף והתקדם בעדינות עד מתיחה בחזה."
+        }
+      ]
+    },
+    "childs-pose": {
+      "frames": [
+        {
+          "file": "/warmup/childs-pose/1.webp",
+          "captionHe": "שלח ישבן לאחור וידיים לפנים, בטווח נוח וללא מאמץ.",
+          "altHe": "תנוחת ילד — שלח ישבן לאחור וידיים לפנים, בטווח נוח וללא מאמץ."
+        }
+      ]
+    },
+    "lat-side-reach": {
+      "frames": [
+        {
+          "file": "/warmup/lat-side-reach/1.webp",
+          "captionHe": "הטה את הגוף הצידה בעדינות והארך את הצד שמתחת ליד המורמת.",
+          "altHe": "מתיחת צד ורחב גבי — הטה את הגוף הצידה בעדינות והארך את הצד שמתחת ליד המורמת."
+        }
+      ]
+    },
+    "cross-shoulder": {
+      "frames": [
+        {
+          "file": "/warmup/cross-shoulder/1.webp",
+          "captionHe": "קרב זרוע ישרה לרוחב החזה, בלי להרים את הכתף.",
+          "altHe": "מתיחת כתף חוצה גוף — קרב זרוע ישרה לרוחב החזה, בלי להרים את הכתף."
+        }
+      ]
+    },
+    "overhead-triceps": {
+      "frames": [
+        {
+          "file": "/warmup/overhead-triceps/1.webp",
+          "captionHe": "כופף מרפק מעל הראש וסייע בעדינות עם היד השנייה.",
+          "altHe": "מתיחת יד אחורית מעל הראש — כופף מרפק מעל הראש וסייע בעדינות עם היד השנייה."
+        }
+      ]
+    },
+    "prayer-forearms": {
+      "frames": [
+        {
+          "file": "/warmup/prayer-forearms/1.webp",
+          "captionHe": "הצמד כפות ידיים עם אצבעות למטה והרם מרפקים בעדינות.",
+          "altHe": "מתיחת אמות בתפילה הפוכה — הצמד כפות ידיים עם אצבעות למטה והרם מרפקים בעדינות."
+        }
+      ]
+    },
+    "cobra": {
+      "frames": [
+        {
+          "file": "/warmup/cobra/1.webp",
+          "captionHe": "הרם את החזה בעזרת הידיים, כשהאגן נשאר על הרצפה.",
+          "altHe": "מתיחת בטן בשכיבה (קוברה) — הרם את החזה בעזרת הידיים, כשהאגן נשאר על הרצפה."
+        }
+      ]
+    },
+    "upper-back-hug": {
+      "frames": [
+        {
+          "file": "/warmup/upper-back-hug/1.webp",
+          "captionHe": "חבק את הכתפיים והרחב בעדינות את הגב העליון.",
+          "altHe": "חיבוק עצמי לגב עליון — חבק את הכתפיים והרחב בעדינות את הגב העליון."
+        }
+      ]
+    },
+    "walking-easy": {
+      "frames": [
+        {
+          "file": "/warmup/walking-easy/step-0.webp",
+          "captionHe": "הליכה קלה בצעדים קצרים, עם תנועת ידיים טבעית ונשימה נינוחה.",
+          "altHe": "הליכה קלה בצעדים קצרים, עם תנועת ידיים טבעית ונשימה נינוחה."
+        }
+      ]
+    },
+    "arm-crossovers": {
+      "frames": [
+        {
+          "file": "/warmup/arm-crossovers/phase-0.webp",
+          "captionHe": "פתח את הידיים לצדדים בגובה הכתפיים.",
+          "altHe": "ידיים פרושות לצדדים, צמיד כחול על יד ימין"
+        },
+        {
+          "file": "/warmup/arm-crossovers/phase-1.webp",
+          "captionHe": "הצלב את הידיים מול החזה, יד ימין מעל שמאל.",
+          "altHe": "יד ימין עם הצמיד הכחול מוצלבת מעל יד שמאל"
+        },
+        {
+          "file": "/warmup/arm-crossovers/phase-2.webp",
+          "captionHe": "פתח שוב והצלב בכיוון ההפוך, יד שמאל מעל ימין; המשך לסירוגין.",
+          "altHe": "יד שמאל מוצלבת מעל יד ימין עם הצמיד הכחול"
+        }
+      ]
+    },
+    "neck-half-circles": {
+      "frames": [
+        {
+          "file": "/warmup/neck-half-circles/step-0.webp",
+          "captionHe": "הטה את הסנטר בעדינות לכיוון כתף אחת, עם מבט מטה.",
+          "altHe": "סנטר מופנה מטה לעבר כתף אחת"
+        },
+        {
+          "file": "/warmup/neck-half-circles/step-1.webp",
+          "captionHe": "העבר את הסנטר דרך מרכז החזה בתנועה איטית.",
+          "altHe": "סנטר מטה מול מרכז החזה"
+        },
+        {
+          "file": "/warmup/neck-half-circles/step-2.webp",
+          "captionHe": "המשך אל הכתף השנייה; חזור באותו מסלול קדמי, בלי להטות לאחור.",
+          "altHe": "סנטר מופנה מטה לעבר הכתף השנייה"
+        }
+      ]
+    },
+    "worlds-greatest": {
+      "frames": [
+        {
+          "file": "/warmup/worlds-greatest/step-0.webp",
+          "captionHe": "צעד צעד גדול קדימה ללאנג׳ נמוך.",
+          "altHe": "לאנג׳ ארוך עם ידיים על הירך הקדמית"
+        },
+        {
+          "file": "/warmup/worlds-greatest/step-1.webp",
+          "captionHe": "הנח את שתי כפות הידיים על הרצפה בצד הפנימי של הרגל הקדמית.",
+          "altHe": "שתי כפות ידיים על הרצפה בתוך הרגל הקדמית"
+        },
+        {
+          "file": "/warmup/worlds-greatest/step-2.webp",
+          "captionHe": "השאר יד אחת תומכת וסובב את היד השנייה לתקרה.",
+          "altHe": "יד אחת תומכת ברצפה והשנייה מורמת בסיבוב החזה"
+        },
+        {
+          "file": "/warmup/worlds-greatest/step-3.webp",
+          "captionHe": "החזר את היד לרצפה; חזור בשליטה והחלף צד.",
+          "altHe": "חזרה לשתי כפות ידיים על הרצפה בתוך הרגל הקדמית"
+        }
+      ]
+    },
+    "knees-to-chest": {
+      "frames": [
+        {
+          "file": "/warmup/knees-to-chest/step-0.webp",
+          "captionHe": "שכב על הגב וחבק את שתי הברכיים אל החזה.",
+          "altHe": "שכיבה על הגב עם שתי הברכיים מחובקות לחזה"
+        },
+        {
+          "file": "/warmup/knees-to-chest/step-1.webp",
+          "captionHe": "התנדנד בעדינות לצד אחד, כשהברכיים נשארות מחובקות.",
+          "altHe": "ברכיים מחובקות בהטיה קטנה לצד אחד"
+        },
+        {
+          "file": "/warmup/knees-to-chest/step-2.webp",
+          "captionHe": "העבר את המשקל בעדינות לצד השני; שמור על תנועה קטנה ונינוחה.",
+          "altHe": "ברכיים מחובקות בהטיה קטנה לצד השני"
+        }
+      ]
+    },
+    "ankle-circles": {
+      "frames": [
+        {
+          "file": "/warmup/ankle-circles/step-0.webp",
+          "captionHe": "הרם כף רגל אחת באוויר והתחל כשהאצבעות פונות מעט מעלה.",
+          "altHe": "כף רגל מורמת עם אצבעות פונות מעלה"
+        },
+        {
+          "file": "/warmup/ankle-circles/step-1.webp",
+          "captionHe": "המשך במעגל והפנה את כף הרגל החוצה.",
+          "altHe": "כף הרגל המורמת פונה החוצה"
+        },
+        {
+          "file": "/warmup/ankle-circles/step-2.webp",
+          "captionHe": "העבר את האצבעות מטה, כשהשוק נשארת יציבה.",
+          "altHe": "כף הרגל המורמת פונה מטה"
+        },
+        {
+          "file": "/warmup/ankle-circles/step-3.webp",
+          "captionHe": "המשך פנימה והשלם את המעגל; חזור בכיוון ההפוך ואז החלף רגל.",
+          "altHe": "כף הרגל המורמת פונה פנימה"
+        }
+      ]
+    },
+    "hip-circles": {
+      "frames": [
+        {
+          "file": "/warmup/hip-circles/step-0.webp",
+          "captionHe": "עמוד ברגליים יציבות, הנח ידיים על המותניים והעבר את האגן מעט קדימה.",
+          "altHe": "עמידה בידיים על המותניים עם אגן מעט קדימה"
+        },
+        {
+          "file": "/warmup/hip-circles/step-1.webp",
+          "captionHe": "המשך את המעגל עם העברת האגן לצד אחד.",
+          "altHe": "העברת האגן הצידה ברגליים נטועות"
+        },
+        {
+          "file": "/warmup/hip-circles/step-2.webp",
+          "captionHe": "העבר את האגן לאחור בתנועה נוחה, בלי לכופף את הגב בכוח.",
+          "altHe": "העברת האגן לאחור ברגליים נטועות"
+        },
+        {
+          "file": "/warmup/hip-circles/step-3.webp",
+          "captionHe": "המשך לצד השני והשלם מעגל; בצע גם בכיוון ההפוך.",
+          "altHe": "העברת האגן לצד השני"
+        }
+      ]
+    },
+    "shoulder-circles": {
+      "frames": [
+        {
+          "file": "/warmup/shoulder-circles/step-0.webp",
+          "captionHe": "הרם את שתי הכתפיים בעדינות לכיוון האוזניים.",
+          "altHe": "כתפיים מורמות לכיוון האוזניים"
+        },
+        {
+          "file": "/warmup/shoulder-circles/step-1.webp",
+          "captionHe": "גלגל את הכתפיים לאחור, כשהידיים נשארות משוחררות.",
+          "altHe": "כתפיים משוכות בעדינות לאחור"
+        },
+        {
+          "file": "/warmup/shoulder-circles/step-2.webp",
+          "captionHe": "הורד את הכתפיים הרחק מהאוזניים.",
+          "altHe": "כתפיים משוחררות מטה"
+        },
+        {
+          "file": "/warmup/shoulder-circles/step-3.webp",
+          "captionHe": "המשך קדימה והשלם את הסיבוב; לאחר מכן החלף כיוון.",
+          "altHe": "כתפיים נעות קדימה להשלמת הסיבוב"
+        }
+      ]
+    },
+    "wrist-circles": {
+      "frames": [
+        {
+          "file": "/warmup/wrist-circles/step-0.webp",
+          "captionHe": "שלב את האצבעות מול הגוף והתחל להטות את כפות הידיים מעלה.",
+          "altHe": "אצבעות משולבות וכפות ידיים מוטות מעלה"
+        },
+        {
+          "file": "/warmup/wrist-circles/step-1.webp",
+          "captionHe": "המשך את הסיבוב לצד אחד, בלי לשחרר את שילוב האצבעות.",
+          "altHe": "כפות ידיים משולבות מוטות לצד אחד"
+        },
+        {
+          "file": "/warmup/wrist-circles/step-2.webp",
+          "captionHe": "גלגל את כפות הידיים מטה בתנועה נוחה.",
+          "altHe": "כפות ידיים משולבות מוטות מטה"
+        },
+        {
+          "file": "/warmup/wrist-circles/step-3.webp",
+          "captionHe": "המשך לצד השני והשלם מעגל; חזור גם בכיוון ההפוך.",
+          "altHe": "כפות ידיים משולבות מוטות לצד השני"
+        }
+      ]
+    }
+  }
+}

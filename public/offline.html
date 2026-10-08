@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>אין חיבור — המנוע</title>
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<style>
+/* קליפת האופליין חייבת להיות עצמאית לחלוטין: היא מוגשת מה-service worker
+   כשאין רשת, ולכן אינה יכולה לטעון את ה-CSS של Next או את הגופנים.
+   הערכים כאן הם העתק מוקפא של src/styles/tokens.css — מקור האמת נשאר שם. */
+:root {
+  color-scheme: dark;
+  --bg-app: #12161c;
+  --bg-raised: #1a2029;
+  --line: #262f3b;
+  --fg: #f2f5f9;
+  --fg-2: #9fabbc;
+  --fg-3: #7d8aa1;
+  --accent: #ff6b35;
+  --accent-hi: #ff8557;
+  --on-accent: #1c0f06;
+  --accent-soft: rgba(255, 107, 53, 0.14);
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    --bg-app: #f5f6f8;
+    --bg-raised: #ffffff;
+    --line: #e2e6ec;
+    --fg: #161c26;
+    --fg-2: #46536a;
+    --fg-3: #5f6c84;
+    --accent: #b23a0a;
+    --accent-hi: #8f300b;
+    --on-accent: #ffffff;
+    --accent-soft: rgba(178, 58, 10, 0.12);
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: var(--bg-app);
+  color: var(--fg);
+  font-family: "IBM Plex Sans Hebrew", system-ui, -apple-system, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+main { width: 100%; max-width: 26rem; text-align: center; }
+.mark { color: var(--accent); }
+h1 { margin: 1.25rem 0 0; font-size: 1.5rem; line-height: 1.3; }
+p { margin: 0.625rem 0 0; color: var(--fg-2); line-height: 1.7; font-size: 0.9375rem; }
+.card {
+  margin-top: 1.5rem;
+  border: 1px solid var(--line);
+  background: var(--bg-raised);
+  border-radius: 14px;
+  padding: 1rem 1.125rem;
+  text-align: start;
+}
+.card h2 { margin: 0; font-size: 0.8125rem; color: var(--fg-3); font-weight: 600; }
+.card ul { margin: 0.5rem 0 0; padding-inline-start: 1.1rem; color: var(--fg-2); font-size: 0.875rem; line-height: 1.8; }
+button {
+  margin-top: 1.5rem;
+  width: 100%;
+  min-height: 3.5rem;
+  border: 0;
+  border-radius: 14px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font: inherit;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 150ms;
+}
+button:hover { background: var(--accent-hi); }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.hint { margin-top: 0.75rem; font-size: 0.75rem; color: var(--fg-3); }
+@media (prefers-reduced-motion: reduce) { * { transition-duration: 0.01ms !important; } }
+</style>
+</head>
+<body>
+<main>
+  <svg class="mark" width="56" height="56" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-dasharray="40 13.4" transform="rotate(-45 12 12)"/>
+    <circle cx="12" cy="12" r="2.6" fill="currentColor"/>
+  </svg>
+
+  <h1>אין כרגע חיבור</h1>
+  <p>
+    המנוע בונה כל אימון בשרת, ולכן צריך רשת כדי לפתוח אימון חדש או לראות
+    את ההתקדמות.
+  </p>
+
+  <div class="card">
+    <h2>אם אתה באמצע אימון</h2>
+    <ul>
+      <li>הטיימר והמונים ממשיכים לרוץ במסך שכבר פתוח — אל תסגור אותו.</li>
+      <li>סטים שנרשמו לפני הניתוק כבר נשמרו.</li>
+      <li>כשהחיבור יחזור, המשך מאיפה שהפסקת — הכול משוחזר.</li>
+    </ul>
+  </div>
+
+  <button type="button" onclick="location.reload()">נסה שוב</button>
+  <p class="hint">הדף הזה נטען מהמכשיר שלך, בלי רשת.</p>
+</main>
+</body>
+</html>

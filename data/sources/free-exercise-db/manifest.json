@@ -1,0 +1,25 @@
+{
+  "id": "free-exercise-db",
+  "title": "Free Exercise DB",
+  "authors": [
+    "yuhonas/free-exercise-db contributors"
+  ],
+  "author": "yuhonas/free-exercise-db contributors",
+  "license": "Unlicense",
+  "licenseId": "Unlicense",
+  "licenseNote": "Free Exercise DB — Unlicense (public domain). Hebrew adaptation by ForceApp.",
+  "sourceUrl": "https://github.com/yuhonas/free-exercise-db",
+  "acquiredAt": "2026-09-17T07:42:20.709Z",
+  "files": [
+    {
+      "file": "exercises.json",
+      "sha256": "5bb747e3fc658f095a60dcbf6d53c96627acdcc6ffb6fffde86f7e26995d40bf"
+    },
+    {
+      "file": "LICENSE.md",
+      "sha256": "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e"
+    }
+  ],
+  "version": "Current upstream retrieved 2026-09-17; historical source revision not recorded",
+  "archiveIndex": "artifacts/content-sources/index.json"
+}

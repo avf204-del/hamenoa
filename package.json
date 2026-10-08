@@ -1,0 +1,59 @@
+{
+  "name": "hamenoa",
+  "version": "2.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "postinstall": "prisma generate",
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "start": "TZ=Asia/Jerusalem next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "db:setup": "prisma generate && prisma migrate deploy && tsx prisma/seed.ts",
+    "deploy:prepare": "prisma migrate deploy && tsx scripts/import-exercises.ts",
+    "db:reset": "prisma migrate reset",
+    "db:local": "tsx scripts/local-pg.ts",
+    "db:local:qa": "tsx scripts/local-pg.ts --port 5434 --dir prisma/local-pg-qa",
+    "db:backup": "tsx scripts/db-backup.ts",
+    "db:restore": "tsx scripts/db-backup.ts --restore",
+    "snapshot:update": "tsx scripts/update-snapshot.ts",
+    "backup:inventory": "tsx scripts/backup-maintenance.ts",
+    "cloud:setup": "node scripts/cloud/run.mjs setup",
+    "cloud:dev": "node scripts/cloud/run.mjs dev",
+    "cloud:verify": "node scripts/cloud/run.mjs verify",
+    "cloud:password": "node scripts/cloud/run.mjs password",
+    "cloud:test": "node --test scripts/cloud/environment.test.mjs"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.9.1",
+    "@prisma/client": "^7.9.1",
+    "next": "16.3.2",
+    "pg": "^8.23.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "yaml": "^2.9.0"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.7",
+    "@electric-sql/pglite-socket": "^0.2.10",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "dotenv": "^17.4.2",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.2",
+    "playwright": "1.58.2",
+    "prisma": "^7.9.1",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.12",
+    "typescript": "^5",
+    "vitest": "^4.1.11"
+  },
+  "packageManager": "pnpm@11.22.0"
+}

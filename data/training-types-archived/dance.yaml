@@ -1,0 +1,213 @@
+# הוראות עבריות מעובדות מטקסטי CC BY 4.0; פרטי המקור והשינויים במניפסט provenanceId.
+# יחידות זמן ומינון מפורטות בהוראות ובמניפסט. בתרגיל מתוזמן pace=1 מייצג שנייה.
+# substitutes הם חלופות לפעילות כללית בתחום, ללא הבטחת שקילות אנטומית.
+
+dance-body-shape-exploration:
+  source: null
+  trainingType: "dance"
+  provenanceId: "louis-2022-elements-of-dance"
+  addedOn: "2026-09-17"
+  nameHe: "מחול יצירתי — שלוש צורות גוף"
+  nameEn: "Creative Dance Body Shapes"
+  modality: "gymnastics"
+  pattern: "core"
+  equipment: []
+  stationType: "none"
+  skillLevel: 1
+  loadClass: "bodyweight"
+  unilateral: false
+  repPaceSecPerRep: 6
+  systemicCost: "low"
+  constraints: []
+  substitutes: ["dance-energy-contrast-phrase"]
+  scalingEasier: null
+  scalingHarder: null
+  primaryMuscles: ["abdominals", "shoulders"]
+  secondaryMuscles: ["glutes", "quadriceps"]
+  instructionsHe: |-
+    1. עמוד בחלל פנוי עם שתי כפות רגליים על הרצפה וברכיים רכות. בחר שלושה דימויים, למשל עץ, גשר וקשר בין אנשים.
+    2. צור בידיים ובגו צורה שמזכירה את הדימוי הראשון. אפשר להשתמש בקווים ישרים, בקשתות או במרווח שבין הזרועות.
+    3. הישאר בצורת הגוף 3 שניות, ואז עבור במשך כשלוש שניות לצורה השנייה. אין צורך לחקות צורה מדויקת או לשמור על סימטריה.
+    4. החזק גם את הצורה השנייה 3 שניות ועבור באיטיות לשלישית. השאר את שתי הרגליים על הרצפה לאורך החקירה.
+    5. חזור על שלוש הצורות פעם נוספת: 6 החזקות בסך הכול. בסיום השווה לעצמך איזו צורה מרגישה רחבה, צרה או מעוגלת.
+    שים לב: בחר צורות שאפשר לצאת מהן בקלות. הימנע מנעילת ברכיים, מעצירת נשימה וממתיחה מעבר לטווח נוח; זהו תרגיל בחירה תנועתית ללא צורה אחת נכונה.
+
+dance-energy-contrast-phrase:
+  source: null
+  trainingType: "dance"
+  provenanceId: "louis-2022-elements-of-dance"
+  addedOn: "2026-09-17"
+  nameHe: "מחול יצירתי — רצף בשתי איכויות"
+  nameEn: "Creative Dance Energy Contrast"
+  modality: "gymnastics"
+  pattern: "locomotion"
+  equipment: []
+  stationType: "none"
+  skillLevel: 1
+  loadClass: "bodyweight"
+  unilateral: false
+  repPaceSecPerRep: 10
+  systemicCost: "low"
+  constraints: ["space"]
+  substitutes: ["dance-body-shape-exploration"]
+  scalingEasier: null
+  scalingHarder: null
+  primaryMuscles: ["quadriceps", "glutes"]
+  secondaryMuscles: ["calves", "shoulders", "abdominals"]
+  instructionsHe: |-
+    1. פנה סביבך מרחב של כמה צעדים ובחר רצף קצר שאפשר לזכור, למשל שני צעדים הצדה, הושטת יד קדימה וחזרה לעמידה.
+    2. תרגל את הרצף פעם אחת בקצב נוח כך שיימשך בערך 10 שניות. קבע את אותו סדר פעולות ואת אותו מסלול לכל החזרות.
+    3. בצע את הרצף באיכות רכה ורציפה: חבר את המעברים, הושט את היד בהדרגה ודרוך בשקט.
+    4. בצע שוב את אותו רצף במשך כ־10 שניות, הפעם באיכות ברורה ומקוטעת: הוסף עצירות קצרות בין הפעולות, ללא מכות או תנופות חדות במפרקים.
+    5. נוח כ־10 שניות וחזור על הזוג פעם נוספת. סך הכול 4 ביצועים של אותו רצף; ההבדל הוא באיכות התנועה ולא במהירות מרבית.
+    שים לב: שמור על אותם צעדים גם כשהאיכות משתנה. תנועה מקוטעת אינה דורשת קפיצות, דריכה חזקה או נעילת מרפקים וברכיים.
+
+dance-pathway-levels:
+  source: null
+  trainingType: "dance"
+  provenanceId: "louis-2022-elements-of-dance"
+  addedOn: "2026-09-17"
+  nameHe: "מחול יצירתי — מסלול ושינויי גובה"
+  nameEn: "Creative Dance Pathway and Levels"
+  modality: "gymnastics"
+  pattern: "locomotion"
+  equipment: []
+  stationType: "none"
+  skillLevel: 1
+  loadClass: "bodyweight"
+  unilateral: false
+  repPaceSecPerRep: 1
+  systemicCost: "low"
+  constraints: ["space"]
+  substitutes: ["dance-variable-tempo-walk"]
+  scalingEasier: null
+  scalingHarder: null
+  primaryMuscles: ["quadriceps", "glutes"]
+  secondaryMuscles: ["calves", "abdominals"]
+  instructionsHe: |-
+    1. צייר על דף מסלול רציף קצר בלי חציות, למשל קו ישר שממשיך בקשת רחבה. הנח את הדף מחוץ לאזור התנועה וזכור את כיוון המסלול.
+    2. פנה מהרצפה חפצים ובדוק שיש מרחב ללכת את המסלול. התחל בהליכה רגילה לאורכו במשך כ־10 שניות.
+    3. בקטע הבא הורד מעט את גובה הגוף באמצעות כפיפה קטנה של הברכיים והמשך בצעדים קצרים במשך כ־10 שניות. שמור את הגו מאורגן מעל כפות הרגליים.
+    4. סיים את המסלול בהליכה זקופה ובהושטת ידיים לגובה נוח במשך כ־10 שניות. אין צורך לעלות על קצות האצבעות או לקפוץ.
+    5. נוח 15 שניות וחזור על אותו מסלול פעם נוספת, תוך בחירה עצמאית היכן לשנות גובה. כל מעבר במסלול נמשך כ־30 שניות.
+    שים לב: שינויי הגובה קטנים ומבוקרים; אין צורך לרדת לרצפה. בצע פניות בקשת רחבה והבט לכיוון ההתקדמות. דף ועיפרון נדרשים רק לתכנון, מחוץ למשטח התנועה.
+
+dance-speech-rhythm:
+  source: null
+  trainingType: "dance"
+  provenanceId: "louis-2022-elements-of-dance"
+  addedOn: "2026-09-17"
+  nameHe: "מחול יצירתי — מקצב של משפט"
+  nameEn: "Creative Dance Speech Rhythm"
+  modality: "gymnastics"
+  pattern: "locomotion"
+  equipment: []
+  stationType: "none"
+  skillLevel: 1
+  loadClass: "bodyweight"
+  unilateral: false
+  repPaceSecPerRep: 8
+  systemicCost: "low"
+  constraints: []
+  substitutes: ["dance-energy-contrast-phrase"]
+  scalingEasier: null
+  scalingHarder: null
+  primaryMuscles: ["quadriceps", "calves"]
+  secondaryMuscles: ["shoulders", "abdominals"]
+  instructionsHe: |-
+    1. עמוד במרווח קטן ופנוי ונסח משפט עם שמך ומאכל אהוב, למשל: נועה אוהבת לחם וזיתים.
+    2. אמור את המשפט בקול בקצב נוח והקשב להברות המודגשות ולהפסקות. חזור עליו תוך מחיאות כפיים קלות לפי המקצב ששמעת.
+    3. החלף חלק ממחיאות הכפיים בתנועות פשוטות: צעד הצדה, קירוב הרגל השנייה והושטת יד. השאר הפסקה בתנועה במקום שבו יש הפסקה בדיבור.
+    4. ארגן את המשפט והרצף למחזור של כ־8 שניות, כולל הפסקה קצרה בסוף אם צריך. שמור על אותו סדר תנועות בכל מחזור.
+    5. תרגל עד שתוכל לבצע 4 מחזורים ברצף, עם המשפט בקול או בדמיון. סיים בעמידה יציבה וידיים רפויות.
+    שים לב: המקצב נובע מהמשפט שבחרת ואין צורך במוזיקה או במהירות גבוהה. דרוך בעדינות; אפשר להחליף מחיאות כפיים בנגיעות אצבע שקטות.
+
+dance-out-out-in-in:
+  source: null
+  trainingType: "dance"
+  provenanceId: "batson-2016-improvment"
+  addedOn: "2026-09-17"
+  nameHe: "מחול יצירתי בישיבה — החוצה ופנימה"
+  nameEn: "Seated Creative Dance Out Out In In"
+  modality: "gymnastics"
+  pattern: "core"
+  equipment: ["chair"]
+  stationType: "portable"
+  skillLevel: 1
+  loadClass: "bodyweight"
+  unilateral: false
+  repPaceSecPerRep: 8
+  systemicCost: "low"
+  constraints: []
+  substitutes: ["dance-body-shape-exploration"]
+  scalingEasier: null
+  scalingHarder: null
+  primaryMuscles: ["shoulders"]
+  secondaryMuscles: ["abdominals", "middle back"]
+  instructionsHe: |-
+    1. שב על כיסא יציב ללא גלגלים, השאר שתי כפות רגליים על הרצפה ופנה מקום סביב הזרועות.
+    2. בשתי ספירות איטיות שלח את יד ימין לכיוון שתבחר, ובשתי הספירות הבאות שלח את יד שמאל לכיוון אחר. בחר גובה וטווח נוחים.
+    3. בשתי הספירות הבאות החזר את יד ימין לכיוון מרכז הגוף, ואז בשתי ספירות נוספות החזר את יד שמאל. זהו מחזור אחד של החוצה, החוצה, פנימה, פנימה.
+    4. במחזור הבא שנה את המסלול: למשל יד אחת לפנים והשנייה באלכסון נמוך. אפשר להוסיף תנועה קטנה של הגו כל עוד האגן נשאר יציב על הכיסא.
+    5. בצע 4 מחזורים של כ־8 שניות, נשום בחופשיות ונוח 15 שניות. אם נוח, בצע קבוצה נוספת של 4 מחזורים עם מסלולים חדשים.
+    שים לב: הדוגמה מציעה מבנה לתנועה ואפשר לבחור מסלולים משלך. אל תטה את הכיסא, תזרוק את הראש או תשלח יד אל מעבר לטווח שבו הישיבה יציבה.
+
+dance-pass-the-gesture:
+  source: null
+  trainingType: "dance"
+  provenanceId: "batson-2016-improvment"
+  addedOn: "2026-09-17"
+  nameHe: "מחול יצירתי בקבוצה — מעבירים מחווה"
+  nameEn: "Creative Dance Pass the Gesture"
+  modality: "gymnastics"
+  pattern: "core"
+  equipment: ["chair"]
+  stationType: "portable"
+  skillLevel: 1
+  loadClass: "bodyweight"
+  unilateral: false
+  repPaceSecPerRep: 8
+  systemicCost: "low"
+  constraints: []
+  substitutes: ["dance-out-out-in-in"]
+  scalingEasier: null
+  scalingHarder: null
+  primaryMuscles: ["shoulders"]
+  secondaryMuscles: ["abdominals", "middle back"]
+  instructionsHe: |-
+    1. תרגל עם עוד משתתף אחד לפחות. סדרו כיסאות יציבים ללא גלגלים במעגל קטן, עם מרווח שבו הידיים אינן נוגעות זו בזו, והניחו כפות רגליים על הרצפה.
+    2. המשתתף הראשון יוצר מחווה קצרה של כ־4 שניות בעזרת הידיים ותנועה קטנה של הגו, למשל פתיחה איטית של הזרועות.
+    3. סיים את המחווה בכיוון המשתתף הבא או בסימן מוסכם. אפשר ליצור קשר עין אם נוח לשניכם, ללא מגע או העברת חפץ.
+    4. המשתתף הבא מקבל את הרעיון ומשנה אותו: למשל מקטין את המחווה, משנה כיוון או מוסיף עצירה. לאחר מכן הוא מעביר את המחווה הלאה.
+    5. השאירו לכל משתתף כ־8 שניות לתנועה ולהעברה, עד שהמחווה משלימה שני סבבים. בזוג פשוט מעבירים הלוך ושוב עד שכל אחד ביצע פעמיים.
+    שים לב: נדרשים לפחות שני משתתפים. ההעברה היא סימן תנועתי, ללא דחיפה או משיכה; אפשר להישאר בתנועה קטנה ואין חובה לקשר עין. שמרו על כיסאות יציבים.
+
+dance-variable-tempo-walk:
+  source: null
+  trainingType: "dance"
+  provenanceId: "batson-2016-improvment"
+  addedOn: "2026-09-17"
+  nameHe: "מחול יצירתי — הליכה בקצב משתנה"
+  nameEn: "Creative Dance Variable Tempo Walk"
+  modality: "gymnastics"
+  pattern: "locomotion"
+  equipment: []
+  stationType: "none"
+  skillLevel: 1
+  loadClass: "bodyweight"
+  unilateral: false
+  repPaceSecPerRep: 1
+  systemicCost: "low"
+  constraints: ["space"]
+  substitutes: ["dance-pathway-levels"]
+  scalingEasier: null
+  scalingHarder: null
+  primaryMuscles: ["quadriceps", "glutes"]
+  secondaryMuscles: ["calves", "hamstrings", "abdominals"]
+  instructionsHe: |-
+    1. בחר מסלול פנוי של כמה צעדים עם מקום לפנייה רחבה. התחל בהליכה קלה והבט לכיוון ההתקדמות.
+    2. לך באיטיות במשך 10 שניות, בקצב שבו כל צעד נוח והזרועות נעות באופן טבעי.
+    3. במשך 10 השניות הבאות עבור בהדרגה לקצב ההליכה הרגיל שלך. אפשר לשנות את אורך הצעד מעט בלי להאיץ בפתאומיות.
+    4. בחר עוד 10 שניות בקצב מעט נמרץ יותר, כל עוד נשארת הליכה נשלטת. אחר כך האט במשך 10 שניות עד עצירה נוחה.
+    5. נוח 20 שניות וחזור על רצף ארבעת הקצבים פעם נוספת אם נוח. בכל רצף יש כ־40 שניות תנועה, ואתה בוחר את ההבדל בין הקצבים.
+    שים לב: אין צורך לרוץ, לבצע פניות חדות או להשתמש באחוזי מאמץ מדודים. השאר את הרצפה פנויה והקטן את שינוי הקצב אם קשה לשמור על צעדים יציבים.

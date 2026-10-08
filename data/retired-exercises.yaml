@@ -1,0 +1,38 @@
+# Historical records retained for source traceability; not an active import catalog.
+# high-knees is an alias of fast-skipping; existing workout logs stay intact.
+high-knees:
+  source: null
+  trainingType: base
+  provenanceId: forceapp-original
+  addedOn: "2026-09-16"
+  nameHe: ברכיים גבוהות במקום
+  nameEn: High Knees
+  modality: cardio
+  pattern: locomotion
+  equipment: []
+  stationType: none
+  skillLevel: 1
+  loadClass: bodyweight
+  repPaceSecPerRep: 0.5
+  systemicCost: med
+  constraints:
+    - noise
+  substitutes:
+    - running-in-place
+    - fast-skipping
+    - jumping-jacks
+  scalingEasier: running-in-place
+  scalingHarder: fast-skipping
+  primaryMuscles:
+    - quadriceps
+  secondaryMuscles:
+    - calves
+    - glutes
+    - hamstrings
+    - abdominals
+  instructionsHe: |-
+    1. עמוד זקוף עם מרפקים כפופים בזווית ישרה.
+    2. הרם ברך אחת עד גובה האגן והחלף במהירות לברך השנייה, במקום.
+    3. הישאר על כריות כפות הרגליים והנע את הידיים בתיאום עם הרגליים.
+    4. שמור על קצב אחיד לאורך כל הזמן שנקבע.
+    שים לב: הרם את הברך אל הגוף במקום להישען עם הגב אחורה כדי להגיע גבוה.

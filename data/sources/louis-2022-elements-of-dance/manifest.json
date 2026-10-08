@@ -1,0 +1,127 @@
+{
+  "sourceUrl": "https://louis.pressbooks.pub/danceappreciation/chapter/chapter-2-elements-of-dance/",
+  "retrievedFrom": "https://human.libretexts.org/Bookshelves/Dance/So_You_Think_You_Know_Dance_-_Fundamentals_of_Dance_%28Whipp_Spears_Perlis_and_Kanamoto%29/01%3A_Sections/1.02%3A_Elements_of_Dance",
+  "authors": [
+    "Mary Francis \"Cissy\" Whipp",
+    "Roshanda Spears",
+    "Susan Perlis",
+    "Vanessa Kanamoto"
+  ],
+  "title": "So You Think You Know Dance? Fundamentals of Dance — Elements of Dance",
+  "publishedYear": 2022,
+  "sourceRevision": "LibreTexts page 288438, last modified 2024-11-03T20:44:09Z",
+  "changes": "עיבוד עברי מקורי לארבע משימות הביצוע האחרונות בפרק. נוספו דוגמאות תנועה, חלוקה לשלבים, מינון ותיוג שרירים. דוגמאות הדימויים והמשפט בעברית מקוריות. שינויי הגובה הוגבלו לעמידה ולהליכה. טקסט המשימות הוא המקור; לא נעשה שימוש בתמונות, סרטונים, מוזיקה או קטעי כוריאוגרפיה מוטמעים.",
+  "acquisitionNote": "Downloaded the actual HTML from the attributed LibreTexts mirror because direct LOUIS downloads returned HTTP 403. The mirror identifies the original authors, LOUIS and CC BY 4.0. The failed CloudFront response is not archived as source material.",
+  "scope": "Only the final four numbered Check Your Understanding movement tasks before Resources. Whole HTML is retained as evidence of context and attribution; its separately credited CC BY-SA images, embedded video links and third-party media are excluded from reuse and are not image assets for this project.",
+  "schemaVersion": 1,
+  "id": "louis-2022-elements-of-dance",
+  "author": "Mary Francis \"Cissy\" Whipp, Roshanda Spears, Susan Perlis, Vanessa Kanamoto",
+  "license": "CC-BY-4.0",
+  "licenseVersion": "4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "acquiredAt": "2026-09-17T07:48:45.463402+00:00",
+  "acquiredAtMeaning": "UTC time original downloaded bytes were copied into this source archive; not the publication date.",
+  "files": [
+    {
+      "path": "chapter.html",
+      "url": "https://human.libretexts.org/Bookshelves/Dance/So_You_Think_You_Know_Dance_-_Fundamentals_of_Dance_%28Whipp_Spears_Perlis_and_Kanamoto%29/01%3A_Sections/1.02%3A_Elements_of_Dance",
+      "acquiredAt": "2026-09-17T07:48:45.463402+00:00",
+      "contentType": "text/html",
+      "bytes": 160089,
+      "sha256": "059936ae552bdf273e5951fb812bda176f10c7c04880cd552ef699c099006edf",
+      "derivedExtract": false
+    },
+    {
+      "path": "license-legalcode.txt",
+      "url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt",
+      "acquiredAt": "2026-09-17T07:48:45.463402+00:00",
+      "contentType": "text/plain",
+      "bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "derivedExtract": false
+    },
+    {
+      "path": "license-notice.txt",
+      "url": "https://human.libretexts.org/Bookshelves/Dance/So_You_Think_You_Know_Dance_-_Fundamentals_of_Dance_%28Whipp_Spears_Perlis_and_Kanamoto%29/01%3A_Sections/1.02%3A_Elements_of_Dance",
+      "acquiredAt": "2026-09-17T07:48:45.463402+00:00",
+      "contentType": "text/plain",
+      "bytes": 609,
+      "sha256": "014a6c54316ca356a4e2a2c4aace71354624ecf9ced2858a9c2ae30f0c8b5b55",
+      "derivedExtract": true
+    },
+    {
+      "path": "instruction-extract.txt",
+      "url": "https://human.libretexts.org/Bookshelves/Dance/So_You_Think_You_Know_Dance_-_Fundamentals_of_Dance_%28Whipp_Spears_Perlis_and_Kanamoto%29/01%3A_Sections/1.02%3A_Elements_of_Dance",
+      "acquiredAt": "2026-09-17T07:48:45.463402+00:00",
+      "contentType": "text/plain",
+      "bytes": 949,
+      "sha256": "766709048c3201916e2b922149b284025e158e9790d4f3bdacbdc330446085e1",
+      "derivedExtract": true
+    }
+  ],
+  "entries": [
+    {
+      "slug": "dance-body-shape-exploration",
+      "sourceLocator": {
+        "section": "Final Check Your Understanding before Resources",
+        "task": 1
+      },
+      "dosage": {
+        "unit": "shapeCycles",
+        "cycles": 6,
+        "holdSeconds": 3,
+        "transitionSeconds": 3
+      },
+      "minParticipants": 1
+    },
+    {
+      "slug": "dance-energy-contrast-phrase",
+      "sourceLocator": {
+        "section": "Final Check Your Understanding before Resources",
+        "task": 2
+      },
+      "dosage": {
+        "unit": "phrases",
+        "phrases": 4,
+        "secondsPerPhrase": 10,
+        "restBetweenPairsSeconds": 10
+      },
+      "minParticipants": 1
+    },
+    {
+      "slug": "dance-pathway-levels",
+      "sourceLocator": {
+        "section": "Final Check Your Understanding before Resources",
+        "task": 3
+      },
+      "dosage": {
+        "unit": "seconds",
+        "secondsPerPass": 30,
+        "passes": 2,
+        "restSeconds": 15
+      },
+      "minParticipants": 1
+    },
+    {
+      "slug": "dance-speech-rhythm",
+      "sourceLocator": {
+        "section": "Final Check Your Understanding before Resources",
+        "task": 4
+      },
+      "dosage": {
+        "unit": "phrases",
+        "phrases": 4,
+        "secondsPerPhrase": 8
+      },
+      "minParticipants": 1
+    }
+  ],
+  "attribution": "So You Think You Know Dance? Fundamentals of Dance — Elements of Dance — Mary Francis \"Cissy\" Whipp, Roshanda Spears, Susan Perlis, Vanessa Kanamoto. CC BY 4.0. Hebrew adaptation by ForceApp; changes documented in this manifest.",
+  "editorialNotes": [
+    "Muscle tags indicate editorially selected movement involvement, not measured muscle activation or a strength-training claim.",
+    "The existing pattern taxonomy has no mobility category. core marks seated axial movement and shapes; pushH is the closest available hand-loading label for the supported wrist movement, not a claim that this is a strength press.",
+    "Substitutes offer a general activity alternative, not anatomical or therapeutic equivalence; no progression relation is asserted when scaling fields are null.",
+    "Timing is an editorial practice suggestion. repPaceSecPerRep=1 denotes seconds for holds and timed continuous movement, not one complete motion each second.",
+    "New captions and English image prompts are original image-generation storyboards. Built-in generated illustrations are archived separately under artifacts/training-types/generated; no external source images were used."
+  ]
+}

@@ -1,0 +1,461 @@
+# BLOCKED: unresolved source license; do not auto-import or generate media.
+# קפוארה — מקטע תוכן עצמאי, לא מוזג ל-tagging.yaml.
+# 15 תרגילי סולו / 13 משפחות; M4 ו-M19 הן וריאציות מובחנות, לא שמות נוספים.
+# source:null עוקף את קישור Free Exercise DB בלבד; מקור ורישיון נשמרים ב-provenanceId.
+# מקור חזותי: Sérgio Rodrigues Moreira (2017), DOI 10.5216/rpp.v20i4.40171.
+# סעיף המאמר מצהיר CC BY 3.0; בארכיון מתועדת סתירה מול סמל BY-NC-SA.
+# אין אישור מורה או טענת אימות מקצועי. ההוראות וההתקדמויות הן עיבוד מקורי.
+# repPaceSecPerRep הוא אומדן עריכתי לתנועה נשלטת, לא קצב אימון עצים.
+# הקטע כולל את שדות הסכמה הקיימת וגם trainingType/provenanceId שאושרו להרחבה.
+# אין לייבא דרך נתיב שמוחק אותם או מייחס source:null אוטומטית לתוכן חסר מקור.
+# הסברים, עקיבות ופער הרישוי: data/sources/moreira-2017-capoeira/manifest.json ו-README.md.
+
+
+capoeira-ginga:
+  source: null
+  addedOn: "2026-09-17"
+  nameHe: "ג׳ינגה — צעד בסיס"
+  nameEn: "Ginga"
+  trainingType: "capoeira"
+  provenanceId: "moreira-2017-capoeira"
+  modality: "gymnastics"
+  pattern: "locomotion"
+  equipment: []
+  stationType: "none"
+  skillLevel: 1
+  loadClass: "bodyweight"
+  unilateral: false
+  repPaceSecPerRep: 8
+  systemicCost: "low"
+  constraints: ["space"]
+  substitutes: ["capoeira-diagonal-step"]
+  scalingEasier: null
+  scalingHarder: null
+  primaryMuscles: ["quadriceps", "glutes"]
+  secondaryMuscles: ["calves", "abdominals"]
+  instructionsHe: |-
+    1. פנה סביבך מקום לצעד לאחור ולצד. עמוד ברגליים מעט מעבר לרוחב האגן, ברכיים רכות וידיים ליד הפנים.
+    2. העבר את רגל ימין לאחור לצעד נוח. השאר את ברך שמאל כפופה מעל כיוון כף הרגל, והרם את אמה ימין לפני הפנים בלי להסתיר את המבט.
+    3. החזר את רגל ימין לעמידה הרחבה דרך העברת משקל חלקה; אל תצמיד את הרגליים ואל תקפוץ.
+    4. העבר כעת את רגל שמאל לאחור ואת אמה שמאל לפני הפנים. הגוף נוטה מעט קדימה מן הירכיים, בלי לקרוס בגב.
+    5. חזור לעמידה הרחבה. ימין לאחור, מרכז, שמאל לאחור ומרכז הם מחזור אחד; תרגל 4–6 מחזורים איטיים ועצור בעמידה יציבה.
+    שים לב: שמור על מרחק בין כפות הרגליים ועל נשימה רציפה. התחל בצעדים קצרים; הגדל את התנועה רק כשאפשר לשנות צד בלי לאבד שיווי משקל.
+
+capoeira-esquiva-lateral:
+  source: null
+  addedOn: "2026-09-17"
+  nameHe: "אסקיבה לטרלית — התחמקות לצד"
+  nameEn: "Esquiva lateral"
+  trainingType: "capoeira"
+  provenanceId: "moreira-2017-capoeira"
+  modality: "gymnastics"
+  pattern: "squat"
+  equipment: []
+  stationType: "none"
+  skillLevel: 2
+  loadClass: "bodyweight"
+  unilateral: true
+  repPaceSecPerRep: 5
+  systemicCost: "low"
+  constraints: []
+  substitutes: ["capoeira-esquiva-basica"]
+  scalingEasier: null
+  scalingHarder: "capoeira-esquiva-basica"
+  primaryMuscles: ["quadriceps", "glutes"]
+  secondaryMuscles: ["abdominals", "adductors"]
+  instructionsHe: |-
+    1. עמוד בפישוק נוח עם ברכיים רכות וידיים ליד הפנים. ודא שיש מרחב להטיית הגוף ימינה.
+    2. העבר משקל אל רגל ימין וכופף את הברך בכיוון אצבעות הרגל; רגל שמאל נשארת ארוכה ורכה וכף רגלה על הרצפה.
+    3. הטה את הגו לפנים ולימין דרך מפרקי הירך כדי להוריד את הראש מקו העמידה. שמור על אמה ימין ליד הראש ועל מבט קדימה.
+    4. עצור לרגע בגובה שנשלט בלי תמיכת יד ברצפה. דחוף דרך רגל ימין והחזר את האגן למרכז תוך הזדקפות.
+    5. בצע 3–5 ירידות וחזרות לימין, אחר כך אותו מספר לשמאל בתמונת ראי. חזרה אחת היא ירידה וחזרה למרכז.
+    שים לב: ההתחמקות נוצרת מכיפוף רגל והטיית אגן, לא ממשיכה בצוואר או מקריסת ברך פנימה. אם קשה לחזור בשליטה, הקטן את הפישוק ואת עומק הירידה.
+
+capoeira-diagonal-step:
+  source: null
+  addedOn: "2026-09-17"
+  nameHe: "התקדמות אלכסונית בקפוארה"
+  nameEn: "Deslocamento em diagonal — controlled step"
+  trainingType: "capoeira"
+  provenanceId: "moreira-2017-capoeira"
+  modality: "gymnastics"
+  pattern: "locomotion"
+  equipment: []
+  stationType: "none"
+  skillLevel: 1
+  loadClass: "bodyweight"
+  unilateral: true
+  repPaceSecPerRep: 6
+  systemicCost: "low"
+  constraints: ["space"]
+  substitutes: ["capoeira-ginga"]
+  scalingEasier: null
+  scalingHarder: null
+  primaryMuscles: ["quadriceps", "glutes"]
+  secondaryMuscles: ["calves", "abdominals"]
+  instructionsHe: |-
+    1. עמוד בבסיס רחב ורך, ידיים מגינות על הפנים. בחר קו פנוי באלכסון קדימה וימינה, באורך של צעד אחד.
+    2. צעד ברגל ימין לאלכסון שבחרת והעבר אליה משקל בהדרגה. הראש והגו נעים עם האגן, בלי זינוק.
+    3. קרב את רגל שמאל במידה שמחזירה בסיס נוח, בלי להצליב או להצמיד את כפות הרגליים. שמור על ברכיים כפופות מעט.
+    4. חזור לנקודת המוצא בשני צעדים קטנים: שמאל תחילה ואז ימין, כשהמבט נשאר קדימה.
+    5. צא וחזור 3–5 פעמים לאותו אלכסון, ואז החלף צד. יציאה וחזרה הן חזרה אחת; האט אם כפות הרגליים מתקרבות זו לזו.
+    שים לב: זוהי התאמת צעדים איטית לתזוזה האלכסונית שבתרשים, לא תרגול מול התקפה. הטיית הגוף קלה; פנה מרחב גם למסלול החזרה.
+
+capoeira-esquiva-basica:
+  source: null
+  addedOn: "2026-09-17"
+  nameHe: "אסקיבה בסיסית — ירידה בתמיכת יד"
+  nameEn: "Esquiva básica / Descida básica"
+  trainingType: "capoeira"
+  provenanceId: "moreira-2017-capoeira"
+  modality: "gymnastics"
+  pattern: "lunge"
+  equipment: []
+  stationType: "none"
+  skillLevel: 3
+  loadClass: "bodyweight"
+  unilateral: true
+  repPaceSecPerRep: 7
+  systemicCost: "med"
+  constraints: ["space"]
+  substitutes: ["capoeira-esquiva-lateral"]
+  scalingEasier: "capoeira-esquiva-lateral"
+  scalingHarder: null
+  primaryMuscles: ["quadriceps", "glutes"]
+  secondaryMuscles: ["shoulders", "abdominals"]
+  instructionsHe: |-
+    1. על משטח יציב שאינו מחליק, עמוד כשרגל שמאל לפנים וימין מאחור. לפני התרגול ודא שנוח להניח כף יד פתוחה על הרצפה ולשאת עליה מעט משקל.
+    2. כופף את ברך שמאל והנמך את האגן. ברך ימין מתקרבת לרצפה בלי לפגוע בה, והעקב האחורי מורם.
+    3. הנח את כף יד שמאל על הרצפה בצד הפנימי של כף רגל שמאל, במקום שמאפשר לכתף להישאר יציבה. כופף את המרפק מעט ולא בכוח.
+    4. הטה את הגו נמוך מעל הירך הקדמית ושמור את אמה ימין ליד הראש. עצור כשהעומק עדיין מאפשר חזרה רגועה.
+    5. העבר את המשקל בחזרה לרגליים, הרם את כף היד והזדקף לבסיס המדורג. בצע 3–4 חזרות ואז החלף צד.
+    שים לב: אל תיפול אל כף היד ואל תכפה הגעה לרצפה. אם התמיכה או החזרה אינן נשלטות, תרגל תחילה אסקיבה לטרלית רדודה; כאב בשורש כף היד הוא סיבה לצאת מהתמיכה.
+
+capoeira-negativa:
+  source: null
+  addedOn: "2026-09-17"
+  nameHe: "נגטיבה — ירידה לבסיס קרקע"
+  nameEn: "Negativa"
+  trainingType: "capoeira"
+  provenanceId: "moreira-2017-capoeira"
+  modality: "gymnastics"
+  pattern: "squat"
+  equipment: []
+  stationType: "none"
+  skillLevel: 3
+  loadClass: "bodyweight"
+  unilateral: true
+  repPaceSecPerRep: 9
+  systemicCost: "med"
+  constraints: ["space"]
+  substitutes: ["capoeira-esquiva-basica"]
+  scalingEasier: "capoeira-esquiva-basica"
+  scalingHarder: "capoeira-role"
+  primaryMuscles: ["quadriceps", "glutes"]
+  secondaryMuscles: ["shoulders", "abdominals", "triceps"]
+  instructionsHe: |-
+    1. בחר משטח נקי, יציב ולא מחליק. התחל בכריעה נמוכה ונוחה, שתי כפות הרגליים על הרצפה; דרושה יכולת ירידה ועלייה בשליטה ותמיכת יד ללא כאב.
+    2. העבר את האגן לכיוון עקב שמאל והנח את כף יד ימין על הרצפה לצד ימין של האגן. השאר את מרפק ימין רך ואת הכתף פעילה.
+    3. הושט את רגל ימין קדימה באלכסון נמוך; העקב נוגע קלות ברצפה והברך אינה ננעלת. רגל שמאל נשארת כפופה מתחת לגוף.
+    4. שמור את יד שמאל לפני הפנים, את הראש מורם ואת רוב המשקל על הרגל הכפופה ובתמיכת היד. עצור לרגע בבסיס הנמוך.
+    5. החזר את כף רגל ימין אל הכריעה, העבר את המשקל לשתי הרגליים והרם את היד. קום בנחת; בצע 3 חזרות ואז החלף צד.
+    שים לב: אל תישב בכוח על הברך הכפופה ואל תחליק את הרגל הישרה למרחק שאינו מאפשר חזרה. בהתחלה הושט את הרגל מעט בלבד; זו תנוחת קרקע נמוכה, לא נפילה אל הרצפה.
+
+capoeira-role:
+  source: null
+  addedOn: "2026-09-17"
+  nameHe: "רולה — מעבר סיבובי נמוך"
+  nameEn: "Rolê — slow floor transition"
+  trainingType: "capoeira"
+  provenanceId: "moreira-2017-capoeira"
+  modality: "gymnastics"
+  pattern: "locomotion"
+  equipment: []
+  stationType: "none"
+  skillLevel: 3
+  loadClass: "bodyweight"
+  unilateral: true
+  repPaceSecPerRep: 12
+  systemicCost: "med"
+  constraints: ["space"]
+  substitutes: ["capoeira-negativa"]
+  scalingEasier: "capoeira-negativa"
+  scalingHarder: null
+  primaryMuscles: ["glutes", "quadriceps"]
+  secondaryMuscles: ["shoulders", "abdominals", "triceps"]
+  instructionsHe: |-
+    1. התחל בנגטיבה: רגל שמאל כפופה, ימין מושטת נמוך וכף יד ימין תומכת. תרגל רק לאחר שליטה בנגטיבה ובנשיאת משקל בשתי ידיים; פנה סביבך שטח לסיבוב.
+    2. הנח גם את כף יד שמאל לפנים, ברוחב נוח מהימנית. הטה את המשקל בהדרגה לידיים ולכף רגל שמאל והרם מעט את האגן.
+    3. אסוף מעט את רגל ימין והעבר אותה בצעד סביב הגוף לימין ולאחור. תן לרגל שמאל להסתובב על הרצפה בכיוון התנועה, בלי להשאיר ברך מסובבת מעל כף רגל תקועה.
+    4. המשך בצעדים קטנים של הרגליים עד שהגוף פונה לכיוון הנגדי. העבר יד אחת בכל פעם למקום תמיכה נוח; לפחות יד אחת ורגל אחת נשארות תומכות בכל מעבר.
+    5. הנמך שוב את האגן לבסיס נמוך עם שמאל כפופה וימין מושטת, אסוף את הרגליים וקום בשליטה. המעבר והקימה הם חזרה אחת; בצע 2–3 חזרות ואז החלף צד.
+    שים לב: זהו רולה איטי בצעדים, בלי קפיצה ובלי גלגול על הראש או הצוואר. אם הסיבוב אינו רציף, עצור בכריעה, שחרר את הידיים וחזור לנגטיבה במקום להאיץ.
+
+capoeira-meia-lua-de-frente:
+  source: null
+  addedOn: "2026-09-17"
+  nameHe: "מייה לואה דה פרנצ׳י — קשת קדמית"
+  nameEn: "Meia-lua de frente"
+  trainingType: "capoeira"
+  provenanceId: "moreira-2017-capoeira"
+  modality: "gymnastics"
+  pattern: "locomotion"
+  equipment: []
+  stationType: "none"
+  skillLevel: 2
+  loadClass: "bodyweight"
+  unilateral: true
+  repPaceSecPerRep: 7
+  systemicCost: "low"
+  constraints: ["space"]
+  substitutes: ["capoeira-ponteira"]
+  scalingEasier: null
+  scalingHarder: "capoeira-queixada"
+  primaryMuscles: ["quadriceps", "adductors"]
+  secondaryMuscles: ["glutes", "abdominals", "calves"]
+  instructionsHe: |-
+    1. עמוד עם שמאל לפנים וימין מאחור, ידיים מול הפנים. פנה קשת פנויה מלפנים ומשני הצדדים, ובדוק שאפשר לעמוד רגע על רגל שמאל בלי להיאחז.
+    2. העבר משקל לשמאל והבא את רגל ימין קדימה ומעט החוצה לימין. שמור על ברך שמאל רכה ועל אצבעות כף הרגל התומכת בכיוון הברך.
+    3. העבר את רגל ימין בקשת מהחוץ פנימה, מימין לשמאל מול הגוף. השאר את הברך ארוכה אך לא נעולה ואת הקשת בתחילה מתחת לגובה האגן.
+    4. הרשה לכף רגל שמאל להסתובב מעט עם האגן. הנמך את ימין בסיום הקשת והנח אותה בעדינות לפנים, בלי לפגוע ברצפה בכוח.
+    5. צעד חזרה לבסיס המקורי. קשת וחזרה לבסיס הן חזרה אחת; בצע 3–5 בימין ואז החלף צד.
+    שים לב: אין מטרה לפגוע בחפץ או להגיע לגובה הראש. הקטן את גובה הקשת אם הגו נזרק לאחור או רגל התמיכה מאבדת יציבות; הידיים נשארות ליד הראש.
+
+capoeira-armada:
+  source: null
+  addedOn: "2026-09-17"
+  nameHe: "ארמדה — בעיטה סיבובית נמוכה"
+  nameEn: "Armada — low controlled spinning kick"
+  trainingType: "capoeira"
+  provenanceId: "moreira-2017-capoeira"
+  modality: "gymnastics"
+  pattern: "locomotion"
+  equipment: []
+  stationType: "none"
+  skillLevel: 4
+  loadClass: "bodyweight"
+  unilateral: true
+  repPaceSecPerRep: 10
+  systemicCost: "med"
+  constraints: ["space"]
+  substitutes: ["capoeira-queixada"]
+  scalingEasier: "capoeira-queixada"
+  scalingHarder: null
+  primaryMuscles: ["glutes", "quadriceps"]
+  secondaryMuscles: ["abdominals", "calves", "adductors"]
+  instructionsHe: |-
+    1. פנה מעגל ריק מסביבך ועמוד עם שמאל לפנים וימין מאחור. תנאי כניסה: סיבוב עמידה איטי בלי בעיטה וחזרה יציבה לאותו כיוון, וכן שליטה בבעיטת קשת נמוכה.
+    2. התחל סיבוב ימינה דרך הראש, הכתפיים והאגן. תן לשתי כפות הרגליים להסתובב עם הגוף, כשהברכיים רכות, בלי לסובב ברך מעל כף רגל מקובעת.
+    3. מצא שוב במבט את הכיוון המקורי מעבר לכתף ימין. רק לאחר שהמבט חוזר והמשקל נשלט על שמאל, הרם את רגל ימין לקשת רחבה ונמוכה עם המשך הסיבוב.
+    4. העבר את רגל ימין סביב הגוף בברך ארוכה ורכה. כף רגל שמאל ממשיכה להסתובב עם האגן, והידיים נשארות סמוך לפנים.
+    5. הנמך את ימין והשב שתי רגליים לבסיס מול הכיוון המקורי. עצור לגמרי לפני החזרה הבאה; בצע 2–3 חזרות לצד אחד ואז החלף.
+    שים לב: למד תחילה את הסיבוב עם שתי רגליים על הרצפה, ורק אחר כך הוסף קשת נמוכה. אם אינך מוצא את כיוון הסיום או נדרש צעד הצלה, סיים בלי בעיטה וחזור לגרסת הסיבוב בלבד.
+
+capoeira-cadeira:
+  source: null
+  addedOn: "2026-09-17"
+  nameHe: "קדיירה — החזקת בסיס מקביל"
+  nameEn: "Paralela / Cadeira — base hold"
+  trainingType: "capoeira"
+  provenanceId: "moreira-2017-capoeira"
+  modality: "gymnastics"
+  pattern: "squat"
+  equipment: []
+  stationType: "none"
+  skillLevel: 1
+  loadClass: "bodyweight"
+  unilateral: false
+  repPaceSecPerRep: 1
+  systemicCost: "low"
+  constraints: []
+  substitutes: ["capoeira-esquiva-lateral"]
+  scalingEasier: null
+  scalingHarder: null
+  primaryMuscles: ["quadriceps", "glutes"]
+  secondaryMuscles: ["abdominals", "calves"]
+  instructionsHe: |-
+    1. עמוד בכפות רגליים ברוחב נוח מעבר לאגן, פונות קדימה או מעט החוצה. השאר מרחב להטיית הגו וידיים מגינות לפני הגוף.
+    2. כופף את שתי הברכיים והעבר את האגן מעט לאחור. הטה את הגו מן הירכיים ושמור על צוואר בהמשך הגב ועל עקבים נתמכים.
+    3. עצור בגובה שאפשר להחזיק בלי רעד שמפריע לשליטה. הברכיים עוקבות אחר כיוון כפות הרגליים, והמשקל מתחלק בין שתי הרגליים.
+    4. החזק 10–15 שניות בנשימה רגועה, ואז יישר את הרגליים בהדרגה ועמוד. לאחר מנוחה אפשר לחזור פעם נוספת; יחידת המינון כאן היא שניית החזקה.
+    שים לב: אין צורך להגיע לכריעה עמוקה. אם העקבים מתרוממים או הגב מתעגל כדי להישאר נמוך, עלה מעט; אל תעצור נשימה כדי להאריך את ההחזקה.
+
+capoeira-au-low-preparation:
+  source: null
+  addedOn: "2026-09-17"
+  nameHe: "הכנה נמוכה לאאו — מעבר צד בתמיכת ידיים"
+  nameEn: "Aú — low supported preparation"
+  trainingType: "capoeira"
+  provenanceId: "moreira-2017-capoeira"
+  modality: "gymnastics"
+  pattern: "locomotion"
+  equipment: []
+  stationType: "none"
+  skillLevel: 4
+  loadClass: "bodyweight"
+  unilateral: true
+  repPaceSecPerRep: 12
+  systemicCost: "med"
+  constraints: ["space"]
+  substitutes: ["capoeira-role"]
+  scalingEasier: "capoeira-role"
+  scalingHarder: null
+  primaryMuscles: ["shoulders", "triceps"]
+  secondaryMuscles: ["abdominals", "glutes", "quadriceps"]
+  instructionsHe: |-
+    1. תרגל על רצפה יציבה, נקייה ולא מחליקה, עם שטח פנוי משני הצדדים. דרושה נשיאת משקל נוחה בשתי ידיים ובסיס כריעה נשלט; התרגיל הוא הכנה נמוכה לגלגלון, לא גלגלון מלא.
+    2. עמוד בפישוק, כופף ברכיים והטה את הגוף לשמאל. הנח יד שמאל על הרצפה בצד שמאל ואז יד ימין במרחק נוח ממנה, במסלול המעבר.
+    3. העבר מעט משקל אל שתי כפות הידיים, שמור את הכתפיים פעילות ואת הראש חופשי מהרצפה. הישאר נמוך וברגליים כפופות.
+    4. העבר את רגל ימין בצעד או בהרמה נמוכה אל הצד השני של בסיס הידיים, כששמאל עדיין תומכת. הנח את ימין ורק אז העבר את שמאל אחריה; אין שלב שבו שתי הרגליים חייבות להיות באוויר.
+    5. העבר משקל בחזרה לרגליים, שחרר יד אחת ואז את השנייה וקום בעמידה רחבה. בצע 2–3 מעברים לשמאל, אחר כך לצד השני.
+    שים לב: האגן נשאר נמוך מגובה הכתפיים ואין ניסיון לבעוט לעמידת ידיים. אם צריך לקפוץ כדי לעבור, הקטן את הצעד ועצור בכריעה. שמור על מרפקים תומכים ללא נעילה בכוח; צא מהתמיכה אם מופיע כאב.
+
+capoeira-queixada:
+  source: null
+  addedOn: "2026-09-17"
+  nameHe: "קיישאדה — קשת החוצה בצעד הכנה"
+  nameEn: "Queixada"
+  trainingType: "capoeira"
+  provenanceId: "moreira-2017-capoeira"
+  modality: "gymnastics"
+  pattern: "locomotion"
+  equipment: []
+  stationType: "none"
+  skillLevel: 3
+  loadClass: "bodyweight"
+  unilateral: true
+  repPaceSecPerRep: 8
+  systemicCost: "med"
+  constraints: ["space"]
+  substitutes: ["capoeira-meia-lua-de-frente"]
+  scalingEasier: "capoeira-meia-lua-de-frente"
+  scalingHarder: "capoeira-armada"
+  primaryMuscles: ["glutes", "quadriceps"]
+  secondaryMuscles: ["abdominals", "adductors", "calves"]
+  instructionsHe: |-
+    1. עמוד עם ימין מעט לפנים ושמאל מאחור, ידיים ליד הראש. פנה מרחב לצעד הצידה ולקשת נמוכה; תרגל קודם העברת משקל בלי בעיטה.
+    2. העבר את שמאל בצעד קטן מאחורי ימין, בלי להדק את הרגליים זו לזו. סובב מעט את האגן והנח את שמאל כך שתוכל לקבל משקל בלי פיתול בברך.
+    3. העבר את המשקל לשמאל והרם את רגל ימין אל הצד הפנימי של קו הגוף, כשהברך ארוכה ורכה.
+    4. העבר את ימין בקשת מהפנים החוצה, משמאל לימין מול הגוף. התחל בגובה נמוך מגובה האגן, ותן לכף רגל שמאל להסתובב עם התנועה.
+    5. הנח את ימין ברכות ופתח שוב בסיס מדורג ללא הצלבה. צעד ההכנה, הקשת והחזרה הם חזרה אחת; בצע 3 חזרות ואז החלף צד.
+    שים לב: הצעד המקדים נועד לארגן את האגן, לא לסובב ברך כשהרגל תקועה. עצור לאחר צעד ההכנה אם אין בסיס יציב; הגדל את הקשת רק לאחר שהנחיתה והחזרה נשלטות.
+
+capoeira-martelo:
+  source: null
+  addedOn: "2026-09-17"
+  nameHe: "מרטלו — בעיטה מעגלית מבוקרת"
+  nameEn: "Martelo"
+  trainingType: "capoeira"
+  provenanceId: "moreira-2017-capoeira"
+  modality: "gymnastics"
+  pattern: "locomotion"
+  equipment: []
+  stationType: "none"
+  skillLevel: 3
+  loadClass: "bodyweight"
+  unilateral: true
+  repPaceSecPerRep: 7
+  systemicCost: "med"
+  constraints: ["space"]
+  substitutes: ["capoeira-ponteira"]
+  scalingEasier: "capoeira-ponteira"
+  scalingHarder: "capoeira-martelo-de-chao-supported"
+  primaryMuscles: ["quadriceps", "glutes"]
+  secondaryMuscles: ["abdominals", "calves", "hamstrings"]
+  instructionsHe: |-
+    1. עמוד עם שמאל לפנים וימין מאחור, ידיים מגינות ליד הפנים. השאר מרחב פנוי למסלול הרגל; התחל בבעיטה נמוכה ובדוק עמידה יציבה על שמאל.
+    2. העבר את המשקל לשמאל והרם את ברך ימין כפופה. סובב את כף רגל שמאל ואת האגן יחד כדי לאפשר לברך ימין לפנות הצדה לכיוון הבעיטה.
+    3. הארך את ברך ימין בקשת קצרה מול הגוף, כשהאגן פונה עם הרגל. גב כף הרגל ממשיך את קו השוק ואין צורך להגיע ליישור מלא.
+    4. כופף מחדש את ברך ימין באותו מסלול והחזר אותה לעמדת ההכנה לפני הורדת הרגל.
+    5. הנח את ימין וחזור לבסיס המקורי. הרמה, הארכה, איסוף ונחיתה הם חזרה אחת; בצע 3–5 בימין ואז החלף צד.
+    שים לב: רגל התמיכה מסתובבת עם האגן; אל תנסה לסובב את האגן מעל כף רגל שאינה זזה. בעיטת סולו נעצרת בשליטה באוויר, ללא נעילה חדה או חיפוש אחר כוח פגיעה.
+
+capoeira-meia-lua-de-compasso-low:
+  source: null
+  addedOn: "2026-09-17"
+  nameHe: "מייה לואה דה קומפסו — קשת נמוכה בתמיכת ידיים"
+  nameEn: "Meia-lua de compasso — low partial arc"
+  trainingType: "capoeira"
+  provenanceId: "moreira-2017-capoeira"
+  modality: "gymnastics"
+  pattern: "hinge"
+  equipment: []
+  stationType: "none"
+  skillLevel: 4
+  loadClass: "bodyweight"
+  unilateral: true
+  repPaceSecPerRep: 12
+  systemicCost: "med"
+  constraints: ["space"]
+  substitutes: ["capoeira-meia-lua-de-frente"]
+  scalingEasier: "capoeira-meia-lua-de-frente"
+  scalingHarder: null
+  primaryMuscles: ["glutes", "hamstrings"]
+  secondaryMuscles: ["shoulders", "abdominals", "quadriceps"]
+  instructionsHe: |-
+    1. פנה שטח ריק מאחור ומשני הצדדים, על רצפה שאינה מחליקה. התחל בפישוק נוח; דרושה יכולת להתכופף מהאגן, לתמוך בשתי ידיים ולהסתובב על רגל אחת בלי כאב או איבוד שליטה.
+    2. כופף ברכיים והטה את הגו מן הירכיים. הנח שתי כפות ידיים על הרצפה לפנים ובצד הגוף, ברוחב שמאפשר תמיכה יציבה; הראש נשאר חופשי בין הזרועות.
+    3. העבר משקל לשתי הידיים ולרגל שמאל. הרם את ימין מעט מאחור בברך ארוכה ורכה, כשהעקב מוביל והאגן נשאר נמוך.
+    4. העבר את רגל ימין בקשת קצרה ונמוכה מאחורי הגוף, רק בטווח שמאפשר לכף רגל שמאל להסתובב עם האגן. הידיים נשארות תומכות; בהתחלה אין צורך להשלים סיבוב מלא.
+    5. הנח את ימין ברצפה בסוף הקשת, עצור, העבר משקל לשתי הרגליים והרם את הידיים. עלה באיטיות וסדר מחדש את הבסיס; בצע 2–3 חזרות ואז החלף צד.
+    שים לב: הקשת מוגבלת לטווח נשלט, לא לגובה או לזווית קבועים. אל תסובב ברך מעל כף רגל תקועה ואל תניח משקל על הראש. אם חסרה יציבות, בצע רק הטיה ותמיכה כששתי הרגליים נשארות ברצפה.
+
+capoeira-martelo-de-chao-supported:
+  source: null
+  addedOn: "2026-09-17"
+  nameHe: "מרטלו מהקרקע — הכנה נמוכה בתמיכה"
+  nameEn: "Martelo de chão — supported low preparation"
+  trainingType: "capoeira"
+  provenanceId: "moreira-2017-capoeira"
+  modality: "gymnastics"
+  pattern: "core"
+  equipment: []
+  stationType: "none"
+  skillLevel: 4
+  loadClass: "bodyweight"
+  unilateral: true
+  repPaceSecPerRep: 12
+  systemicCost: "med"
+  constraints: ["space"]
+  substitutes: ["capoeira-martelo"]
+  scalingEasier: "capoeira-martelo"
+  scalingHarder: null
+  primaryMuscles: ["shoulders", "abdominals"]
+  secondaryMuscles: ["triceps", "quadriceps", "glutes"]
+  instructionsHe: |-
+    1. בחר רצפה יציבה ולא מחליקה ופנה מרחב לבעיטה לצד. דרושה שליטה בנגטיבה, בתמיכת שתי ידיים ובאיסוף ברך; זו הכנה עם רגל תומכת, ללא השלב האווירי שבתרשים המקור.
+    2. מכריעה נמוכה הנח שתי כפות ידיים לפנים ברוחב כתפיים נוח. העבר מעט משקל לידיים ולכף רגל שמאל והשאר את האגן נמוך.
+    3. הרם את ברך ימין כפופה לצד הגוף, רק מעט מעל הרצפה. ידיים ושמאל יוצרים בסיס תמיכה; סובב את שמאל עם האגן במידת הצורך בלי לעקם את הברך.
+    4. הארך את רגל ימין בקשת קצרה ונמוכה לצד, בלי להרים את האגן לגובה הכתפיים ובלי לנתק את רגל שמאל. שמור את המרפקים תומכים ואת הראש מחוץ לקו הרצפה.
+    5. אסוף את ברך ימין חזרה, הנח את כף הרגל לצד שמאל והעבר משקל לשתי הרגליים. שחרר את הידיים וקום בנחת; בצע 2–3 חזרות ואז החלף צד.
+    שים לב: התקדם תחילה בהעברת משקל כשהרגליים נשארות ברצפה, אחר כך בהרמת ברך, ורק לבסוף בהארכה קצרה. אם התמיכה מתמוטטת או מופיע כאב ביד, החזר מיד את הרגל לרצפה וצא מהתמיכה; אין כאן קפיצה או בעיטה מול אדם.
+
+capoeira-ponteira:
+  source: null
+  addedOn: "2026-09-17"
+  nameHe: "פונטיירה — בעיטה קדמית נמוכה"
+  nameEn: "Ponteira — controlled front kick"
+  trainingType: "capoeira"
+  provenanceId: "moreira-2017-capoeira"
+  modality: "gymnastics"
+  pattern: "locomotion"
+  equipment: []
+  stationType: "none"
+  skillLevel: 2
+  loadClass: "bodyweight"
+  unilateral: true
+  repPaceSecPerRep: 6
+  systemicCost: "low"
+  constraints: ["space"]
+  substitutes: ["capoeira-meia-lua-de-frente"]
+  scalingEasier: null
+  scalingHarder: "capoeira-martelo"
+  primaryMuscles: ["quadriceps"]
+  secondaryMuscles: ["glutes", "abdominals", "calves"]
+  instructionsHe: |-
+    1. עמוד עם שמאל מעט לפנים וימין מאחור, ידיים ליד הפנים. פנה מקום להארכת רגל קדימה ובדוק שאפשר להרים את ימין בלי להישען לאחור.
+    2. העבר את המשקל לשמאל והרם את ברך ימין לפנים לגובה נוח, כשכף הרגל מתחת לברך והאגן נשאר נשלט.
+    3. הארך את רגל ימין קדימה בתנועה חלקה ונמוכה, בלי לנעול את הברך. כף הרגל ממשיכה קדימה ואין מטרה למגע או לפגיעה.
+    4. כופף את הברך ואסוף את כף הרגל בחזרה מתחתיה לפני ההנמכה. שמור על מבט קדימה ועל ברך תמיכה רכה.
+    5. הנח את ימין מאחור וחזור לבסיס. הרמה, הארכה, איסוף והנחה הם חזרה אחת; בצע 3–5 ואז החלף צד.
+    שים לב: אל תזרוק את הגו לאחור כדי להגביה את הבעיטה ואל תיישר את הברך בצליפה. הקטן את גובה הברך ואת ההארכה אם קשה לעצור או להחזיר את הרגל באותו מסלול.

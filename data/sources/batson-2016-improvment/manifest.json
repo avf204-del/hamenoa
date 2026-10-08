@@ -1,0 +1,142 @@
+{
+  "sourceUrl": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2016.00015/full",
+  "retrievedFrom": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4756105/fullTextXML",
+  "doi": "10.3389/fneur.2016.00015",
+  "authors": [
+    "Glenna Batson",
+    "Christina E. Hugenschmidt",
+    "Christina T. Soriano"
+  ],
+  "title": "Verbal Auditory Cueing of Improvisational Dance: A Proposed Method for Training Agency in Parkinson’s Disease",
+  "publishedYear": 2016,
+  "changes": "עיבוד עברי מקורי לשלוש משימות מחול יצירתי כלליות: החוצה ופנימה בישיבה, העברת מחווה בין משתתפים והליכה בקצבים לבחירה. הפרוטוקול הקליני אינו משוכפל ואין טענת טיפול בפרקינסון או הסמכה בשיטת IMPROVment. נוספו דוגמאות, ספירות, זמני תרגול, תיוג שרירים ותסריטי תמונה. מסלולי מכשולים והרמת כיסאות הושמטו, וקשר עין הוגדר כרשות.",
+  "acquisitionNote": "Downloaded full text XML from the official Europe PMC API. acquiredAt records ingestion into the archive.",
+  "scope": "Authorial instructional prose in Class Structure, Group Warm-up and Moving through Free Space. No clinical claims, music, images or separate rights in the named method are imported; no endorsement by the authors is implied.",
+  "schemaVersion": 1,
+  "id": "batson-2016-improvment",
+  "author": "Glenna Batson, Christina E. Hugenschmidt, Christina T. Soriano",
+  "license": "CC-BY-4.0",
+  "licenseVersion": "4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "acquiredAt": "2026-09-17T07:48:45.463402+00:00",
+  "acquiredAtMeaning": "UTC time original downloaded bytes were copied into this source archive; not the publication date.",
+  "files": [
+    {
+      "path": "article.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4756105/fullTextXML",
+      "acquiredAt": "2026-09-17T07:48:45.463402+00:00",
+      "contentType": "application/xml",
+      "bytes": 101442,
+      "sha256": "1264fc314dd88a56e79e326e17a07a85fec2c377e4611460294ad871694313a2",
+      "derivedExtract": false
+    },
+    {
+      "path": "license-legalcode.txt",
+      "url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt",
+      "acquiredAt": "2026-09-17T07:48:45.463402+00:00",
+      "contentType": "text/plain",
+      "bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "derivedExtract": false
+    },
+    {
+      "path": "license-notice.txt",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4756105/fullTextXML",
+      "acquiredAt": "2026-09-17T07:48:45.463402+00:00",
+      "contentType": "text/plain",
+      "bytes": 1101,
+      "sha256": "f00cef3066416f6640b8d2a3695a8af909ca9f99e4dccdf3598e46d09ce3bba4",
+      "derivedExtract": true
+    },
+    {
+      "path": "instruction-extract.txt",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4756105/fullTextXML",
+      "acquiredAt": "2026-09-17T07:48:45.463402+00:00",
+      "contentType": "text/plain",
+      "bytes": 3621,
+      "sha256": "98d79a4d00a0f8f551807ceb070c279b750e49e1c77184fe907ee090de4e452a",
+      "derivedExtract": true
+    }
+  ],
+  "entries": [
+    {
+      "slug": "dance-out-out-in-in",
+      "sourceLocator": {
+        "researchId": "D05",
+        "sections": [
+          {
+            "id": "S2-6",
+            "paragraphs": [
+              2
+            ]
+          }
+        ]
+      },
+      "dosage": {
+        "unit": "cycles",
+        "cyclesPerSet": 4,
+        "sets": [
+          1,
+          2
+        ],
+        "secondsPerCycle": 8,
+        "restSeconds": 15
+      },
+      "minParticipants": 1
+    },
+    {
+      "slug": "dance-pass-the-gesture",
+      "sourceLocator": {
+        "researchId": "D06",
+        "sections": [
+          {
+            "id": "S2-6-1",
+            "paragraphs": [
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      "dosage": {
+        "unit": "turns",
+        "turnsPerParticipant": 2,
+        "secondsPerTurn": 8
+      },
+      "minParticipants": 2
+    },
+    {
+      "slug": "dance-variable-tempo-walk",
+      "sourceLocator": {
+        "researchId": "D07",
+        "sections": [
+          {
+            "id": "S2-6-3",
+            "paragraphs": [
+              1,
+              3
+            ]
+          }
+        ]
+      },
+      "dosage": {
+        "unit": "seconds",
+        "secondsPerSequence": 40,
+        "sets": [
+          1,
+          2
+        ],
+        "restSeconds": 20
+      },
+      "minParticipants": 1
+    }
+  ],
+  "attribution": "Verbal Auditory Cueing of Improvisational Dance: A Proposed Method for Training Agency in Parkinson’s Disease — Glenna Batson, Christina E. Hugenschmidt, Christina T. Soriano. CC BY 4.0. Hebrew adaptation by ForceApp; changes documented in this manifest.",
+  "editorialNotes": [
+    "Muscle tags indicate editorially selected movement involvement, not measured muscle activation or a strength-training claim.",
+    "The existing pattern taxonomy has no mobility category. core marks seated axial movement and shapes; pushH is the closest available hand-loading label for the supported wrist movement, not a claim that this is a strength press.",
+    "Substitutes offer a general activity alternative, not anatomical or therapeutic equivalence; no progression relation is asserted when scaling fields are null.",
+    "Timing is an editorial practice suggestion. repPaceSecPerRep=1 denotes seconds for holds and timed continuous movement, not one complete motion each second.",
+    "New captions and English image prompts are original image-generation storyboards. Built-in generated illustrations are archived separately under artifacts/training-types/generated; no external source images were used."
+  ]
+}

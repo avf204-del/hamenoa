@@ -1,0 +1,137 @@
+{
+  "id": "minghelli-2023-capoeira",
+  "author": "Beatriz Minghelli",
+  "title": "Musculoskeletal Injuries in Capoeira Athletes: An Epidemiological Study",
+  "publisher": "MDPI, Healthcare 11(14), 1978",
+  "doi": "10.3390/healthcare11141978",
+  "articleUrl": "https://www.mdpi.com/2227-9032/11/14/1978",
+  "archiveUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10379664/",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "acquiredAt": "2026-09-17T07:58:17.148741+00:00",
+  "licenseEvidence": {
+    "status": "verified",
+    "resolution": "Resolved: article-specific CC BY 4.0 statement verified in archived full article HTML.",
+    "evidence": "Article-specific copyright paragraph in archived article.html: © 2023 by the author; Licensee MDPI; this article under CC BY, linking BY 4.0. No NC/SA/ND condition found in that article license.",
+    "sourceFile": "article.html",
+    "sourceSection": "Copyright and License information",
+    "scope": "Article text only; this is a statement about the published license, not legal or medical certification.",
+    "statement": "Article-specific copyright paragraph in archived article.html: © 2023 by the author; Licensee MDPI; this article under CC BY, linking BY 4.0. No NC/SA/ND condition found in that article license."
+  },
+  "clearanceStatus": "article-text-license-verified",
+  "admissibleForImport": true,
+  "instructionGrade": 1,
+  "candidateCountBasis": {
+    "coreSoloAdaptationCandidates": 5,
+    "coreFamilies": 3,
+    "items": [
+      "ginga",
+      "armada",
+      "standing martelo",
+      "martelo-on-the-ground",
+      "hammer-rotated"
+    ],
+    "additionalAcrobaticDescriptions": [
+      "mortal",
+      "parafuso"
+    ],
+    "excludedPartnerTechnique": [
+      "tesoura"
+    ],
+    "completeCoachingInstructions": 0
+  },
+  "files": [
+    {
+      "path": "article.html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10379664/",
+      "acquiredAt": "2026-09-17T07:58:17.148741+00:00",
+      "bytes": 194502,
+      "sha256": "4149eebe28839024b003165cb8279f72f7dcafea1a81306b7d101d73bfeabd61"
+    },
+    {
+      "path": "license-deed.html",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "acquiredAt": "2026-09-17T07:59:35.165377+00:00",
+      "bytes": 32178,
+      "sha256": "231a5dac65bbf135ba27145969a63cd289faadc172f1512c4810a6c60ba91036"
+    }
+  ],
+  "pdfArchiveStatus": "Attempt returned an HTML browser challenge instead of a PDF; rejected, not archived as PDF. Original full article HTML is archived.",
+  "sourceUrl": "https://www.mdpi.com/2227-9032/11/14/1978",
+  "licenseStatus": "verified",
+  "reuseStatus": "approved-for-listed-new-adaptations",
+  "changes": "שלוש רשומות עבריות חדשות נכתבו ישירות מתיאורי Ginga, standing Martelo ו-Armada שבסעיף Discussion. נוספו כניסה ויציאה, תרגול איטי ונמוך ללא מגע, תנאי כניסה, מינון ראשוני, שרירים ותסריטי המחשה. אין העתקת הוראות מטיוטת Moreira ואין אישור מדריך. אין העתקת תמונות מקור או טענות טיפוליות.",
+  "attribution": "Beatriz Minghelli (2023), Musculoskeletal Injuries in Capoeira Athletes: An Epidemiological Study. Healthcare 11(14):1978. DOI 10.3390/healthcare11141978. CC BY 4.0. Hebrew exercise instructions are original editorial adaptations; no author endorsement implied.",
+  "contentPath": "data/training-types/capoeira-minghelli.yaml",
+  "newlyAuthoredCount": 3,
+  "newlyAuthoredFamilyCount": 3,
+  "instructorCertified": false,
+  "entries": [
+    {
+      "slug": "capoeira-ginga-alternating-step",
+      "sourceSection": "4. Discussion",
+      "sourceParagraphOpening": "Regarding the maneuver that caused the most injury in this study",
+      "sourceSupportHe": "בסעיף Discussion מוגדרת תנועה חוזרת: יד ימין לפנים ורגל ימין לאחור, ואז אותו חילוף בצד שמאל.",
+      "sourceInstructionGrade": 1,
+      "minimumParticipants": 1,
+      "editorialAdditions": [
+        "entry and recovery",
+        "low non-contact range",
+        "prerequisite practice",
+        "initial dosage",
+        "muscles and technical level",
+        "storyboards"
+      ]
+    },
+    {
+      "slug": "capoeira-martelo-standing",
+      "sourceSection": "4. Discussion",
+      "sourceParagraphOpening": "Regarding the maneuver that caused the most injury in this study",
+      "sourceSupportHe": "בסעיף Discussion מתואר standing martelo: כפיפת ירך וברך, סיבוב גוף ובעיטה באמצעות פשיטת הברך; משטח המגע המתואר הוא גב כף הרגל. הגובה כאן הונמך לצורך סולו.",
+      "sourceInstructionGrade": 1,
+      "minimumParticipants": 1,
+      "editorialAdditions": [
+        "entry and recovery",
+        "low non-contact range",
+        "prerequisite practice",
+        "initial dosage",
+        "muscles and technical level",
+        "storyboards"
+      ]
+    },
+    {
+      "slug": "capoeira-armada-controlled-turn",
+      "sourceSection": "4. Discussion",
+      "sourceParagraphOpening": "Regarding the maneuver that caused the most injury in this study",
+      "sourceSupportHe": "בסעיף Discussion מתוארת armada עם סיבוב גוף של 360 מעלות דרך הפניית הגב, רגל אחת תומכת ובעיטה ברגל השנייה עם הצד החיצוני של כף הרגל. יעד ראש הושמט והגובה הונמך לעיבוד סולו.",
+      "sourceInstructionGrade": 1,
+      "minimumParticipants": 1,
+      "editorialAdditions": [
+        "entry and recovery",
+        "low non-contact range",
+        "prerequisite practice",
+        "initial dosage",
+        "muscles and technical level",
+        "storyboards"
+      ]
+    }
+  ],
+  "excludedDescriptions": [
+    {
+      "name": "martelo-on-the-ground",
+      "reasonHe": "יש תיאור תנועתי קצר, אך חסרים ארגון תמיכות וכניסה/יציאה; לא הוספנו כעת הוראות קרקע מעבר לבסיס שבטקסט."
+    },
+    {
+      "name": "hammer-rotated",
+      "reasonHe": "מתואר כהמשך מרטלו לסיבוב 360; נשמר כמועמד, לא הורחב כעת לכרטיס עצמאי ללא פירוט המעבר."
+    },
+    {
+      "name": "mortal / parafuso",
+      "reasonHe": "תיאורים אקרובטיים כלליים ללא התקדמות כניסה ונחיתה; לא נבחרו לכרטיס חדש בסבב זה."
+    },
+    {
+      "name": "tesoura",
+      "reasonHe": "התיאור כולל בן זוג והפלה ולכן אינו תרגיל הסולו המבוקש."
+    }
+  ]
+}

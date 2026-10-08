@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-09-17T08:45:34.954Z",
+  "entries": 282,
+  "activeBaseEntries": 263,
+  "stagedWaveEntries": 18,
+  "retiredEntries": 1,
+  "sourceReferences": 200,
+  "unavailableSourceIds": [],
+  "historicalVersionStatus": "Original historical commit unknown; existing curated snapshot preserved separately. Full upstream is a dated retrieval, not a reconstruction of the original import."
+}

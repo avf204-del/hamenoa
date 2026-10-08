@@ -1,0 +1,766 @@
+// המנוע — סכמת נתונים (סעיף 5 ב־docs/SPEC.md)
+// Postgres בכל הסביבות (החלטה 20). המודלים נשארו כפי שהיו בימי ה־SQLite:
+// שדות בחירה הם String עם טיפוסי TS ב־src/engine/types.ts, ומערכים הם Json.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ---------- משתמשים (אבן דרך 8, החלטה 21) ----------
+// הרשמה עצמית בגוגל; הזמנה היא מסלול נוסף (החלטה 35).
+// כל הנתונים האישיים נושאים userId, וכל שאילתה בשרת מסננת לפיו.
+
+model User {
+  id         String    @id @default(cuid())
+  name       String // שם לתצוגה בלוח הבעלים (לא מוצג לנסיינים אחרים)
+  role       String // owner | tester
+  createdAt  DateTime  @default(now())
+  lastSeenAt DateTime? // עודכן בכניסה — כך הבעלים רואה מי פעיל
+  revokedAt  DateTime? // ביטול גישה בידי הבעלים; מבטל גם אסימונים שהונפקו
+
+  disclaimerAcceptedAt DateTime? // הצהרת הוויתור המשפטית (החלטה 26ד) — חותמת האישור
+
+  googleSub String? @unique // מזהה יציב (sub) מחשבון גוגל מקושר; null = לא קושר
+  email     String? // אימייל מגוגל, לתצוגה בלבד — לא ערוץ כניסה בפני עצמו
+
+  // פיילוט ציבורי (סבב 35). כל השדות אופציונליים: משתמש ותיק נכנס בלי אף
+  // אחד מהם, והשערים (src/lib/onboarding.ts) קוראים "חסר" כ"טרם נעשה".
+  legalVersion        Int? // גרסת המסמכים המשפטיים שאושרה (LEGAL_VERSION ב-src/legal)
+  healthScreenedAt    DateTime? // מועד מילוי שאלון הבריאות
+  healthScreenVersion Int? // גרסת השאלון שמולאה (HEALTH_SCREEN_VERSION)
+  healthFlagged       Boolean? // האם נענתה "כן" על שאלה כלשהי
+  healthAnswers       Json? // { answers: Record<questionId, boolean>, acknowledged: boolean }
+  signupSource        String? // google | invite | owner
+  trainingPreferences Json? // account defaults; request preferences still win
+  displayName         String? // כינוי לאתגרים ולזירה (החלטה 47); null = טרם הסכים להיות גלוי
+
+  exerciseTracks ExerciseTrack[]
+  exerciseLoadState ExerciseLoadState?
+  capacityProfile CapacityProfile?
+
+  gameState        GameState?
+  gameRuns         GameRun[]
+  gameLedger       GameLedger[]
+  proWorkspacesOwned ProWorkspace[] @relation("ProWorkspaceOwner")
+  proMemberships ProMembership[]
+  proInvitesCreated ProInvite[] @relation("ProInviteCreator")
+  proInvitesAccepted ProInvite[] @relation("ProInviteAcceptor")
+  proTagsAuthored ProTag[] @relation("ProTagAuthor")
+  proTagsReceived ProTag[] @relation("ProTagTrainee")
+  proSessionMetas ProSessionMeta[] @relation("ProSessionTrainee")
+  proSessionsScheduled ProSessionMeta[] @relation("ProSessionScheduler")
+  proAudits ProSessionAudit[] @relation("ProAuditActor")
+  proComments ProComment[]
+
+  invite           Invite?
+  locations        LocationProfile[]
+  calibrations     UserCalibration[]
+  benchmarks       Benchmark[]
+  sessions         Session[]
+  setLogs          SetLog[]
+  benchmarkResults BenchmarkResult[]
+  legalAcceptances LegalAcceptance[]
+  feedback         Feedback[]
+  experienceProfile  ExperienceProfile?
+  experienceSessions ExperienceSession[]
+  experienceFeedback ExperienceFeedback[]
+  experienceAwards   ExperienceAward[]
+  challengesCreated  Challenge[]        @relation("ChallengeCreator")
+  challengeMembers   ChallengeMember[]
+  matchesHosted      Match[]            @relation("MatchHost")
+  matchParticipants  MatchParticipant[]
+}
+
+// ---------- הפיילוט הציבורי (סבב 35) ----------
+
+// יומן אישורים append-only: כל אישור של גרסת מסמכים נרשם בשורה משלו, כך
+// שאפשר להוכיח מה בדיוק אושר ומתי. החותמת האחרונה יושבת גם על המשתמש
+// (disclaimerAcceptedAt + legalVersion) כדי שהשער יעבוד בלי join.
+model LegalAcceptance {
+  id         String   @id @default(cuid())
+  userId     String
+  version    Int
+  acceptedAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+// אנליטיקה עצמית (החלטה 35, D-8). אין מפתח זר ל-User בכוונה: אירוע שורד
+// מחיקת חשבון אחרי שהמזהה מנוקה ממנו, כך שמדדי הפיילוט לא נשברים למפרע.
+// אין כתובת IP כאן — רק visitId אקראי שנוצר בדפדפן.
+model PilotEvent {
+  id        String   @id @default(cuid())
+  name      String
+  userId    String? // מנוקה ל-null במחיקת חשבון
+  userRole  String? // owner | tester — הבעלים מוחרג מכל מדד
+  visitId   String? // מזהה ביקור אקראי מהדפדפן (sessionStorage)
+  path      String?
+  props     Json?
+  createdAt DateTime @default(now())
+
+  @@index([name, createdAt])
+  @@index([userId])
+  @@index([visitId])
+}
+
+// משוב מתוך האפליקציה ופניות מטופס יצירת הקשר הציבורי (D-11).
+model Feedback {
+  id         String    @id @default(cuid())
+  userId     String? // null = פנייה מאנונימי, או משתמש שנמחק
+  sessionId  String? // האימון שממנו נשלח המשוב (בלי מפתח זר — היסטוריה חופשית)
+  kind       String // feedback | contact
+  rating     Int? // 1..5
+  name       String?
+  email      String?
+  text       String
+  path       String?
+  createdAt  DateTime  @default(now())
+  resolvedAt DateTime? // סומן "טופל" בלוח הפיילוט
+
+  user User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([createdAt])
+}
+
+// הגדרות מערכת בשורה אחת לכל נושא (כרגע: "registration"). ה-id הוא cuid
+// כמו בכל טבלה אחרת — הגיבוי והשחזור ממיינים ומשחזרים לפי id — והמפתח
+// הלוגי יושב ב-key הייחודי.
+model AppSetting {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  value     Json
+  updatedAt DateTime @updatedAt
+}
+
+model Invite {
+  id        String    @id @default(cuid())
+  code      String    @unique // XXXX-XXXX; נמסר אישית, לא מתפרסם
+  label     String // למי נועד — לעיני הבעלים בלבד
+  createdAt DateTime  @default(now())
+  usedAt    DateTime? // מולא בפדיון הראשון; קוד פדוי לא יוצר משתמש נוסף
+  revokedAt DateTime? // ביטול בידי הבעלים — הקוד מפסיק לעבוד
+  userId    String?   @unique // המשתמש היחיד שנוצר מהקוד
+
+  user User? @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Exercise {
+  id               String   @id @default(cuid())
+  slug             String   @unique
+  nameHe           String
+  nameEn           String
+  sourceId         String // מזהה במאגר הקוד הפתוח
+  licenseNote      String
+  trainingType     String   @default("base") // base | yoga | capoeira | dance
+  provenanceId     String? // data/sources/<id>/manifest.json; content attribution
+  modality         String // cardio | gymnastics | weights
+  pattern          String // squat | hinge | pushV | pushH | pullV | pullH | lunge | carry | core | locomotion
+  equipment        Json // string[]
+  stationType      String // fixed | portable | none
+  skillLevel       Int // 1-5
+  loadClass        String // bodyweight | light | moderate | heavy
+  unilateral       Boolean  @default(false) // סט שלם מבוצע בצד אחד (יד/רגל)
+  repPaceSecPerRep Float
+  systemicCost     String // low | med | high
+  constraints      Json // string[]: noise | ceiling | space
+  substitutes      Json // ExerciseId[] מדורג; תקינות נאכפת בסקריפט הייבוא ובבדיקות
+  scalingEasierId  String?
+  scalingHarderId  String?
+  instructionsHe   String
+  primaryMuscles   Json? // string[] — אוצר המילים של free-exercise-db; null = אין נתון (src/lib/muscle-groups.ts נופל לדפוס)
+  secondaryMuscles Json? // string[] — כנ"ל
+  createdAt        DateTime @default(now())
+
+  setLogs SetLog[]
+}
+
+model LocationProfile {
+  id           String  @id @default(cuid())
+  userId       String
+  kind         String // gym | home
+  name         String
+  equipment    Json // string[] — סלאגים מ־src/lib/equipment.ts
+  quantities   Json // { [equipment]: number }
+  peakHours    Boolean @default(false)
+  constraints  Json // string[]: noise | ceiling | space
+  usuallyTaken Json // string[] — ציוד/תרגילים שלרוב תפוסים
+  weightInventory Json? // equipment slug -> available total/per-hand kg values
+
+  user     User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sessions Session[]
+
+  @@index([userId, kind])
+}
+
+model UserCalibration {
+  id            String   @id @default(cuid())
+  userId        String
+  repsPerMinute Json // { [slug]: number } — תוצאות מבחן הדקה (שאלון הקצב, M5)
+  failurePoints Json // ירושה מהמפרט; חלק ב' ממומש כ-maxReps (מדויק יותר) — נשאר {}
+  maxReps       Json? // { [slug]: number } — מקסימום חזרות רצוף שדווח/נלמד
+  level         Int // נגזר מהתוצאה הנמוכה ביותר בתרגילי הבסיס
+  paceFactor    Float? // מקדם הקצב שנמדד בשאלון; null = ייגזר מהרמה בזמן טעינה
+  baselineLoads Json? // { [slug]: number } — משקל העבודה האחרון שהושלם (נלמד מ-SetLog)
+  testedMax     Json? // { [group]: { e1rmKg, testedAt, slug } } — המקסימום שנמדד באימון בדיקה (docs/strength-model.md §9); null = אין, והנתיב הקיים רץ כרגיל
+  bodyWeightKg  Float? // משקל גוף שדווח במסך היכולת (החלטה 26א) — נגרר קדימה כמו שאר השדות
+  heightCm      Float? // גובה שדווח במסך היכולת (החלטה 26א)
+  source        String   @default("manual") // manual = מסך היכולת · auto = עדכון מ-SetLog
+  createdAt     DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+}
+
+model Session {
+  id            String    @id @default(cuid())
+  userId        String
+  date          DateTime
+  seed          String
+  timeBudgetMin Int
+  locationId    String
+  mood          String // fresh | normal | wrecked
+  status        String // planned | active | done | abandoned
+  revision      Int       @default(0) // גרסה לכתיבות מקבילות של סטים, התקדמות וסיום
+  gameBudgetSec Float? // frozen approved loggable duration; never raised by edits
+  score         Int? // 0-100, מחושב מ־SetLog בלבד
+  rpe           Int? // 1-10
+  funRating     Int?
+  explainLog    Json // שורת הסבר בעברית לכל החלטת מנוע
+  context       Json? // קלטי היצירה: ציוד תפוס, שעת עומס, מדד התקדמות באימון
+  startedAt     DateTime? // שעון הקיר הרץ מרגע ה-activate הראשון (החלטה 25 ו-27 סעיף א); null = טרם הופעל / רשומה ישנה
+  completedAt   DateTime? // נחתם פעם אחת במעבר ל-done/abandoned (סבב 36, D-6); null = רשומה ישנה או אימון עדיין פעיל/מתוכנן
+  createdAt     DateTime  @default(now())
+
+  user             User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  location         LocationProfile   @relation(fields: [locationId], references: [id])
+  blocks           Block[]
+  swapEvents       SwapEvent[]
+  benchmarkResults BenchmarkResult[]
+  experience       ExperienceSession?
+  gameRun          GameRun?
+  proMeta          ProSessionMeta?
+  proAudits        ProSessionAudit[]
+  proComments      ProComment[]
+  writeReceipts    SessionWriteReceipt[]
+  movementReceipts MovementReceipt[]
+
+  // אימון פעיל אחד למשתמש נאכף באינדקס ייחודי **חלקי** —
+  // UNIQUE("userId") WHERE status = 'active' — שנוצר במיגרציה
+  // round37_guards. ל-Prisma אין תחביר לתנאי כזה, ולכן הוא חי ב-SQL בלבד;
+  // אל תיצרו כאן @@unique([userId]) — הוא יחסום גם planned/done.
+  @@index([userId, date])
+}
+
+model Block {
+  id         String  @id @default(cuid())
+  sessionId  String
+  order      Int
+  type       String // warmup | strength | metcon | bonus | cardio | flexibility | cooldown
+  format     String? // amrap | emom | rft | ladder | chipper | intervals | tabata | deathby | stations
+  plannedMin Float
+  payload    Json // תרגילים, סכמת חזרות, משקלים, מנוחות
+
+  session Session  @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  setLogs SetLog[]
+
+  @@unique([sessionId, order])
+}
+
+model SetLog {
+  // מקור האמת: נפח, שיאים והתקדמות מחושבים תמיד מ־actualReps × actualWeightKg
+  id             String   @id @default(cuid())
+  userId         String
+  blockId        String
+  exerciseId     String
+  setIndex       Int
+  targetReps     Int
+  actualReps     Int
+  targetWeightKg Float?
+  actualWeightKg Float?
+  effort         String? // easy | normal | hard | unknown; specific to this performed set
+  workSec        Int? // משך טיימר העבודה בפועל בשניות (סבב 36, D-6); null = נרשם בלי טיימר
+  restSec        Int? // מנוחה בפועל בשניות מהסט הקודם עד "התחלתי סט" (סבב 36, D-6); null = נרשם בלי טיימר
+  completedAt    DateTime @default(now())
+  recordKind String? // segment | aggregate; null = historical representation
+  gameplayEligible Boolean @default(false)
+  gameplayUnits Float @default(0) // immutable credit captured when the performance is first recorded
+  revision Int @default(1)
+  reportedAt DateTime @default(now())
+  effectiveAt DateTime?
+  timingSource String @default("unknown")
+  reportedOnTime Boolean?
+  reportedTempo Boolean?
+  interrupted Boolean @default(false)
+  capacityEvidence Json? // source conditions only; quantities remain SetLog fields
+  actualDoseSec Int? // player reported timed quantity; distinct from measured work clock
+  writeReceipts SessionWriteReceipt[]
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  block    Block    @relation(fields: [blockId], references: [id], onDelete: Cascade)
+  exercise Exercise @relation(fields: [exerciseId], references: [id])
+
+  // רישום אידמפוטנטי: שליחה חוזרת של אותו סט מעדכנת, לא מכפילה
+  @@unique([blockId, exerciseId, setIndex])
+  @@index([userId, completedAt])
+  @@index([userId, exerciseId, completedAt])
+}
+
+model SessionWriteReceipt {
+  id String @id @default(cuid())
+  sessionId String
+  requestId String
+  payloadHash String
+  setLogId String
+  createdAt DateTime @default(now())
+  session Session @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  setLog SetLog @relation(fields: [setLogId], references: [id], onDelete: Cascade)
+  @@unique([sessionId, requestId])
+}
+
+model CapacityProfile {
+  id String @id @default(cuid())
+  userId String @unique
+  revision Int @default(0)
+  data Json
+  updatedAt DateTime @updatedAt
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model MovementReceipt {
+  id String @id @default(cuid())
+  sessionId String
+  requestId String
+  payloadHash String
+  result Json
+  createdAt DateTime @default(now())
+  session Session @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  @@unique([sessionId, requestId])
+}
+
+model SwapEvent {
+  id             String   @id @default(cuid())
+  sessionId      String
+  blockId        String
+  fromExerciseId String
+  toExerciseId   String
+  reason         String // busy | missing | injury | dislike
+  midWorkout     Boolean
+  createdAt      DateTime @default(now())
+  resolvedAt     DateTime? // injury restriction remains active until explicitly cleared
+  needsReview    Boolean @default(false) // expired legacy report awaits an explicit decision
+
+  session Session @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  @@index([sessionId])
+}
+
+model Benchmark {
+  id             String    @id @default(cuid())
+  userId         String
+  slug           String // מזהה יציב לזריעה ולטריגר (baseline | pace | strength | endurance)
+  nameHe         String // שם עברי משלנו, לא שם קרוספיט
+  structure      Json // BenchmarkStructure — הבלוקים (BlockPlan[]) + אופן המדידה (src/lib/benchmark-defs.ts)
+  cadenceWeeks   Int       @default(4)
+  lastDeclinedAt DateTime? // "יום מדד?" שנדחה — הצעה חוזרת בעוד 3 ימים (החלטה 9)
+
+  user    User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  results BenchmarkResult[]
+
+  // ההגדרות זהות לכולם; הרשומה פר-משתמש מחזיקה את המצב (דחייה, תוצאות)
+  @@unique([userId, slug])
+}
+
+model BenchmarkResult {
+  id          String   @id @default(cuid())
+  userId      String
+  benchmarkId String
+  sessionId   String
+  scoreValue  Float
+  scoreUnit   String // reps | seconds | kg
+  createdAt   DateTime @default(now())
+
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  benchmark Benchmark @relation(fields: [benchmarkId], references: [id], onDelete: Cascade)
+  session   Session   @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  // אימון אחד = ניסיון מדד אחד; סיום כפול במרוץ לא מכפיל תוצאה
+  @@unique([sessionId])
+}
+
+/// רישום גיבוי שהצליח. הגיבוי רץ משני מקומות (שירות ה-cron ב-Railway
+/// והמחשב של הבעלים) אל שני יעדים נפרדים, אבל שניהם קוראים מאותו מסד —
+/// ולכן המסד הוא המקום היחיד שאפשר לשאול בו "מתי גובינו לאחרונה".
+/// ‏Railway מצמיד ווליום לשירות, כך שהאפליקציה לא רואה את קבצי ה-cron.
+model BackupRun {
+  id         String   @id @default(cuid())
+  finishedAt DateTime @default(now())
+  source     String // railway-cron | local | manual
+  rows       Int
+  bytes      Int
+  target     String // לאן נכתב הקובץ — לזיהוי איזה משני הנתיבים רץ
+  status     String   @default("ok") // ok | failed
+  error      String? // הודעה מסוננת, ללא כתובת חיבור או סודות
+
+  @@index([finishedAt])
+  @@index([source, finishedAt])
+}
+
+// חוויית האימון (C1, DELIVERY-V1). שכבת תצוגה/משוב/מסע בלבד: אינה משנה
+// SetLog, מינון או את מצב האימון. הכול נמחק עם המשתמש (cascade) ונכלל
+// בייצוא ובגיבוי (scripts/db-schema.ts).
+model ExperienceProfile {
+  id        String   @id @default(cuid())
+  userId    String   @unique
+  enabled   Boolean  @default(true) // opt-in לפיילוט; false = חזרה לאפליקציה הרגילה בלי מחיקה
+  revision  Int      @default(0) // הגנה מעדכון ישן: כל שמירה חייבת לשלוח את הגרסה שקראה
+  prefs     Json // { [axis]: { value, source: explicit|confirmed-suggestion, updatedAt } }; חסר = לא ידוע
+  previous  Json? // ההעדפות לפני השמירה האחרונה — ל"ביטול השינוי"
+  dayOverride Json? // בחירת היום { day, timeBudgetMin?, energy?, novelty?, savedAt } — נצרכת באימון אחד בלבד
+  suggestion Json? // הצעה אחת פעילה/אחרונה { id, axis, from, to, reason, status, ... }
+  nextPlan  Json? // { intention, nextAt (UTC ISO), timeZone, savedAt }
+  contentVersion Int @default(1)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// קישור אימון לחוויה: הגרסאות וההעדפות שהאימון נוצר איתן, והעקיפה היומית.
+model ExperienceSession {
+  id                String   @id @default(cuid())
+  sessionId         String   @unique
+  userId            String
+  experienceVersion Int
+  contentVersion    Int
+  profileRevision   Int
+  overrides         Json? // בחירת היום שנצרכה באימון הזה בלבד
+  resolved          Json // world/companion/novelty/... שהיו בתוקף בתחילת האימון (מדידה)
+  outcome           String? // completed | early — נקבע בסיום מהנתונים, לא מהמסך
+  journeyStep       Int? // שלב המסע שהאימון השלים (1..12); null = לא קידם
+  createdAt         DateTime @default(now())
+  endedAt           DateTime?
+
+  session Session @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+}
+
+// שאלות חוויה בסיום (עד שתיים). דילוג לא נשמר כשורה — חסר אינו אפס.
+model ExperienceFeedback {
+  id        String   @id @default(cuid())
+  userId    String
+  sessionId String
+  question  String // enjoyment | satisfaction | clarity | novelty | return-intent
+  answer    String // מזהה אפשרות מהקטלוג
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([sessionId, question])
+  @@index([userId, createdAt])
+}
+
+// הישגים ו-XP. המפתח הייחודי הופך הענקה חוזרת (רענון/שתי לשוניות) לפעולה ריקה.
+model ExperienceAward {
+  id        String   @id @default(cuid())
+  userId    String
+  kind      String // achievement | xp
+  key       String // מזהה ההישג, או כלל XP + מזהה אירוע
+  amount    Int      @default(0)
+  period    String? // שבוע ISO ב-UTC — תקרת XP יציבה גם כשאזור הזמן משתנה
+  sessionId String?
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, kind, key])
+  @@index([userId, kind, period])
+}
+
+// ---------- אתגרים וזירה (החלטה 47, docs/product/CHALLENGES-V1.md) ----------
+// בין משתתפים עוברים כינוי ותוצאה בלבד. הזירה לא נרשמת כאימון (לא SetLog).
+
+model Challenge {
+  id            String    @id @default(cuid())
+  code          String    @unique // XXXX-XXXX, ייחודי גם מול Match.code
+  title         String // 2–40
+  kind          String // sessions | benchmark
+  benchmarkSlug String? // baseline | pace | endurance
+  startDay      String // YYYY-MM-DD, שעון ישראל
+  endDay        String // כולל; 7–28 יום
+  createdById   String?
+  endedAt       DateTime?
+  createdAt     DateTime  @default(now())
+
+  createdBy User?             @relation("ChallengeCreator", fields: [createdById], references: [id], onDelete: SetNull)
+  members   ChallengeMember[]
+
+  @@index([createdById])
+}
+
+model ChallengeMember {
+  id          String   @id @default(cuid())
+  challengeId String
+  userId      String
+  joinedAt    DateTime @default(now())
+
+  challenge Challenge @relation(fields: [challengeId], references: [id], onDelete: Cascade)
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([challengeId, userId])
+  @@index([userId])
+}
+
+model Match {
+  id               String    @id @default(cuid())
+  code             String    @unique
+  hostId           String? // SetNull; מארח שנמחק = הבקר עובר הלאה
+  phase            String // setup | lobby | strategy | live | done | cancelled
+  program          Json? // MatchProgram, מאומת ב-src/lib/match.ts
+  programRevision  Int       @default(0) // שינוי תוכנית מאפס "מוכן"
+  seed             String
+  proposalRound    Int       @default(0)
+  strategyDeadline DateTime?
+  eventIndex       Int?
+  heat             Int?
+  stage            String? // intro | running | scoring | reveal | rest
+  startsAt         DateTime? // זינוק המקצה הנוכחי, או סוף המנוחה
+  revision         Int       @default(0) // נעילה אופטימית
+  createdAt        DateTime  @default(now())
+  endedAt          DateTime?
+
+  host         User?              @relation("MatchHost", fields: [hostId], references: [id], onDelete: SetNull)
+  participants MatchParticipant[]
+  results      MatchResult[]
+
+  @@index([hostId])
+  @@index([endedAt])
+}
+
+model MatchParticipant {
+  id               String    @id @default(cuid())
+  matchId          String
+  userId           String? // null = אורח
+  guestName        String? // מנוקה 30 יום אחרי endedAt
+  guestTokenHash   String?   @unique // sha256 של עוגיית האורח
+  managedById      String? // participantId שמנהל את האורח (בלי מכשיר)
+  guestAckAt       DateTime? // 18+, סיכון, "עצור מיד"
+  guestHealthFlagged      Boolean? // אורח: האם ענה "כן" בשאלון הבריאות. התשובות עצמן לא נשמרות
+  guestHealthAcknowledged Boolean   @default(false) // אורח: עבר את השאלון (ואישר את ההמלצה אם סומן)
+  role             String // competitor | referee | spectator
+  teamId           String?
+  captain          Boolean   @default(false)
+  readyRevision    Int?
+  picks            Json? // number[]
+  jokerEvent       Int? // סודי עד החשיפה
+  strategyLockedAt DateTime?
+  order            Int?
+  joinedAt         DateTime  @default(now())
+
+  match   Match         @relation(fields: [matchId], references: [id], onDelete: Cascade)
+  user    User?         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  results MatchResult[]
+
+  @@unique([matchId, userId])
+  @@index([userId])
+}
+
+model MatchResult {
+  id            String    @id @default(cuid())
+  matchId       String
+  participantId String
+  eventIndex    Int
+  value         Float? // חזרות או שניות
+  status        String // ok | capped | dnf
+  by            String // self | referee | manager
+  confirmedAt   DateTime?
+  createdAt     DateTime  @default(now())
+
+  match       Match            @relation(fields: [matchId], references: [id], onDelete: Cascade)
+  participant MatchParticipant @relation(fields: [participantId], references: [id], onDelete: Cascade)
+
+  @@unique([participantId, eventIndex])
+  @@index([matchId])
+}
+
+// Optional story layer. Account deletion cascades; training is independent.
+model GameState {
+  id String @id @default(cuid())
+  userId String @unique
+  revision Int @default(0)
+  materials Int @default(0)
+  keys Int @default(0)
+  tool Boolean @default(false)
+  challengeStage Int @default(0)
+  buildStage Int @default(0)
+  world Json?
+  updatedAt DateTime @updatedAt
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+model GameRun {
+  id String @id @default(cuid())
+  userId String
+  sessionId String @unique
+  factor Float
+  awardedMaterials Int @default(0)
+  awardedKeys Int @default(0)
+  progress Float @default(0)
+  result String?
+  createdAt DateTime @default(now())
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  session Session @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  @@index([userId, createdAt])
+}
+model GameLedger {
+  id String @id @default(cuid())
+  userId String
+  key String
+  kind String
+  materials Int @default(0)
+  keys Int @default(0)
+  detail Json
+  createdAt DateTime @default(now())
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([userId, key])
+  @@index([userId, createdAt])
+}
+
+// Professional access is opt-in per workspace. A user may belong to many gyms
+// and coaching workspaces; revocation is checked on every request.
+model ProWorkspace {
+  id String @id @default(cuid())
+  name String
+  kind String // gym | coaching
+  ownerId String
+  timezone String @default("Asia/Jerusalem")
+  equipment Json @default("[]")
+  createdAt DateTime @default(now())
+  archivedAt DateTime?
+  owner User @relation("ProWorkspaceOwner", fields: [ownerId], references: [id], onDelete: Cascade)
+  memberships ProMembership[]
+  invites ProInvite[]
+  tags ProTag[]
+  sessions ProSessionMeta[]
+  @@index([ownerId])
+}
+
+model ProMembership {
+  id String @id @default(cuid())
+  workspaceId String
+  userId String
+  role String // manager | trainer | trainee
+  acceptedAt DateTime @default(now())
+  revokedAt DateTime?
+  createdAt DateTime @default(now())
+  workspace ProWorkspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([workspaceId, userId, role])
+  @@index([userId, revokedAt])
+}
+
+model ProInvite {
+  id String @id @default(cuid())
+  workspaceId String
+  tokenHash String @unique
+  role String
+  createdById String
+  acceptedById String?
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  acceptedAt DateTime?
+  revokedAt DateTime?
+  workspace ProWorkspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  createdBy User @relation("ProInviteCreator", fields: [createdById], references: [id], onDelete: Cascade)
+  acceptedBy User? @relation("ProInviteAcceptor", fields: [acceptedById], references: [id], onDelete: SetNull)
+  @@index([workspaceId, createdAt])
+}
+
+model ProTag {
+  id String @id @default(cuid())
+  workspaceId String
+  traineeId String
+  authorId String
+  kind String // goal | perceived-level | preference | restriction
+  code String?
+  label String
+  createdAt DateTime @default(now())
+  archivedAt DateTime?
+  workspace ProWorkspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  trainee User @relation("ProTagTrainee", fields: [traineeId], references: [id], onDelete: Cascade)
+  author User @relation("ProTagAuthor", fields: [authorId], references: [id], onDelete: Cascade)
+  @@index([traineeId, kind, archivedAt])
+  @@index([workspaceId, traineeId])
+}
+
+model ProSessionMeta {
+  id String @id @default(cuid())
+  sessionId String @unique
+  workspaceId String
+  traineeId String
+  scheduledById String
+  timezone String
+  scheduledAt DateTime
+  cancelledAt DateTime?
+  createdAt DateTime @default(now())
+  session Session @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  workspace ProWorkspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  trainee User @relation("ProSessionTrainee", fields: [traineeId], references: [id], onDelete: Cascade)
+  scheduledBy User @relation("ProSessionScheduler", fields: [scheduledById], references: [id], onDelete: Cascade)
+  @@index([workspaceId, scheduledAt])
+  @@index([traineeId, scheduledAt])
+}
+
+model ProSessionAudit {
+  id String @id @default(cuid())
+  sessionId String
+  actorId String
+  action String
+  revision Int?
+  before Json?
+  after Json?
+  createdAt DateTime @default(now())
+  session Session @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  actor User @relation("ProAuditActor", fields: [actorId], references: [id], onDelete: Cascade)
+  @@index([sessionId, createdAt])
+}
+
+model ProComment {
+  id String @id @default(cuid())
+  sessionId String
+  authorId String
+  body String
+  createdAt DateTime @default(now())
+  session Session @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  author User @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  @@index([sessionId, createdAt])
+}
+
+// Derived from verified SetLog evidence; replay is idempotent after corrections.
+model ExerciseTrack {
+  id String @id @default(cuid())
+  userId String
+  slug String
+  band String
+  data Json
+  updatedAt DateTime @updatedAt
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([userId, slug, band])
+}
+
+// One estimate per exercise in estimates[slug]; measured anchors stay separate.
+model ExerciseLoadState {
+  id String @id @default(cuid())
+  userId String @unique
+  data Json
+  lastSessionDay Int?
+  updatedAt DateTime @updatedAt
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}

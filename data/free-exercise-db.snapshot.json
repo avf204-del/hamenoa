@@ -1,0 +1,2593 @@
+{
+ "source": "https://github.com/yuhonas/free-exercise-db",
+ "license": "Unlicense (public domain)",
+ "fetchedAt": "2026-09-16",
+ "count": 200,
+ "exercises": [
+  {
+   "id": "3_4_Sit-Up",
+   "name": "3/4 Sit-Up",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Ab_Crunch_Machine",
+   "name": "Ab Crunch Machine",
+   "equipment": "machine",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Air_Bike",
+   "name": "Air Bike",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Alternate_Heel_Touchers",
+   "name": "Alternate Heel Touchers",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Alternate_Leg_Diagonal_Bound",
+   "name": "Alternate Leg Diagonal Bound",
+   "equipment": null,
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "abductors",
+    "adductors",
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Alternating_Renegade_Row",
+   "name": "Alternating Renegade Row",
+   "equipment": "kettlebells",
+   "level": "expert",
+   "primaryMuscles": [
+    "middle back"
+   ],
+   "secondaryMuscles": [
+    "abdominals",
+    "biceps",
+    "chest",
+    "lats",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Back_Flyes_-_With_Bands",
+   "name": "Back Flyes - With Bands",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "middle back",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Band_Assisted_Pull-Up",
+   "name": "Band Assisted Pull-Up",
+   "equipment": "other",
+   "level": "beginner",
+   "primaryMuscles": [
+    "lats"
+   ],
+   "secondaryMuscles": [
+    "abdominals",
+    "forearms",
+    "middle back"
+   ]
+  },
+  {
+   "id": "Band_Good_Morning",
+   "name": "Band Good Morning",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "hamstrings"
+   ],
+   "secondaryMuscles": [
+    "glutes",
+    "lower back"
+   ]
+  },
+  {
+   "id": "Band_Good_Morning_Pull_Through",
+   "name": "Band Good Morning (Pull Through)",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "hamstrings"
+   ],
+   "secondaryMuscles": [
+    "glutes",
+    "lower back"
+   ]
+  },
+  {
+   "id": "Band_Hip_Adductions",
+   "name": "Band Hip Adductions",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "adductors"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Band_Pull_Apart",
+   "name": "Band Pull Apart",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "middle back",
+    "traps"
+   ]
+  },
+  {
+   "id": "Band_Skull_Crusher",
+   "name": "Band Skull Crusher",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "triceps"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Barbell_Ab_Rollout",
+   "name": "Barbell Ab Rollout",
+   "equipment": "barbell",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": [
+    "lower back",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Barbell_Bench_Press_-_Medium_Grip",
+   "name": "Barbell Bench Press - Medium Grip",
+   "equipment": "barbell",
+   "level": "beginner",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": [
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Barbell_Deadlift",
+   "name": "Barbell Deadlift",
+   "equipment": "barbell",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "lower back"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "forearms",
+    "glutes",
+    "hamstrings",
+    "lats",
+    "middle back",
+    "quadriceps",
+    "traps"
+   ]
+  },
+  {
+   "id": "Barbell_Glute_Bridge",
+   "name": "Barbell Glute Bridge",
+   "equipment": "barbell",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "glutes"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Barbell_Hip_Thrust",
+   "name": "Barbell Hip Thrust",
+   "equipment": "barbell",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "glutes"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Barbell_Incline_Bench_Press_-_Medium_Grip",
+   "name": "Barbell Incline Bench Press - Medium Grip",
+   "equipment": "barbell",
+   "level": "beginner",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": [
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Barbell_Shoulder_Press",
+   "name": "Barbell Shoulder Press",
+   "equipment": "barbell",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "chest",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Barbell_Shrug",
+   "name": "Barbell Shrug",
+   "equipment": "barbell",
+   "level": "beginner",
+   "primaryMuscles": [
+    "traps"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Barbell_Squat",
+   "name": "Barbell Squat",
+   "equipment": "barbell",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings",
+    "lower back"
+   ]
+  },
+  {
+   "id": "Barbell_Walking_Lunge",
+   "name": "Barbell Walking Lunge",
+   "equipment": "barbell",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Bench_Dips",
+   "name": "Bench Dips",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "triceps"
+   ],
+   "secondaryMuscles": [
+    "chest",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Bench_Press_-_With_Bands",
+   "name": "Bench Press - With Bands",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": [
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Bent-Knee_Hip_Raise",
+   "name": "Bent-Knee Hip Raise",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Bent_Over_Barbell_Row",
+   "name": "Bent Over Barbell Row",
+   "equipment": "barbell",
+   "level": "beginner",
+   "primaryMuscles": [
+    "middle back"
+   ],
+   "secondaryMuscles": [
+    "biceps",
+    "lats",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Bicycling_Stationary",
+   "name": "Bicycling, Stationary",
+   "equipment": "machine",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Body-Up",
+   "name": "Body-Up",
+   "equipment": "body only",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "triceps"
+   ],
+   "secondaryMuscles": [
+    "abdominals",
+    "forearms"
+   ]
+  },
+  {
+   "id": "Body_Tricep_Press",
+   "name": "Body Tricep Press",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "triceps"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Bodyweight_Squat",
+   "name": "Bodyweight Squat",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Bodyweight_Walking_Lunge",
+   "name": "Bodyweight Walking Lunge",
+   "equipment": null,
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Box_Squat",
+   "name": "Box Squat",
+   "equipment": "barbell",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "adductors",
+    "calves",
+    "glutes",
+    "hamstrings",
+    "lower back"
+   ]
+  },
+  {
+   "id": "Butt-Ups",
+   "name": "Butt-Ups",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Butt_Lift_Bridge",
+   "name": "Butt Lift (Bridge)",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "glutes"
+   ],
+   "secondaryMuscles": [
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Butterfly",
+   "name": "Butterfly",
+   "equipment": "machine",
+   "level": "beginner",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Cable_Crossover",
+   "name": "Cable Crossover",
+   "equipment": "cable",
+   "level": "beginner",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": [
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Cable_Crunch",
+   "name": "Cable Crunch",
+   "equipment": "cable",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Cable_Deadlifts",
+   "name": "Cable Deadlifts",
+   "equipment": "cable",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "forearms",
+    "glutes",
+    "hamstrings",
+    "lower back"
+   ]
+  },
+  {
+   "id": "Cable_Russian_Twists",
+   "name": "Cable Russian Twists",
+   "equipment": "cable",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Cable_Seated_Lateral_Raise",
+   "name": "Cable Seated Lateral Raise",
+   "equipment": "cable",
+   "level": "beginner",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "middle back",
+    "traps"
+   ]
+  },
+  {
+   "id": "Calf_Raises_-_With_Bands",
+   "name": "Calf Raises - With Bands",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "calves"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Carioca_Quick_Step",
+   "name": "Carioca Quick Step",
+   "equipment": null,
+   "level": "beginner",
+   "primaryMuscles": [
+    "adductors"
+   ],
+   "secondaryMuscles": [
+    "abdominals",
+    "abductors",
+    "calves",
+    "glutes",
+    "hamstrings",
+    "quadriceps"
+   ]
+  },
+  {
+   "id": "Chair_Squat",
+   "name": "Chair Squat",
+   "equipment": "machine",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Chin-Up",
+   "name": "Chin-Up",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "lats"
+   ],
+   "secondaryMuscles": [
+    "biceps",
+    "forearms",
+    "middle back"
+   ]
+  },
+  {
+   "id": "Clean_and_Jerk",
+   "name": "Clean and Jerk",
+   "equipment": "barbell",
+   "level": "expert",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "abdominals",
+    "glutes",
+    "hamstrings",
+    "lower back",
+    "quadriceps",
+    "traps",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Clock_Push-Up",
+   "name": "Clock Push-Up",
+   "equipment": "body only",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": [
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Close-Grip_Barbell_Bench_Press",
+   "name": "Close-Grip Barbell Bench Press",
+   "equipment": "barbell",
+   "level": "beginner",
+   "primaryMuscles": [
+    "triceps"
+   ],
+   "secondaryMuscles": [
+    "chest",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Close-Grip_Front_Lat_Pulldown",
+   "name": "Close-Grip Front Lat Pulldown",
+   "equipment": "cable",
+   "level": "beginner",
+   "primaryMuscles": [
+    "lats"
+   ],
+   "secondaryMuscles": [
+    "biceps",
+    "middle back",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Cocoons",
+   "name": "Cocoons",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Cross-Body_Crunch",
+   "name": "Cross-Body Crunch",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Cross_Over_-_With_Bands",
+   "name": "Cross Over - With Bands",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": [
+    "biceps",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Crunches",
+   "name": "Crunches",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Dead_Bug",
+   "name": "Dead Bug",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Dips_-_Triceps_Version",
+   "name": "Dips - Triceps Version",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "triceps"
+   ],
+   "secondaryMuscles": [
+    "chest",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Double_Leg_Butt_Kick",
+   "name": "Double Leg Butt Kick",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "abductors",
+    "adductors",
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Drop_Push",
+   "name": "Drop Push",
+   "equipment": "other",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": [
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Dumbbell_Bench_Press",
+   "name": "Dumbbell Bench Press",
+   "equipment": "dumbbell",
+   "level": "beginner",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": [
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Dumbbell_Clean",
+   "name": "Dumbbell Clean",
+   "equipment": "dumbbell",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "hamstrings"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "forearms",
+    "glutes",
+    "lower back",
+    "quadriceps",
+    "shoulders",
+    "traps"
+   ]
+  },
+  {
+   "id": "Dumbbell_Floor_Press",
+   "name": "Dumbbell Floor Press",
+   "equipment": "dumbbell",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "triceps"
+   ],
+   "secondaryMuscles": [
+    "chest",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Dumbbell_Lunges",
+   "name": "Dumbbell Lunges",
+   "equipment": "dumbbell",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Dumbbell_Lying_Rear_Lateral_Raise",
+   "name": "Dumbbell Lying Rear Lateral Raise",
+   "equipment": "dumbbell",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Dumbbell_Rear_Lunge",
+   "name": "Dumbbell Rear Lunge",
+   "equipment": "dumbbell",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Dumbbell_Shoulder_Press",
+   "name": "Dumbbell Shoulder Press",
+   "equipment": "dumbbell",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "triceps"
+   ]
+  },
+  {
+   "id": "Dumbbell_Squat",
+   "name": "Dumbbell Squat",
+   "equipment": "dumbbell",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings",
+    "lower back"
+   ]
+  },
+  {
+   "id": "Dumbbell_Step_Ups",
+   "name": "Dumbbell Step Ups",
+   "equipment": "dumbbell",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Elliptical_Trainer",
+   "name": "Elliptical Trainer",
+   "equipment": "machine",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "External_Rotation_with_Band",
+   "name": "External Rotation with Band",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Face_Pull",
+   "name": "Face Pull",
+   "equipment": "cable",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "middle back"
+   ]
+  },
+  {
+   "id": "Farmers_Walk",
+   "name": "Farmer's Walk",
+   "equipment": "other",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "forearms"
+   ],
+   "secondaryMuscles": [
+    "abdominals",
+    "glutes",
+    "hamstrings",
+    "lower back",
+    "quadriceps",
+    "traps"
+   ]
+  },
+  {
+   "id": "Fast_Skipping",
+   "name": "Fast Skipping",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "abductors",
+    "adductors",
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Flat_Bench_Lying_Leg_Raise",
+   "name": "Flat Bench Lying Leg Raise",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Freehand_Jump_Squat",
+   "name": "Freehand Jump Squat",
+   "equipment": "body only",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Frog_Sit-Ups",
+   "name": "Frog Sit-Ups",
+   "equipment": "body only",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Front_Barbell_Squat",
+   "name": "Front Barbell Squat",
+   "equipment": "barbell",
+   "level": "expert",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Front_Box_Jump",
+   "name": "Front Box Jump",
+   "equipment": "other",
+   "level": "beginner",
+   "primaryMuscles": [
+    "hamstrings"
+   ],
+   "secondaryMuscles": [
+    "abductors",
+    "adductors",
+    "calves",
+    "glutes",
+    "quadriceps"
+   ]
+  },
+  {
+   "id": "Front_Cone_Hops_or_hurdle_hops",
+   "name": "Front Cone Hops (or hurdle hops)",
+   "equipment": "other",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "abductors",
+    "adductors",
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Front_Squats_With_Two_Kettlebells",
+   "name": "Front Squats With Two Kettlebells",
+   "equipment": "kettlebells",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes"
+   ]
+  },
+  {
+   "id": "Glute_Kickback",
+   "name": "Glute Kickback",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "glutes"
+   ],
+   "secondaryMuscles": [
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Goblet_Squat",
+   "name": "Goblet Squat",
+   "equipment": "kettlebells",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Good_Morning",
+   "name": "Good Morning",
+   "equipment": "barbell",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "hamstrings"
+   ],
+   "secondaryMuscles": [
+    "abdominals",
+    "glutes",
+    "lower back"
+   ]
+  },
+  {
+   "id": "Hack_Squat",
+   "name": "Hack Squat",
+   "equipment": "machine",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Handstand_Push-Ups",
+   "name": "Handstand Push-Ups",
+   "equipment": "body only",
+   "level": "expert",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "triceps"
+   ]
+  },
+  {
+   "id": "Hang_Clean",
+   "name": "Hang Clean",
+   "equipment": "barbell",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "forearms",
+    "glutes",
+    "hamstrings",
+    "lower back",
+    "shoulders",
+    "traps"
+   ]
+  },
+  {
+   "id": "Hanging_Leg_Raise",
+   "name": "Hanging Leg Raise",
+   "equipment": "body only",
+   "level": "expert",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Hanging_Pike",
+   "name": "Hanging Pike",
+   "equipment": "body only",
+   "level": "expert",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Hip_Extension_with_Bands",
+   "name": "Hip Extension with Bands",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "glutes"
+   ],
+   "secondaryMuscles": [
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Hip_Flexion_with_Band",
+   "name": "Hip Flexion with Band",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Hip_Lift_with_Band",
+   "name": "Hip Lift with Band",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "glutes"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Hyperextensions_Back_Extensions",
+   "name": "Hyperextensions (Back Extensions)",
+   "equipment": "other",
+   "level": "beginner",
+   "primaryMuscles": [
+    "lower back"
+   ],
+   "secondaryMuscles": [
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Incline_Dumbbell_Curl",
+   "name": "Incline Dumbbell Curl",
+   "equipment": "dumbbell",
+   "level": "beginner",
+   "primaryMuscles": [
+    "biceps"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Incline_Dumbbell_Press",
+   "name": "Incline Dumbbell Press",
+   "equipment": "dumbbell",
+   "level": "beginner",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": [
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Incline_Push-Up",
+   "name": "Incline Push-Up",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": [
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Incline_Push-Up_Close-Grip",
+   "name": "Incline Push-Up Close-Grip",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "triceps"
+   ],
+   "secondaryMuscles": [
+    "chest",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Internal_Rotation_with_Band",
+   "name": "Internal Rotation with Band",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Inverted_Row",
+   "name": "Inverted Row",
+   "equipment": null,
+   "level": "beginner",
+   "primaryMuscles": [
+    "middle back"
+   ],
+   "secondaryMuscles": [
+    "lats"
+   ]
+  },
+  {
+   "id": "Inverted_Row_with_Straps",
+   "name": "Inverted Row with Straps",
+   "equipment": "other",
+   "level": "beginner",
+   "primaryMuscles": [
+    "middle back"
+   ],
+   "secondaryMuscles": [
+    "biceps",
+    "lats"
+   ]
+  },
+  {
+   "id": "Jackknife_Sit-Up",
+   "name": "Jackknife Sit-Up",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Kettlebell_Arnold_Press",
+   "name": "Kettlebell Arnold Press",
+   "equipment": "kettlebells",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "triceps"
+   ]
+  },
+  {
+   "id": "Kettlebell_Figure_8",
+   "name": "Kettlebell Figure 8",
+   "equipment": "kettlebells",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": [
+    "hamstrings",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Kettlebell_Halo",
+   "name": "Kettlebell Halo",
+   "equipment": "kettlebells",
+   "level": "beginner",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "traps",
+    "middle back",
+    "abdominals",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Kettlebell_One-Legged_Deadlift",
+   "name": "Kettlebell One-Legged Deadlift",
+   "equipment": "kettlebells",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "hamstrings"
+   ],
+   "secondaryMuscles": [
+    "glutes",
+    "lower back"
+   ]
+  },
+  {
+   "id": "Kettlebell_Pistol_Squat",
+   "name": "Kettlebell Pistol Squat",
+   "equipment": "kettlebells",
+   "level": "expert",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Kettlebell_Sumo_High_Pull",
+   "name": "Kettlebell Sumo High Pull",
+   "equipment": "kettlebells",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "traps"
+   ],
+   "secondaryMuscles": [
+    "adductors",
+    "glutes",
+    "hamstrings",
+    "quadriceps",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Kettlebell_Thruster",
+   "name": "Kettlebell Thruster",
+   "equipment": "kettlebells",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "quadriceps",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Kettlebell_Turkish_Get-Up_Squat_style",
+   "name": "Kettlebell Turkish Get-Up (Squat style)",
+   "equipment": "kettlebells",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "abdominals",
+    "calves",
+    "hamstrings",
+    "quadriceps",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Kettlebell_Windmill",
+   "name": "Kettlebell Windmill",
+   "equipment": "kettlebells",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": [
+    "glutes",
+    "hamstrings",
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Knee_Hip_Raise_On_Parallel_Bars",
+   "name": "Knee/Hip Raise On Parallel Bars",
+   "equipment": "other",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Knee_Tuck_Jump",
+   "name": "Knee Tuck Jump",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "hamstrings"
+   ],
+   "secondaryMuscles": [
+    "abductors",
+    "adductors",
+    "calves",
+    "glutes",
+    "quadriceps"
+   ]
+  },
+  {
+   "id": "Lateral_Bound",
+   "name": "Lateral Bound",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "adductors"
+   ],
+   "secondaryMuscles": [
+    "abductors",
+    "calves",
+    "glutes",
+    "hamstrings",
+    "quadriceps"
+   ]
+  },
+  {
+   "id": "Lateral_Cone_Hops",
+   "name": "Lateral Cone Hops",
+   "equipment": "other",
+   "level": "beginner",
+   "primaryMuscles": [
+    "adductors"
+   ],
+   "secondaryMuscles": [
+    "abductors",
+    "calves",
+    "glutes",
+    "hamstrings",
+    "quadriceps"
+   ]
+  },
+  {
+   "id": "Lateral_Raise_-_With_Bands",
+   "name": "Lateral Raise - With Bands",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Leg_Extensions",
+   "name": "Leg Extensions",
+   "equipment": "machine",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Leg_Press",
+   "name": "Leg Press",
+   "equipment": "machine",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Leverage_Iso_Row",
+   "name": "Leverage Iso Row",
+   "equipment": "machine",
+   "level": "beginner",
+   "primaryMuscles": [
+    "lats"
+   ],
+   "secondaryMuscles": [
+    "biceps",
+    "middle back"
+   ]
+  },
+  {
+   "id": "Machine_Bench_Press",
+   "name": "Machine Bench Press",
+   "equipment": "machine",
+   "level": "beginner",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": [
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Machine_Shoulder_Military_Press",
+   "name": "Machine Shoulder (Military) Press",
+   "equipment": "machine",
+   "level": "beginner",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "triceps"
+   ]
+  },
+  {
+   "id": "Monster_Walk",
+   "name": "Monster Walk",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abductors"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Mountain_Climbers",
+   "name": "Mountain Climbers",
+   "equipment": null,
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "chest",
+    "hamstrings",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Muscle_Up",
+   "name": "Muscle Up",
+   "equipment": "other",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "lats"
+   ],
+   "secondaryMuscles": [
+    "abdominals",
+    "biceps",
+    "forearms",
+    "middle back",
+    "shoulders",
+    "traps",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Natural_Glute_Ham_Raise",
+   "name": "Natural Glute Ham Raise",
+   "equipment": "body only",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "hamstrings"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "lower back"
+   ]
+  },
+  {
+   "id": "Oblique_Crunches_-_On_The_Floor",
+   "name": "Oblique Crunches - On The Floor",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "One-Arm_Dumbbell_Row",
+   "name": "One-Arm Dumbbell Row",
+   "equipment": "dumbbell",
+   "level": "beginner",
+   "primaryMuscles": [
+    "middle back"
+   ],
+   "secondaryMuscles": [
+    "biceps",
+    "lats",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "One-Arm_Kettlebell_Clean_and_Jerk",
+   "name": "One-Arm Kettlebell Clean and Jerk",
+   "equipment": "kettlebells",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "One-Arm_Kettlebell_Jerk",
+   "name": "One-Arm Kettlebell Jerk",
+   "equipment": "kettlebells",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "quadriceps",
+    "triceps"
+   ]
+  },
+  {
+   "id": "One-Arm_Kettlebell_Push_Press",
+   "name": "One-Arm Kettlebell Push Press",
+   "equipment": "kettlebells",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "quadriceps",
+    "triceps"
+   ]
+  },
+  {
+   "id": "One-Arm_Kettlebell_Row",
+   "name": "One-Arm Kettlebell Row",
+   "equipment": "kettlebells",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "middle back"
+   ],
+   "secondaryMuscles": [
+    "biceps",
+    "lats"
+   ]
+  },
+  {
+   "id": "One-Arm_Kettlebell_Snatch",
+   "name": "One-Arm Kettlebell Snatch",
+   "equipment": "kettlebells",
+   "level": "expert",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings",
+    "lower back",
+    "traps",
+    "triceps"
+   ]
+  },
+  {
+   "id": "One-Arm_Kettlebell_Swings",
+   "name": "One-Arm Kettlebell Swings",
+   "equipment": "kettlebells",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "hamstrings"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "lower back",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Overhead_Squat",
+   "name": "Overhead Squat",
+   "equipment": "barbell",
+   "level": "expert",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "abdominals",
+    "calves",
+    "glutes",
+    "hamstrings",
+    "lower back",
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Pallof_Press",
+   "name": "Pallof Press",
+   "equipment": "cable",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": [
+    "chest",
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Pelvic_Tilt_Into_Bridge",
+   "name": "Pelvic Tilt Into Bridge",
+   "equipment": null,
+   "level": "intermediate",
+   "primaryMuscles": [
+    "lower back"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Plank",
+   "name": "Plank",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Platform_Hamstring_Slides",
+   "name": "Platform Hamstring Slides",
+   "equipment": "other",
+   "level": "beginner",
+   "primaryMuscles": [
+    "hamstrings"
+   ],
+   "secondaryMuscles": [
+    "glutes"
+   ]
+  },
+  {
+   "id": "Plyo_Push-up",
+   "name": "Plyo Push-up",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": [
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Pull_Through",
+   "name": "Pull Through",
+   "equipment": "cable",
+   "level": "beginner",
+   "primaryMuscles": [
+    "glutes"
+   ],
+   "secondaryMuscles": [
+    "hamstrings",
+    "lower back"
+   ]
+  },
+  {
+   "id": "Pullups",
+   "name": "Pullups",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "lats"
+   ],
+   "secondaryMuscles": [
+    "biceps",
+    "middle back"
+   ]
+  },
+  {
+   "id": "Push-Up_Wide",
+   "name": "Push-Up Wide",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": [
+    "abdominals",
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Push-Ups_-_Close_Triceps_Position",
+   "name": "Push-Ups - Close Triceps Position",
+   "equipment": "body only",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "triceps"
+   ],
+   "secondaryMuscles": [
+    "chest",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Push-Ups_With_Feet_Elevated",
+   "name": "Push-Ups With Feet Elevated",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": [
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Push_Press",
+   "name": "Push Press",
+   "equipment": "barbell",
+   "level": "expert",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "quadriceps",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Push_Up_to_Side_Plank",
+   "name": "Push Up to Side Plank",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": [
+    "abdominals",
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Pushups",
+   "name": "Pushups",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": [
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Reverse_Crunch",
+   "name": "Reverse Crunch",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Reverse_Machine_Flyes",
+   "name": "Reverse Machine Flyes",
+   "equipment": "machine",
+   "level": "beginner",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Rocket_Jump",
+   "name": "Rocket Jump",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Romanian_Deadlift",
+   "name": "Romanian Deadlift",
+   "equipment": "barbell",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "hamstrings"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "lower back"
+   ]
+  },
+  {
+   "id": "Rope_Jumping",
+   "name": "Rope Jumping",
+   "equipment": "other",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Rowing_Stationary",
+   "name": "Rowing, Stationary",
+   "equipment": "machine",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "biceps",
+    "calves",
+    "glutes",
+    "hamstrings",
+    "lower back",
+    "middle back"
+   ]
+  },
+  {
+   "id": "Running_Treadmill",
+   "name": "Running, Treadmill",
+   "equipment": "machine",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Russian_Twist",
+   "name": "Russian Twist",
+   "equipment": "body only",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": [
+    "lower back"
+   ]
+  },
+  {
+   "id": "Scapular_Pull-Up",
+   "name": "Scapular Pull-Up",
+   "equipment": null,
+   "level": "beginner",
+   "primaryMuscles": [
+    "traps"
+   ],
+   "secondaryMuscles": [
+    "lats",
+    "middle back"
+   ]
+  },
+  {
+   "id": "Scissor_Kick",
+   "name": "Scissor Kick",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Seated_Band_Hamstring_Curl",
+   "name": "Seated Band Hamstring Curl",
+   "equipment": "other",
+   "level": "beginner",
+   "primaryMuscles": [
+    "hamstrings"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Seated_Cable_Rows",
+   "name": "Seated Cable Rows",
+   "equipment": "cable",
+   "level": "beginner",
+   "primaryMuscles": [
+    "middle back"
+   ],
+   "secondaryMuscles": [
+    "biceps",
+    "lats",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Seated_Cable_Shoulder_Press",
+   "name": "Seated Cable Shoulder Press",
+   "equipment": "cable",
+   "level": "beginner",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "triceps"
+   ]
+  },
+  {
+   "id": "Seated_Leg_Curl",
+   "name": "Seated Leg Curl",
+   "equipment": "machine",
+   "level": "beginner",
+   "primaryMuscles": [
+    "hamstrings"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Seated_Leg_Tucks",
+   "name": "Seated Leg Tucks",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Shoulder_Press_-_With_Bands",
+   "name": "Shoulder Press - With Bands",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": [
+    "triceps"
+   ]
+  },
+  {
+   "id": "Side_Bridge",
+   "name": "Side Bridge",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": [
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Side_Jackknife",
+   "name": "Side Jackknife",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Side_Lateral_Raise",
+   "name": "Side Lateral Raise",
+   "equipment": "dumbbell",
+   "level": "beginner",
+   "primaryMuscles": [
+    "shoulders"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Side_Standing_Long_Jump",
+   "name": "Side Standing Long Jump",
+   "equipment": null,
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Single-Arm_Push-Up",
+   "name": "Single-Arm Push-Up",
+   "equipment": "body only",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": [
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Single-Leg_Hop_Progression",
+   "name": "Single-Leg Hop Progression",
+   "equipment": "other",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "abductors",
+    "adductors",
+    "calves",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Single-Leg_Lateral_Hop",
+   "name": "Single-Leg Lateral Hop",
+   "equipment": "other",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "abductors",
+    "adductors",
+    "calves",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Single_Leg_Glute_Bridge",
+   "name": "Single Leg Glute Bridge",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "glutes"
+   ],
+   "secondaryMuscles": [
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Single_Leg_Push-off",
+   "name": "Single Leg Push-off",
+   "equipment": "other",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Smith_Machine_Squat",
+   "name": "Smith Machine Squat",
+   "equipment": "machine",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings",
+    "lower back"
+   ]
+  },
+  {
+   "id": "Snatch",
+   "name": "Snatch",
+   "equipment": "barbell",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "biceps",
+    "glutes",
+    "hamstrings",
+    "lower back",
+    "shoulders",
+    "traps",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Speed_Band_Overhead_Triceps",
+   "name": "Speed Band Overhead Triceps",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "triceps"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Spider_Crawl",
+   "name": "Spider Crawl",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": [
+    "chest",
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Split_Jump",
+   "name": "Split Jump",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Split_Squat_with_Dumbbells",
+   "name": "Split Squat with Dumbbells",
+   "equipment": "dumbbell",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Squats_-_With_Bands",
+   "name": "Squats - With Bands",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings",
+    "lower back"
+   ]
+  },
+  {
+   "id": "Stairmaster",
+   "name": "Stairmaster",
+   "equipment": "machine",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Standing_Biceps_Cable_Curl",
+   "name": "Standing Biceps Cable Curl",
+   "equipment": "cable",
+   "level": "beginner",
+   "primaryMuscles": [
+    "biceps"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Standing_Cable_Wood_Chop",
+   "name": "Standing Cable Wood Chop",
+   "equipment": "cable",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": [
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Standing_Calf_Raises",
+   "name": "Standing Calf Raises",
+   "equipment": "machine",
+   "level": "beginner",
+   "primaryMuscles": [
+    "calves"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Standing_Long_Jump",
+   "name": "Standing Long Jump",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Star_Jump",
+   "name": "Star Jump",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Step-up_with_Knee_Raise",
+   "name": "Step-up with Knee Raise",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "glutes"
+   ],
+   "secondaryMuscles": [
+    "hamstrings",
+    "quadriceps"
+   ]
+  },
+  {
+   "id": "Straight-Arm_Pulldown",
+   "name": "Straight-Arm Pulldown",
+   "equipment": "cable",
+   "level": "beginner",
+   "primaryMuscles": [
+    "lats"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Sumo_Deadlift",
+   "name": "Sumo Deadlift",
+   "equipment": "barbell",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "hamstrings"
+   ],
+   "secondaryMuscles": [
+    "adductors",
+    "forearms",
+    "glutes",
+    "lower back",
+    "middle back",
+    "quadriceps",
+    "traps"
+   ]
+  },
+  {
+   "id": "Superman",
+   "name": "Superman",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "lower back"
+   ],
+   "secondaryMuscles": [
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Suspended_Fallout",
+   "name": "Suspended Fallout",
+   "equipment": "other",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": [
+    "chest",
+    "lower back",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Suspended_Push-Up",
+   "name": "Suspended Push-Up",
+   "equipment": "other",
+   "level": "beginner",
+   "primaryMuscles": [
+    "chest"
+   ],
+   "secondaryMuscles": [
+    "shoulders",
+    "triceps"
+   ]
+  },
+  {
+   "id": "Suspended_Reverse_Crunch",
+   "name": "Suspended Reverse Crunch",
+   "equipment": "other",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Suspended_Split_Squat",
+   "name": "Suspended Split Squat",
+   "equipment": "other",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "abductors",
+    "adductors",
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Thigh_Abductor",
+   "name": "Thigh Abductor",
+   "equipment": "machine",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abductors"
+   ],
+   "secondaryMuscles": [
+    "glutes"
+   ]
+  },
+  {
+   "id": "Thigh_Adductor",
+   "name": "Thigh Adductor",
+   "equipment": "machine",
+   "level": "beginner",
+   "primaryMuscles": [
+    "adductors"
+   ],
+   "secondaryMuscles": [
+    "glutes",
+    "hamstrings"
+   ]
+  },
+  {
+   "id": "Triceps_Overhead_Extension_with_Rope",
+   "name": "Triceps Overhead Extension with Rope",
+   "equipment": "cable",
+   "level": "beginner",
+   "primaryMuscles": [
+    "triceps"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Triceps_Pushdown",
+   "name": "Triceps Pushdown",
+   "equipment": "cable",
+   "level": "beginner",
+   "primaryMuscles": [
+    "triceps"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Two-Arm_Kettlebell_Row",
+   "name": "Two-Arm Kettlebell Row",
+   "equipment": "kettlebells",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "middle back"
+   ],
+   "secondaryMuscles": [
+    "biceps",
+    "lats"
+   ]
+  },
+  {
+   "id": "Upright_Row_-_With_Bands",
+   "name": "Upright Row - With Bands",
+   "equipment": "bands",
+   "level": "beginner",
+   "primaryMuscles": [
+    "traps"
+   ],
+   "secondaryMuscles": [
+    "shoulders"
+   ]
+  },
+  {
+   "id": "V-Bar_Pullup",
+   "name": "V-Bar Pullup",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "lats"
+   ],
+   "secondaryMuscles": [
+    "biceps",
+    "middle back",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Wide-Grip_Lat_Pulldown",
+   "name": "Wide-Grip Lat Pulldown",
+   "equipment": "cable",
+   "level": "beginner",
+   "primaryMuscles": [
+    "lats"
+   ],
+   "secondaryMuscles": [
+    "biceps",
+    "middle back",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Wide-Grip_Rear_Pull-Up",
+   "name": "Wide-Grip Rear Pull-Up",
+   "equipment": "body only",
+   "level": "intermediate",
+   "primaryMuscles": [
+    "lats"
+   ],
+   "secondaryMuscles": [
+    "biceps",
+    "middle back",
+    "shoulders"
+   ]
+  },
+  {
+   "id": "Wind_Sprints",
+   "name": "Wind Sprints",
+   "equipment": "body only",
+   "level": "beginner",
+   "primaryMuscles": [
+    "abdominals"
+   ],
+   "secondaryMuscles": []
+  },
+  {
+   "id": "Zercher_Squats",
+   "name": "Zercher Squats",
+   "equipment": "barbell",
+   "level": "expert",
+   "primaryMuscles": [
+    "quadriceps"
+   ],
+   "secondaryMuscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ]
+  }
+ ]
+}
