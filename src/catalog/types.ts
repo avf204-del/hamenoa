@@ -37,6 +37,8 @@ export interface ExerciseData {
   trainingType?: TrainingType;
   provenanceId?: string | null;
   nameHe: string;
+  /** English name from the source catalog; may be missing on original entries. */
+  nameEn?: string;
   modality: Modality;
   pattern: Pattern;
   equipment: string[];

@@ -17,6 +17,7 @@ export function exerciseRowToData(e: ExerciseRow): ExerciseData {
     trainingType: (e.trainingType ?? "base") as TrainingType,
     provenanceId: e.provenanceId ?? null,
     nameHe: e.nameHe,
+    nameEn: e.nameEn || undefined,
     modality: e.modality as ExerciseData["modality"],
     pattern: e.pattern as Pattern,
     equipment: e.equipment as string[],
