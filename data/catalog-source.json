@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "repository": "avf204-del/forceapp",
+  "sourceCommit": "838842603be4bbe2e823287a889969b249ba01ca",
+  "sourcePullRequest": "https://github.com/avf204-del/forceapp/pull/16",
+  "destinationBase": "f7785b8380be2fb868f3e315e7c0b08d78bb860d",
+  "importedAt": "2026-10-08",
+  "legacyRows": 283,
+  "addedRows": 676,
+  "rows": 959,
+  "demoFrames": 2181,
+  "sourceImages": 1746,
+  "legacyNormalization": "Missing unilateral means false; trainingType defaults to base; provenanceId defaults to null. Existing hamenoa YAML and warmup content are preserved.",
+  "sync": "Reviewed snapshot; no live sync or runtime dependency on forceapp or Google Sheets.",
+  "executionIntegration": "Catalog display only. Source game-and-inventory and tempoChoice values describe the source catalog contract; hamenoa does not consume them for load selection.",
+  "legacyTaggingSha256": "3acf24e95c2cea91ab2b16664166b29819ca71fc1d5a2bad0bf027dbd55c2ba1"
+}
