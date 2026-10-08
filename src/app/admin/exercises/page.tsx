@@ -121,7 +121,7 @@ export default async function ExercisesAdminPage() {
         </Link>
       </div>
       <p className="mt-1 text-sm text-fg-2">
-        המאגר המשותף: <span className="num">{rows.length}</span> תרגילים
+        מאגר התרגילים: <span className="num">{rows.length}</span> תרגילים
         מתויגים
         {latestDate && (
           <>

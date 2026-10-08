@@ -17,7 +17,7 @@ const db = createPrismaClient(undefined, 1);
 const userId = 'catalog-browser-' + randomUUID();
 const base = process.env.CATALOG_BROWSER_URL ?? process.env.APP_URL!;
 assert(['127.0.0.1', 'localhost'].includes(new URL(base).hostname), 'local browser origin required');
-const output = process.env.CATALOG_BROWSER_OUTPUT ?? '/workspace/exports/hamenoa-catalog';
+const output = process.env.CATALOG_BROWSER_OUTPUT ?? '.cloud/catalog-review';
 const slugs = ['goblet-squat', 'marching-in-place', 'plank', 'fedb-sumo-deadlift-with-bands', 'fedb-sumo-deadlift-with-chains', 'fedb-front-incline-dumbbell-raise', 'fedb-standing-low-pulley-one-arm-triceps-extension', 'fedb-tire-flip', 'fedb-alternating-floor-press'];
 async function main() {
   mkdirSync(output, { recursive: true });
@@ -77,7 +77,10 @@ async function main() {
           assert(response.headers()['content-type'].startsWith('image/jpeg'));
         }
         assert(!await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth + 1), 'horizontal overflow');
-        if (slug === 'fedb-sumo-deadlift-with-bands') await summary.locator('..').screenshot({ path: `${output}/mapping-${width}.png` });
+        if (slug === 'fedb-sumo-deadlift-with-bands') {
+          await summary.locator('..').evaluate(el => el.scrollIntoView({ block: 'start' }));
+          await page.screenshot({ path: `${output}/mapping-${width}.png` });
+        }
         await page.keyboard.press('Escape');
         await page.waitForFunction(() => [...document.querySelectorAll('[role="dialog"]')].every(el => el.closest('[inert]')));
         results.push({ width, slug, framesDecoded: count, sourceLinks: exerciseExecution(slug)!.evidence.sourceImages.length, readable: true, noOverflow: true });
