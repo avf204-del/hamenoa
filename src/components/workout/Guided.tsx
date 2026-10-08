@@ -10,7 +10,7 @@ import { useLocale } from "@/i18n/client";
 import type { ExerciseInfoMap } from "@/lib/exercise-info";
 import { clock, say } from "./format";
 import { PrimaryButton, QuietButton, Screen } from "./parts";
-import { useShortScreen } from "./useRun";
+import { useShortScreen, useTapGuard } from "./useRun";
 
 interface Props {
   title: string;
@@ -30,14 +30,19 @@ export default function Guided({ title, items, info, doneLabel, onDone, skipLabe
   const short = useShortScreen();
   const last = index >= items.length - 1;
 
+  // A second tap of the same finger must not skip the item that has just appeared.
+  const { mark, fresh } = useTapGuard();
+
   useEffect(() => {
+    mark();
     const timer = setInterval(() => setLeft((s) => Math.max(0, s - 1)), 1000);
     return () => clearInterval(timer);
-  }, [index]);
+  }, [index, mark]);
 
   if (!item) return null;
 
   const next = () => {
+    if (fresh()) return;
     if (last) return onDone();
     setIndex(index + 1);
     setLeft(items[index + 1].seconds);

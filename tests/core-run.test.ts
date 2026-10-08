@@ -2,7 +2,7 @@
 
 import { describe, expect, it } from "vitest";
 import { COUNTDOWN_SEC, type RunEvent, type RunEventInput, type Workout } from "../src/core/contract";
-import { accept, impliedEvents, replay } from "../src/core/run";
+import { accept, closeAbandoned, impliedEvents, lastSeenAt, replay } from "../src/core/run";
 
 const workout: Workout = {
   contract: 1,
@@ -53,7 +53,7 @@ describe("מהלך אימון", () => {
     const view = replay(workout, run(toStation), 61 * SEC);
     expect(view.phase).toBe("station");
     expect(view.station).toMatchObject({ id: "s1", status: "ready", clockStartsAt: null });
-    expect(view.station!.portion).toEqual({ exerciseIndex: 0, target: 6, round: 1 });
+    expect(view.station!.portion).toEqual({ index: 0, exerciseIndex: 0, target: 6, round: 1 });
   });
 
   it("התחלת משחקון: ספירה 3-2-1, ואז השעון והמנה הראשונה מתחילים יחד", () => {
@@ -68,11 +68,11 @@ describe("מהלך אימון", () => {
     const events = run([
       ...toStation,
       [70, { type: "station-start", station: "s1" }],
-      [90, { type: "report", station: "s1", amount: 6 }],
+      [90, { type: "report", station: "s1", portion: 0, amount: 6 }],
     ]);
     const resting = replay(workout, events, 91 * SEC).station!;
     expect(resting).toMatchObject({ status: "resting", restEndsAt: 100 * SEC });
-    expect(resting.portion).toEqual({ exerciseIndex: 1, target: 4, round: 1 });
+    expect(resting.portion).toEqual({ index: 1, exerciseIndex: 1, target: 4, round: 1 });
     // גם אחרי שהמנוחה עברה, בלי לחיצה עדיין לא עובדים
     expect(replay(workout, events, 105 * SEC).station!.status).toBe("resting");
 
@@ -85,20 +85,21 @@ describe("מהלך אימון", () => {
   it("היעד אינו נרשם במקום המתאמן: כמות מעל היתרה או לא שלמה נדחית", () => {
     const events = run([...toStation, [70, { type: "station-start", station: "s1" }]]);
     const at = 80 * SEC;
-    expect(accept(workout, events, { type: "report", station: "s1", amount: 7 }, "x", at)).toEqual({ ok: false, reason: "bad-amount" });
-    expect(accept(workout, events, { type: "report", station: "s1", amount: 2.5 }, "x", at)).toEqual({ ok: false, reason: "bad-amount" });
-    expect(accept(workout, events, { type: "report", station: "s1", amount: 0 }, "x", at).ok).toBe(true);
-    expect(accept(workout, events, { type: "report", station: "s1", amount: null }, "x", at).ok).toBe(true);
-    expect(accept(workout, events, { type: "report", station: "s2", amount: 6 }, "x", at)).toEqual({ ok: false, reason: "wrong-station" });
+    expect(accept(workout, events, { type: "report", station: "s1", portion: 0, amount: 7 }, "x", at)).toEqual({ ok: false, reason: "bad-amount" });
+    expect(accept(workout, events, { type: "report", station: "s1", portion: 0, amount: 2.5 }, "x", at)).toEqual({ ok: false, reason: "bad-amount" });
+    expect(accept(workout, events, { type: "report", station: "s1", portion: 0, amount: 0 }, "x", at).ok).toBe(true);
+    expect(accept(workout, events, { type: "report", station: "s1", portion: 0, amount: null }, "x", at).ok).toBe(true);
+    expect(accept(workout, events, { type: "report", station: "s2", portion: 0, amount: 6 }, "x", at)).toEqual({ ok: false, reason: "wrong-station" });
   });
 
   it("הפעמון באמצע מנה: אפשר עדיין לדווח על מה שכבר בוצע, והדיווח נחתם בזמן הפעמון", () => {
     const events = run([...toStation, [70, { type: "station-start", station: "s1" }]]);
     const bell = (73 + 300) * SEC;
     expect(replay(workout, events, bell + 5 * SEC).station!.status).toBe("last-report");
-    const late = accept(workout, events, { type: "report", station: "s1", amount: 3 }, "late", bell + 8 * SEC);
+    const late = accept(workout, events, { type: "report", station: "s1", portion: 0, amount: 3 }, "late", bell + 8 * SEC);
     expect(late.ok).toBe(true);
     if (!late.ok) return;
+    expect(late.events.at(-1)).toMatchObject({ type: "station-end", reason: "time", at: bell });
     const ended = replay(workout, late.events, bell + 9 * SEC).station!;
     expect(ended).toMatchObject({ status: "ended", endReason: "time", endedAt: bell });
     expect(ended.reports[0]).toMatchObject({ amount: 3, at: bell });
@@ -119,7 +120,7 @@ describe("מהלך אימון", () => {
     const events = run([
       ...toStation,
       [70, { type: "station-start", station: "s1" }],
-      [90, { type: "report", station: "s1", amount: 6 }],
+      [90, { type: "report", station: "s1", portion: 0, amount: 6 }],
     ]);
     const after = 400 * SEC;
     expect(replay(workout, events, after).station).toMatchObject({ status: "ended", endReason: "time" });
@@ -137,7 +138,7 @@ describe("מהלך אימון", () => {
     const events = run([
       ...toStation,
       [70, { type: "station-start", station: "s1" }],
-      [90, { type: "report", station: "s1", amount: 6 }],
+      [90, { type: "report", station: "s1", portion: 0, amount: 6 }],
       [95, { type: "station-end", station: "s1", reason: "choice" }],
       [100, { type: "next" }],
       [110, { type: "station-start", station: "s2" }],
@@ -162,19 +163,114 @@ describe("מהלך אימון", () => {
     expect(accept(workout, events, { type: "finish" }, "f", 81 * SEC).ok).toBe(true);
   });
 
+  it("דיווח שמגיע באיחור על מנה אחרת נדחה ולא נרשם על התרגיל הלא נכון", () => {
+    const events = run([
+      ...toStation,
+      [70, { type: "station-start", station: "s1" }],
+    ]);
+    // השרת עדיין על המנה הראשונה; מגיע דיווח שנכתב על המנה שאחריה
+    const late = accept(workout, events, { type: "report", station: "s1", portion: 1, amount: 4 }, "x", 80 * SEC);
+    expect(late).toEqual({ ok: false, reason: "stale" });
+
+    // אחרי דיווח חלקי (4 מתוך 6) נשארת יתרה באותו תרגיל ובאותו סבב. עותק מאוחר
+    // של הדיווח הקודם אינו נרשם על היתרה, כי הוא נושא את מספר המנה שלו
+    const partial = run([
+      ...toStation,
+      [70, { type: "station-start", station: "s1" }],
+      [90, { type: "report", station: "s1", portion: 0, amount: 4 }],
+      [100, { type: "portion-start", station: "s1" }],
+    ]);
+    expect(replay(workout, partial, 105 * SEC).station!.portion).toEqual({ index: 1, exerciseIndex: 0, target: 2, round: 1 });
+    const copy = accept(workout, partial, { type: "report", station: "s1", portion: 0, amount: 2 }, "x", 105 * SEC);
+    expect(copy).toEqual({ ok: false, reason: "stale" });
+    expect(accept(workout, partial, { type: "report", station: "s1", portion: 1, amount: 2 }, "x", 105 * SEC).ok).toBe(true);
+  });
+
+  it("עצירה בגלל כאב אחרי הפעמון נשמרת ככאב, גם באמצע מנה וגם אחרי שהשעון כבר סיים", () => {
+    const working = run([...toStation, [70, { type: "station-start", station: "s1" }]]);
+    const bell = (73 + 300) * SEC;
+    const midPortion = accept(workout, working, { type: "station-end", station: "s1", reason: "pain" }, "p", bell + 2 * SEC);
+    expect(midPortion.ok).toBe(true);
+    if (!midPortion.ok) return;
+    expect(midPortion.events.at(-1)).toMatchObject({ type: "station-end", reason: "pain", at: bell });
+    expect(accept(workout, midPortion.events, { type: "next" }, "n", bell + 3 * SEC)).toEqual({ ok: false, reason: "stopped-for-pain" });
+
+    const resting = run([
+      ...toStation,
+      [70, { type: "station-start", station: "s1" }],
+      [90, { type: "report", station: "s1", portion: 0, amount: 6 }],
+    ]);
+    const afterBell = accept(workout, resting, { type: "station-end", station: "s1", reason: "pain" }, "p", bell + 2 * SEC);
+    expect(afterBell.ok).toBe(true);
+    if (!afterBell.ok) return;
+    expect(replay(workout, afterBell.events, bell + 3 * SEC).station).toMatchObject({ status: "ended", endReason: "pain", endedAt: bell });
+    expect(accept(workout, afterBell.events, { type: "next" }, "n", bell + 3 * SEC)).toEqual({ ok: false, reason: "stopped-for-pain" });
+    // סיום מרצון על משחקון שכבר הסתיים אינו משנה דבר
+    expect(accept(workout, afterBell.events, { type: "station-end", station: "s1", reason: "choice" }, "c", bell + 4 * SEC)).toEqual({ ok: false, reason: "not-now" });
+  });
+
   it("אי אפשר לסיים אימון באמצע משחקון בלי לסיים אותו קודם", () => {
     const events = run([...toStation, [70, { type: "station-start", station: "s1" }]]);
     expect(accept(workout, events, { type: "finish" }, "f", 80 * SEC)).toEqual({ ok: false, reason: "end-station-first" });
     expect(accept(workout, events, { type: "to-cooldown" }, "c", 80 * SEC)).toEqual({ ok: false, reason: "end-station-first" });
   });
 
+  it("אימון שננטש באמצע מנה נסגר: התחנה מסתיימת בפעמון שלה, והאימון נחתם באותו רגע", () => {
+    const events = run([
+      ...toStation,
+      [70, { type: "station-start", station: "s1" }],
+      [90, { type: "report", station: "s1", portion: 0, amount: 6 }],
+      [100, { type: "portion-start", station: "s1" }],
+    ]);
+    const fourHoursLater = 4 * 3600 * SEC;
+    expect(lastSeenAt(events, fourHoursLater)).toBe(100 * SEC);
+
+    const added = closeAbandoned(workout, events, fourHoursLater);
+    const bell = (70 + COUNTDOWN_SEC + 300) * SEC;
+    expect(added).toEqual([
+      { id: "s1:end", at: bell, type: "station-end", station: "s1", reason: "time" },
+      { id: "run:closed", at: bell, type: "finish" },
+    ]);
+
+    const view = replay(workout, [...events, ...added], fourHoursLater);
+    expect(view).toMatchObject({ phase: "summary", startedAt: 0, finishedAt: bell });
+    // המנה שלא דווחה נשארת בלי דיווח: שום כמות לא נרשמת במקום המתאמן
+    expect(view.stations[0].reports.map((r) => r.amount)).toEqual([6]);
+    expect(view.stations[0]).toMatchObject({ status: "ended", endReason: "time", endedAt: bell });
+  });
+
+  it("אימון שננטש בחימום או אחרי משחקון נסגר בלי להמציא תוצאות", () => {
+    const warmingUp = run([[0, { type: "begin" }]]);
+    expect(closeAbandoned(workout, warmingUp, 4 * 3600 * SEC)).toEqual([{ id: "run:closed", at: 0, type: "finish" }]);
+
+    // הפעמון צלצל בזמן מנוחה ואף אחד לא חזר: הסיום בזמן נרשם, ואחריו הסגירה
+    const resting = run([
+      ...toStation,
+      [70, { type: "station-start", station: "s1" }],
+      [90, { type: "report", station: "s1", portion: 0, amount: 6 }],
+    ]);
+    const added = closeAbandoned(workout, resting, 4 * 3600 * SEC);
+    expect(added.map((e) => [e.id, e.type])).toEqual([["s1:end", "station-end"], ["run:closed", "finish"]]);
+
+    // אימון שהוחלף באחר בזמן שהשעון עוד רץ: המשחקון נקטע מבחירה, לא בגלל הזמן
+    const cut = closeAbandoned(workout, resting, 120 * SEC);
+    expect(cut).toEqual([
+      { id: "s1:end", at: 120 * SEC, type: "station-end", station: "s1", reason: "choice" },
+      { id: "run:closed", at: 120 * SEC, type: "finish" },
+    ]);
+
+    // אימון שלא התחיל או שכבר הסתיים לא נסגר שוב
+    expect(closeAbandoned(workout, [], 4 * 3600 * SEC)).toEqual([]);
+    expect(lastSeenAt([], 5)).toBeNull();
+  });
+
   it("אותו יומן ואותו שעון נותנים תמיד אותה תצוגה", () => {
     const events = run([
       ...toStation,
       [70, { type: "station-start", station: "s1" }],
-      [90, { type: "report", station: "s1", amount: 4 }],
+      [90, { type: "report", station: "s1", portion: 0, amount: 4 }],
     ]);
     expect(replay(workout, events, 95 * SEC)).toEqual(replay(workout, events, 95 * SEC));
-    expect(replay(workout, events, 95 * SEC).station!.portion).toEqual({ exerciseIndex: 0, target: 2, round: 1 });
+    expect(replay(workout, events, 95 * SEC).station!.portion).toEqual({ index: 1, exerciseIndex: 0, target: 2, round: 1 });
   });
 });

@@ -96,7 +96,7 @@ export const G18: GameRule = {
 
   next(station, reports): Portion {
     const p = position(station, reports);
-    return { exerciseIndex: p.index, target: station.exercises[p.index].quota - p.saved, round: p.round };
+    return { index: reports.length, exerciseIndex: p.index, target: station.exercises[p.index].quota - p.saved, round: p.round };
   },
 
   restAfter(station, reports): number {

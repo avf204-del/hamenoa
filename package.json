@@ -13,6 +13,7 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
+    "check:live": "node tests/live/api-check.mjs && node tests/live/browser-check.mjs",
     "db:setup": "prisma generate && prisma migrate deploy && tsx prisma/seed.ts",
     "deploy:prepare": "prisma migrate deploy && tsx scripts/import-exercises.ts",
     "db:reset": "prisma migrate reset",

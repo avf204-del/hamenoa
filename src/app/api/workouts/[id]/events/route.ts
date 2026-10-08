@@ -23,10 +23,13 @@ function parseEvent(raw: unknown): RunEventInput | null {
     case "station-start":
     case "portion-start":
       return station ? { type: raw.type, station } : null;
-    case "report":
-      if (!station) return null;
-      if (raw.amount === null) return { type: "report", station, amount: null };
-      return typeof raw.amount === "number" ? { type: "report", station, amount: raw.amount } : null;
+    case "report": {
+      // A report must say which portion it is about; the core refuses one that is no longer open.
+      const { portion, amount } = raw;
+      if (!station || !Number.isInteger(portion)) return null;
+      if (amount !== null && typeof amount !== "number") return null;
+      return { type: "report", station, portion: portion as number, amount };
+    }
     case "station-end":
       // The clock and the rules end stations on their own; a player can only choose to stop.
       return station && END_REASONS.includes(raw.reason as EndReason)
@@ -37,7 +40,8 @@ function parseEvent(raw: unknown): RunEventInput | null {
   }
 }
 
-const STATUS: Record<string, number> = { "not-found": 404, busy: 409 };
+// 409: two writes met, try again. 410: this workout is over and takes nothing more.
+const STATUS: Record<string, number> = { "not-found": 404, busy: 409, closed: 410 };
 
 export async function POST(request: Request, { params }: { params: Promise<{ id: string }> }) {
   const gate = await writeGate();
@@ -47,7 +51,8 @@ export async function POST(request: Request, { params }: { params: Promise<{ id:
   const body: unknown = await request.json().catch(() => null);
   const eventId = isJsonObject(body) && typeof body.id === "string" ? body.id : "";
   const event = isJsonObject(body) ? parseEvent(body.event) : null;
-  if (!event || eventId.length < 8 || eventId.length > 64) {
+  // Ids are chosen by the sender; the server's own ids (those with a colon) cannot be imitated.
+  if (!event || !/^[A-Za-z0-9-]{8,64}$/.test(eventId)) {
     return NextResponse.json({ ok: false, error: "בקשה לא תקינה" }, { status: 400 });
   }
 

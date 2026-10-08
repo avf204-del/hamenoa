@@ -23,7 +23,7 @@
 
 ## פקודות
 
-`pnpm` בלבד. `pnpm db:local` (מסד מקומי, רץ ברקע) · `pnpm db:setup` · `pnpm dev` · `pnpm typecheck` · `pnpm lint` · `pnpm test` · `pnpm build`.
+`pnpm` בלבד. `pnpm db:local` (מסד מקומי, רץ ברקע) · `pnpm db:setup` · `pnpm dev` · `pnpm typecheck` · `pnpm lint` · `pnpm test` · `pnpm build` · `pnpm check:live` (בדיקה חיה מול שרת ומסד מקומיים; ראו README).
 בסביבת ענן: `pnpm cloud:setup` ואז `pnpm cloud:dev`; הסיסמה ב־`pnpm cloud:password`.
 
 ## איך עובדים

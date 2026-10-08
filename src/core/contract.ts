@@ -100,11 +100,13 @@ export type RunEventInput =
   /** "Start": the next portion, once the required rest has passed. */
   | { type: "portion-start"; station: string }
   /**
-   * What was actually done in the current portion. A number is a report, zero
-   * included; null means the player does not know. The target is never
-   * recorded on the player's behalf.
+   * What was actually done in a portion. A number is a report, zero included;
+   * null means the player does not know. The target is never recorded on the
+   * player's behalf. The report names the portion it is about (`Portion.index`),
+   * so one that arrives late can never be filed under another.
    */
-  | { type: "report"; station: string; amount: number | null }
+  | { type: "report"; station: string; portion: number; amount: number | null }
+  /** Stop this game. A pain stop may also be added to a game that already ended. */
   | { type: "station-end"; station: string; reason: EndReason }
   /** From an ended station: on to the next station, or to the cool-down. */
   | { type: "next" }
@@ -136,6 +138,8 @@ export interface Report {
 
 /** The piece of work in front of the player. */
 export interface Portion {
+  /** Its place in the station, from 0: how many reports were saved before it. */
+  index: number;
   exerciseIndex: number;
   target: number;
   /** 1-based. */

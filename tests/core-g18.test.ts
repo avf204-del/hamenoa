@@ -32,14 +32,18 @@ function play(amounts: (number | null)[]): Report[] {
 
 describe("G18 — סבב תרגילים קבוע", () => {
   it("פותח בתרגיל הראשון, במכסה המלאה, בסבב 1", () => {
-    expect(G18.next(station, [])).toEqual({ exerciseIndex: 0, target: 6, round: 1 });
+    expect(G18.next(station, [])).toMatchObject({ exerciseIndex: 0, target: 6, round: 1 });
+    // כל מנה נושאת את מספרה בתחנה: כמה דיווחים נשמרו לפניה
+    expect(G18.next(station, [])!.index).toBe(0);
+    expect(G18.next(station, play([4]))!.index).toBe(1);
+    expect(G18.next(station, play([4, 2, 4]))!.index).toBe(3);
     expect(G18.score(station, []).rank).toEqual([0, 0, 0]);
     expect(G18.restAfter(station, [])).toBe(0);
   });
 
   it("מכסה מלאה מעבירה לתרגיל הבא עם מנוחת מעבר", () => {
     const reports = play([6]);
-    expect(G18.next(station, reports)).toEqual({ exerciseIndex: 1, target: 4, round: 1 });
+    expect(G18.next(station, reports)).toMatchObject({ exerciseIndex: 1, target: 4, round: 1 });
     expect(G18.restAfter(station, reports)).toBe(10);
     expect(G18.score(station, reports).rank).toEqual([0, 1, 0]);
   });
@@ -49,20 +53,20 @@ describe("G18 — סבב תרגילים קבוע", () => {
     expect(G18.score(station, reports).rank).toEqual([1, 0, 0]);
     expect(G18.score(station, reports).value).toBe(1);
     expect(G18.restAfter(station, reports)).toBe(20);
-    expect(G18.next(station, reports)).toEqual({ exerciseIndex: 0, target: 6, round: 2 });
+    expect(G18.next(station, reports)).toMatchObject({ exerciseIndex: 0, target: 6, round: 2 });
   });
 
   it("מנה חלקית משאירה את אותו תרגיל פתוח עם היתרה בלבד", () => {
     const reports = play([4]);
-    expect(G18.next(station, reports)).toEqual({ exerciseIndex: 0, target: 2, round: 1 });
+    expect(G18.next(station, reports)).toMatchObject({ exerciseIndex: 0, target: 2, round: 1 });
     expect(G18.score(station, reports).rank).toEqual([0, 0, 4]);
     // השלמת היתרה סוגרת את התרגיל
-    expect(G18.next(station, play([4, 2]))).toEqual({ exerciseIndex: 1, target: 4, round: 1 });
+    expect(G18.next(station, play([4, 2]))).toMatchObject({ exerciseIndex: 1, target: 4, round: 1 });
   });
 
   it("אפס הוא דיווח אמיתי: לא מקדם ולא נמחק", () => {
     const reports = play([0]);
-    expect(G18.next(station, reports)).toEqual({ exerciseIndex: 0, target: 6, round: 1 });
+    expect(G18.next(station, reports)).toMatchObject({ exerciseIndex: 0, target: 6, round: 1 });
     expect(G18.restAfter(station, reports)).toBe(10);
   });
 
