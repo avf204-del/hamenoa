@@ -11,7 +11,7 @@
     "build": "next build",
     "start": "TZ=Asia/Jerusalem next start",
     "lint": "eslint",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
     "check:live": "node tests/live/api-check.mjs && node tests/live/browser-check.mjs",
     "db:setup": "prisma generate && prisma migrate deploy && tsx prisma/seed.ts",
