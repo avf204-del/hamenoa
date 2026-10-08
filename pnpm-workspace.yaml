@@ -1,6 +1,8 @@
 allowBuilds:
   sharp: false
   unrs-resolver: false
+  # An optional companion of the Prisma CLI for SQLite. This app uses Postgres only.
+  better-sqlite3: false
   prisma: true
   "@prisma/client": true
   "@prisma/engines": true
