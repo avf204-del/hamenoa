@@ -40,6 +40,11 @@ export interface PlanRequest {
    * first that still fits today opens the workout, so there is a result to beat.
    */
   rematch?: readonly Station[];
+  /**
+   * The last workout was a single game, and it was one that had come back.
+   * A one-game workout then gets a new game, so the same one is not all there is.
+   */
+  lastWasLoneRematch?: boolean;
 }
 
 export type PlanErrorCode = "minutes" | "no-exercises";
@@ -50,7 +55,8 @@ export class PlanError extends Error {
   }
 }
 
-export const MIN_MINUTES = 10;
+/** The shortest workout: warm-up, one game and cool-down take about eleven minutes. */
+export const MIN_MINUTES = 12;
 export const MAX_MINUTES = 90;
 const MAX_STATIONS = 4;
 /** Walking over, setting up and reading the next game. */
@@ -147,7 +153,8 @@ function buildStations(request: PlanRequest, count: number, game: GameId): Stati
   // A game played before comes back unchanged: same exercises, quotas and
   // clock, so today's result can be compared with the earlier one.
   const eligible = new Set(pool.map((e) => e.slug));
-  const back = (request.rematch ?? []).find(
+  const mayReturn = count >= 2 || !request.lastWasLoneRematch;
+  const back = (mayReturn ? (request.rematch ?? []) : []).find(
     (s) =>
       s.game === game &&
       s.ruleVersion === rule.ruleVersion &&
@@ -292,16 +299,17 @@ function estimate(warmup: GuidedItem[], stations: Station[], cooldown: GuidedIte
 }
 
 export function planWorkout(request: PlanRequest): Workout {
-  if (!Number.isFinite(request.minutes) || request.minutes < MIN_MINUTES || request.minutes > MAX_MINUTES) {
+  if (!Number.isInteger(request.minutes) || request.minutes < MIN_MINUTES || request.minutes > MAX_MINUTES) {
     throw new PlanError("minutes");
   }
   const game: GameId = "G18";
   const rule = ruleFor(game);
 
   // How many stations fit once a typical warm-up and cool-down are set aside.
+  // There is a move before every station except the first.
   const NOMINAL_WARMUP_AND_COOLDOWN_SEC = 150 + 210;
   const perStation = COUNTDOWN_SEC + rule.defaults.frameSec + MOVE_BETWEEN_STATIONS_SEC;
-  const fits = Math.floor((request.minutes * 60 - NOMINAL_WARMUP_AND_COOLDOWN_SEC) / perStation);
+  const fits = Math.floor((request.minutes * 60 - NOMINAL_WARMUP_AND_COOLDOWN_SEC + MOVE_BETWEEN_STATIONS_SEC) / perStation);
   const count = Math.min(MAX_STATIONS, Math.max(1, fits));
 
   const stations = buildStations(request, count, game);

@@ -7,13 +7,13 @@
 import { useEffect, useRef, useState } from "react";
 import ExerciseThumb from "@/components/ExerciseThumb";
 import Sheet from "@/components/Sheet";
-import type { Score, Station, StationView } from "@/core/contract";
+import type { RunEventInput, Score, Station, StationView } from "@/core/contract";
 import { useLocale } from "@/i18n/client";
 import type { ExerciseInfoMap } from "@/lib/exercise-info";
 import { clock, say, secondsUntil } from "./format";
 import { PrimaryButton, QuietButton, Screen } from "./parts";
 import { beep, buzz, setSoundOff, soundOff } from "./signals";
-import { useShortScreen, type Run } from "./useRun";
+import { useShortScreen, useTapGuard, type Run } from "./useRun";
 
 interface Props {
   station: Station;
@@ -23,16 +23,25 @@ interface Props {
   position: { index: number; total: number };
   info: ExerciseInfoMap;
   send: Run["send"];
+  /** A press is waiting to be saved: only stopping the game is possible. */
+  paused: boolean;
   onHowTo: (slug: string) => void;
 }
 
-export default function StationPlay({ station, view, now, best, position, info, send, onHowTo }: Props) {
+export default function StationPlay({ station, view, now, best, position, info, send, paused, onHowTo }: Props) {
   const { t, locale } = useLocale();
   const [picking, setPicking] = useState(false);
   const [menu, setMenu] = useState(false);
   const [ending, setEnding] = useState(false);
   const [muted, setMuted] = useState(false);
   const short = useShortScreen();
+  // A second tap of the same finger must not choose from a list that has just
+  // opened under it: choices count only once the list has been up for a moment.
+  const list = useTapGuard();
+  const openPicker = () => {
+    list.mark();
+    setPicking(true);
+  };
 
   const { status, portion, score } = view;
   const exercise = portion ? station.exercises[portion.exerciseIndex] : null;
@@ -54,28 +63,39 @@ export default function StationPlay({ station, view, now, best, position, info, 
     previous.current = { status, startsIn, restLeft, rounds: score.value };
   }, [status, startsIn, restLeft, score.value]);
 
+  /** A report always names the portion on screen, so it can never land on another one. */
+  const reportOf = (amount: number | null): RunEventInput | null =>
+    portion && { type: "report", station: station.id, portion: portion.index, amount };
+
   const report = (amount: number | null) => {
+    const event = reportOf(amount);
+    if (!event || list.fresh() || !send(event)) return;
     setPicking(false);
     buzz(20);
-    send({ type: "report", station: station.id, amount });
   };
 
-  const end = (reason: "choice" | "pain") => {
+  const end = (reason: "choice" | "pain", lastAmount?: number) => {
+    if (list.fresh()) return;
     setMenu(false);
     setEnding(false);
-    send({ type: "station-end", station: station.id, reason });
+    const stop: RunEventInput = { type: "station-end", station: station.id, reason };
+    const last = lastAmount === undefined ? null : reportOf(lastAmount);
+    // Reporting the last portion and stopping are one press.
+    if (last) send(last, stop);
+    else send(stop);
   };
 
   /** Ending mid-portion: first ask what was already done, never assume it. */
   const endByChoice = () => {
+    if (status !== "working") return end("choice");
     setMenu(false);
-    if (status === "working") setEnding(true);
-    else end("choice");
+    list.mark();
+    setEnding(true);
   };
 
   const amounts = (upTo: number) => Array.from({ length: upTo + 1 }, (_, n) => n);
   const numberButton =
-    "num flex min-h-14 min-w-0 flex-1 items-center justify-center rounded-(--r-s) border border-line bg-raised text-xl font-semibold transition-colors duration-(--t-quick) hover:border-accent";
+    "num flex min-h-14 min-w-0 flex-1 items-center justify-center rounded-(--r-s) border border-line bg-raised text-xl font-semibold transition-colors duration-(--t-quick) hover:border-accent disabled:opacity-40";
 
   /* ---------- The actions under the thumb ---------- */
 
@@ -86,25 +106,28 @@ export default function StationPlay({ station, view, now, best, position, info, 
         <p className="text-center text-sm text-fg-2">{t("כמה עשית?", "How many did you do?")}</p>
         <div className="flex gap-2">
           {amounts(portion.target - 1).map((n) => (
-            <button key={n} type="button" className={numberButton} onClick={() => report(n)}>
+            <button key={n} type="button" className={numberButton} disabled={paused} onClick={() => report(n)}>
               {n}
             </button>
           ))}
         </div>
-        <QuietButton onClick={() => setPicking(false)}>{t("חזרה", "Back")}</QuietButton>
+        <div className="flex gap-2">
+          <QuietButton onClick={() => setPicking(false)}>{t("חזרה", "Back")}</QuietButton>
+          <QuietButton onClick={() => report(null)}>{t("לא ספרתי", "I did not count")}</QuietButton>
+        </div>
       </>
     ) : (
       <>
-        <PrimaryButton onClick={() => report(portion.target)}>
+        <PrimaryButton onClick={() => report(portion.target)} disabled={paused}>
           {t("עשיתי", "Did")} <span className="num">{portion.target}</span>
         </PrimaryButton>
-        <QuietButton onClick={() => setPicking(true)}>{t("עשיתי פחות", "I did fewer")}</QuietButton>
+        {!paused && <QuietButton onClick={openPicker}>{t("עשיתי פחות", "I did fewer")}</QuietButton>}
       </>
     );
   } else if (status === "resting" && exercise) {
     // The same button in the same place: grey while resting, live when the rest is over.
     actions = (
-      <PrimaryButton onClick={() => send({ type: "portion-start", station: station.id })} disabled={restLeft > 0}>
+      <PrimaryButton onClick={() => send({ type: "portion-start", station: station.id })} disabled={restLeft > 0 || paused}>
         {t("התחל", "Start")}
       </PrimaryButton>
     );
@@ -116,7 +139,7 @@ export default function StationPlay({ station, view, now, best, position, info, 
         </p>
         <div className="flex gap-2">
           {amounts(portion.target).map((n) => (
-            <button key={n} type="button" className={numberButton} onClick={() => report(n)}>
+            <button key={n} type="button" className={numberButton} disabled={paused} onClick={() => report(n)}>
               {n}
             </button>
           ))}
@@ -269,10 +292,7 @@ export default function StationPlay({ station, view, now, best, position, info, 
                   key={n}
                   type="button"
                   className={numberButton}
-                  onClick={() => {
-                    send({ type: "report", station: station.id, amount: n });
-                    end("choice");
-                  }}
+                  onClick={() => end("choice", n)}
                 >
                   {n}
                 </button>

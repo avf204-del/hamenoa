@@ -46,7 +46,7 @@ export default function WorkoutRun({ data, info }: { data: RunData; info: Exerci
       ) : view.station.status === "ended" ? (
         <StationEnded station={station} view={view.station} best={best[station.id]} isLast={view.stationIndex === workout.stations.length - 1} send={send} />
       ) : (
-        <StationPlay {...common} view={view.station} now={now} position={position} />
+        <StationPlay {...common} view={view.station} now={now} position={position} paused={run.stalled} />
       );
   } else if (view.phase === "cooldown") {
     screen = (
@@ -65,14 +65,35 @@ export default function WorkoutRun({ data, info }: { data: RunData; info: Exerci
 
   return (
     <>
-      {run.unsaved && (
+      {run.stalled ? (
         <div role="alert" className="animate-slide-down sticky top-0 z-40 flex items-center justify-between gap-3 bg-danger-soft px-5 py-3 text-sm">
-          <span>{t("הפעולה האחרונה עוד לא נשמרה.", "Your last action is not saved yet.")}</span>
-          <button type="button" onClick={run.retry} className="min-h-11 rounded-(--r-s) border border-line px-3 font-bold">
-            {t("נסה לשמור שוב", "Try saving again")}
-          </button>
+          <span>
+            {run.canDiscard
+              ? t(
+                  "השרת לא מצליח לשמור את הלחיצה האחרונה. אפשר לנסות שוב, או לוותר עליה ולהמשיך.",
+                  "The server cannot save your last press. Try again, or give it up and carry on.",
+                )
+              : t(
+                  "אין חיבור. הלחיצה האחרונה עוד לא נשמרה. עד שתישמר אפשר רק לעצור את המשחקון.",
+                  "No connection. Your last press is not saved yet. Until it is, you can only stop the game.",
+                )}
+          </span>
+          <span className="flex shrink-0 flex-col gap-2">
+            <button type="button" onClick={run.retry} className="min-h-11 rounded-(--r-s) border border-line px-3 font-bold">
+              {t("נסה שוב", "Try again")}
+            </button>
+            {run.canDiscard && (
+              <button type="button" onClick={run.discard} className="min-h-11 rounded-(--r-s) border border-line px-3">
+                {t("ותר עליה", "Give it up")}
+              </button>
+            )}
+          </span>
         </div>
-      )}
+      ) : run.notRecorded ? (
+        <div role="status" className="animate-slide-down sticky top-0 z-40 bg-raised px-5 py-3 text-sm">
+          {t("הלחיצה האחרונה לא נרשמה. המסך מציג את המצב השמור.", "Your last press was not recorded. The screen shows the saved state.")}
+        </div>
+      ) : null}
       {screen}
       <ExerciseInfoSheet info={howTo ? (info[howTo] ?? null) : null} infoKey={howTo} onClose={() => setHowTo(null)} />
     </>

@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { MAX_MINUTES, MIN_MINUTES } from "@/core/plan";
 import { userGate, writeGate } from "@/lib/current-user";
 import { isJsonObject, jsonNumber } from "@/lib/json-object";
 import { rateLimit } from "@/lib/rate-limit";
@@ -14,7 +15,7 @@ export async function GET() {
 }
 
 const MESSAGES: Record<string, string> = {
-  minutes: "בחר משך אימון בין 10 ל-90 דקות",
+  minutes: `בחר משך אימון בדקות שלמות, בין ${MIN_MINUTES} ל-${MAX_MINUTES}`,
   place: "מקום האימון לא מוכר",
   "no-exercises": "לא נמצאו תרגילים שמתאימים לציוד שסומן",
 };

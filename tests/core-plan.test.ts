@@ -1,6 +1,7 @@
 // The planner, against the real exercise catalog.
 
 import { describe, expect, it } from "vitest";
+import { DEFAULT_MINUTES, MINUTE_CHOICES } from "../src/components/workout/choices";
 import { isEligible, planWorkout, PlanError, type PlanRequest } from "../src/core/plan";
 import { WALKING_INFO_KEY } from "../src/lib/walking";
 import { realCatalog } from "./catalog-fixture";
@@ -66,12 +67,23 @@ describe("בניית אימון", () => {
   });
 
   it("מספר התחנות נקבע לפי הזמן, והאומדן אינו חורג מהבקשה", () => {
-    const counts = [12, 15, 20, 25, 35, 45, 60].map((minutes) => {
+    const counts = [12, 15, 20, 25, 30, 45, 60].map((minutes) => {
       const workout = planWorkout(request({ minutes }));
-      expect(workout.estimatedSec).toBeLessThanOrEqual(minutes * 60 + 60);
+      expect(workout.estimatedSec).toBeLessThanOrEqual(minutes * 60);
       return workout.stations.length;
     });
     expect(counts).toEqual([1, 1, 2, 3, 4, 4, 4]);
+  });
+
+  it("כל משך שמוצע במסך הבית בונה אימון באורך שביקשו, בלי הערת קיצור", () => {
+    expect(MINUTE_CHOICES).toContain(DEFAULT_MINUTES);
+    const built = MINUTE_CHOICES.map((minutes) => {
+      const workout = planWorkout(request({ minutes }));
+      expect(workout.notes).toEqual([]);
+      expect(minutes * 60 - workout.estimatedSec).toBeLessThan(4 * 60);
+      return workout.stations.length;
+    });
+    expect(built).toEqual([1, 2, 3, 4]);
   });
 
   it("כשהאימון קצר בהרבה מהבקשה, זה נאמר במפורש", () => {
@@ -103,6 +115,19 @@ describe("בניית אימון", () => {
     expect(new Set(rest).size).toBe(6);
   });
 
+  it("באימון של משחקון אחד, משחקון חוזר ומשחקון חדש מתחלפים", () => {
+    const earlier = planWorkout(request({ minutes: 12 })).stations[0];
+    const back = planWorkout(request({ minutes: 12, seed: "day-2", rematch: [earlier] }));
+    expect(back.stations.map((s) => s.compareKey)).toEqual([earlier.compareKey]);
+    // אחרי אימון שכולו משחקון חוזר, האימון הקצר הבא מקבל משחקון חדש
+    const fresh = planWorkout(request({ minutes: 12, seed: "day-3", rematch: [earlier], lastWasLoneRematch: true }));
+    expect(fresh.stations).toHaveLength(1);
+    expect(fresh.stations[0].compareKey).not.toBe(earlier.compareKey);
+    // באימון ארוך יותר המשחקון החוזר נשאר, כי יש לצידו משחקונים חדשים
+    const longer = planWorkout(request({ minutes: 25, seed: "day-3", rematch: [earlier], lastWasLoneRematch: true }));
+    expect(longer.stations[0].compareKey).toBe(earlier.compareKey);
+  });
+
   it("משחקון שהציוד שלו לא זמין היום אינו חוזר", () => {
     const withChair = planWorkout(request({ equipment: ["chair"], seed: "chair-day" }));
     const needsChair = withChair.stations.find((s) =>
@@ -121,8 +146,9 @@ describe("בניית אימון", () => {
   });
 
   it("זמן לא תקין או מאגר ריק נדחים בקוד שגיאה ברור", () => {
-    expect(() => planWorkout(request({ minutes: 5 }))).toThrow(PlanError);
+    expect(() => planWorkout(request({ minutes: 11 }))).toThrow(PlanError);
     expect(() => planWorkout(request({ minutes: 120 }))).toThrow(PlanError);
+    expect(() => planWorkout(request({ minutes: 20.5 }))).toThrowError("minutes");
     expect(() => planWorkout(request({ exercises: [] }))).toThrowError("no-exercises");
   });
 });

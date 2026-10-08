@@ -139,7 +139,12 @@ export function replay(workout: Workout, events: readonly RunEvent[], now: numbe
       }
       case "station-end": {
         const track = trackOf(event.station);
-        if (!track || track.endedAt !== null) break;
+        if (!track) break;
+        if (track.endedAt !== null) {
+          // A pain stop that arrives after the bell still marks the game as stopped for pain.
+          if (event.reason === "pain") track.endReason = "pain";
+          break;
+        }
         track.endedAt = event.at;
         track.endReason = event.reason;
         track.portionStartedAt = null;
@@ -177,8 +182,43 @@ export function impliedEvents(workout: Workout, events: readonly RunEvent[], now
     .map((s) => ({ id: `${s.id}:end`, at: s.endedAt!, type: "station-end" as const, station: s.id, reason: s.endReason! }));
 }
 
+/** The last moment the player is known to have been there; null before anything happened. */
+export function lastSeenAt(events: readonly RunEvent[], now: number): number | null {
+  if (events.length === 0) return null;
+  return Math.min(now, Math.max(...events.map((e) => e.at)));
+}
+
+/**
+ * A run the player walked away from, or replaced with a new workout. Returns
+ * what to add so the log says how it ended: every open station closed, then a
+ * finish stamped with the last moment the log knows of (a press, or the bell
+ * of a station that was under way), so the workout's length stays true.
+ */
+export function closeAbandoned(workout: Workout, events: readonly RunEvent[], now: number): RunEvent[] {
+  const added = impliedEvents(workout, events, now);
+  const view = replay(workout, [...events, ...added], now);
+  if (view.phase === "preview" || view.phase === "summary") return added;
+  for (const station of view.stations) {
+    if (station.status === "ended") continue;
+    // Work in progress that was never reported stays unreported. A clock that
+    // already ran out ended the game; one still running was cut short by leaving.
+    const rang = now >= station.clockEndsAt!;
+    added.push({
+      id: `${station.id}:end`,
+      at: rang ? station.clockEndsAt! : now,
+      type: "station-end",
+      station: station.id,
+      reason: rang ? "time" : "choice",
+    });
+  }
+  const seen = lastSeenAt([...events, ...added], now) ?? now;
+  added.push({ id: "run:closed", at: seen, type: "finish" });
+  return added;
+}
+
 export type RejectReason =
   | "not-now"
+  | "stale"
   | "wrong-station"
   | "rest-not-over"
   | "bad-amount"
@@ -194,7 +234,8 @@ const MID_GAME: ReadonlySet<StationView["status"]> = new Set(["countdown", "work
 
 /**
  * Decide whether the player may do `input` now. On success returns the full
- * log to store: what was there, anything the clock implied, and the new event.
+ * log to store: what was there, the new event, and every station ending the
+ * clock or a rule implies before and after it.
  */
 export function accept(
   workout: Workout,
@@ -207,7 +248,11 @@ export function accept(
   const view = replay(workout, settled, now);
   const station = view.station;
   const reject = (reason: RejectReason): Accepted => ({ ok: false, reason });
-  const done = (at = now): Accepted => ({ ok: true, events: [...settled, { ...input, id, at }] });
+  const store = (event: RunEvent): Accepted => {
+    const log = [...settled, event];
+    return { ok: true, events: [...log, ...impliedEvents(workout, log, now)] };
+  };
+  const done = (at = now): Accepted => store({ ...input, id, at });
 
   switch (input.type) {
     case "begin":
@@ -232,17 +277,23 @@ export function accept(
       if (station.status !== "working" && station.status !== "last-report") return reject("not-now");
       if (input.station !== station.id) return reject("wrong-station");
       const { amount } = input;
-      const target = station.portion?.target ?? 0;
-      if (amount !== null && (!Number.isInteger(amount) || amount < 0 || amount > target)) return reject("bad-amount");
+      const portion = station.portion;
+      if (!portion || portion.index !== input.portion) return reject("stale");
+      if (amount !== null && (!Number.isInteger(amount) || amount < 0 || amount > portion.target)) return reject("bad-amount");
       return done();
     }
 
     case "station-end":
-      if (view.phase !== "station" || !station || !MID_GAME.has(station.status)) return reject("not-now");
+      if (view.phase !== "station" || !station) return reject("not-now");
       if (input.station !== station.id) return reject("wrong-station");
-      // After the bell the clock ended the game, whatever the player then pressed.
+      // A pain stop is never lost: it also marks a game the clock has just ended.
+      if (station.status === "ended") {
+        return input.reason === "pain" && station.endReason !== "pain" ? done() : reject("not-now");
+      }
+      if (!MID_GAME.has(station.status)) return reject("not-now");
+      // After the bell the clock is what ended the game; only a pain stop keeps its own reason.
       if (station.status === "last-report") {
-        return { ok: true, events: [...settled, { ...input, reason: "time", id, at: station.clockEndsAt! }] };
+        return store({ ...input, reason: input.reason === "pain" ? "pain" : "time", id, at: station.clockEndsAt! });
       }
       return done();
 
