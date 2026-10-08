@@ -1,0 +1,3528 @@
+{
+  "schemaVersion": 1,
+  "source": "https://github.com/yuhonas/free-exercise-db",
+  "commit": "f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5",
+  "acquiredAt": "2026-10-07T05:07:08.931Z",
+  "license": "Unlicense",
+  "count": 876,
+  "imageCount": 1746,
+  "imageBytes": 98671281,
+  "missingImages": [
+    "Kettlebell_Halo",
+    "Kettlebell_Halo_With_Overhead_Extension",
+    "Kettlebell_Overhead_Triceps_Extension"
+  ],
+  "linkedExercises": {
+    "Bodyweight_Squat": {
+      "slug": "air-squat",
+      "nameHe": "סקוואט"
+    },
+    "Barbell_Squat": {
+      "slug": "back-squat",
+      "nameHe": "סקוואט עם מוט"
+    },
+    "Front_Box_Jump": {
+      "slug": "box-jump",
+      "nameHe": "קפיצה לתיבה"
+    },
+    "Chair_Squat": {
+      "slug": "chair-squat",
+      "nameHe": "סקוואט לכיסא"
+    },
+    "Dumbbell_Squat": {
+      "slug": "dumbbell-squat",
+      "nameHe": "סקוואט עם משקולות יד"
+    },
+    "Front_Barbell_Squat": {
+      "slug": "front-squat",
+      "nameHe": "סקוואט קדמי עם מוט"
+    },
+    "Goblet_Squat": {
+      "slug": "goblet-squat",
+      "nameHe": "סקוואט גובלט"
+    },
+    "Freehand_Jump_Squat": {
+      "slug": "jump-squat",
+      "nameHe": "סקוואט קפיצה"
+    },
+    "Overhead_Squat": {
+      "slug": "overhead-squat",
+      "nameHe": "סקוואט מעל הראש"
+    },
+    "Kettlebell_Pistol_Squat": {
+      "slug": "pistol-squat",
+      "nameHe": "סקוואט על רגל אחת"
+    },
+    "Kettlebell_Thruster": {
+      "slug": "thruster",
+      "nameHe": "סקוואט עם לחיצה מעל הראש"
+    },
+    "Pull_Through": {
+      "slug": "cable-pull-through",
+      "nameHe": "משיכת כבל בין הרגליים"
+    },
+    "Barbell_Deadlift": {
+      "slug": "deadlift",
+      "nameHe": "דדליפט"
+    },
+    "Dumbbell_Clean": {
+      "slug": "dumbbell-clean",
+      "nameHe": "קלין עם משקולות יד"
+    },
+    "Pelvic_Tilt_Into_Bridge": {
+      "slug": "glute-bridge",
+      "nameHe": "גשר אגן"
+    },
+    "Good_Morning": {
+      "slug": "good-morning",
+      "nameHe": "גוד מורנינג"
+    },
+    "Barbell_Hip_Thrust": {
+      "slug": "hip-thrust",
+      "nameHe": "היפ תראסט"
+    },
+    "One-Arm_Kettlebell_Snatch": {
+      "slug": "kettlebell-snatch",
+      "nameHe": "סנאץ' קטלבל"
+    },
+    "One-Arm_Kettlebell_Swings": {
+      "slug": "one-arm-kettlebell-swing",
+      "nameHe": "סווינג קטלבל ביד אחת"
+    },
+    "Romanian_Deadlift": {
+      "slug": "romanian-deadlift",
+      "nameHe": "דדליפט רומני"
+    },
+    "Kettlebell_One-Legged_Deadlift": {
+      "slug": "single-leg-deadlift",
+      "nameHe": "דדליפט על רגל אחת"
+    },
+    "Single_Leg_Glute_Bridge": {
+      "slug": "single-leg-glute-bridge",
+      "nameHe": "גשר אגן על רגל אחת"
+    },
+    "Bench_Dips": {
+      "slug": "bench-dips",
+      "nameHe": "דיפס על כיסא"
+    },
+    "Barbell_Bench_Press_-_Medium_Grip": {
+      "slug": "bench-press",
+      "nameHe": "לחיצת חזה עם מוט"
+    },
+    "Cable_Crossover": {
+      "slug": "cable-crossover",
+      "nameHe": "פתיחת חזה בכבלים"
+    },
+    "Push-Ups_With_Feet_Elevated": {
+      "slug": "decline-pushup",
+      "nameHe": "שכיבות סמיכה רגליים מוגבהות"
+    },
+    "Dips_-_Triceps_Version": {
+      "slug": "dips",
+      "nameHe": "דיפס במקבילים"
+    },
+    "Dumbbell_Bench_Press": {
+      "slug": "dumbbell-bench-press",
+      "nameHe": "לחיצת חזה עם משקולות יד"
+    },
+    "Dumbbell_Floor_Press": {
+      "slug": "dumbbell-floor-press",
+      "nameHe": "לחיצת חזה מהרצפה"
+    },
+    "Incline_Push-Up": {
+      "slug": "incline-pushup",
+      "nameHe": "שכיבות סמיכה ידיים מוגבהות"
+    },
+    "Pushups": {
+      "slug": "pushup",
+      "nameHe": "שכיבות סמיכה"
+    },
+    "Suspended_Push-Up": {
+      "slug": "strap-pushup",
+      "nameHe": "שכיבות סמיכה ברצועות"
+    },
+    "Triceps_Pushdown": {
+      "slug": "triceps-pushdown",
+      "nameHe": "יישור מרפקים בפולי"
+    },
+    "Dumbbell_Shoulder_Press": {
+      "slug": "dumbbell-shoulder-press",
+      "nameHe": "לחיצת כתפיים עם משקולות יד"
+    },
+    "Handstand_Push-Ups": {
+      "slug": "handstand-pushup",
+      "nameHe": "שכיבות סמיכה בעמידת ידיים"
+    },
+    "One-Arm_Kettlebell_Push_Press": {
+      "slug": "kettlebell-push-press",
+      "nameHe": "לחיצת כתפיים עם תנופה, קטלבל ביד אחת"
+    },
+    "Push_Press": {
+      "slug": "push-press",
+      "nameHe": "לחיצת כתפיים עם תנופה, עם מוט"
+    },
+    "Barbell_Shoulder_Press": {
+      "slug": "shoulder-press",
+      "nameHe": "לחיצת כתפיים עם מוט"
+    },
+    "Band_Assisted_Pull-Up": {
+      "slug": "band-assisted-pullup",
+      "nameHe": "מתח עם גומייה"
+    },
+    "Chin-Up": {
+      "slug": "chinup",
+      "nameHe": "מתח באחיזה הפוכה"
+    },
+    "Wide-Grip_Lat_Pulldown": {
+      "slug": "lat-pulldown",
+      "nameHe": "משיכה בפולי עליון"
+    },
+    "Muscle_Up": {
+      "slug": "muscle-up",
+      "nameHe": "עלייה מעל המוט (מאסל-אפ)"
+    },
+    "Pullups": {
+      "slug": "pullup",
+      "nameHe": "מתח"
+    },
+    "Scapular_Pull-Up": {
+      "slug": "scapular-pullup",
+      "nameHe": "משיכת שכמות בתלייה"
+    },
+    "Straight-Arm_Pulldown": {
+      "slug": "straight-arm-pulldown",
+      "nameHe": "משיכה בידיים ישרות בפולי"
+    },
+    "Bent_Over_Barbell_Row": {
+      "slug": "bent-over-row",
+      "nameHe": "חתירה עם מוט בכפיפה"
+    },
+    "Standing_Biceps_Cable_Curl": {
+      "slug": "cable-biceps-curl",
+      "nameHe": "כפיפת מרפקים בפולי"
+    },
+    "Face_Pull": {
+      "slug": "face-pull",
+      "nameHe": "משיכה לפנים בפולי"
+    },
+    "Inverted_Row": {
+      "slug": "inverted-row",
+      "nameHe": "חתירה הפוכה במוט"
+    },
+    "One-Arm_Dumbbell_Row": {
+      "slug": "one-arm-dumbbell-row",
+      "nameHe": "חתירת משקולת ביד אחת"
+    },
+    "Alternating_Renegade_Row": {
+      "slug": "renegade-row",
+      "nameHe": "חתירה בפלאנק עם משקולות יד"
+    },
+    "Seated_Cable_Rows": {
+      "slug": "seated-cable-row",
+      "nameHe": "חתירה בפולי תחתון"
+    },
+    "Inverted_Row_with_Straps": {
+      "slug": "straps-row",
+      "nameHe": "חתירה ברצועות"
+    },
+    "Split_Squat_with_Dumbbells": {
+      "slug": "bulgarian-split-squat",
+      "nameHe": "סקוואט בולגרי"
+    },
+    "Dumbbell_Lunges": {
+      "slug": "dumbbell-lunge",
+      "nameHe": "לאנג' עם משקולות יד"
+    },
+    "Dumbbell_Step_Ups": {
+      "slug": "dumbbell-step-up",
+      "nameHe": "עליית מדרגה עם משקולות יד"
+    },
+    "Dumbbell_Rear_Lunge": {
+      "slug": "reverse-lunge",
+      "nameHe": "לאנג' לאחור"
+    },
+    "Step-up_with_Knee_Raise": {
+      "slug": "step-up",
+      "nameHe": "עליית מדרגה עם הרמת ברך"
+    },
+    "Suspended_Split_Squat": {
+      "slug": "strap-split-squat",
+      "nameHe": "סקוואט בולגרי ברצועות"
+    },
+    "Bodyweight_Walking_Lunge": {
+      "slug": "walking-lunge",
+      "nameHe": "לאנג' בהליכה"
+    },
+    "Farmers_Walk": {
+      "slug": "farmers-walk",
+      "nameHe": "הליכת איכר"
+    },
+    "Standing_Cable_Wood_Chop": {
+      "slug": "cable-woodchop",
+      "nameHe": "חיתוך אלכסוני בכבל"
+    },
+    "Dead_Bug": {
+      "slug": "dead-bug",
+      "nameHe": "דד באג"
+    },
+    "Scissor_Kick": {
+      "slug": "flutter-kicks",
+      "nameHe": "בעיטות רפרוף"
+    },
+    "Hanging_Leg_Raise": {
+      "slug": "hanging-leg-raise",
+      "nameHe": "הרמת רגליים בתלייה"
+    },
+    "Flat_Bench_Lying_Leg_Raise": {
+      "slug": "lying-leg-raise",
+      "nameHe": "הרמת רגליים בשכיבה"
+    },
+    "Machine_Bench_Press": {
+      "slug": "machine-chest-press",
+      "nameHe": "לחיצת חזה בישיבה (מכונה)"
+    },
+    "Mountain_Climbers": {
+      "slug": "mountain-climbers",
+      "nameHe": "טיפוס הרים"
+    },
+    "Pallof_Press": {
+      "slug": "pallof-press",
+      "nameHe": "לחיצה נגד סיבוב בכבל"
+    },
+    "Knee_Hip_Raise_On_Parallel_Bars": {
+      "slug": "parallel-bar-knee-raise",
+      "nameHe": "הרמת ברכיים על מקבילים"
+    },
+    "Plank": {
+      "slug": "plank",
+      "nameHe": "פלאנק"
+    },
+    "Russian_Twist": {
+      "slug": "russian-twist",
+      "nameHe": "טוויסט רוסי"
+    },
+    "Side_Bridge": {
+      "slug": "side-plank",
+      "nameHe": "פלאנק צד"
+    },
+    "3_4_Sit-Up": {
+      "slug": "situp",
+      "nameHe": "כפיפת בטן"
+    },
+    "Suspended_Fallout": {
+      "slug": "strap-fallout",
+      "nameHe": "גלגול קדימה ברצועות"
+    },
+    "Suspended_Reverse_Crunch": {
+      "slug": "strap-knee-tuck",
+      "nameHe": "איסוף ברכיים ברצועות"
+    },
+    "Superman": {
+      "slug": "superman",
+      "nameHe": "סופרמן"
+    },
+    "Kettlebell_Turkish_Get-Up_Squat_style": {
+      "slug": "turkish-getup",
+      "nameHe": "קימה טורקית"
+    },
+    "Fast_Skipping": {
+      "slug": "fast-skipping",
+      "nameHe": "סקיפינג מהיר"
+    },
+    "Rope_Jumping": {
+      "slug": "jump-rope",
+      "nameHe": "קפיצה בחבל"
+    },
+    "Rowing_Stationary": {
+      "slug": "rowing-machine",
+      "nameHe": "חתירה במכונה"
+    },
+    "Band_Pull_Apart": {
+      "slug": "band-pull-apart",
+      "nameHe": "משיכת גומייה לפנים"
+    },
+    "Band_Good_Morning": {
+      "slug": "band-good-morning",
+      "nameHe": "כפיפת גו קדימה עם גומייה"
+    },
+    "Squats_-_With_Bands": {
+      "slug": "band-squat",
+      "nameHe": "סקוואט עם גומייה"
+    },
+    "Shoulder_Press_-_With_Bands": {
+      "slug": "band-shoulder-press",
+      "nameHe": "לחיצת כתפיים עם גומייה"
+    },
+    "Bench_Press_-_With_Bands": {
+      "slug": "band-bench-press",
+      "nameHe": "לחיצת חזה עם גומייה"
+    },
+    "Upright_Row_-_With_Bands": {
+      "slug": "band-upright-row",
+      "nameHe": "משיכה זקופה עם גומייה"
+    },
+    "Monster_Walk": {
+      "slug": "band-lateral-walk",
+      "nameHe": "הליכה צידית עם גומייה"
+    },
+    "Star_Jump": {
+      "slug": "star-jump",
+      "nameHe": "קפיצת כוכב"
+    },
+    "Lateral_Bound": {
+      "slug": "lateral-bound",
+      "nameHe": "קפיצה צידית"
+    },
+    "Standing_Long_Jump": {
+      "slug": "standing-long-jump",
+      "nameHe": "קפיצה למרחק מעמידה"
+    },
+    "Wind_Sprints": {
+      "slug": "wind-sprints",
+      "nameHe": "ריצות ספרינט קצרות"
+    },
+    "Split_Jump": {
+      "slug": "split-jump",
+      "nameHe": "קפיצת מספריים"
+    },
+    "Reverse_Crunch": {
+      "slug": "reverse-crunch",
+      "nameHe": "כפיפת בטן הפוכה"
+    },
+    "Air_Bike": {
+      "slug": "air-bike",
+      "nameHe": "אופניים באוויר"
+    },
+    "Cable_Crunch": {
+      "slug": "cable-crunch",
+      "nameHe": "כפיפת בטן בפולי"
+    },
+    "Cable_Russian_Twists": {
+      "slug": "cable-russian-twist",
+      "nameHe": "סיבוב בטן בפולי"
+    },
+    "Kettlebell_Windmill": {
+      "slug": "kettlebell-windmill",
+      "nameHe": "מיל רוח עם קטלבל"
+    },
+    "Kettlebell_Halo": {
+      "slug": "kettlebell-halo",
+      "nameHe": "הילה עם קטלבל"
+    },
+    "Two-Arm_Kettlebell_Row": {
+      "slug": "kettlebell-row",
+      "nameHe": "חתירה כפולה עם קטלבלים"
+    },
+    "One-Arm_Kettlebell_Row": {
+      "slug": "one-arm-kettlebell-row",
+      "nameHe": "חתירה עם קטלבל ביד אחת"
+    },
+    "Kettlebell_Sumo_High_Pull": {
+      "slug": "kettlebell-sumo-high-pull",
+      "nameHe": "משיכה גבוהה סומו עם קטלבל"
+    },
+    "Wide-Grip_Rear_Pull-Up": {
+      "slug": "wide-grip-pullup",
+      "nameHe": "מתח באחיזה רחבה"
+    },
+    "V-Bar_Pullup": {
+      "slug": "neutral-grip-pullup",
+      "nameHe": "מתח באחיזה ניטרלית"
+    },
+    "Plyo_Push-up": {
+      "slug": "plyo-pushup",
+      "nameHe": "שכיבת סמיכה נפיצה"
+    },
+    "Single-Arm_Push-Up": {
+      "slug": "single-arm-pushup",
+      "nameHe": "שכיבת סמיכה ביד אחת"
+    },
+    "Cable_Deadlifts": {
+      "slug": "cable-deadlift",
+      "nameHe": "דדליפט בפולי"
+    },
+    "Close-Grip_Front_Lat_Pulldown": {
+      "slug": "close-grip-pulldown",
+      "nameHe": "משיכה בפולי באחיזה צרה"
+    },
+    "Sumo_Deadlift": {
+      "slug": "sumo-deadlift",
+      "nameHe": "דדליפט סומו"
+    },
+    "Barbell_Walking_Lunge": {
+      "slug": "barbell-walking-lunge",
+      "nameHe": "לאנג' הליכה עם מוט"
+    },
+    "Barbell_Glute_Bridge": {
+      "slug": "barbell-glute-bridge",
+      "nameHe": "גשר ירכיים עם מוט"
+    },
+    "Zercher_Squats": {
+      "slug": "zercher-squat",
+      "nameHe": "סקוואט זרשר"
+    },
+    "Hang_Clean": {
+      "slug": "hang-clean",
+      "nameHe": "קלין מתלייה"
+    },
+    "Barbell_Ab_Rollout": {
+      "slug": "barbell-rollout",
+      "nameHe": "גלגלת בטן עם מוט"
+    },
+    "Snatch": {
+      "slug": "barbell-snatch",
+      "nameHe": "סנאץ' עם מוט"
+    },
+    "Clean_and_Jerk": {
+      "slug": "barbell-clean-and-jerk",
+      "nameHe": "קלין וג'רק עם מוט"
+    },
+    "Barbell_Shrug": {
+      "slug": "barbell-shrug",
+      "nameHe": "הרמת כתפיים עם מוט"
+    },
+    "Box_Squat": {
+      "slug": "barbell-box-squat",
+      "nameHe": "סקוואט לתיבה עם מוט"
+    },
+    "Barbell_Incline_Bench_Press_-_Medium_Grip": {
+      "slug": "incline-bench-press",
+      "nameHe": "לחיצת חזה משופעת עם מוט"
+    },
+    "Close-Grip_Barbell_Bench_Press": {
+      "slug": "close-grip-bench-press",
+      "nameHe": "לחיצת חזה באחיזה צרה"
+    },
+    "Incline_Dumbbell_Press": {
+      "slug": "dumbbell-incline-press",
+      "nameHe": "לחיצת חזה משופעת עם משקולות יד"
+    },
+    "Seated_Cable_Shoulder_Press": {
+      "slug": "cable-shoulder-press",
+      "nameHe": "לחיצת כתפיים בפולי"
+    },
+    "Triceps_Overhead_Extension_with_Rope": {
+      "slug": "cable-triceps-overhead",
+      "nameHe": "יישור מרפקים מעל הראש בפולי"
+    },
+    "Cable_Seated_Lateral_Raise": {
+      "slug": "cable-lateral-raise",
+      "nameHe": "הרחקת כתפיים בפולי"
+    },
+    "One-Arm_Kettlebell_Clean_and_Jerk": {
+      "slug": "kettlebell-clean-and-jerk",
+      "nameHe": "קלין וג'רק עם קטלבל"
+    },
+    "Kettlebell_Figure_8": {
+      "slug": "kettlebell-figure-8",
+      "nameHe": "שמונה בין הרגליים עם קטלבל"
+    },
+    "Front_Squats_With_Two_Kettlebells": {
+      "slug": "double-kettlebell-front-squat",
+      "nameHe": "סקוואט קדמי עם שני קטלבלים"
+    },
+    "Kettlebell_Arnold_Press": {
+      "slug": "kettlebell-arnold-press",
+      "nameHe": "לחיצת ארנולד עם קטלבל"
+    },
+    "One-Arm_Kettlebell_Jerk": {
+      "slug": "kettlebell-jerk",
+      "nameHe": "ג'רק עם קטלבל"
+    },
+    "Side_Lateral_Raise": {
+      "slug": "dumbbell-lateral-raise",
+      "nameHe": "הרחקת כתפיים עם משקולות יד"
+    },
+    "Incline_Dumbbell_Curl": {
+      "slug": "incline-dumbbell-curl",
+      "nameHe": "כפיפת מרפקים בספסל משופע"
+    },
+    "Dumbbell_Lying_Rear_Lateral_Raise": {
+      "slug": "dumbbell-rear-delt-fly",
+      "nameHe": "פתיחת כתף אחורית עם משקולות יד"
+    },
+    "Hanging_Pike": {
+      "slug": "hanging-pike",
+      "nameHe": "הרמת רגליים תלוי עם קיפול"
+    },
+    "Seated_Leg_Tucks": {
+      "slug": "seated-leg-tucks",
+      "nameHe": "קיפול רגליים בישיבה"
+    },
+    "Knee_Tuck_Jump": {
+      "slug": "knee-tuck-jump",
+      "nameHe": "קפיצת קיפול ברכיים"
+    },
+    "Double_Leg_Butt_Kick": {
+      "slug": "double-leg-butt-kick",
+      "nameHe": "קפיצת עקבים לישבן"
+    },
+    "Carioca_Quick_Step": {
+      "slug": "carioca",
+      "nameHe": "צעד צד מוצלב"
+    },
+    "Rocket_Jump": {
+      "slug": "rocket-jump",
+      "nameHe": "קפיצת רקטה"
+    },
+    "Butt_Lift_Bridge": {
+      "slug": "glute-bridge-hold",
+      "nameHe": "החזקת גשר אגן"
+    },
+    "Natural_Glute_Ham_Raise": {
+      "slug": "nordic-curl",
+      "nameHe": "כפיפת ברכיים נורדית"
+    },
+    "Glute_Kickback": {
+      "slug": "glute-kickback",
+      "nameHe": "בעיטת רגל לאחור על ארבע"
+    },
+    "Platform_Hamstring_Slides": {
+      "slug": "hamstring-slide",
+      "nameHe": "החלקת עקבים"
+    },
+    "Push-Up_Wide": {
+      "slug": "wide-pushup",
+      "nameHe": "שכיבות סמיכה באחיזה רחבה"
+    },
+    "Push-Ups_-_Close_Triceps_Position": {
+      "slug": "close-grip-pushup",
+      "nameHe": "שכיבות סמיכה באחיזה צרה"
+    },
+    "Clock_Push-Up": {
+      "slug": "clock-pushup",
+      "nameHe": "שכיבות סמיכה שעון"
+    },
+    "Push_Up_to_Side_Plank": {
+      "slug": "pushup-to-side-plank",
+      "nameHe": "שכיבת סמיכה עם פתיחה לפלאנק צד"
+    },
+    "Incline_Push-Up_Close-Grip": {
+      "slug": "incline-close-grip-pushup",
+      "nameHe": "שכיבות סמיכה בשיפוע באחיזה צרה"
+    },
+    "Body-Up": {
+      "slug": "plank-up-down",
+      "nameHe": "פלאנק עלייה וירידה"
+    },
+    "Body_Tricep_Press": {
+      "slug": "triceps-body-press",
+      "nameHe": "לחיצת טרייספס מול משטח"
+    },
+    "Drop_Push": {
+      "slug": "drop-pushup",
+      "nameHe": "שכיבת סמיכה עם נפילה ממשטח"
+    },
+    "Crunches": {
+      "slug": "crunch",
+      "nameHe": "כפיפת בטן קצרה"
+    },
+    "Bent-Knee_Hip_Raise": {
+      "slug": "bent-knee-hip-raise",
+      "nameHe": "הרמת אגן בשכיבה"
+    },
+    "Jackknife_Sit-Up": {
+      "slug": "v-up",
+      "nameHe": "קיפול V"
+    },
+    "Side_Jackknife": {
+      "slug": "side-jackknife",
+      "nameHe": "קיפול צד"
+    },
+    "Oblique_Crunches_-_On_The_Floor": {
+      "slug": "oblique-crunch",
+      "nameHe": "כפיפת בטן אלכסונית בשכיבה על הצד"
+    },
+    "Cross-Body_Crunch": {
+      "slug": "cross-body-crunch",
+      "nameHe": "כפיפת בטן מוצלבת"
+    },
+    "Alternate_Heel_Touchers": {
+      "slug": "heel-touch",
+      "nameHe": "נגיעה בעקבים"
+    },
+    "Frog_Sit-Ups": {
+      "slug": "frog-situp",
+      "nameHe": "כפיפת בטן עם כפות רגליים צמודות"
+    },
+    "Cocoons": {
+      "slug": "cocoon",
+      "nameHe": "קיפול גולם"
+    },
+    "Butt-Ups": {
+      "slug": "plank-pike",
+      "nameHe": "הרמת אגן מפלאנק"
+    },
+    "Spider_Crawl": {
+      "slug": "spider-crawl",
+      "nameHe": "ברך למרפק בעמדה נמוכה"
+    },
+    "Back_Flyes_-_With_Bands": {
+      "slug": "band-reverse-fly",
+      "nameHe": "פתיחת ידיים לאחור עם גומייה"
+    },
+    "Band_Good_Morning_Pull_Through": {
+      "slug": "band-pull-through",
+      "nameHe": "משיכת גומייה בין הרגליים"
+    },
+    "Band_Hip_Adductions": {
+      "slug": "band-hip-adduction",
+      "nameHe": "קירוב ירך עם גומייה"
+    },
+    "Band_Skull_Crusher": {
+      "slug": "band-skull-crusher",
+      "nameHe": "יישור מרפקים בשכיבה עם גומייה"
+    },
+    "Calf_Raises_-_With_Bands": {
+      "slug": "band-calf-raise",
+      "nameHe": "הרמת עקבים עם גומייה"
+    },
+    "Cross_Over_-_With_Bands": {
+      "slug": "band-crossover",
+      "nameHe": "הצלבת ידיים מול החזה עם גומייה"
+    },
+    "External_Rotation_with_Band": {
+      "slug": "band-external-rotation",
+      "nameHe": "סיבוב כתף החוצה עם גומייה"
+    },
+    "Internal_Rotation_with_Band": {
+      "slug": "band-internal-rotation",
+      "nameHe": "סיבוב כתף פנימה עם גומייה"
+    },
+    "Hip_Extension_with_Bands": {
+      "slug": "band-hip-extension",
+      "nameHe": "בעיטה לאחור בעמידה עם גומייה"
+    },
+    "Hip_Flexion_with_Band": {
+      "slug": "band-hip-flexion",
+      "nameHe": "הרמת ברך עם גומייה"
+    },
+    "Hip_Lift_with_Band": {
+      "slug": "band-hip-lift",
+      "nameHe": "גשר ישבן עם גומייה"
+    },
+    "Lateral_Raise_-_With_Bands": {
+      "slug": "band-lateral-raise",
+      "nameHe": "הרחקת כתפיים עם גומייה"
+    },
+    "Speed_Band_Overhead_Triceps": {
+      "slug": "band-overhead-triceps-extension",
+      "nameHe": "יישור מרפקים מעל הראש עם גומייה"
+    },
+    "Seated_Band_Hamstring_Curl": {
+      "slug": "band-hamstring-curl",
+      "nameHe": "כפיפת ברכיים בישיבה עם גומייה"
+    },
+    "Alternate_Leg_Diagonal_Bound": {
+      "slug": "diagonal-bound",
+      "nameHe": "ניתור אלכסוני מרגל לרגל"
+    },
+    "Side_Standing_Long_Jump": {
+      "slug": "side-long-jump",
+      "nameHe": "קפיצה לרוחק הצידה"
+    },
+    "Single-Leg_Hop_Progression": {
+      "slug": "single-leg-hop",
+      "nameHe": "ניתור על רגל אחת קדימה"
+    },
+    "Single-Leg_Lateral_Hop": {
+      "slug": "single-leg-lateral-hop",
+      "nameHe": "ניתור על רגל אחת לצדדים"
+    },
+    "Single_Leg_Push-off": {
+      "slug": "single-leg-push-off",
+      "nameHe": "דחיפה מרגל אחת על משטח נמוך"
+    },
+    "Front_Cone_Hops_or_hurdle_hops": {
+      "slug": "forward-hops",
+      "nameHe": "ניתורים קדימה בשתי רגליים"
+    },
+    "Lateral_Cone_Hops": {
+      "slug": "lateral-hops",
+      "nameHe": "ניתורים לצדדים בשתי רגליים"
+    },
+    "Bicycling_Stationary": {
+      "slug": "stationary-bike",
+      "nameHe": "רכיבה על אופני כושר"
+    },
+    "Running_Treadmill": {
+      "slug": "treadmill-run",
+      "nameHe": "ריצה בהליכון"
+    },
+    "Elliptical_Trainer": {
+      "slug": "elliptical-trainer",
+      "nameHe": "אימון באליפטיקל"
+    },
+    "Stairmaster": {
+      "slug": "stair-climber-machine",
+      "nameHe": "מכונת מדרגות"
+    },
+    "Leg_Press": {
+      "slug": "leg-press",
+      "nameHe": "לחיצת רגליים במכונה"
+    },
+    "Hack_Squat": {
+      "slug": "hack-squat",
+      "nameHe": "האק סקוואט במכונה"
+    },
+    "Smith_Machine_Squat": {
+      "slug": "smith-squat",
+      "nameHe": "סקוואט במכונת סמית'"
+    },
+    "Leg_Extensions": {
+      "slug": "leg-extension",
+      "nameHe": "יישור ברכיים במכונה"
+    },
+    "Thigh_Adductor": {
+      "slug": "hip-adduction",
+      "nameHe": "קירוב ירכיים במכונה"
+    },
+    "Seated_Leg_Curl": {
+      "slug": "seated-leg-curl",
+      "nameHe": "כפיפת ברכיים במכונה"
+    },
+    "Hyperextensions_Back_Extensions": {
+      "slug": "back-extension",
+      "nameHe": "יישור גב על מתקן"
+    },
+    "Butterfly": {
+      "slug": "pec-deck-fly",
+      "nameHe": "פתיחת חזה במכונה (פרפר)"
+    },
+    "Machine_Shoulder_Military_Press": {
+      "slug": "machine-shoulder-press",
+      "nameHe": "לחיצת כתפיים במכונה"
+    },
+    "Leverage_Iso_Row": {
+      "slug": "machine-row",
+      "nameHe": "חתירה בישיבה במכונה"
+    },
+    "Reverse_Machine_Flyes": {
+      "slug": "reverse-pec-deck",
+      "nameHe": "פרפר הפוך במכונה"
+    },
+    "Thigh_Abductor": {
+      "slug": "hip-abduction",
+      "nameHe": "הרחקת ירכיים במכונה"
+    },
+    "Ab_Crunch_Machine": {
+      "slug": "machine-crunch",
+      "nameHe": "כפיפות בטן במכונה"
+    },
+    "Standing_Calf_Raises": {
+      "slug": "calf-raise",
+      "nameHe": "הרמת עקבים במכונה"
+    },
+    "90_90_Hamstring": {
+      "slug": "fedb-90-90-hamstring",
+      "nameHe": "יישור ברך בשכיבה עם ירך מורמת"
+    },
+    "Ab_Roller": {
+      "slug": "fedb-ab-roller",
+      "nameHe": "גלגול גלגל בטן מהברכיים"
+    },
+    "Adductor": {
+      "slug": "fedb-adductor",
+      "nameHe": "גלגול פנים הירך על גליל עיסוי"
+    },
+    "Adductor_Groin": {
+      "slug": "fedb-adductor-groin",
+      "nameHe": "מתיחת מפשעה בשכיבה בעזרת בן זוג"
+    },
+    "Advanced_Kettlebell_Windmill": {
+      "slug": "fedb-advanced-kettlebell-windmill",
+      "nameHe": "טחנת רוח מתקדמת עם קטלבל מעל הראש"
+    },
+    "All_Fours_Quad_Stretch": {
+      "slug": "fedb-all-fours-quad-stretch",
+      "nameHe": "מתיחת ירך קדמית מעמידת שש עם אחיזת כף הרגל"
+    },
+    "Alternate_Hammer_Curl": {
+      "slug": "fedb-alternate-hammer-curl",
+      "nameHe": "כפיפת פטיש במשקולות יד לסירוגין"
+    },
+    "Alternate_Incline_Dumbbell_Curl": {
+      "slug": "fedb-alternate-incline-dumbbell-curl",
+      "nameHe": "כפיפת מרפקים לסירוגין בישיבה בשיפוע"
+    },
+    "Alternating_Cable_Shoulder_Press": {
+      "slug": "fedb-alternating-cable-shoulder-press",
+      "nameHe": "לחיצת כתפיים בכבלים נמוכים לסירוגין"
+    },
+    "Alternating_Deltoid_Raise": {
+      "slug": "fedb-alternating-deltoid-raise",
+      "nameHe": "הרמות משקולות לפנים ולצדדים לסירוגין"
+    },
+    "Alternating_Floor_Press": {
+      "slug": "fedb-alternating-floor-press",
+      "nameHe": "לחיצת רצפה בקטלבלים לסירוגין"
+    },
+    "Alternating_Hang_Clean": {
+      "slug": "fedb-alternating-hang-clean",
+      "nameHe": "הנפת קטלבלים מתלייה לכתפיים לסירוגין"
+    },
+    "Alternating_Kettlebell_Press": {
+      "slug": "fedb-alternating-kettlebell-press",
+      "nameHe": "לחיצת כתפיים בקטלבלים לסירוגין"
+    },
+    "Alternating_Kettlebell_Row": {
+      "slug": "fedb-alternating-kettlebell-row",
+      "nameHe": "חתירת קטלבלים לסירוגין"
+    },
+    "Ankle_Circles": {
+      "slug": "fedb-ankle-circles",
+      "nameHe": "מעגלי קרסול בעמידה נתמכת"
+    },
+    "Ankle_On_The_Knee": {
+      "slug": "fedb-ankle-on-the-knee",
+      "nameHe": "מתיחת ישבן בשכיבה עם קרסול מעל הברך"
+    },
+    "Anterior_Tibialis-SMR": {
+      "slug": "fedb-anterior-tibialis-smr",
+      "nameHe": "עיסוי עצמי לצדי השוק ברולר ידני"
+    },
+    "Anti-Gravity_Press": {
+      "slug": "fedb-anti-gravity-press",
+      "nameHe": "לחיצת מוט לפנים בשכיבה על הבטן בשיפוע"
+    },
+    "Arm_Circles": {
+      "slug": "fedb-arm-circles",
+      "nameHe": "מעגלי זרועות לצדדים"
+    },
+    "Arnold_Dumbbell_Press": {
+      "slug": "fedb-arnold-dumbbell-press",
+      "nameHe": "לחיצת ארנולד בישיבה עם משקולות"
+    },
+    "Around_The_Worlds": {
+      "slug": "fedb-around-the-worlds",
+      "nameHe": "מעגל זרועות בשכיבה עם משקולות"
+    },
+    "Atlas_Stone_Trainer": {
+      "slug": "fedb-atlas-stone-trainer",
+      "nameHe": "הרמת מתקן אימון לאבן אטלס"
+    },
+    "Atlas_Stones": {
+      "slug": "fedb-atlas-stones",
+      "nameHe": "העמסת אבן אטלס"
+    },
+    "Axle_Deadlift": {
+      "slug": "fedb-axle-deadlift",
+      "nameHe": "דדליפט עם מוט אקסל עבה"
+    },
+    "Backward_Drag": {
+      "slug": "fedb-backward-drag",
+      "nameHe": "גרירת מזחלת לאחור"
+    },
+    "Backward_Medicine_Ball_Throw": {
+      "slug": "fedb-backward-medicine-ball-throw",
+      "nameHe": "זריקת כדור כוח לאחור מעל הראש"
+    },
+    "Balance_Board": {
+      "slug": "fedb-balance-board",
+      "nameHe": "עמידה על לוח שיווי משקל"
+    },
+    "Ball_Leg_Curl": {
+      "slug": "fedb-ball-leg-curl",
+      "nameHe": "כפיפת ברכיים בשכיבה עם כדור פיזיו"
+    },
+    "Barbell_Ab_Rollout_-_On_Knees": {
+      "slug": "fedb-barbell-ab-rollout-on-knees",
+      "nameHe": "גלגול מוט מהברכיים"
+    },
+    "Barbell_Curl": {
+      "slug": "fedb-barbell-curl",
+      "nameHe": "כפיפת מרפקים במוט בעמידה"
+    },
+    "Barbell_Curls_Lying_Against_An_Incline": {
+      "slug": "fedb-barbell-curls-lying-against-an-incline",
+      "nameHe": "כפיפת מרפקים עם מוט כשהחזה נתמך בשיפוע"
+    },
+    "Barbell_Full_Squat": {
+      "slug": "fedb-barbell-full-squat",
+      "nameHe": "סקוואט מלא עם מוט על הגב"
+    },
+    "Barbell_Guillotine_Bench_Press": {
+      "slug": "fedb-barbell-guillotine-bench-press",
+      "nameHe": "לחיצת גיוטינה במוט מעל קו החזה העליון"
+    },
+    "Barbell_Hack_Squat": {
+      "slug": "fedb-barbell-hack-squat",
+      "nameHe": "האק־סקוואט עם מוט מאחורי הרגליים"
+    },
+    "Barbell_Incline_Shoulder_Raise": {
+      "slug": "fedb-barbell-incline-shoulder-raise",
+      "nameHe": "הושטת שכמות בשיפוע עם מוט וזרועות ישרות"
+    },
+    "Barbell_Lunge": {
+      "slug": "fedb-barbell-lunge",
+      "nameHe": "מכרע לפנים עם מוט על הגב"
+    },
+    "Barbell_Rear_Delt_Row": {
+      "slug": "fedb-barbell-rear-delt-row",
+      "nameHe": "חתירת מוט לכתף אחורית עם מרפקים פתוחים"
+    },
+    "Barbell_Rollout_from_Bench": {
+      "slug": "fedb-barbell-rollout-from-bench",
+      "nameHe": "גלגול מוט עם ברכיים על ספסל"
+    },
+    "Barbell_Seated_Calf_Raise": {
+      "slug": "fedb-barbell-seated-calf-raise",
+      "nameHe": "הרמת עקבים בישיבה עם מוט על הירכיים"
+    },
+    "Barbell_Shrug_Behind_The_Back": {
+      "slug": "fedb-barbell-shrug-behind-the-back",
+      "nameHe": "הרמת כתפיים עם מוט מאחורי הגב"
+    },
+    "Barbell_Side_Bend": {
+      "slug": "fedb-barbell-side-bend",
+      "nameHe": "כפיפות צד עם מוט על הגב"
+    },
+    "Barbell_Side_Split_Squat": {
+      "slug": "fedb-barbell-side-split-squat",
+      "nameHe": "סקוואט צדי עם מוט על הגב"
+    },
+    "Barbell_Squat_To_A_Bench": {
+      "slug": "fedb-barbell-squat-to-a-bench",
+      "nameHe": "סקוואט עם מוט עד מגע בספסל"
+    },
+    "Barbell_Step_Ups": {
+      "slug": "fedb-barbell-step-ups",
+      "nameHe": "עלייה למדרגה עם מוט על הגב"
+    },
+    "Battling_Ropes": {
+      "slug": "fedb-battling-ropes",
+      "nameHe": "גלים לסירוגין בחבלי קרב"
+    },
+    "Bear_Crawl_Sled_Drags": {
+      "slug": "fedb-bear-crawl-sled-drags",
+      "nameHe": "זחילת דוב עם גרירת מזחלת ברתמה"
+    },
+    "Behind_Head_Chest_Stretch": {
+      "slug": "fedb-behind-head-chest-stretch",
+      "nameHe": "מתיחת חזה עם ידיים מאחורי הראש ובן זוג"
+    },
+    "Bench_Jump": {
+      "slug": "fedb-bench-jump",
+      "nameHe": "קפיצה מעבר לספסל"
+    },
+    "Bench_Press_-_Powerlifting": {
+      "slug": "fedb-bench-press-powerlifting",
+      "nameHe": "לחיצת חזה במוט בטכניקת כוח"
+    },
+    "Bench_Press_with_Chains": {
+      "slug": "fedb-bench-press-with-chains",
+      "nameHe": "לחיצת חזה במוט עם שרשראות"
+    },
+    "Bench_Sprint": {
+      "slug": "fedb-bench-sprint",
+      "nameHe": "החלפת רגליים בקפיצה על ספסל"
+    },
+    "Bent-Arm_Barbell_Pullover": {
+      "slug": "fedb-bent-arm-barbell-pullover",
+      "nameHe": "פולאובר במוט עם מרפקים כפופים"
+    },
+    "Bent-Arm_Dumbbell_Pullover": {
+      "slug": "fedb-bent-arm-dumbbell-pullover",
+      "nameHe": "פולאובר במשקולת יד עם מרפקים כפופים"
+    },
+    "Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench": {
+      "slug": "fedb-bent-over-dumbbell-rear-delt-raise-with-head-on-bench",
+      "nameHe": "הרמת כתף אחורית עם משקולות ומצח נתמך בספסל"
+    },
+    "Bent_Over_Low-Pulley_Side_Lateral": {
+      "slug": "fedb-bent-over-low-pulley-side-lateral",
+      "nameHe": "הרמת כתף אחורית ביד אחת בכבל נמוך"
+    },
+    "Bent_Over_One-Arm_Long_Bar_Row": {
+      "slug": "fedb-bent-over-one-arm-long-bar-row",
+      "nameHe": "חתירת מוט מעוגן ביד אחת"
+    },
+    "Bent_Over_Two-Arm_Long_Bar_Row": {
+      "slug": "fedb-bent-over-two-arm-long-bar-row",
+      "nameHe": "חתירת מוט מעוגן בשתי ידיים"
+    },
+    "Bent_Over_Two-Dumbbell_Row": {
+      "slug": "fedb-bent-over-two-dumbbell-row",
+      "nameHe": "חתירת שתי משקולות בגו מוטה באחיזה עליונה"
+    },
+    "Bent_Over_Two-Dumbbell_Row_With_Palms_In": {
+      "slug": "fedb-bent-over-two-dumbbell-row-with-palms-in",
+      "nameHe": "חתירת שתי משקולות בגו מוטה באחיזה ניטרלית"
+    },
+    "Bent_Press": {
+      "slug": "fedb-bent-press",
+      "nameHe": "לחיצה בקטלבל עם הטיית גו מתחת למשקל"
+    },
+    "Bicycling": {
+      "slug": "fedb-bicycling",
+      "nameHe": "רכיבה על אופניים"
+    },
+    "Board_Press": {
+      "slug": "fedb-board-press",
+      "nameHe": "לחיצת חזה במוט עד לוחות עצירה על החזה"
+    },
+    "Bodyweight_Flyes": {
+      "slug": "fedb-bodyweight-flyes",
+      "nameHe": "פרפר במשקל גוף על זוג מוטות מתגלגלים"
+    },
+    "Bodyweight_Mid_Row": {
+      "slug": "fedb-bodyweight-mid-row",
+      "nameHe": "חתירה תלויה במשקל גוף עם ברכיים מורמות"
+    },
+    "Bosu_Ball_Cable_Crunch_With_Side_Bends": {
+      "slug": "fedb-bosu-ball-cable-crunch-with-side-bends",
+      "nameHe": "כפיפת גו על בוסו בכבלים עם כפיפות צד"
+    },
+    "Bottoms-Up_Clean_From_The_Hang_Position": {
+      "slug": "fedb-bottoms-up-clean-from-the-hang-position",
+      "nameHe": "הנפת קטלבל מתלייה באחיזה הפוכה"
+    },
+    "Bottoms_Up": {
+      "slug": "fedb-bottoms-up",
+      "nameHe": "הרמת אגן בשכיבה עם יישור הרגליים מעלה"
+    },
+    "Box_Jump_Multiple_Response": {
+      "slug": "fedb-box-jump-multiple-response",
+      "nameHe": "קפיצות חוזרות אל תיבה וחזרה לרצפה"
+    },
+    "Box_Skip": {
+      "slug": "fedb-box-skip",
+      "nameHe": "דילוגים דרך זוג תיבות אימון"
+    },
+    "Box_Squat_with_Bands": {
+      "slug": "fedb-box-squat-with-bands",
+      "nameHe": "סקוואט לתיבה עם מוט וגומיות מעוגנות"
+    },
+    "Box_Squat_with_Chains": {
+      "slug": "fedb-box-squat-with-chains",
+      "nameHe": "סקוואט לתיבה עם מוט ושרשראות"
+    },
+    "Brachialis-SMR": {
+      "slug": "fedb-brachialis-smr",
+      "nameHe": "שחרור זרוע עליונה על גליל עיסוי"
+    },
+    "Bradford_Rocky_Presses": {
+      "slug": "fedb-bradford-rocky-presses",
+      "nameHe": "לחיצות ברדפורד בישיבה מלפנים ומאחורי הראש"
+    },
+    "Cable_Chest_Press": {
+      "slug": "fedb-cable-chest-press",
+      "nameHe": "לחיצת חזה בכבלים בישיבה"
+    },
+    "Cable_Hammer_Curls_-_Rope_Attachment": {
+      "slug": "fedb-cable-hammer-curls-rope-attachment",
+      "nameHe": "כפיפת פטיש בכבל נמוך עם חבל"
+    },
+    "Cable_Hip_Adduction": {
+      "slug": "fedb-cable-hip-adduction",
+      "nameHe": "קירוב ירך בכבל נמוך"
+    },
+    "Cable_Incline_Pushdown": {
+      "slug": "fedb-cable-incline-pushdown",
+      "nameHe": "משיכת כבל בקשת עם זרועות ישרות בשיפוע"
+    },
+    "Cable_Incline_Triceps_Extension": {
+      "slug": "fedb-cable-incline-triceps-extension",
+      "nameHe": "פשיטת מרפקים בכבל גבוה בשכיבה בשיפוע"
+    },
+    "Cable_Internal_Rotation": {
+      "slug": "fedb-cable-internal-rotation",
+      "nameHe": "סיבוב כתף פנימה בכבל נמוך בישיבה על הרצפה"
+    },
+    "Cable_Iron_Cross": {
+      "slug": "fedb-cable-iron-cross",
+      "nameHe": "משיכת צלב בכבלים גבוהים עם זרועות ישרות"
+    },
+    "Cable_Judo_Flip": {
+      "slug": "fedb-cable-judo-flip",
+      "nameHe": "סיבוב וכפיפת גו בכבל נמוך מעל הכתף"
+    },
+    "Cable_Lying_Triceps_Extension": {
+      "slug": "fedb-cable-lying-triceps-extension",
+      "nameHe": "פשיטת מרפקים בכבל נמוך בשכיבה על ספסל"
+    },
+    "Cable_One_Arm_Tricep_Extension": {
+      "slug": "fedb-cable-one-arm-tricep-extension",
+      "nameHe": "פשיטת מרפק ביד אחת בכבל גבוה באחיזה תחתית"
+    },
+    "Cable_Preacher_Curl": {
+      "slug": "fedb-cable-preacher-curl",
+      "nameHe": "כפיפת מרפקים בכבל נמוך על ספסל כומר"
+    },
+    "Cable_Rear_Delt_Fly": {
+      "slug": "fedb-cable-rear-delt-fly",
+      "nameHe": "פרפר כתף אחורית בכבלים גבוהים מוצלבים"
+    },
+    "Cable_Reverse_Crunch": {
+      "slug": "fedb-cable-reverse-crunch",
+      "nameHe": "כפיפת אגן בשכיבה עם קרסוליים מחוברים לכבל"
+    },
+    "Cable_Rope_Overhead_Triceps_Extension": {
+      "slug": "fedb-cable-rope-overhead-triceps-extension",
+      "nameHe": "פשיטת מרפקים מעל הראש בחבל מכבל נמוך"
+    },
+    "Cable_Rope_Rear-Delt_Rows": {
+      "slug": "fedb-cable-rope-rear-delt-rows",
+      "nameHe": "חתירה לכתף אחורית בישיבה עם חבל"
+    },
+    "Cable_Seated_Crunch": {
+      "slug": "fedb-cable-seated-crunch",
+      "nameHe": "כפיפת גו בישיבה עם חבל מכבל גבוה"
+    },
+    "Cable_Shoulder_Press": {
+      "slug": "fedb-cable-shoulder-press",
+      "nameHe": "לחיצת כתפיים בכבלים בעמידה"
+    },
+    "Cable_Shrugs": {
+      "slug": "fedb-cable-shrugs",
+      "nameHe": "הרמת כתפיים בכבל נמוך"
+    },
+    "Cable_Wrist_Curl": {
+      "slug": "fedb-cable-wrist-curl",
+      "nameHe": "כפיפת שורשי כפות ידיים בכבל נמוך בישיבה"
+    },
+    "Calf-Machine_Shoulder_Shrug": {
+      "slug": "fedb-calf-machine-shoulder-shrug",
+      "nameHe": "הרמת כתפיים תחת כריות מכונת עקבים"
+    },
+    "Calf_Press": {
+      "slug": "fedb-calf-press",
+      "nameHe": "דחיפת כריות כף הרגל במכונת לחיצת רגליים"
+    },
+    "Calf_Press_On_The_Leg_Press_Machine": {
+      "slug": "fedb-calf-press-on-the-leg-press-machine",
+      "nameHe": "הרמת עקבים במכונת לחיצת רגליים בשיפוע"
+    },
+    "Calf_Raise_On_A_Dumbbell": {
+      "slug": "fedb-calf-raise-on-a-dumbbell",
+      "nameHe": "הרמת עקב על ידית משקולת עגולה עם תמיכה"
+    },
+    "Calf_Stretch_Elbows_Against_Wall": {
+      "slug": "fedb-calf-stretch-elbows-against-wall",
+      "nameHe": "מתיחת שוקיים עם אמות נתמכות בקיר"
+    },
+    "Calf_Stretch_Hands_Against_Wall": {
+      "slug": "fedb-calf-stretch-hands-against-wall",
+      "nameHe": "מתיחת שוק בעמידת פסיעה עם ידיים על הקיר"
+    },
+    "Calves-SMR": {
+      "slug": "fedb-calves-smr",
+      "nameHe": "גלגול שוק על גליל עיסוי"
+    },
+    "Car_Deadlift": {
+      "slug": "fedb-car-deadlift",
+      "nameHe": "דדליפט במסגרת מנוף למשא כבד"
+    },
+    "Car_Drivers": {
+      "slug": "fedb-car-drivers",
+      "nameHe": "סיבובי צלחת לפנים בתנועת הגה"
+    },
+    "Cat_Stretch": {
+      "slug": "fedb-cat-stretch",
+      "nameHe": "מתיחת חתול בגב מעוגל מעמידת שש"
+    },
+    "Catch_and_Overhead_Throw": {
+      "slug": "fedb-catch-and-overhead-throw",
+      "nameHe": "זריקה מעל הראש ותפיסת כדור חוזר מהקיר"
+    },
+    "Chain_Handle_Extension": {
+      "slug": "fedb-chain-handle-extension",
+      "nameHe": "פשיטת מרפקים בשכיבה עם ידיות ושרשראות"
+    },
+    "Chain_Press": {
+      "slug": "fedb-chain-press",
+      "nameHe": "לחיצת חזה בידיות עם שרשראות"
+    },
+    "Chair_Leg_Extended_Stretch": {
+      "slug": "fedb-chair-leg-extended-stretch",
+      "nameHe": "יישור רגל והעברתה לצד בישיבה על כיסא"
+    },
+    "Chair_Lower_Back_Stretch": {
+      "slug": "fedb-chair-lower-back-stretch",
+      "nameHe": "מתיחת צד הגו בישיבה על כיסא"
+    },
+    "Chair_Upper_Body_Stretch": {
+      "slug": "fedb-chair-upper-body-stretch",
+      "nameHe": "מתיחת פלג גוף עליון עם אחיזה במשענת הכיסא"
+    },
+    "Chest_And_Front_Of_Shoulder_Stretch": {
+      "slug": "fedb-chest-and-front-of-shoulder-stretch",
+      "nameHe": "העברת מקל מעל הראש למוביליטי כתפיים"
+    },
+    "Chest_Push_from_3_point_stance": {
+      "slug": "fedb-chest-push-from-3-point-stance",
+      "nameHe": "זריקת כדור מהחזה מתוך עמידת שלוש נקודות"
+    },
+    "Chest_Push_multiple_response": {
+      "slug": "fedb-chest-push-multiple-response",
+      "nameHe": "זריקות חזה חוזרות מכריעה עם תמיכת ידיים בנפילה"
+    },
+    "Chest_Push_single_response": {
+      "slug": "fedb-chest-push-single-response",
+      "nameHe": "זריקת חזה אחת מכריעה עם תמיכת ידיים בנפילה"
+    },
+    "Chest_Push_with_Run_Release": {
+      "slug": "fedb-chest-push-with-run-release",
+      "nameHe": "זריקת חזה עם צעדי הכנה והאצה לאחר השחרור"
+    },
+    "Chest_Stretch_on_Stability_Ball": {
+      "slug": "fedb-chest-stretch-on-stability-ball",
+      "nameHe": "מתיחת חזה עם מרפק נתמך על כדור פיזיו"
+    },
+    "Childs_Pose": {
+      "slug": "fedb-childs-pose",
+      "nameHe": "תנוחת ילד עם זרועות לצד הרגליים"
+    },
+    "Chin_To_Chest_Stretch": {
+      "slug": "fedb-chin-to-chest-stretch",
+      "nameHe": "מתיחת עורף בישיבה עם סנטר לכיוון החזה"
+    },
+    "Circus_Bell": {
+      "slug": "fedb-circus-bell",
+      "nameHe": "הנפה ודחיקה של משקולת קרקס ביד אחת"
+    },
+    "Clean": {
+      "slug": "fedb-clean",
+      "nameHe": "הנפת מוט מהרצפה וקבלה בסקוואט קדמי"
+    },
+    "Clean_Deadlift": {
+      "slug": "fedb-clean-deadlift",
+      "nameHe": "דדליפט באחיזת קלין"
+    },
+    "Clean_Pull": {
+      "slug": "fedb-clean-pull",
+      "nameHe": "משיכת קלין מהרצפה ללא קבלה"
+    },
+    "Clean_Shrug": {
+      "slug": "fedb-clean-shrug",
+      "nameHe": "הרמת כתפיים באחיזת קלין מתלייה"
+    },
+    "Clean_and_Press": {
+      "slug": "fedb-clean-and-press",
+      "nameHe": "הנפת מוט לכתפיים ולחיצה מעל הראש"
+    },
+    "Clean_from_Blocks": {
+      "slug": "fedb-clean-from-blocks",
+      "nameHe": "הנפת מוט מתיבות וקבלה בסקוואט קדמי"
+    },
+    "Close-Grip_Dumbbell_Press": {
+      "slug": "fedb-close-grip-dumbbell-press",
+      "nameHe": "לחיצת חזה במשקולת אחת בשתי ידיים על ספסל לרוחב"
+    },
+    "Close-Grip_EZ-Bar_Curl_with_Band": {
+      "slug": "fedb-close-grip-ez-bar-curl-with-band",
+      "nameHe": "כפיפת מרפקים באחיזה צרה במוט EZ עם גומייה"
+    },
+    "Close-Grip_EZ-Bar_Press": {
+      "slug": "fedb-close-grip-ez-bar-press",
+      "nameHe": "לחיצת חזה באחיזה צרה במוט EZ"
+    },
+    "Close-Grip_EZ_Bar_Curl": {
+      "slug": "fedb-close-grip-ez-bar-curl",
+      "nameHe": "כפיפת מרפקים במוט EZ באחיזה צרה"
+    },
+    "Close-Grip_Push-Up_off_of_a_Dumbbell": {
+      "slug": "fedb-close-grip-push-up-off-of-a-dumbbell",
+      "nameHe": "שכיבת סמיכה באחיזה צרה על משקולת עומדת"
+    },
+    "Close-Grip_Standing_Barbell_Curl": {
+      "slug": "fedb-close-grip-standing-barbell-curl",
+      "nameHe": "כפיפת מרפקים במוט ישר באחיזה צרה"
+    },
+    "Conans_Wheel": {
+      "slug": "fedb-conans-wheel",
+      "nameHe": "נשיאת קונאן בהליכה סביב ציר מרכזי"
+    },
+    "Concentration_Curls": {
+      "slug": "fedb-concentration-curls",
+      "nameHe": "כפיפת מרפק מרוכזת בישיבה עם משקולת"
+    },
+    "Cross_Body_Hammer_Curl": {
+      "slug": "fedb-cross-body-hammer-curl",
+      "nameHe": "כפיפת פטיש באלכסון הגוף לסירוגין"
+    },
+    "Crossover_Reverse_Lunge": {
+      "slug": "fedb-crossover-reverse-lunge",
+      "nameHe": "מכרע לאחור עם סיבוב גו לסירוגין"
+    },
+    "Crucifix": {
+      "slug": "fedb-crucifix",
+      "nameHe": "החזקת משקולות בזרועות לצדדים"
+    },
+    "Crunch_-_Hands_Overhead": {
+      "slug": "fedb-crunch-hands-overhead",
+      "nameHe": "כפיפת בטן עם זרועות מעבר לראש"
+    },
+    "Crunch_-_Legs_On_Exercise_Ball": {
+      "slug": "fedb-crunch-legs-on-exercise-ball",
+      "nameHe": "כפיפת בטן עם רגליים על כדור פיזיו"
+    },
+    "Cuban_Press": {
+      "slug": "fedb-cuban-press",
+      "nameHe": "סיבוב כתפיים ולחיצה קובנית במשקולות"
+    },
+    "Dancers_Stretch": {
+      "slug": "fedb-dancers-stretch",
+      "nameHe": "מתיחת גו בישיבה עם רגל מוצלבת"
+    },
+    "Deadlift_with_Bands": {
+      "slug": "fedb-deadlift-with-bands",
+      "nameHe": "דדליפט מוט עם גומיות מתחת לכפות הרגליים"
+    },
+    "Deadlift_with_Chains": {
+      "slug": "fedb-deadlift-with-chains",
+      "nameHe": "דדליפט מוט עם שרשראות"
+    },
+    "Decline_Barbell_Bench_Press": {
+      "slug": "fedb-decline-barbell-bench-press",
+      "nameHe": "לחיצת חזה במוט על ספסל בשיפוע שלילי"
+    },
+    "Decline_Close-Grip_Bench_To_Skull_Crusher": {
+      "slug": "fedb-decline-close-grip-bench-to-skull-crusher",
+      "nameHe": "לחיצה צרה ופשיטת מרפקים במוט על ספסל בשיפוע שלילי"
+    },
+    "Decline_Crunch": {
+      "slug": "fedb-decline-crunch",
+      "nameHe": "כפיפת בטן על ספסל בשיפוע שלילי"
+    },
+    "Decline_Dumbbell_Bench_Press": {
+      "slug": "fedb-decline-dumbbell-bench-press",
+      "nameHe": "לחיצת חזה במשקולות על ספסל בשיפוע שלילי"
+    },
+    "Decline_Dumbbell_Flyes": {
+      "slug": "fedb-decline-dumbbell-flyes",
+      "nameHe": "פרפר במשקולות על ספסל בשיפוע שלילי"
+    },
+    "Decline_Dumbbell_Triceps_Extension": {
+      "slug": "fedb-decline-dumbbell-triceps-extension",
+      "nameHe": "פשיטת מרפקים במשקולות על ספסל בשיפוע שלילי"
+    },
+    "Decline_EZ_Bar_Triceps_Extension": {
+      "slug": "fedb-decline-ez-bar-triceps-extension",
+      "nameHe": "פשיטת מרפקים במוט EZ על ספסל בשיפוע שלילי"
+    },
+    "Decline_Oblique_Crunch": {
+      "slug": "fedb-decline-oblique-crunch",
+      "nameHe": "כפיפת בטן אלכסונית על ספסל בשיפוע שלילי"
+    },
+    "Decline_Push-Up": {
+      "slug": "fedb-decline-push-up",
+      "nameHe": "שכיבת סמיכה עם רגליים מוגבהות"
+    },
+    "Decline_Reverse_Crunch": {
+      "slug": "fedb-decline-reverse-crunch",
+      "nameHe": "כפיפת בטן הפוכה על ספסל משופע עם ראש גבוה"
+    },
+    "Decline_Smith_Press": {
+      "slug": "fedb-decline-smith-press",
+      "nameHe": "לחיצת חזה בסמית על ספסל בשיפוע שלילי"
+    },
+    "Deficit_Deadlift": {
+      "slug": "fedb-deficit-deadlift",
+      "nameHe": "דדליפט בעמידה על הגבהה נמוכה"
+    },
+    "Depth_Jump_Leap": {
+      "slug": "fedb-depth-jump-leap",
+      "nameHe": "ירידה מתיבה וניתור לתיבה גבוהה יותר"
+    },
+    "Dip_Machine": {
+      "slug": "fedb-dip-machine",
+      "nameHe": "פשיטת מרפקים בישיבה במכונת מקבילים"
+    },
+    "Dips_-_Chest_Version": {
+      "slug": "fedb-dips-chest-version",
+      "nameHe": "מקבילים בהטיית גו קדימה"
+    },
+    "Donkey_Calf_Raises": {
+      "slug": "fedb-donkey-calf-raises",
+      "nameHe": "הרמת עקבים במכונת תאומים בכפיפת גו"
+    },
+    "Double_Kettlebell_Alternating_Hang_Clean": {
+      "slug": "fedb-double-kettlebell-alternating-hang-clean",
+      "nameHe": "קלין קטלבל לסירוגין עם שני קטלבלים"
+    },
+    "Double_Kettlebell_Jerk": {
+      "slug": "fedb-double-kettlebell-jerk",
+      "nameHe": "דחיקת שני קטלבלים עם קבלה בפיסוק קדמי"
+    },
+    "Double_Kettlebell_Push_Press": {
+      "slug": "fedb-double-kettlebell-push-press",
+      "nameHe": "דחיפת שני קטלבלים מעל הראש בעזרת הרגליים"
+    },
+    "Double_Kettlebell_Snatch": {
+      "slug": "fedb-double-kettlebell-snatch",
+      "nameHe": "הנפת שני קטלבלים מעל הראש"
+    },
+    "Double_Kettlebell_Windmill": {
+      "slug": "fedb-double-kettlebell-windmill",
+      "nameHe": "טחנת רוח עם קטלבל מעל הראש והרמת קטלבל מהרצפה"
+    },
+    "Downward_Facing_Balance": {
+      "slug": "fedb-downward-facing-balance",
+      "nameHe": "איזון בשכיבה על כדור פיזיו עם רגליים מורמות"
+    },
+    "Drag_Curl": {
+      "slug": "fedb-drag-curl",
+      "nameHe": "כפיפת מרפקים במוט בצמוד לגוף"
+    },
+    "Dumbbell_Alternate_Bicep_Curl": {
+      "slug": "fedb-dumbbell-alternate-bicep-curl",
+      "nameHe": "כפיפת מרפקים במשקולות לסירוגין עם סיבוב אחיזה"
+    },
+    "Dumbbell_Bench_Press_with_Neutral_Grip": {
+      "slug": "fedb-dumbbell-bench-press-with-neutral-grip",
+      "nameHe": "לחיצת חזה במשקולות באחיזה ניטרלית"
+    },
+    "Dumbbell_Bicep_Curl": {
+      "slug": "fedb-dumbbell-bicep-curl",
+      "nameHe": "כפיפת מרפקים בשתי משקולות יחד"
+    },
+    "Dumbbell_Flyes": {
+      "slug": "fedb-dumbbell-flyes",
+      "nameHe": "פרפר במשקולות על ספסל שטוח"
+    },
+    "Dumbbell_Incline_Row": {
+      "slug": "fedb-dumbbell-incline-row",
+      "nameHe": "חתירת משקולות עם חזה נתמך בספסל משופע"
+    },
+    "Dumbbell_Incline_Shoulder_Raise": {
+      "slug": "fedb-dumbbell-incline-shoulder-raise",
+      "nameHe": "הושטת שכמות בשיפוע עם משקולות וזרועות ארוכות"
+    },
+    "Dumbbell_Lying_One-Arm_Rear_Lateral_Raise": {
+      "slug": "fedb-dumbbell-lying-one-arm-rear-lateral-raise",
+      "nameHe": "הרחקת כתף אחורית ביד אחת עם חזה נתמך"
+    },
+    "Dumbbell_Lying_Pronation": {
+      "slug": "fedb-dumbbell-lying-pronation",
+      "nameHe": "סיבוב כתף החוצה בשכיבה על הבטן"
+    },
+    "Dumbbell_Lying_Supination": {
+      "slug": "fedb-dumbbell-lying-supination",
+      "nameHe": "סיבוב כתף החוצה בשכיבה על הצד"
+    },
+    "Dumbbell_One-Arm_Shoulder_Press": {
+      "slug": "fedb-dumbbell-one-arm-shoulder-press",
+      "nameHe": "לחיצת כתף במשקולת ביד אחת בעמידה"
+    },
+    "Dumbbell_One-Arm_Triceps_Extension": {
+      "slug": "fedb-dumbbell-one-arm-triceps-extension",
+      "nameHe": "פשיטת מרפק במשקולת ביד אחת מעל הראש"
+    },
+    "Dumbbell_One-Arm_Upright_Row": {
+      "slug": "fedb-dumbbell-one-arm-upright-row",
+      "nameHe": "חתירה אנכית במשקולת ביד אחת"
+    },
+    "Dumbbell_Prone_Incline_Curl": {
+      "slug": "fedb-dumbbell-prone-incline-curl",
+      "nameHe": "כפיפת מרפקים במשקולות עם חזה נתמך בשיפוע"
+    },
+    "Dumbbell_Raise": {
+      "slug": "fedb-dumbbell-raise",
+      "nameHe": "חתירה אנכית בשתי משקולות"
+    },
+    "Dumbbell_Scaption": {
+      "slug": "fedb-dumbbell-scaption",
+      "nameHe": "הרמת משקולות במישור השכמה"
+    },
+    "Dumbbell_Seated_Box_Jump": {
+      "slug": "fedb-dumbbell-seated-box-jump",
+      "nameHe": "קפיצה מישיבה לתיבה עם משקולת על החזה"
+    },
+    "Dumbbell_Seated_One-Leg_Calf_Raise": {
+      "slug": "fedb-dumbbell-seated-one-leg-calf-raise",
+      "nameHe": "הרמת עקב בישיבה עם משקולת — רגל אחת"
+    },
+    "Dumbbell_Shrug": {
+      "slug": "fedb-dumbbell-shrug",
+      "nameHe": "הרמת כתפיים עם משקולות"
+    },
+    "Dumbbell_Side_Bend": {
+      "slug": "fedb-dumbbell-side-bend",
+      "nameHe": "כפיפה צידית עם משקולת"
+    },
+    "Dumbbell_Squat_To_A_Bench": {
+      "slug": "fedb-dumbbell-squat-to-a-bench",
+      "nameHe": "סקוואט עם משקולות אל ספסל"
+    },
+    "Dumbbell_Tricep_Extension_-Pronated_Grip": {
+      "slug": "fedb-dumbbell-tricep-extension-pronated-grip",
+      "nameHe": "פשיטת מרפקים בשכיבה באחיזה ישרה"
+    },
+    "Dynamic_Back_Stretch": {
+      "slug": "fedb-dynamic-back-stretch",
+      "nameHe": "תנועת זרועות דינמית לגב"
+    },
+    "Dynamic_Chest_Stretch": {
+      "slug": "fedb-dynamic-chest-stretch",
+      "nameHe": "פתיחת חזה דינמית"
+    },
+    "EZ-Bar_Curl": {
+      "slug": "fedb-ez-bar-curl",
+      "nameHe": "כפיפת מרפקים עם מוט EZ"
+    },
+    "EZ-Bar_Skullcrusher": {
+      "slug": "fedb-ez-bar-skullcrusher",
+      "nameHe": "פשיטת מרפקים בשכיבה עם מוט EZ"
+    },
+    "Elbow_Circles": {
+      "slug": "fedb-elbow-circles",
+      "nameHe": "מעגלי מרפקים"
+    },
+    "Elbow_to_Knee": {
+      "slug": "fedb-elbow-to-knee",
+      "nameHe": "כפיפת בטן אל הברך הנגדית"
+    },
+    "Elbows_Back": {
+      "slug": "fedb-elbows-back",
+      "nameHe": "מתיחת חזה עם מרפקים לאחור"
+    },
+    "Elevated_Back_Lunge": {
+      "slug": "fedb-elevated-back-lunge",
+      "nameHe": "מכרע לאחור ממשטח מוגבה עם מוט"
+    },
+    "Elevated_Cable_Rows": {
+      "slug": "fedb-elevated-cable-rows",
+      "nameHe": "חתירת כבל בישיבה מוגבהת"
+    },
+    "Exercise_Ball_Crunch": {
+      "slug": "fedb-exercise-ball-crunch",
+      "nameHe": "כפיפת בטן על כדור פיזיו"
+    },
+    "Exercise_Ball_Pull-In": {
+      "slug": "fedb-exercise-ball-pull-in",
+      "nameHe": "משיכת ברכיים עם כדור פיזיו"
+    },
+    "Extended_Range_One-Arm_Kettlebell_Floor_Press": {
+      "slug": "fedb-extended-range-one-arm-kettlebell-floor-press",
+      "nameHe": "לחיצת קטלבל חד־ידית על הרצפה בטווח מורחב"
+    },
+    "External_Rotation": {
+      "slug": "fedb-external-rotation",
+      "nameHe": "סיבוב כתף החוצה בשכיבה עם משקולת"
+    },
+    "External_Rotation_with_Cable": {
+      "slug": "fedb-external-rotation-with-cable",
+      "nameHe": "סיבוב כתף החוצה עם כבל"
+    },
+    "Finger_Curls": {
+      "slug": "fedb-finger-curls",
+      "nameHe": "כפיפת אצבעות עם מוט"
+    },
+    "Flat_Bench_Cable_Flyes": {
+      "slug": "fedb-flat-bench-cable-flyes",
+      "nameHe": "פרפר כבלים בשכיבה על ספסל"
+    },
+    "Flat_Bench_Leg_Pull-In": {
+      "slug": "fedb-flat-bench-leg-pull-in",
+      "nameHe": "משיכת ברכיים בשכיבה על ספסל"
+    },
+    "Flexor_Incline_Dumbbell_Curls": {
+      "slug": "fedb-flexor-incline-dumbbell-curls",
+      "nameHe": "כפיפת מרפקים בשיפוע באחיזה מוטה"
+    },
+    "Floor_Glute-Ham_Raise": {
+      "slug": "fedb-floor-glute-ham-raise",
+      "nameHe": "כפיפת ברכיים נורדית עם עוזר"
+    },
+    "Floor_Press": {
+      "slug": "fedb-floor-press",
+      "nameHe": "לחיצת מוט על הרצפה"
+    },
+    "Floor_Press_with_Chains": {
+      "slug": "fedb-floor-press-with-chains",
+      "nameHe": "לחיצת מוט על הרצפה עם שרשראות"
+    },
+    "Flutter_Kicks": {
+      "slug": "fedb-flutter-kicks",
+      "nameHe": "בעיטות רגליים לסירוגין בשכיבה על הבטן"
+    },
+    "Foot-SMR": {
+      "slug": "fedb-foot-smr",
+      "nameHe": "עיסוי עצמי לכף הרגל בגליל"
+    },
+    "Forward_Drag_with_Press": {
+      "slug": "fedb-forward-drag-with-press",
+      "nameHe": "גרירת מזחלת קדימה עם לחיצת ידיות"
+    },
+    "Frankenstein_Squat": {
+      "slug": "fedb-frankenstein-squat",
+      "nameHe": "סקוואט קדמי ללא אחיזת ידיים"
+    },
+    "Frog_Hops": {
+      "slug": "fedb-frog-hops",
+      "nameHe": "קפיצות צפרדע"
+    },
+    "Front_Barbell_Squat_To_A_Bench": {
+      "slug": "fedb-front-barbell-squat-to-a-bench",
+      "nameHe": "סקוואט קדמי עם מוט אל ספסל"
+    },
+    "Front_Cable_Raise": {
+      "slug": "fedb-front-cable-raise",
+      "nameHe": "הרמת זרוע לפנים עם כבל"
+    },
+    "Front_Dumbbell_Raise": {
+      "slug": "fedb-front-dumbbell-raise",
+      "nameHe": "הרמת משקולת לפנים לסירוגין"
+    },
+    "Front_Incline_Dumbbell_Raise": {
+      "slug": "fedb-front-incline-dumbbell-raise",
+      "nameHe": "הרמת משקולות לפנים בשכיבה בשיפוע"
+    },
+    "Front_Leg_Raises": {
+      "slug": "fedb-front-leg-raises",
+      "nameHe": "הנפת רגל לפנים ולאחור"
+    },
+    "Front_Plate_Raise": {
+      "slug": "fedb-front-plate-raise",
+      "nameHe": "הרמת צלחת משקל לפנים"
+    },
+    "Front_Raise_And_Pullover": {
+      "slug": "fedb-front-raise-and-pullover",
+      "nameHe": "הרמה קדמית ופולאובר עם מוט בשכיבה"
+    },
+    "Front_Squat_Clean_Grip": {
+      "slug": "fedb-front-squat-clean-grip",
+      "nameHe": "סקוואט קדמי באחיזת קלין"
+    },
+    "Front_Two-Dumbbell_Raise": {
+      "slug": "fedb-front-two-dumbbell-raise",
+      "nameHe": "הרמת שתי משקולות לפנים"
+    },
+    "Full_Range-Of-Motion_Lat_Pulldown": {
+      "slug": "fedb-full-range-of-motion-lat-pulldown",
+      "nameHe": "משיכת כבלים עליונים בטווח מלא"
+    },
+    "Gironda_Sternum_Chins": {
+      "slug": "fedb-gironda-sternum-chins",
+      "nameHe": "עליית מתח אל עצם החזה"
+    },
+    "Glute_Ham_Raise": {
+      "slug": "fedb-glute-ham-raise",
+      "nameHe": "כפיפת ברכיים במתקן גלוט־האם"
+    },
+    "Good_Morning_off_Pins": {
+      "slug": "fedb-good-morning-off-pins",
+      "nameHe": "גוד מורנינג מתמיכות הכלוב"
+    },
+    "Gorilla_Chin_Crunch": {
+      "slug": "fedb-gorilla-chin-crunch",
+      "nameHe": "עליית מתח עם קירוב ברכיים"
+    },
+    "Groin_and_Back_Stretch": {
+      "slug": "fedb-groin-and-back-stretch",
+      "nameHe": "תנועת פרפר עם כפיפת גו"
+    },
+    "Groiners": {
+      "slug": "fedb-groiners",
+      "nameHe": "קפיצת רגליים אל כפות הידיים"
+    },
+    "Hammer_Curls": {
+      "slug": "fedb-hammer-curls",
+      "nameHe": "כפיפת מרפקים באחיזת פטיש"
+    },
+    "Hammer_Grip_Incline_DB_Bench_Press": {
+      "slug": "fedb-hammer-grip-incline-db-bench-press",
+      "nameHe": "לחיצת משקולות בשיפוע באחיזת פטיש"
+    },
+    "Hamstring-SMR": {
+      "slug": "fedb-hamstring-smr",
+      "nameHe": "עיסוי עצמי לירך האחורית בגליל"
+    },
+    "Hamstring_Stretch": {
+      "slug": "fedb-hamstring-stretch",
+      "nameHe": "מתיחת ירך אחורית עם רצועה בשכיבה"
+    },
+    "Hang_Clean_-_Below_the_Knees": {
+      "slug": "fedb-hang-clean-below-the-knees",
+      "nameHe": "קלין מתלייה מתחת לברכיים"
+    },
+    "Hang_Snatch": {
+      "slug": "fedb-hang-snatch",
+      "nameHe": "סנאץ׳ מתלייה"
+    },
+    "Hang_Snatch_-_Below_Knees": {
+      "slug": "fedb-hang-snatch-below-knees",
+      "nameHe": "סנאץ׳ מתלייה מתחת לברכיים"
+    },
+    "Hanging_Bar_Good_Morning": {
+      "slug": "fedb-hanging-bar-good-morning",
+      "nameHe": "גוד מורנינג עם מוט תלוי בשרשראות"
+    },
+    "Heaving_Snatch_Balance": {
+      "slug": "fedb-heaving-snatch-balance",
+      "nameHe": "כניסה לסקוואט סנאץ׳ בעזרת דחיפת רגליים"
+    },
+    "Heavy_Bag_Thrust": {
+      "slug": "fedb-heavy-bag-thrust",
+      "nameHe": "דחיפת שק כבד"
+    },
+    "High_Cable_Curls": {
+      "slug": "fedb-high-cable-curls",
+      "nameHe": "כפיפת מרפקים בין גלגלות גבוהות"
+    },
+    "Hip_Circles_prone": {
+      "slug": "fedb-hip-circles-prone",
+      "nameHe": "מעגלי ירך בעמידת שש"
+    },
+    "Hug_A_Ball": {
+      "slug": "fedb-hug-a-ball",
+      "nameHe": "מתיחת גב בישיבה בחיבוק כדור"
+    },
+    "Hug_Knees_To_Chest": {
+      "slug": "fedb-hug-knees-to-chest",
+      "nameHe": "חיבוק ברכיים אל החזה"
+    },
+    "Hurdle_Hops": {
+      "slug": "fedb-hurdle-hops",
+      "nameHe": "קפיצות רצופות מעל משוכות"
+    },
+    "Hyperextensions_With_No_Hyperextension_Bench": {
+      "slug": "fedb-hyperextensions-with-no-hyperextension-bench",
+      "nameHe": "פשיטת גב על ספסל עם עזרת שותף"
+    },
+    "IT_Band_and_Glute_Stretch": {
+      "slug": "fedb-it-band-and-glute-stretch",
+      "nameHe": "מתיחת צד הירך והישבן עם רצועה"
+    },
+    "Iliotibial_Tract-SMR": {
+      "slug": "fedb-iliotibial-tract-smr",
+      "nameHe": "גלגול צד הירך על גליל עיסוי"
+    },
+    "Inchworm": {
+      "slug": "fedb-inchworm",
+      "nameHe": "הליכת תולעת"
+    },
+    "Incline_Barbell_Triceps_Extension": {
+      "slug": "fedb-incline-barbell-triceps-extension",
+      "nameHe": "פשיטת מרפקים במוט על ספסל בשיפוע"
+    },
+    "Incline_Bench_Pull": {
+      "slug": "fedb-incline-bench-pull",
+      "nameHe": "חתירה רחבה עם משקולות בתמיכת ספסל בשיפוע"
+    },
+    "Incline_Cable_Chest_Press": {
+      "slug": "fedb-incline-cable-chest-press",
+      "nameHe": "לחיצת חזה בכבלים על ספסל בשיפוע"
+    },
+    "Incline_Cable_Flye": {
+      "slug": "fedb-incline-cable-flye",
+      "nameHe": "פרפר בכבלים על ספסל בשיפוע"
+    },
+    "Incline_Dumbbell_Bench_With_Palms_Facing_In": {
+      "slug": "fedb-incline-dumbbell-bench-with-palms-facing-in",
+      "nameHe": "לחיצת משקולות בשיפוע באחיזה ניטרלית"
+    },
+    "Incline_Dumbbell_Flyes": {
+      "slug": "fedb-incline-dumbbell-flyes",
+      "nameHe": "פרפר במשקולות על ספסל בשיפוע"
+    },
+    "Incline_Dumbbell_Flyes_-_With_A_Twist": {
+      "slug": "fedb-incline-dumbbell-flyes-with-a-twist",
+      "nameHe": "פרפר במשקולות בשיפוע עם סיבוב כפות הידיים"
+    },
+    "Incline_Hammer_Curls": {
+      "slug": "fedb-incline-hammer-curls",
+      "nameHe": "כפיפת מרפקים בפטיש על ספסל בשיפוע"
+    },
+    "Incline_Inner_Biceps_Curl": {
+      "slug": "fedb-incline-inner-biceps-curl",
+      "nameHe": "כפיפת מרפקים החוצה על ספסל בשיפוע"
+    },
+    "Incline_Push-Up_Depth_Jump": {
+      "slug": "fedb-incline-push-up-depth-jump",
+      "nameHe": "שכיבות סמיכה מתפרצות בין מדרגות עם רגליים מוגבהות"
+    },
+    "Incline_Push-Up_Medium": {
+      "slug": "fedb-incline-push-up-medium",
+      "nameHe": "שכיבות סמיכה בשיפוע על מוט בגובה בינוני"
+    },
+    "Incline_Push-Up_Reverse_Grip": {
+      "slug": "fedb-incline-push-up-reverse-grip",
+      "nameHe": "שכיבות סמיכה בשיפוע על מוט באחיזה הפוכה"
+    },
+    "Incline_Push-Up_Wide": {
+      "slug": "fedb-incline-push-up-wide",
+      "nameHe": "שכיבות סמיכה בשיפוע על מוט באחיזה רחבה"
+    },
+    "Intermediate_Groin_Stretch": {
+      "slug": "fedb-intermediate-groin-stretch",
+      "nameHe": "מתיחת מקרבים בשכיבה עם רצועה"
+    },
+    "Intermediate_Hip_Flexor_and_Quad_Stretch": {
+      "slug": "fedb-intermediate-hip-flexor-and-quad-stretch",
+      "nameHe": "מתיחת ירך קדמית בשכיבה על הבטן עם רצועה"
+    },
+    "Iron_Cross": {
+      "slug": "fedb-iron-cross",
+      "nameHe": "סקוואט עם הרמה קדמית ופתיחת משקולות לצדדים"
+    },
+    "Iron_Crosses_stretch": {
+      "slug": "fedb-iron-crosses-stretch",
+      "nameHe": "העברת רגל מעבר לגוף בשכיבה על הבטן"
+    },
+    "Isometric_Chest_Squeezes": {
+      "slug": "fedb-isometric-chest-squeezes",
+      "nameHe": "לחיצת כפות ידיים איזומטרית מול החזה"
+    },
+    "Isometric_Neck_Exercise_-_Front_And_Back": {
+      "slug": "fedb-isometric-neck-exercise-front-and-back",
+      "nameHe": "התנגדות צוואר איזומטרית קדימה ואחורה"
+    },
+    "Isometric_Neck_Exercise_-_Sides": {
+      "slug": "fedb-isometric-neck-exercise-sides",
+      "nameHe": "התנגדות צוואר איזומטרית לצדדים"
+    },
+    "Isometric_Wipers": {
+      "slug": "fedb-isometric-wipers",
+      "nameHe": "שכיבות סמיכה בהעברת משקל מצד לצד"
+    },
+    "JM_Press": {
+      "slug": "fedb-jm-press",
+      "nameHe": "לחיצת ג׳יי־אם במוט"
+    },
+    "Janda_Sit-Up": {
+      "slug": "fedb-janda-sit-up",
+      "nameHe": "כפיפת בטן איטית עם כיווץ ישבן וירך אחורית"
+    },
+    "Jefferson_Squats": {
+      "slug": "fedb-jefferson-squats",
+      "nameHe": "סקוואט ג׳פרסון עם מוט בין הרגליים"
+    },
+    "Jerk_Balance": {
+      "slug": "fedb-jerk-balance",
+      "nameHe": "תרגול כניסה למכרע בג׳רק"
+    },
+    "Jerk_Dip_Squat": {
+      "slug": "fedb-jerk-dip-squat",
+      "nameHe": "כיפוף ברכיים קצר עם מוט קדמי לקראת ג׳רק"
+    },
+    "Jogging_Treadmill": {
+      "slug": "fedb-jogging-treadmill",
+      "nameHe": "ריצה קלה על הליכון"
+    },
+    "Keg_Load": {
+      "slug": "fedb-keg-load",
+      "nameHe": "נשיאת חבית והעמסתה על משטח"
+    },
+    "Kettlebell_Dead_Clean": {
+      "slug": "fedb-kettlebell-dead-clean",
+      "nameHe": "הנפת קטלבל מהרצפה לעמדת כתף"
+    },
+    "Kettlebell_Halo_With_Overhead_Extension": {
+      "slug": "fedb-kettlebell-halo-with-overhead-extension",
+      "nameHe": "סיבוב קטלבל סביב הראש עם פשיטת מרפקים"
+    },
+    "Kettlebell_Hang_Clean": {
+      "slug": "fedb-kettlebell-hang-clean",
+      "nameHe": "הנפת קטלבל מתלייה לעמדת כתף"
+    },
+    "Kettlebell_Overhead_Triceps_Extension": {
+      "slug": "fedb-kettlebell-overhead-triceps-extension",
+      "nameHe": "פשיטת מרפקים מעל הראש עם קטלבל"
+    },
+    "Kettlebell_Pass_Between_The_Legs": {
+      "slug": "fedb-kettlebell-pass-between-the-legs",
+      "nameHe": "העברת קטלבל בין הרגליים"
+    },
+    "Kettlebell_Pirate_Ships": {
+      "slug": "fedb-kettlebell-pirate-ships",
+      "nameHe": "תנופות קטלבל אלכסוניות מצד לצד"
+    },
+    "Kettlebell_Seated_Press": {
+      "slug": "fedb-kettlebell-seated-press",
+      "nameHe": "לחיצת קטלבל ביד אחת בישיבה על הרצפה"
+    },
+    "Kettlebell_Seesaw_Press": {
+      "slug": "fedb-kettlebell-seesaw-press",
+      "nameHe": "לחיצת קטלבל לסירוגין מעל הראש"
+    },
+    "Kettlebell_Turkish_Get-Up_Lunge_style": {
+      "slug": "fedb-kettlebell-turkish-get-up-lunge-style",
+      "nameHe": "קימה טורקית עם קטלבל דרך מכרע"
+    },
+    "Kipping_Muscle_Up": {
+      "slug": "fedb-kipping-muscle-up",
+      "nameHe": "עליית כוח בטבעות עם תנופה"
+    },
+    "Knee_Across_The_Body": {
+      "slug": "fedb-knee-across-the-body",
+      "nameHe": "מתיחת ישבן עם ברך חוצה את הגוף"
+    },
+    "Knee_Circles": {
+      "slug": "fedb-knee-circles",
+      "nameHe": "מעגלי ברכיים בעמידה"
+    },
+    "Kneeling_Arm_Drill": {
+      "slug": "fedb-kneeling-arm-drill",
+      "nameHe": "תרגול תנועת זרועות בריצה בחצי כריעה"
+    },
+    "Kneeling_Cable_Crunch_With_Alternating_Oblique_Twists": {
+      "slug": "fedb-kneeling-cable-crunch-with-alternating-oblique-twists",
+      "nameHe": "כפיפת בטן בכבל בכריעה עם פיתול לסירוגין"
+    },
+    "Kneeling_Cable_Triceps_Extension": {
+      "slug": "fedb-kneeling-cable-triceps-extension",
+      "nameHe": "פשיטת מרפקים בכבל בכריעה עם תמיכת ספסל"
+    },
+    "Kneeling_Forearm_Stretch": {
+      "slug": "fedb-kneeling-forearm-stretch",
+      "nameHe": "מתיחת אמות בכריעה עם אצבעות לאחור"
+    },
+    "Kneeling_High_Pulley_Row": {
+      "slug": "fedb-kneeling-high-pulley-row",
+      "nameHe": "חתירה בכבל גבוה בכריעה"
+    },
+    "Kneeling_Hip_Flexor": {
+      "slug": "fedb-kneeling-hip-flexor",
+      "nameHe": "מתיחת מכופפי ירך בחצי כריעה"
+    },
+    "Kneeling_Jump_Squat": {
+      "slug": "fedb-kneeling-jump-squat",
+      "nameHe": "קפיצה מכריעה לסקוואט עם מוט"
+    },
+    "Kneeling_Single-Arm_High_Pulley_Row": {
+      "slug": "fedb-kneeling-single-arm-high-pulley-row",
+      "nameHe": "משיכת כבל גבוה ביד אחת בכריעה"
+    },
+    "Kneeling_Squat": {
+      "slug": "fedb-kneeling-squat",
+      "nameHe": "סקוואט בכריעה עם מוט על הגב"
+    },
+    "Landmine_180s": {
+      "slug": "fedb-landmine-180s",
+      "nameHe": "סיבובי מוט מעוגן מצד לצד"
+    },
+    "Landmine_Linear_Jammer": {
+      "slug": "fedb-landmine-linear-jammer",
+      "nameHe": "דחיפת מוט מעוגן מסקוואט עם ידית כפולה"
+    },
+    "Lateral_Box_Jump": {
+      "slug": "fedb-lateral-box-jump",
+      "nameHe": "קפיצה הצדה אל תיבה"
+    },
+    "Latissimus_Dorsi-SMR": {
+      "slug": "fedb-latissimus-dorsi-smr",
+      "nameHe": "שחרור רחב־גבי על גליל עיסוי"
+    },
+    "Leg-Over_Floor_Press": {
+      "slug": "fedb-leg-over-floor-press",
+      "nameHe": "לחיצת קטלבל בשכיבה עם רגל חוצה"
+    },
+    "Leg-Up_Hamstring_Stretch": {
+      "slug": "fedb-leg-up-hamstring-stretch",
+      "nameHe": "מתיחת ירך אחורית עם רגל מורמת"
+    },
+    "Leg_Lift": {
+      "slug": "fedb-leg-lift",
+      "nameHe": "כפיפת ברך בעמידה עם תמיכה"
+    },
+    "Leg_Pull-In": {
+      "slug": "fedb-leg-pull-in",
+      "nameHe": "קירוב ברכיים לחזה בשכיבה"
+    },
+    "Leverage_Chest_Press": {
+      "slug": "fedb-leverage-chest-press",
+      "nameHe": "לחיצת חזה במכונת מנופים"
+    },
+    "Leverage_Deadlift": {
+      "slug": "fedb-leverage-deadlift",
+      "nameHe": "דדליפט במכונת מנופים"
+    },
+    "Leverage_Decline_Chest_Press": {
+      "slug": "fedb-leverage-decline-chest-press",
+      "nameHe": "לחיצת חזה בשיפוע שלילי במכונת מנופים"
+    },
+    "Leverage_High_Row": {
+      "slug": "fedb-leverage-high-row",
+      "nameHe": "חתירה גבוהה במכונת מנופים"
+    },
+    "Leverage_Incline_Chest_Press": {
+      "slug": "fedb-leverage-incline-chest-press",
+      "nameHe": "לחיצת חזה בשיפוע חיובי במכונת מנופים"
+    },
+    "Leverage_Shoulder_Press": {
+      "slug": "fedb-leverage-shoulder-press",
+      "nameHe": "לחיצת כתפיים במכונת מנופים"
+    },
+    "Leverage_Shrug": {
+      "slug": "fedb-leverage-shrug",
+      "nameHe": "הרמת כתפיים במכונת מנופים"
+    },
+    "Linear_3-Part_Start_Technique": {
+      "slug": "fedb-linear-3-part-start-technique",
+      "nameHe": "זינוק לריצה ממנח שלוש נקודות"
+    },
+    "Linear_Acceleration_Wall_Drill": {
+      "slug": "fedb-linear-acceleration-wall-drill",
+      "nameHe": "תרגול ברכיים להאצה בתמיכת קיר"
+    },
+    "Linear_Depth_Jump": {
+      "slug": "fedb-linear-depth-jump",
+      "nameHe": "קפיצת עומק בין שתי תיבות"
+    },
+    "Log_Lift": {
+      "slug": "fedb-log-lift",
+      "nameHe": "הרמת מוט לוג מהרצפה ומעל הראש"
+    },
+    "London_Bridges": {
+      "slug": "fedb-london-bridges",
+      "nameHe": "הליכת ידיים בחבל עם רגליים על מוט מקובע"
+    },
+    "Looking_At_Ceiling": {
+      "slug": "fedb-looking-at-ceiling",
+      "nameHe": "מתיחת קדמת הגוף בכריעה עם אחיזה בעקבים"
+    },
+    "Low_Cable_Crossover": {
+      "slug": "fedb-low-cable-crossover",
+      "nameHe": "פרפר בעמידה מכבלים נמוכים"
+    },
+    "Low_Cable_Triceps_Extension": {
+      "slug": "fedb-low-cable-triceps-extension",
+      "nameHe": "פשיטת מרפקים בשכיבה מול כבל נמוך"
+    },
+    "Low_Pulley_Row_To_Neck": {
+      "slug": "fedb-low-pulley-row-to-neck",
+      "nameHe": "חתירה בכבל נמוך אל גובה הפנים"
+    },
+    "Lower_Back-SMR": {
+      "slug": "fedb-lower-back-smr",
+      "nameHe": "שחרור שרירי צד הגב התחתון על גליל"
+    },
+    "Lower_Back_Curl": {
+      "slug": "fedb-lower-back-curl",
+      "nameHe": "הרמת חזה בשכיבה על הבטן"
+    },
+    "Lunge_Pass_Through": {
+      "slug": "fedb-lunge-pass-through",
+      "nameHe": "מכרע עם העברת קטלבל מתחת לרגל"
+    },
+    "Lunge_Sprint": {
+      "slug": "fedb-lunge-sprint",
+      "nameHe": "מכרע בקפיצה והחלפת רגליים במכונת סמית׳"
+    },
+    "Lying_Bent_Leg_Groin": {
+      "slug": "fedb-lying-bent-leg-groin",
+      "nameHe": "מתיחת מקרבים בשכיבה עם התנגדות שותף"
+    },
+    "Lying_Cable_Curl": {
+      "slug": "fedb-lying-cable-curl",
+      "nameHe": "כפיפת מרפקים בכבל נמוך בשכיבה על הרצפה"
+    },
+    "Lying_Cambered_Barbell_Row": {
+      "slug": "fedb-lying-cambered-barbell-row",
+      "nameHe": "חתירה במוט קמור בשכיבה על ספסל"
+    },
+    "Lying_Close-Grip_Bar_Curl_On_High_Pulley": {
+      "slug": "fedb-lying-close-grip-bar-curl-on-high-pulley",
+      "nameHe": "כפיפת מרפקים מכבל גבוה בשכיבה על ספסל"
+    },
+    "Lying_Close-Grip_Barbell_Triceps_Extension_Behind_The_Head": {
+      "slug": "fedb-lying-close-grip-barbell-triceps-extension-behind-the-head",
+      "nameHe": "פשיטת מרפקים במוט מאחורי הראש בשכיבה"
+    },
+    "Lying_Close-Grip_Barbell_Triceps_Press_To_Chin": {
+      "slug": "fedb-lying-close-grip-barbell-triceps-press-to-chin",
+      "nameHe": "פשיטת מרפקים במוט בשכיבה לכיוון הסנטר"
+    },
+    "Lying_Crossover": {
+      "slug": "fedb-lying-crossover",
+      "nameHe": "מתיחת ברך חוצה בשכיבה עם שותף"
+    },
+    "Lying_Dumbbell_Tricep_Extension": {
+      "slug": "fedb-lying-dumbbell-tricep-extension",
+      "nameHe": "פשיטת מרפקים במשקולות בשכיבה באחיזה ניטרלית"
+    },
+    "Lying_Face_Down_Plate_Neck_Resistance": {
+      "slug": "fedb-lying-face-down-plate-neck-resistance",
+      "nameHe": "פשיטת צוואר בשכיבה על הבטן עם צלחת משקל"
+    },
+    "Lying_Face_Up_Plate_Neck_Resistance": {
+      "slug": "fedb-lying-face-up-plate-neck-resistance",
+      "nameHe": "כפיפת צוואר בשכיבה על הגב עם צלחת משקל"
+    },
+    "Lying_Glute": {
+      "slug": "fedb-lying-glute",
+      "nameHe": "מתיחת ישבן בשכיבה עם שותף"
+    },
+    "Lying_Hamstring": {
+      "slug": "fedb-lying-hamstring",
+      "nameHe": "מתיחת ירך אחורית בשכיבה עם שותף"
+    },
+    "Lying_High_Bench_Barbell_Curl": {
+      "slug": "fedb-lying-high-bench-barbell-curl",
+      "nameHe": "כפיפת מרפקים במוט בשכיבה על ספסל גבוה"
+    },
+    "Lying_Leg_Curls": {
+      "slug": "fedb-lying-leg-curls",
+      "nameHe": "כפיפת ברכיים במכונה בשכיבה על הבטן"
+    },
+    "Lying_Machine_Squat": {
+      "slug": "fedb-lying-machine-squat",
+      "nameHe": "סקוואט במכונה בשכיבה על הגב"
+    },
+    "Lying_One-Arm_Lateral_Raise": {
+      "slug": "fedb-lying-one-arm-lateral-raise",
+      "nameHe": "הרחקת כתף ביד אחת בשכיבה על הבטן"
+    },
+    "Lying_Prone_Quadriceps": {
+      "slug": "fedb-lying-prone-quadriceps",
+      "nameHe": "מתיחת ירך קדמית בשכיבה על הבטן עם שותף"
+    },
+    "Lying_Rear_Delt_Raise": {
+      "slug": "fedb-lying-rear-delt-raise",
+      "nameHe": "הרחקת כתפיים אחורית במשקולות על ספסל שטוח"
+    },
+    "Lying_Supine_Dumbbell_Curl": {
+      "slug": "fedb-lying-supine-dumbbell-curl",
+      "nameHe": "כפיפת מרפקים במשקולות בשכיבה על הגב"
+    },
+    "Lying_T-Bar_Row": {
+      "slug": "fedb-lying-t-bar-row",
+      "nameHe": "חתירה במכונת טי־בר עם תמיכת חזה"
+    },
+    "Lying_Triceps_Press": {
+      "slug": "fedb-lying-triceps-press",
+      "nameHe": "פשיטת מרפקים במוט אי־זי בשכיבה"
+    },
+    "Machine_Bicep_Curl": {
+      "slug": "fedb-machine-bicep-curl",
+      "nameHe": "כפיפת מרפקים במכונה עם תמיכת זרועות"
+    },
+    "Machine_Preacher_Curls": {
+      "slug": "fedb-machine-preacher-curls",
+      "nameHe": "כפיפת מרפקים במכונת כומר"
+    },
+    "Machine_Triceps_Extension": {
+      "slug": "fedb-machine-triceps-extension",
+      "nameHe": "פשיטת מרפקים במכונה עם תמיכת זרועות"
+    },
+    "Medicine_Ball_Chest_Pass": {
+      "slug": "fedb-medicine-ball-chest-pass",
+      "nameHe": "מסירת כדור כוח מהחזה לשותף"
+    },
+    "Medicine_Ball_Full_Twist": {
+      "slug": "fedb-medicine-ball-full-twist",
+      "nameHe": "מסירת כדור כוח בסיבוב עם שותף גב אל גב"
+    },
+    "Medicine_Ball_Scoop_Throw": {
+      "slug": "fedb-medicine-ball-scoop-throw",
+      "nameHe": "זריקת כדור כוח לאחור מעל הראש"
+    },
+    "Middle_Back_Shrug": {
+      "slug": "fedb-middle-back-shrug",
+      "nameHe": "קירוב שכמות עם משקולות בתמיכת ספסל בשיפוע"
+    },
+    "Middle_Back_Stretch": {
+      "slug": "fedb-middle-back-stretch",
+      "nameHe": "מתיחת גו בסיבוב בעמידה"
+    },
+    "Mixed_Grip_Chin": {
+      "slug": "fedb-mixed-grip-chin",
+      "nameHe": "עליית מתח באחיזה מעורבת"
+    },
+    "Moving_Claw_Series": {
+      "slug": "fedb-moving-claw-series",
+      "nameHe": "תרגול מחזור צעד לריצה"
+    },
+    "Muscle_Snatch": {
+      "slug": "fedb-muscle-snatch",
+      "nameHe": "הנפת מוט מעל הראש ללא כיפוף ברכיים בתפיסה"
+    },
+    "Narrow_Stance_Hack_Squats": {
+      "slug": "fedb-narrow-stance-hack-squats",
+      "nameHe": "האק סקוואט במכונה בעמידה צרה"
+    },
+    "Narrow_Stance_Leg_Press": {
+      "slug": "fedb-narrow-stance-leg-press",
+      "nameHe": "לחיצת רגליים במכונה בעמידה צרה"
+    },
+    "Narrow_Stance_Squats": {
+      "slug": "fedb-narrow-stance-squats",
+      "nameHe": "סקוואט במוט בעמידה צרה"
+    },
+    "Neck-SMR": {
+      "slug": "fedb-neck-smr",
+      "nameHe": "שחרור שרירי אחורי הצוואר עם רולר ידני"
+    },
+    "Neck_Press": {
+      "slug": "fedb-neck-press",
+      "nameHe": "לחיצת חזה במוט לכיוון בסיס הצוואר"
+    },
+    "Oblique_Crunches": {
+      "slug": "fedb-oblique-crunches",
+      "nameHe": "כפיפת בטן אלכסונית עם רגליים על ספסל"
+    },
+    "Olympic_Squat": {
+      "slug": "fedb-olympic-squat",
+      "nameHe": "סקוואט עמוק במוט גבוה עם גו זקוף"
+    },
+    "On-Your-Back_Quad_Stretch": {
+      "slug": "fedb-on-your-back-quad-stretch",
+      "nameHe": "מתיחת ירך קדמית בשכיבה על ספסל"
+    },
+    "On_Your_Side_Quad_Stretch": {
+      "slug": "fedb-on-your-side-quad-stretch",
+      "nameHe": "מתיחת ירך קדמית בשכיבה על הצד"
+    },
+    "One-Arm_Flat_Bench_Dumbbell_Flye": {
+      "slug": "fedb-one-arm-flat-bench-dumbbell-flye",
+      "nameHe": "פרפר במשקולת ביד אחת על ספסל שטוח"
+    },
+    "One-Arm_High-Pulley_Cable_Side_Bends": {
+      "slug": "fedb-one-arm-high-pulley-cable-side-bends",
+      "nameHe": "כפיפה צידית בידית כבל גבוה"
+    },
+    "One-Arm_Incline_Lateral_Raise": {
+      "slug": "fedb-one-arm-incline-lateral-raise",
+      "nameHe": "הרחקת כתף ביד אחת בשכיבה על הצד בשיפוע"
+    },
+    "One-Arm_Kettlebell_Clean": {
+      "slug": "fedb-one-arm-kettlebell-clean",
+      "nameHe": "הנפת קטלבל ביד אחת לעמדת כתף"
+    },
+    "One-Arm_Kettlebell_Floor_Press": {
+      "slug": "fedb-one-arm-kettlebell-floor-press",
+      "nameHe": "לחיצת קטלבל ביד אחת בשכיבה על הרצפה"
+    },
+    "One-Arm_Kettlebell_Military_Press_To_The_Side": {
+      "slug": "fedb-one-arm-kettlebell-military-press-to-the-side",
+      "nameHe": "לחיצת קטלבל ביד אחת מעלה והצדה"
+    },
+    "One-Arm_Kettlebell_Para_Press": {
+      "slug": "fedb-one-arm-kettlebell-para-press",
+      "nameHe": "לחיצת קטלבל ביד אחת באחיזה קדמית"
+    },
+    "One-Arm_Kettlebell_Split_Jerk": {
+      "slug": "fedb-one-arm-kettlebell-split-jerk",
+      "nameHe": "ג׳רק בקטלבל ביד אחת לתפיסה במכרע"
+    },
+    "One-Arm_Kettlebell_Split_Snatch": {
+      "slug": "fedb-one-arm-kettlebell-split-snatch",
+      "nameHe": "הנפת קטלבל ביד אחת לתפיסה מעל הראש במכרע"
+    },
+    "One-Arm_Long_Bar_Row": {
+      "slug": "fedb-one-arm-long-bar-row",
+      "nameHe": "חתירה ביד אחת עם מוט מעוגן"
+    },
+    "One-Arm_Medicine_Ball_Slam": {
+      "slug": "fedb-one-arm-medicine-ball-slam",
+      "nameHe": "הטחת כדור כוח ביד אחת"
+    },
+    "One-Arm_Open_Palm_Kettlebell_Clean": {
+      "slug": "fedb-one-arm-open-palm-kettlebell-clean",
+      "nameHe": "הנפת קטלבל ביד אחת ותפיסה בכף יד פתוחה"
+    },
+    "One-Arm_Overhead_Kettlebell_Squats": {
+      "slug": "fedb-one-arm-overhead-kettlebell-squats",
+      "nameHe": "סקוואט עם קטלבל ביד אחת מעל הראש"
+    },
+    "One-Arm_Side_Deadlift": {
+      "slug": "fedb-one-arm-side-deadlift",
+      "nameHe": "דדליפט מוט לצד הגוף ביד אחת"
+    },
+    "One-Arm_Side_Laterals": {
+      "slug": "fedb-one-arm-side-laterals",
+      "nameHe": "הרחקת כתף ביד אחת בעמידה עם תמיכה"
+    },
+    "One-Legged_Cable_Kickback": {
+      "slug": "fedb-one-legged-cable-kickback",
+      "nameHe": "פשיטת ירך בכבל עם רצועת קרסול"
+    },
+    "One_Arm_Against_Wall": {
+      "slug": "fedb-one-arm-against-wall",
+      "nameHe": "מתיחת גב צידי עם זרוע על קיר"
+    },
+    "One_Arm_Chin-Up": {
+      "slug": "fedb-one-arm-chin-up",
+      "nameHe": "עליית מתח ביד אחת בסיוע מגבת"
+    },
+    "One_Arm_Dumbbell_Bench_Press": {
+      "slug": "fedb-one-arm-dumbbell-bench-press",
+      "nameHe": "לחיצת חזה במשקולת ביד אחת על ספסל"
+    },
+    "One_Arm_Dumbbell_Preacher_Curl": {
+      "slug": "fedb-one-arm-dumbbell-preacher-curl",
+      "nameHe": "כפיפת מרפק במשקולת ביד אחת על ספסל כומר"
+    },
+    "One_Arm_Floor_Press": {
+      "slug": "fedb-one-arm-floor-press",
+      "nameHe": "לחיצת מוט ביד אחת בשכיבה על הרצפה"
+    },
+    "One_Arm_Lat_Pulldown": {
+      "slug": "fedb-one-arm-lat-pulldown",
+      "nameHe": "משיכת פולי עליון ביד אחת בישיבה"
+    },
+    "One_Arm_Pronated_Dumbbell_Triceps_Extension": {
+      "slug": "fedb-one-arm-pronated-dumbbell-triceps-extension",
+      "nameHe": "פשיטת מרפק במשקולת ביד אחת באחיזה עילית"
+    },
+    "One_Arm_Supinated_Dumbbell_Triceps_Extension": {
+      "slug": "fedb-one-arm-supinated-dumbbell-triceps-extension",
+      "nameHe": "פשיטת מרפק במשקולת ביד אחת באחיזה תחתית"
+    },
+    "One_Half_Locust": {
+      "slug": "fedb-one-half-locust",
+      "nameHe": "מתיחת חצי קשת בשכיבה על הבטן"
+    },
+    "One_Handed_Hang": {
+      "slug": "fedb-one-handed-hang",
+      "nameHe": "מתיחת גב בתלייה חלקית ביד אחת"
+    },
+    "One_Knee_To_Chest": {
+      "slug": "fedb-one-knee-to-chest",
+      "nameHe": "מתיחת ישבן עם ברך אחת לחזה"
+    },
+    "One_Leg_Barbell_Squat": {
+      "slug": "fedb-one-leg-barbell-squat",
+      "nameHe": "סקוואט מפוצל במוט עם רגל אחורית על ספסל"
+    },
+    "Open_Palm_Kettlebell_Clean": {
+      "slug": "fedb-open-palm-kettlebell-clean",
+      "nameHe": "הנפת קטלבל בשתי ידיים ותפיסה בכפות ידיים פתוחות"
+    },
+    "Otis-Up": {
+      "slug": "fedb-otis-up",
+      "nameHe": "כפיפת בטן עם דחיפת משקולת מעל הראש"
+    },
+    "Overhead_Cable_Curl": {
+      "slug": "fedb-overhead-cable-curl",
+      "nameHe": "כפיפת מרפק בכבלים גבוהים משני הצדדים"
+    },
+    "Overhead_Lat": {
+      "slug": "fedb-overhead-lat",
+      "nameHe": "מתיחת גב רחב בסיוע שותף"
+    },
+    "Overhead_Slam": {
+      "slug": "fedb-overhead-slam",
+      "nameHe": "הטחת כדור כוח מעל הראש בשתי ידיים"
+    },
+    "Overhead_Stretch": {
+      "slug": "fedb-overhead-stretch",
+      "nameHe": "מתיחת גו עם ידיים משולבות מעל הראש"
+    },
+    "Overhead_Triceps": {
+      "slug": "fedb-overhead-triceps",
+      "nameHe": "מתיחת יד אחורית בסיוע שותף"
+    },
+    "Pallof_Press_With_Rotation": {
+      "slug": "fedb-pallof-press-with-rotation",
+      "nameHe": "לחיצת פאלוף עם סיבוב גו בכבל"
+    },
+    "Palms-Down_Dumbbell_Wrist_Curl_Over_A_Bench": {
+      "slug": "fedb-palms-down-dumbbell-wrist-curl-over-a-bench",
+      "nameHe": "פשיטת שורש כף יד במשקולות על ספסל"
+    },
+    "Palms-Down_Wrist_Curl_Over_A_Bench": {
+      "slug": "fedb-palms-down-wrist-curl-over-a-bench",
+      "nameHe": "פשיטת שורש כף יד במוט על ספסל"
+    },
+    "Palms-Up_Barbell_Wrist_Curl_Over_A_Bench": {
+      "slug": "fedb-palms-up-barbell-wrist-curl-over-a-bench",
+      "nameHe": "כפיפת שורש כף יד במוט על ספסל"
+    },
+    "Palms-Up_Dumbbell_Wrist_Curl_Over_A_Bench": {
+      "slug": "fedb-palms-up-dumbbell-wrist-curl-over-a-bench",
+      "nameHe": "כפיפת שורש כף יד במשקולות על ספסל"
+    },
+    "Parallel_Bar_Dip": {
+      "slug": "fedb-parallel-bar-dip",
+      "nameHe": "מקבילים במוטות מקבילים"
+    },
+    "Peroneals-SMR": {
+      "slug": "fedb-peroneals-smr",
+      "nameHe": "עיסוי שוק חיצונית בגליל"
+    },
+    "Peroneals_Stretch": {
+      "slug": "fedb-peroneals-stretch",
+      "nameHe": "מתיחת שוק חיצונית עם רצועה"
+    },
+    "Physioball_Hip_Bridge": {
+      "slug": "fedb-physioball-hip-bridge",
+      "nameHe": "גשר ירכיים עם גב על כדור פיזיו"
+    },
+    "Pin_Presses": {
+      "slug": "fedb-pin-presses",
+      "nameHe": "לחיצת חזה ממוט על פיני בטיחות"
+    },
+    "Piriformis-SMR": {
+      "slug": "fedb-piriformis-smr",
+      "nameHe": "עיסוי ישבן בגליל עם רגל מוצלבת"
+    },
+    "Plate_Pinch": {
+      "slug": "fedb-plate-pinch",
+      "nameHe": "החזקת שתי צלחות בצביטת אצבעות"
+    },
+    "Plate_Twist": {
+      "slug": "fedb-plate-twist",
+      "nameHe": "סיבובי גו בישיבה עם צלחת משקל"
+    },
+    "Plie_Dumbbell_Squat": {
+      "slug": "fedb-plie-dumbbell-squat",
+      "nameHe": "סקוואט רחב עם משקולת בשתי ידיים"
+    },
+    "Plyo_Kettlebell_Pushups": {
+      "slug": "fedb-plyo-kettlebell-pushups",
+      "nameHe": "שכיבות סמיכה בקפיצה והחלפת יד על קטלבל"
+    },
+    "Posterior_Tibialis_Stretch": {
+      "slug": "fedb-posterior-tibialis-stretch",
+      "nameHe": "מתיחת שוק פנימית עם רצועה"
+    },
+    "Power_Clean": {
+      "slug": "fedb-power-clean",
+      "nameHe": "הנפת כוח במוט אל הכתפיים"
+    },
+    "Power_Clean_from_Blocks": {
+      "slug": "fedb-power-clean-from-blocks",
+      "nameHe": "הנפת כוח במוט מבלוקים"
+    },
+    "Power_Jerk": {
+      "slug": "fedb-power-jerk",
+      "nameHe": "ג׳רק כוח במוט לתפיסה בפיסוק"
+    },
+    "Power_Partials": {
+      "slug": "fedb-power-partials",
+      "nameHe": "הרחקת כתפיים במשקולות עד גובה הכתף"
+    },
+    "Power_Snatch": {
+      "slug": "fedb-power-snatch",
+      "nameHe": "הנפת כוח במוט מעל הראש"
+    },
+    "Power_Snatch_from_Blocks": {
+      "slug": "fedb-power-snatch-from-blocks",
+      "nameHe": "הנפת כוח במוט מעל הראש מבלוקים"
+    },
+    "Power_Stairs": {
+      "slug": "fedb-power-stairs",
+      "nameHe": "העמסת משקולת על מדרגת כוח"
+    },
+    "Preacher_Curl": {
+      "slug": "fedb-preacher-curl",
+      "nameHe": "כפיפת מרפק במוט EZ על ספסל כומר"
+    },
+    "Preacher_Hammer_Dumbbell_Curl": {
+      "slug": "fedb-preacher-hammer-dumbbell-curl",
+      "nameHe": "כפיפת פטיש בשתי משקולות על ספסל כומר"
+    },
+    "Press_Sit-Up": {
+      "slug": "fedb-press-sit-up",
+      "nameHe": "כפיפת בטן על ספסל עם לחיצת מוט"
+    },
+    "Prone_Manual_Hamstring": {
+      "slug": "fedb-prone-manual-hamstring",
+      "nameHe": "כפיפת ברך בשכיבה כנגד התנגדות שותף"
+    },
+    "Prowler_Sprint": {
+      "slug": "fedb-prowler-sprint",
+      "nameHe": "דחיפת מזחלת בספרינט קצר"
+    },
+    "Push-Ups_With_Feet_On_An_Exercise_Ball": {
+      "slug": "fedb-push-ups-with-feet-on-an-exercise-ball",
+      "nameHe": "שכיבות סמיכה עם כפות רגליים על כדור פיזיו"
+    },
+    "Push_Press_-_Behind_the_Neck": {
+      "slug": "fedb-push-press-behind-the-neck",
+      "nameHe": "לחיצת דחיפה במוט מהגב העליון"
+    },
+    "Pushups_Close_and_Wide_Hand_Positions": {
+      "slug": "fedb-pushups-close-and-wide-hand-positions",
+      "nameHe": "שכיבות סמיכה באחיזה צרה ורחבה"
+    },
+    "Pyramid": {
+      "slug": "fedb-pyramid",
+      "nameHe": "מתיחת פירמידה נתמכת בכדור פיזיו"
+    },
+    "Quad_Stretch": {
+      "slug": "fedb-quad-stretch",
+      "nameHe": "מתיחת ירך קדמית בשכיבה עם רצועה"
+    },
+    "Quadriceps-SMR": {
+      "slug": "fedb-quadriceps-smr",
+      "nameHe": "עיסוי ירך קדמית בגליל"
+    },
+    "Quick_Leap": {
+      "slug": "fedb-quick-leap",
+      "nameHe": "קפיצה לתיבה וקפיצה מיידית ממנה"
+    },
+    "Rack_Delivery": {
+      "slug": "fedb-rack-delivery",
+      "nameHe": "תרגול סיבוב מרפקים לעמדת מוט על הכתפיים"
+    },
+    "Rack_Pull_with_Bands": {
+      "slug": "fedb-rack-pull-with-bands",
+      "nameHe": "משיכת מוט מפיני כלוב עם גומיות"
+    },
+    "Rack_Pulls": {
+      "slug": "fedb-rack-pulls",
+      "nameHe": "משיכת מוט מפיני כלוב"
+    },
+    "Rear_Leg_Raises": {
+      "slug": "fedb-rear-leg-raises",
+      "nameHe": "הרמת רגל לאחור בעמידת שש"
+    },
+    "Recumbent_Bike": {
+      "slug": "fedb-recumbent-bike",
+      "nameHe": "רכיבה באופני כושר עם משענת"
+    },
+    "Return_Push_from_Stance": {
+      "slug": "fedb-return-push-from-stance",
+      "nameHe": "קבלת כדור כוח והחזרתו מעמידת מוצא"
+    },
+    "Reverse_Band_Bench_Press": {
+      "slug": "fedb-reverse-band-bench-press",
+      "nameHe": "לחיצת חזה במוט עם גומיות מסייעות מלמעלה"
+    },
+    "Reverse_Band_Box_Squat": {
+      "slug": "fedb-reverse-band-box-squat",
+      "nameHe": "סקוואט לתיבה עם גומיות מסייעות מלמעלה"
+    },
+    "Reverse_Band_Deadlift": {
+      "slug": "fedb-reverse-band-deadlift",
+      "nameHe": "דדליפט עם גומיות מסייעות מלמעלה"
+    },
+    "Reverse_Band_Power_Squat": {
+      "slug": "fedb-reverse-band-power-squat",
+      "nameHe": "סקוואט מוט נמוך עם גומיות מסייעות מלמעלה"
+    },
+    "Reverse_Band_Sumo_Deadlift": {
+      "slug": "fedb-reverse-band-sumo-deadlift",
+      "nameHe": "דדליפט סומו עם גומיות מסייעות מלמעלה"
+    },
+    "Reverse_Barbell_Curl": {
+      "slug": "fedb-reverse-barbell-curl",
+      "nameHe": "כפיפת מרפק במוט באחיזה עילית"
+    },
+    "Reverse_Barbell_Preacher_Curls": {
+      "slug": "fedb-reverse-barbell-preacher-curls",
+      "nameHe": "כפיפת מרפק במוט EZ באחיזה עילית על ספסל כומר"
+    },
+    "Reverse_Cable_Curl": {
+      "slug": "fedb-reverse-cable-curl",
+      "nameHe": "כפיפת מרפק בכבל נמוך באחיזה עילית"
+    },
+    "Reverse_Flyes": {
+      "slug": "fedb-reverse-flyes",
+      "nameHe": "פרפר הפוך בשכיבה על ספסל בשיפוע"
+    },
+    "Reverse_Flyes_With_External_Rotation": {
+      "slug": "fedb-reverse-flyes-with-external-rotation",
+      "nameHe": "פרפר הפוך בשיפוע עם סיבוב הזרועות"
+    },
+    "Reverse_Grip_Bent-Over_Rows": {
+      "slug": "fedb-reverse-grip-bent-over-rows",
+      "nameHe": "חתירה במוט באחיזה תחתית"
+    },
+    "Reverse_Grip_Triceps_Pushdown": {
+      "slug": "fedb-reverse-grip-triceps-pushdown",
+      "nameHe": "פשיטת מרפק בפולי עליון באחיזה תחתית"
+    },
+    "Reverse_Hyperextension": {
+      "slug": "fedb-reverse-hyperextension",
+      "nameHe": "פשיטת ירכיים במכונת היפר הפוך"
+    },
+    "Reverse_Plate_Curls": {
+      "slug": "fedb-reverse-plate-curls",
+      "nameHe": "כפיפת מרפק עם צלחת באחיזה עילית"
+    },
+    "Reverse_Triceps_Bench_Press": {
+      "slug": "fedb-reverse-triceps-bench-press",
+      "nameHe": "לחיצת חזה במוט באחיזה תחתית צרה"
+    },
+    "Rhomboids-SMR": {
+      "slug": "fedb-rhomboids-smr",
+      "nameHe": "עיסוי גב עליון בגליל"
+    },
+    "Rickshaw_Carry": {
+      "slug": "fedb-rickshaw-carry",
+      "nameHe": "נשיאת מסגרת ריקשה"
+    },
+    "Rickshaw_Deadlift": {
+      "slug": "fedb-rickshaw-deadlift",
+      "nameHe": "דדליפט במסגרת ריקשה"
+    },
+    "Ring_Dips": {
+      "slug": "fedb-ring-dips",
+      "nameHe": "מקבילים על טבעות"
+    },
+    "Rocking_Standing_Calf_Raise": {
+      "slug": "fedb-rocking-standing-calf-raise",
+      "nameHe": "עליית עקבים והרמת אצבעות עם מוט"
+    },
+    "Rocky_Pull-Ups_Pulldowns": {
+      "slug": "fedb-rocky-pull-ups-pulldowns",
+      "nameHe": "עליות מתח רחבות לפנים ומאחורי הראש"
+    },
+    "Romanian_Deadlift_from_Deficit": {
+      "slug": "fedb-romanian-deadlift-from-deficit",
+      "nameHe": "דדליפט רומני על משטח מוגבה"
+    },
+    "Rope_Climb": {
+      "slug": "fedb-rope-climb",
+      "nameHe": "טיפוס חבל עם נעילת רגליים"
+    },
+    "Rope_Crunch": {
+      "slug": "fedb-rope-crunch",
+      "nameHe": "כפיפת בטן בכריעה עם חבל בפולי עליון"
+    },
+    "Rope_Straight-Arm_Pulldown": {
+      "slug": "fedb-rope-straight-arm-pulldown",
+      "nameHe": "משיכת פולי עליון בחבל עם זרועות ישרות"
+    },
+    "Round_The_World_Shoulder_Stretch": {
+      "slug": "fedb-round-the-world-shoulder-stretch",
+      "nameHe": "תנועת כתפיים עם מקל מאחורי הגוף"
+    },
+    "Runners_Stretch": {
+      "slug": "fedb-runners-stretch",
+      "nameHe": "מכרע רץ עם הרמה והורדת האגן"
+    },
+    "Sandbag_Load": {
+      "slug": "fedb-sandbag-load",
+      "nameHe": "נשיאת שק והעמסתו על משטח"
+    },
+    "Scissors_Jump": {
+      "slug": "fedb-scissors-jump",
+      "nameHe": "קפיצת מכרע עם החלפת רגליים"
+    },
+    "Seated_Barbell_Military_Press": {
+      "slug": "fedb-seated-barbell-military-press",
+      "nameHe": "לחיצת כתפיים במוט בישיבה"
+    },
+    "Seated_Barbell_Twist": {
+      "slug": "fedb-seated-barbell-twist",
+      "nameHe": "סיבובי גו בישיבה עם מוט על הגב"
+    },
+    "Seated_Bent-Over_One-Arm_Dumbbell_Triceps_Extension": {
+      "slug": "fedb-seated-bent-over-one-arm-dumbbell-triceps-extension",
+      "nameHe": "פשיטת מרפק ביד אחת בישיבה כפופה"
+    },
+    "Seated_Bent-Over_Rear_Delt_Raise": {
+      "slug": "fedb-seated-bent-over-rear-delt-raise",
+      "nameHe": "הרחקת כתפיים לאחור בישיבה כפופה"
+    },
+    "Seated_Bent-Over_Two-Arm_Dumbbell_Triceps_Extension": {
+      "slug": "fedb-seated-bent-over-two-arm-dumbbell-triceps-extension",
+      "nameHe": "פשיטת מרפקים בשתי משקולות בישיבה כפופה"
+    },
+    "Seated_Biceps": {
+      "slug": "fedb-seated-biceps",
+      "nameHe": "מתיחת יד קדמית בישיבה בסיוע שותף"
+    },
+    "Seated_Calf_Raise": {
+      "slug": "fedb-seated-calf-raise",
+      "nameHe": "עליית עקבים במכונה בישיבה"
+    },
+    "Seated_Calf_Stretch": {
+      "slug": "fedb-seated-calf-stretch",
+      "nameHe": "מתיחת שוק בישיבה עם רצועה"
+    },
+    "Seated_Close-Grip_Concentration_Barbell_Curl": {
+      "slug": "fedb-seated-close-grip-concentration-barbell-curl",
+      "nameHe": "כפיפת מרפקים מרוכזת במוט בישיבה"
+    },
+    "Seated_Dumbbell_Curl": {
+      "slug": "fedb-seated-dumbbell-curl",
+      "nameHe": "כפיפת מרפקים במשקולות בישיבה"
+    },
+    "Seated_Dumbbell_Inner_Biceps_Curl": {
+      "slug": "fedb-seated-dumbbell-inner-biceps-curl",
+      "nameHe": "כפיפת מרפקים החוצה במשקולות בישיבה"
+    },
+    "Seated_Dumbbell_Palms-Down_Wrist_Curl": {
+      "slug": "fedb-seated-dumbbell-palms-down-wrist-curl",
+      "nameHe": "פשיטת שורשי כפות ידיים במשקולות בישיבה"
+    },
+    "Seated_Dumbbell_Palms-Up_Wrist_Curl": {
+      "slug": "fedb-seated-dumbbell-palms-up-wrist-curl",
+      "nameHe": "כפיפת שורשי כפות ידיים במשקולות בישיבה"
+    },
+    "Seated_Dumbbell_Press": {
+      "slug": "fedb-seated-dumbbell-press",
+      "nameHe": "לחיצת כתפיים במשקולות בישיבה נתמכת"
+    },
+    "Seated_Flat_Bench_Leg_Pull-In": {
+      "slug": "fedb-seated-flat-bench-leg-pull-in",
+      "nameHe": "משיכת ברכיים בישיבה על ספסל"
+    },
+    "Seated_Floor_Hamstring_Stretch": {
+      "slug": "fedb-seated-floor-hamstring-stretch",
+      "nameHe": "מתיחת ירך אחורית בישיבה עם רגל אחת ישרה"
+    },
+    "Seated_Front_Deltoid": {
+      "slug": "fedb-seated-front-deltoid",
+      "nameHe": "מתיחת כתף קדמית בישיבה בסיוע שותף"
+    },
+    "Seated_Glute": {
+      "slug": "fedb-seated-glute",
+      "nameHe": "מתיחת ישבן בישיבה בסיוע שותף"
+    },
+    "Seated_Good_Mornings": {
+      "slug": "fedb-seated-good-mornings",
+      "nameHe": "הטיית גו בישיבה עם מוט על הגב"
+    },
+    "Seated_Hamstring": {
+      "slug": "fedb-seated-hamstring",
+      "nameHe": "מתיחת ירך אחורית בשתי רגליים בסיוע שותף"
+    },
+    "Seated_Hamstring_and_Calf_Stretch": {
+      "slug": "fedb-seated-hamstring-and-calf-stretch",
+      "nameHe": "מתיחת ירך אחורית ושוק בישיבה עם רצועה"
+    },
+    "Seated_Head_Harness_Neck_Resistance": {
+      "slug": "fedb-seated-head-harness-neck-resistance",
+      "nameHe": "פשיטת צוואר בישיבה עם רתמת ראש"
+    },
+    "Seated_One-Arm_Dumbbell_Palms-Down_Wrist_Curl": {
+      "slug": "fedb-seated-one-arm-dumbbell-palms-down-wrist-curl",
+      "nameHe": "פשיטת שורש כף יד במשקולת ביד אחת בישיבה"
+    },
+    "Seated_One-Arm_Dumbbell_Palms-Up_Wrist_Curl": {
+      "slug": "fedb-seated-one-arm-dumbbell-palms-up-wrist-curl",
+      "nameHe": "כפיפת שורש כף יד במשקולת ביד אחת בישיבה"
+    },
+    "Seated_One-arm_Cable_Pulley_Rows": {
+      "slug": "fedb-seated-one-arm-cable-pulley-rows",
+      "nameHe": "חתירת כבל ביד אחת בישיבה"
+    },
+    "Seated_Overhead_Stretch": {
+      "slug": "fedb-seated-overhead-stretch",
+      "nameHe": "מתיחת צד בישיבת פרפר עם מרפק מעל הראש"
+    },
+    "Seated_Palm-Up_Barbell_Wrist_Curl": {
+      "slug": "fedb-seated-palm-up-barbell-wrist-curl",
+      "nameHe": "כפיפת שורשי כפות ידיים במוט בישיבה"
+    },
+    "Seated_Palms-Down_Barbell_Wrist_Curl": {
+      "slug": "fedb-seated-palms-down-barbell-wrist-curl",
+      "nameHe": "פשיטת שורשי כפות ידיים במוט בישיבה"
+    },
+    "Seated_Side_Lateral_Raise": {
+      "slug": "fedb-seated-side-lateral-raise",
+      "nameHe": "הרחקת כתפיים במשקולות בישיבה"
+    },
+    "Seated_Triceps_Press": {
+      "slug": "fedb-seated-triceps-press",
+      "nameHe": "פשיטת מרפקים במשקולת אחת מעל הראש בישיבה"
+    },
+    "Seated_Two-Arm_Palms-Up_Low-Pulley_Wrist_Curl": {
+      "slug": "fedb-seated-two-arm-palms-up-low-pulley-wrist-curl",
+      "nameHe": "כפיפת שורשי כפות ידיים בכבל נמוך בישיבה"
+    },
+    "See-Saw_Press_Alternating_Side_Press": {
+      "slug": "fedb-see-saw-press-alternating-side-press",
+      "nameHe": "לחיצת משקולות לסירוגין עם הטיה צידית"
+    },
+    "Shotgun_Row": {
+      "slug": "fedb-shotgun-row",
+      "nameHe": "חתירת כבל ביד אחת בעמידה מפוצלת"
+    },
+    "Shoulder_Circles": {
+      "slug": "fedb-shoulder-circles",
+      "nameHe": "סיבובי כתפיים בעמידה"
+    },
+    "Shoulder_Raise": {
+      "slug": "fedb-shoulder-raise",
+      "nameHe": "הרמת כתפיים ללא משקל"
+    },
+    "Shoulder_Stretch": {
+      "slug": "fedb-shoulder-stretch",
+      "nameHe": "מתיחת כתף עם זרוע לרוחב החזה"
+    },
+    "Side-Lying_Floor_Stretch": {
+      "slug": "fedb-side-lying-floor-stretch",
+      "nameHe": "מתיחת צד בשכיבה על הרצפה"
+    },
+    "Side_Hop-Sprint": {
+      "slug": "fedb-side-hop-sprint",
+      "nameHe": "קפיצות צד מעל מכשול וספרינט קצר"
+    },
+    "Side_Laterals_to_Front_Raise": {
+      "slug": "fedb-side-laterals-to-front-raise",
+      "nameHe": "הרחקת כתפיים ומעבר להרמה לפנים"
+    },
+    "Side_Leg_Raises": {
+      "slug": "fedb-side-leg-raises",
+      "nameHe": "הנפות רגל לצד עם תמיכה"
+    },
+    "Side_Lying_Groin_Stretch": {
+      "slug": "fedb-side-lying-groin-stretch",
+      "nameHe": "מתיחת מפשעה בשכיבה על הצד"
+    },
+    "Side_Neck_Stretch": {
+      "slug": "fedb-side-neck-stretch",
+      "nameHe": "מתיחת צוואר בהטיה צידית"
+    },
+    "Side_To_Side_Chins": {
+      "slug": "fedb-side-to-side-chins",
+      "nameHe": "עליות מתח בהטיה לצדדים לסירוגין"
+    },
+    "Side_Wrist_Pull": {
+      "slug": "fedb-side-wrist-pull",
+      "nameHe": "מתיחת גב צידי במשיכת זרוע לרוחב הגוף"
+    },
+    "Side_to_Side_Box_Shuffle": {
+      "slug": "fedb-side-to-side-box-shuffle",
+      "nameHe": "דילוגי צד על תיבה לסירוגין"
+    },
+    "Single-Arm_Cable_Crossover": {
+      "slug": "fedb-single-arm-cable-crossover",
+      "nameHe": "פרפר בכבלים עם פתיחת יד לסירוגין"
+    },
+    "Single-Arm_Linear_Jammer": {
+      "slug": "fedb-single-arm-linear-jammer",
+      "nameHe": "לחיצת מוט מעוגן ביד אחת עם דחיפת רגליים"
+    },
+    "Single-Cone_Sprint_Drill": {
+      "slug": "fedb-single-cone-sprint-drill",
+      "nameHe": "צעדים מהירים סביב קונוס"
+    },
+    "Single-Leg_High_Box_Squat": {
+      "slug": "fedb-single-leg-high-box-squat",
+      "nameHe": "עלייה לתיבה גבוהה ברגל אחת עם תמיכה בגומייה"
+    },
+    "Single-Leg_Leg_Extension": {
+      "slug": "fedb-single-leg-leg-extension",
+      "nameHe": "פשיטת ברך במכונה ברגל אחת"
+    },
+    "Single-Leg_Stride_Jump": {
+      "slug": "fedb-single-leg-stride-jump",
+      "nameHe": "קפיצה ברגל אחת מתיבה עם הנפת ברך"
+    },
+    "Single_Dumbbell_Raise": {
+      "slug": "fedb-single-dumbbell-raise",
+      "nameHe": "הרמת משקולת אחת לפנים בשתי ידיים"
+    },
+    "Single_Leg_Butt_Kick": {
+      "slug": "fedb-single-leg-butt-kick",
+      "nameHe": "קפיצה ברגל אחת עם עקב לישבן"
+    },
+    "Sit-Up": {
+      "slug": "fedb-sit-up",
+      "nameHe": "כפיפת גו עם כפות רגליים מעוגנות"
+    },
+    "Sit_Squats": {
+      "slug": "fedb-sit-squats",
+      "nameHe": "סקוואט חלקי במשקל גוף"
+    },
+    "Skating": {
+      "slug": "fedb-skating",
+      "nameHe": "גלישה על גלגיליות"
+    },
+    "Sled_Drag_-_Harness": {
+      "slug": "fedb-sled-drag-harness",
+      "nameHe": "גרירת מזחלת קדימה עם רתמה"
+    },
+    "Sled_Overhead_Backward_Walk": {
+      "slug": "fedb-sled-overhead-backward-walk",
+      "nameHe": "גרירת מזחלת בהליכה לאחור עם ידיים מעל הראש"
+    },
+    "Sled_Overhead_Triceps_Extension": {
+      "slug": "fedb-sled-overhead-triceps-extension",
+      "nameHe": "פשיטת מרפקים מעל הראש במשיכת מזחלת"
+    },
+    "Sled_Push": {
+      "slug": "fedb-sled-push",
+      "nameHe": "דחיפת מזחלת אימון"
+    },
+    "Sled_Reverse_Flye": {
+      "slug": "fedb-sled-reverse-flye",
+      "nameHe": "פרפר הפוך במשיכת מזחלת"
+    },
+    "Sled_Row": {
+      "slug": "fedb-sled-row",
+      "nameHe": "חתירה בעמידה עם מזחלת"
+    },
+    "Sledgehammer_Swings": {
+      "slug": "fedb-sledgehammer-swings",
+      "nameHe": "הנפת פטיש אימון אל צמיג"
+    },
+    "Smith_Incline_Shoulder_Raise": {
+      "slug": "fedb-smith-incline-shoulder-raise",
+      "nameHe": "הרמת כתפיים בשכיבה משופעת במכונת סמית"
+    },
+    "Smith_Machine_Behind_the_Back_Shrug": {
+      "slug": "fedb-smith-machine-behind-the-back-shrug",
+      "nameHe": "משיכת כתפיים עם מוט סמית מאחורי הגוף"
+    },
+    "Smith_Machine_Bench_Press": {
+      "slug": "fedb-smith-machine-bench-press",
+      "nameHe": "לחיצת חזה על ספסל במכונת סמית"
+    },
+    "Smith_Machine_Bent_Over_Row": {
+      "slug": "fedb-smith-machine-bent-over-row",
+      "nameHe": "חתירה בהטיית גו במכונת סמית"
+    },
+    "Smith_Machine_Calf_Raise": {
+      "slug": "fedb-smith-machine-calf-raise",
+      "nameHe": "הרמת עקבים במכונת סמית"
+    },
+    "Smith_Machine_Close-Grip_Bench_Press": {
+      "slug": "fedb-smith-machine-close-grip-bench-press",
+      "nameHe": "לחיצת חזה באחיזה צרה במכונת סמית"
+    },
+    "Smith_Machine_Decline_Press": {
+      "slug": "fedb-smith-machine-decline-press",
+      "nameHe": "לחיצת חזה בשיפוע שלילי במכונת סמית"
+    },
+    "Smith_Machine_Hang_Power_Clean": {
+      "slug": "fedb-smith-machine-hang-power-clean",
+      "nameHe": "הנפת כוח מתלייה במכונת סמית"
+    },
+    "Smith_Machine_Hip_Raise": {
+      "slug": "fedb-smith-machine-hip-raise",
+      "nameHe": "הרמת אגן בשכיבה עם תמיכת רגליים במוט סמית"
+    },
+    "Smith_Machine_Incline_Bench_Press": {
+      "slug": "fedb-smith-machine-incline-bench-press",
+      "nameHe": "לחיצת חזה בשיפוע חיובי במכונת סמית"
+    },
+    "Smith_Machine_Leg_Press": {
+      "slug": "fedb-smith-machine-leg-press",
+      "nameHe": "לחיצת רגליים בשכיבה מתחת למוט סמית"
+    },
+    "Smith_Machine_One-Arm_Upright_Row": {
+      "slug": "fedb-smith-machine-one-arm-upright-row",
+      "nameHe": "חתירה אנכית ביד אחת במכונת סמית"
+    },
+    "Smith_Machine_Overhead_Shoulder_Press": {
+      "slug": "fedb-smith-machine-overhead-shoulder-press",
+      "nameHe": "לחיצת כתפיים בישיבה במכונת סמית"
+    },
+    "Smith_Machine_Pistol_Squat": {
+      "slug": "fedb-smith-machine-pistol-squat",
+      "nameHe": "סקוואט ברגל אחת במכונת סמית"
+    },
+    "Smith_Machine_Reverse_Calf_Raises": {
+      "slug": "fedb-smith-machine-reverse-calf-raises",
+      "nameHe": "הרמת קדמת כף הרגל במכונת סמית"
+    },
+    "Smith_Machine_Stiff-Legged_Deadlift": {
+      "slug": "fedb-smith-machine-stiff-legged-deadlift",
+      "nameHe": "דדליפט בברכיים כמעט ישרות במכונת סמית"
+    },
+    "Smith_Machine_Upright_Row": {
+      "slug": "fedb-smith-machine-upright-row",
+      "nameHe": "חתירה אנכית בשתי ידיים במכונת סמית"
+    },
+    "Smith_Single-Leg_Split_Squat": {
+      "slug": "fedb-smith-single-leg-split-squat",
+      "nameHe": "סקוואט מפוצל עם רגל אחורית על ספסל במכונת סמית"
+    },
+    "Snatch_Balance": {
+      "slug": "fedb-snatch-balance",
+      "nameHe": "קבלת מוט מעל הראש מסקוואט עם דחיפה מהגב"
+    },
+    "Snatch_Deadlift": {
+      "slug": "fedb-snatch-deadlift",
+      "nameHe": "דדליפט באחיזה רחבה להנפה"
+    },
+    "Snatch_Pull": {
+      "slug": "fedb-snatch-pull",
+      "nameHe": "משיכת הנפה באחיזה רחבה"
+    },
+    "Snatch_Shrug": {
+      "slug": "fedb-snatch-shrug",
+      "nameHe": "משיכת כתפיים באחיזת הנפה רחבה"
+    },
+    "Snatch_from_Blocks": {
+      "slug": "fedb-snatch-from-blocks",
+      "nameHe": "הנפה מלאה מבלוקים"
+    },
+    "Speed_Box_Squat": {
+      "slug": "fedb-speed-box-squat",
+      "nameHe": "סקוואט לתיבה עם עלייה מהירה וגומיות מעוגנות"
+    },
+    "Speed_Squats": {
+      "slug": "fedb-speed-squats",
+      "nameHe": "סקוואט עם מוט ועלייה מהירה"
+    },
+    "Spell_Caster": {
+      "slug": "fedb-spell-caster",
+      "nameHe": "סיבוב גו עם שתי משקולות מצד לצד"
+    },
+    "Spider_Curl": {
+      "slug": "fedb-spider-curl",
+      "nameHe": "כפיפת מרפקים עם מוט בשכיבת חזה על ספסל כומר"
+    },
+    "Spinal_Stretch": {
+      "slug": "fedb-spinal-stretch",
+      "nameHe": "סיבוב והטיית גו בישיבה"
+    },
+    "Split_Clean": {
+      "slug": "fedb-split-clean",
+      "nameHe": "הנפת מוט אל הכתפיים בקבלה מפוצלת"
+    },
+    "Split_Jerk": {
+      "slug": "fedb-split-jerk",
+      "nameHe": "דחיקת מוט מעל הראש בקבלה מפוצלת"
+    },
+    "Split_Snatch": {
+      "slug": "fedb-split-snatch",
+      "nameHe": "הנפה מעל הראש בקבלה מפוצלת"
+    },
+    "Split_Squats": {
+      "slug": "fedb-split-squats",
+      "nameHe": "קפיצות סקוואט מפוצל לסירוגין"
+    },
+    "Squat_Jerk": {
+      "slug": "fedb-squat-jerk",
+      "nameHe": "דחיקת מוט בקבלה בסקוואט מלא"
+    },
+    "Squat_with_Bands": {
+      "slug": "fedb-squat-with-bands",
+      "nameHe": "סקוואט עם מוט וגומיות מעוגנות למטה"
+    },
+    "Squat_with_Chains": {
+      "slug": "fedb-squat-with-chains",
+      "nameHe": "סקוואט עם מוט ושרשראות"
+    },
+    "Squat_with_Plate_Movers": {
+      "slug": "fedb-squat-with-plate-movers",
+      "nameHe": "סקוואט עם מוט והזזת צלחת בין חזרות"
+    },
+    "Standing_Alternating_Dumbbell_Press": {
+      "slug": "fedb-standing-alternating-dumbbell-press",
+      "nameHe": "לחיצת כתפיים בעמידה לסירוגין"
+    },
+    "Standing_Barbell_Calf_Raise": {
+      "slug": "fedb-standing-barbell-calf-raise",
+      "nameHe": "הרמת עקבים בעמידה עם מוט"
+    },
+    "Standing_Barbell_Press_Behind_Neck": {
+      "slug": "fedb-standing-barbell-press-behind-neck",
+      "nameHe": "לחיצת מוט מאחורי הראש בעמידה"
+    },
+    "Standing_Bent-Over_One-Arm_Dumbbell_Triceps_Extension": {
+      "slug": "fedb-standing-bent-over-one-arm-dumbbell-triceps-extension",
+      "nameHe": "פשיטת מרפק ביד אחת בעמידה מוטה"
+    },
+    "Standing_Bent-Over_Two-Arm_Dumbbell_Triceps_Extension": {
+      "slug": "fedb-standing-bent-over-two-arm-dumbbell-triceps-extension",
+      "nameHe": "פשיטת שני מרפקים בעמידה מוטה"
+    },
+    "Standing_Biceps_Stretch": {
+      "slug": "fedb-standing-biceps-stretch",
+      "nameHe": "מתיחת קדמת הזרוע עם ידיים מאחורי הגב"
+    },
+    "Standing_Bradford_Press": {
+      "slug": "fedb-standing-bradford-press",
+      "nameHe": "לחיצת ברדפורד בעמידה"
+    },
+    "Standing_Cable_Chest_Press": {
+      "slug": "fedb-standing-cable-chest-press",
+      "nameHe": "לחיצת חזה בעמידה בשני כבלים"
+    },
+    "Standing_Cable_Lift": {
+      "slug": "fedb-standing-cable-lift",
+      "nameHe": "הרמת כבל אלכסונית מלמטה למעלה"
+    },
+    "Standing_Concentration_Curl": {
+      "slug": "fedb-standing-concentration-curl",
+      "nameHe": "כפיפת מרפק מרוכזת בעמידה מוטה"
+    },
+    "Standing_Dumbbell_Calf_Raise": {
+      "slug": "fedb-standing-dumbbell-calf-raise",
+      "nameHe": "הרמת עקבים בעמידה עם שתי משקולות"
+    },
+    "Standing_Dumbbell_Press": {
+      "slug": "fedb-standing-dumbbell-press",
+      "nameHe": "לחיצת כתפיים בשתי משקולות בעמידה"
+    },
+    "Standing_Dumbbell_Reverse_Curl": {
+      "slug": "fedb-standing-dumbbell-reverse-curl",
+      "nameHe": "כפיפת מרפקים במשקולות באחיזה עליונה"
+    },
+    "Standing_Dumbbell_Straight-Arm_Front_Delt_Raise_Above_Head": {
+      "slug": "fedb-standing-dumbbell-straight-arm-front-delt-raise-above-head",
+      "nameHe": "הרמת שתי משקולות לפנים עד מעל הראש"
+    },
+    "Standing_Dumbbell_Triceps_Extension": {
+      "slug": "fedb-standing-dumbbell-triceps-extension",
+      "nameHe": "פשיטת מרפקים מעל הראש עם משקולת אחת בשתי ידיים"
+    },
+    "Standing_Dumbbell_Upright_Row": {
+      "slug": "fedb-standing-dumbbell-upright-row",
+      "nameHe": "חתירה אנכית בעמידה עם שתי משקולות"
+    },
+    "Standing_Elevated_Quad_Stretch": {
+      "slug": "fedb-standing-elevated-quad-stretch",
+      "nameHe": "מתיחת ירך קדמית עם רגל אחורית על משטח"
+    },
+    "Standing_Front_Barbell_Raise_Over_Head": {
+      "slug": "fedb-standing-front-barbell-raise-over-head",
+      "nameHe": "הרמת מוט לפנים עד מעל הראש"
+    },
+    "Standing_Gastrocnemius_Calf_Stretch": {
+      "slug": "fedb-standing-gastrocnemius-calf-stretch",
+      "nameHe": "מתיחת שוק עם עקב על משטח ואחיזה באצבעות"
+    },
+    "Standing_Hamstring_and_Calf_Stretch": {
+      "slug": "fedb-standing-hamstring-and-calf-stretch",
+      "nameHe": "מתיחת ירך אחורית ושוק בעמידה עם רצועה"
+    },
+    "Standing_Hip_Circles": {
+      "slug": "fedb-standing-hip-circles",
+      "nameHe": "סיבובי ירך בעמידה עם תמיכה"
+    },
+    "Standing_Hip_Flexors": {
+      "slug": "fedb-standing-hip-flexors",
+      "nameHe": "מתיחת מכופפי ירך בפיסוק מפוצל בעמידה"
+    },
+    "Standing_Inner-Biceps_Curl": {
+      "slug": "fedb-standing-inner-biceps-curl",
+      "nameHe": "כפיפת מרפקים החוצה עם סיבוב האחיזה"
+    },
+    "Standing_Lateral_Stretch": {
+      "slug": "fedb-standing-lateral-stretch",
+      "nameHe": "מתיחת צד הגוף בעמידה עם יד מאחורי הראש"
+    },
+    "Standing_Leg_Curl": {
+      "slug": "fedb-standing-leg-curl",
+      "nameHe": "כפיפת ברך ברגל אחת במכונה בעמידה"
+    },
+    "Standing_Low-Pulley_Deltoid_Raise": {
+      "slug": "fedb-standing-low-pulley-deltoid-raise",
+      "nameHe": "הרחקת כתף ביד אחת בכבל נמוך"
+    },
+    "Standing_Low-Pulley_One-Arm_Triceps_Extension": {
+      "slug": "fedb-standing-low-pulley-one-arm-triceps-extension",
+      "nameHe": "פשיטת מרפק מעל הראש ביד אחת בכבל נמוך"
+    },
+    "Standing_Military_Press": {
+      "slug": "fedb-standing-military-press",
+      "nameHe": "לחיצת כתפיים עם מוט בעמידה"
+    },
+    "Standing_Olympic_Plate_Hand_Squeeze": {
+      "slug": "fedb-standing-olympic-plate-hand-squeeze",
+      "nameHe": "סגירת אצבעות באחיזת צלחות בעמידה"
+    },
+    "Standing_One-Arm_Cable_Curl": {
+      "slug": "fedb-standing-one-arm-cable-curl",
+      "nameHe": "כפיפת מרפק ביד אחת בכבל נמוך"
+    },
+    "Standing_One-Arm_Dumbbell_Curl_Over_Incline_Bench": {
+      "slug": "fedb-standing-one-arm-dumbbell-curl-over-incline-bench",
+      "nameHe": "כפיפת מרפק ביד אחת על משענת ספסל משופע"
+    },
+    "Standing_One-Arm_Dumbbell_Triceps_Extension": {
+      "slug": "fedb-standing-one-arm-dumbbell-triceps-extension",
+      "nameHe": "פשיטת מרפק ביד אחת מעל הראש בעמידה"
+    },
+    "Standing_Overhead_Barbell_Triceps_Extension": {
+      "slug": "fedb-standing-overhead-barbell-triceps-extension",
+      "nameHe": "פשיטת מרפקים מעל הראש עם מוט בעמידה"
+    },
+    "Standing_Palm-In_One-Arm_Dumbbell_Press": {
+      "slug": "fedb-standing-palm-in-one-arm-dumbbell-press",
+      "nameHe": "לחיצת כתף ביד אחת באחיזה ניטרלית עם תמיכה"
+    },
+    "Standing_Palms-In_Dumbbell_Press": {
+      "slug": "fedb-standing-palms-in-dumbbell-press",
+      "nameHe": "לחיצת כתפיים בעמידה באחיזה ניטרלית"
+    },
+    "Standing_Palms-Up_Barbell_Behind_The_Back_Wrist_Curl": {
+      "slug": "fedb-standing-palms-up-barbell-behind-the-back-wrist-curl",
+      "nameHe": "כפיפת שורשי כפות ידיים עם מוט מאחורי הגב"
+    },
+    "Standing_Pelvic_Tilt": {
+      "slug": "fedb-standing-pelvic-tilt",
+      "nameHe": "הטיות אגן עדינות בעמידה"
+    },
+    "Standing_Rope_Crunch": {
+      "slug": "fedb-standing-rope-crunch",
+      "nameHe": "כפיפת גו בעמידה עם חבל בכבל גבוה"
+    },
+    "Standing_Soleus_And_Achilles_Stretch": {
+      "slug": "fedb-standing-soleus-and-achilles-stretch",
+      "nameHe": "מתיחת שוק וגיד אכילס עם ברכיים כפופות"
+    },
+    "Standing_Toe_Touches": {
+      "slug": "fedb-standing-toe-touches",
+      "nameHe": "מתיחת ירך אחורית בכפיפה לפנים בעמידה"
+    },
+    "Standing_Towel_Triceps_Extension": {
+      "slug": "fedb-standing-towel-triceps-extension",
+      "nameHe": "פשיטת מרפקים מעל הראש עם מגבת והתנגדות שותף"
+    },
+    "Standing_Two-Arm_Overhead_Throw": {
+      "slug": "fedb-standing-two-arm-overhead-throw",
+      "nameHe": "זריקת כדור כוח לפנים מעל הראש"
+    },
+    "Step_Mill": {
+      "slug": "fedb-step-mill",
+      "nameHe": "עלייה במדרגות במכשיר סטפמיל"
+    },
+    "Stiff-Legged_Barbell_Deadlift": {
+      "slug": "fedb-stiff-legged-barbell-deadlift",
+      "nameHe": "דדליפט במוט עם ברכיים כמעט ישרות"
+    },
+    "Stiff-Legged_Dumbbell_Deadlift": {
+      "slug": "fedb-stiff-legged-dumbbell-deadlift",
+      "nameHe": "דדליפט במשקולות עם ברכיים כמעט ישרות"
+    },
+    "Stiff_Leg_Barbell_Good_Morning": {
+      "slug": "fedb-stiff-leg-barbell-good-morning",
+      "nameHe": "גוד מורנינג עם מוט וברכיים כמעט ישרות"
+    },
+    "Stomach_Vacuum": {
+      "slug": "fedb-stomach-vacuum",
+      "nameHe": "איסוף בטן בעמידה עם נשימה רגועה"
+    },
+    "Straight-Arm_Dumbbell_Pullover": {
+      "slug": "fedb-straight-arm-dumbbell-pullover",
+      "nameHe": "פולאובר עם משקולת בשכיבה לרוחב ספסל"
+    },
+    "Straight_Bar_Bench_Mid_Rows": {
+      "slug": "fedb-straight-bar-bench-mid-rows",
+      "nameHe": "חתירת מוט בעמידה על ספסל יציב"
+    },
+    "Straight_Raises_on_Incline_Bench": {
+      "slug": "fedb-straight-raises-on-incline-bench",
+      "nameHe": "הרמת מוט לפנים בשכיבת חזה על ספסל משופע"
+    },
+    "Stride_Jump_Crossover": {
+      "slug": "fedb-stride-jump-crossover",
+      "nameHe": "קפיצה לרוחב תיבה עם החלפת רגל תומכת"
+    },
+    "Sumo_Deadlift_with_Bands": {
+      "slug": "fedb-sumo-deadlift-with-bands",
+      "nameHe": "דדליפט סומו עם גומיות קצרות מתחת לכפות הרגליים"
+    },
+    "Sumo_Deadlift_with_Chains": {
+      "slug": "fedb-sumo-deadlift-with-chains",
+      "nameHe": "דדליפט סומו עם שרשראות"
+    },
+    "Supine_Chest_Throw": {
+      "slug": "fedb-supine-chest-throw",
+      "nameHe": "זריקת כדור כוח מעלה בשכיבה על הגב"
+    },
+    "Supine_One-Arm_Overhead_Throw": {
+      "slug": "fedb-supine-one-arm-overhead-throw",
+      "nameHe": "זריקת כדור ביד אחת מתוך כפיפת גו"
+    },
+    "Supine_Two-Arm_Overhead_Throw": {
+      "slug": "fedb-supine-two-arm-overhead-throw",
+      "nameHe": "זריקת כדור בשתי ידיים מתוך כפיפת גו"
+    },
+    "Suspended_Row": {
+      "slug": "fedb-suspended-row",
+      "nameHe": "חתירה ברצועות תלייה"
+    },
+    "Svend_Press": {
+      "slug": "fedb-svend-press",
+      "nameHe": "לחיצת סוונד עם שתי צלחות צמודות"
+    },
+    "T-Bar_Row_with_Handle": {
+      "slug": "fedb-t-bar-row-with-handle",
+      "nameHe": "חתירת מוט מעוגן עם ידית D כפולה"
+    },
+    "Tate_Press": {
+      "slug": "fedb-tate-press",
+      "nameHe": "פשיטת מרפקים בשכיבה עם מרפקים החוצה"
+    },
+    "The_Straddle": {
+      "slug": "fedb-the-straddle",
+      "nameHe": "מתיחת ירך אחורית בישיבה בפיסוק"
+    },
+    "Tire_Flip": {
+      "slug": "fedb-tire-flip",
+      "nameHe": "הפיכת צמיג אימון"
+    },
+    "Toe_Touchers": {
+      "slug": "fedb-toe-touchers",
+      "nameHe": "כפיפת גו והושטת ידיים לכפות רגליים מורמות"
+    },
+    "Torso_Rotation": {
+      "slug": "fedb-torso-rotation",
+      "nameHe": "סיבובי גו בעמידה עם כדור פיזיו"
+    },
+    "Trail_Running_Walking": {
+      "slug": "fedb-trail-running-walking",
+      "nameHe": "הליכה או ריצה בשביל טבע"
+    },
+    "Trap_Bar_Deadlift": {
+      "slug": "fedb-trap-bar-deadlift",
+      "nameHe": "דדליפט במוט טראפ"
+    },
+    "Tricep_Dumbbell_Kickback": {
+      "slug": "fedb-tricep-dumbbell-kickback",
+      "nameHe": "פשיטת שני מרפקים לאחור בעמידה מוטה"
+    },
+    "Tricep_Side_Stretch": {
+      "slug": "fedb-tricep-side-stretch",
+      "nameHe": "מתיחת זרוע אחורית לרוחב החזה"
+    },
+    "Triceps_Pushdown_-_Rope_Attachment": {
+      "slug": "fedb-triceps-pushdown-rope-attachment",
+      "nameHe": "פשיטת מרפקים בכבל גבוה עם חבל"
+    },
+    "Triceps_Pushdown_-_V-Bar_Attachment": {
+      "slug": "fedb-triceps-pushdown-v-bar-attachment",
+      "nameHe": "פשיטת מרפקים בכבל גבוה עם ידית V"
+    },
+    "Triceps_Stretch": {
+      "slug": "fedb-triceps-stretch",
+      "nameHe": "מתיחת זרוע אחורית מעל הראש"
+    },
+    "Tuck_Crunch": {
+      "slug": "fedb-tuck-crunch",
+      "nameHe": "כפיפת גו עם ברכיים מורמות וקרסוליים משולבים"
+    },
+    "Two-Arm_Dumbbell_Preacher_Curl": {
+      "slug": "fedb-two-arm-dumbbell-preacher-curl",
+      "nameHe": "כפיפת מרפקים בשתי משקולות על ספסל כומר"
+    },
+    "Two-Arm_Kettlebell_Clean": {
+      "slug": "fedb-two-arm-kettlebell-clean",
+      "nameHe": "הנפת שני קטלבלים אל הכתפיים"
+    },
+    "Two-Arm_Kettlebell_Jerk": {
+      "slug": "fedb-two-arm-kettlebell-jerk",
+      "nameHe": "דחיקת שני קטלבלים עם קבלה בכיפוף ברכיים"
+    },
+    "Two-Arm_Kettlebell_Military_Press": {
+      "slug": "fedb-two-arm-kettlebell-military-press",
+      "nameHe": "לחיצת כתפיים בשני קטלבלים"
+    },
+    "Underhand_Cable_Pulldowns": {
+      "slug": "fedb-underhand-cable-pulldowns",
+      "nameHe": "משיכת פולי עליון באחיזה תחתית צרה"
+    },
+    "Upper_Back-Leg_Grab": {
+      "slug": "fedb-upper-back-leg-grab",
+      "nameHe": "מתיחת גב וירך אחורית בישיבה עם חיבוק הרגליים"
+    },
+    "Upper_Back_Stretch": {
+      "slug": "fedb-upper-back-stretch",
+      "nameHe": "מתיחת גב עליון בהושטת ידיים לפנים"
+    },
+    "Upright_Barbell_Row": {
+      "slug": "fedb-upright-barbell-row",
+      "nameHe": "חתירה אנכית במוט בעמידה"
+    },
+    "Upright_Cable_Row": {
+      "slug": "fedb-upright-cable-row",
+      "nameHe": "חתירה אנכית בכבל נמוך"
+    },
+    "Upward_Stretch": {
+      "slug": "fedb-upward-stretch",
+      "nameHe": "מתיחה מעלה עם שתי ידיים מעל הראש"
+    },
+    "V-Bar_Pulldown": {
+      "slug": "fedb-v-bar-pulldown",
+      "nameHe": "משיכת פולי עליון עם ידית V"
+    },
+    "Vertical_Swing": {
+      "slug": "fedb-vertical-swing",
+      "nameHe": "הנפה אנכית של משקולת אחת עם קפיצה"
+    },
+    "Walking_Treadmill": {
+      "slug": "fedb-walking-treadmill",
+      "nameHe": "הליכה על מסילה"
+    },
+    "Weighted_Ball_Hyperextension": {
+      "slug": "fedb-weighted-ball-hyperextension",
+      "nameHe": "פשיטת גו על כדור פיזיו עם צלחת על החזה"
+    },
+    "Weighted_Ball_Side_Bend": {
+      "slug": "fedb-weighted-ball-side-bend",
+      "nameHe": "כפיפת צד על כדור פיזיו עם צלחת"
+    },
+    "Weighted_Bench_Dip": {
+      "slug": "fedb-weighted-bench-dip",
+      "nameHe": "מקבילים בין שני ספסלים עם משקולת על הירכיים"
+    },
+    "Weighted_Crunches": {
+      "slug": "fedb-weighted-crunches",
+      "nameHe": "כפיפת גו עם צלחת על החזה"
+    },
+    "Weighted_Jump_Squat": {
+      "slug": "fedb-weighted-jump-squat",
+      "nameHe": "קפיצת סקוואט עם מוט קל על הגב"
+    },
+    "Weighted_Pull_Ups": {
+      "slug": "fedb-weighted-pull-ups",
+      "nameHe": "עליית מתח עם צלחת תלויה בחגורת משקל"
+    },
+    "Weighted_Sissy_Squat": {
+      "slug": "fedb-weighted-sissy-squat",
+      "nameHe": "סיסי סקוואט נתמך עם צלחת"
+    },
+    "Weighted_Sit-Ups_-_With_Bands": {
+      "slug": "fedb-weighted-sit-ups-with-bands",
+      "nameHe": "כפיפת גו בספסל שיפוע שלילי כנגד גומיות"
+    },
+    "Weighted_Squat": {
+      "slug": "fedb-weighted-squat",
+      "nameHe": "סקוואט עם חגורת משקל בין שני ספסלים"
+    },
+    "Wide-Grip_Barbell_Bench_Press": {
+      "slug": "fedb-wide-grip-barbell-bench-press",
+      "nameHe": "לחיצת חזה במוט באחיזה רחבה"
+    },
+    "Wide-Grip_Decline_Barbell_Bench_Press": {
+      "slug": "fedb-wide-grip-decline-barbell-bench-press",
+      "nameHe": "לחיצת חזה במוט בשיפוע שלילי ובאחיזה רחבה"
+    },
+    "Wide-Grip_Decline_Barbell_Pullover": {
+      "slug": "fedb-wide-grip-decline-barbell-pullover",
+      "nameHe": "פולאובר במוט באחיזה רחבה ובשיפוע שלילי"
+    },
+    "Wide-Grip_Pulldown_Behind_The_Neck": {
+      "slug": "fedb-wide-grip-pulldown-behind-the-neck",
+      "nameHe": "משיכת פולי עליון מאחורי הראש באחיזה רחבה"
+    },
+    "Wide-Grip_Standing_Barbell_Curl": {
+      "slug": "fedb-wide-grip-standing-barbell-curl",
+      "nameHe": "כפיפת מרפקים במוט באחיזה רחבה"
+    },
+    "Wide_Stance_Barbell_Squat": {
+      "slug": "fedb-wide-stance-barbell-squat",
+      "nameHe": "סקוואט במוט בפיסוק רחב"
+    },
+    "Wide_Stance_Stiff_Legs": {
+      "slug": "fedb-wide-stance-stiff-legs",
+      "nameHe": "דדליפט ברגליים כמעט ישרות ובפיסוק רחב"
+    },
+    "Windmills": {
+      "slug": "fedb-windmills",
+      "nameHe": "סיבובי אגן בשכיבה עם הצלבת רגל ישרה"
+    },
+    "Worlds_Greatest_Stretch": {
+      "slug": "fedb-worlds-greatest-stretch",
+      "nameHe": "רצף מתיחה במכרע עם העברת גו ורגל ישרה"
+    },
+    "Wrist_Circles": {
+      "slug": "fedb-wrist-circles",
+      "nameHe": "מעגלי שורש כף יד עם זרועות לצדדים"
+    },
+    "Wrist_Roller": {
+      "slug": "fedb-wrist-roller",
+      "nameHe": "גלגול חבל עם משקולת במתקן אמות"
+    },
+    "Wrist_Rotations_with_Straight_Bar": {
+      "slug": "fedb-wrist-rotations-with-straight-bar",
+      "nameHe": "גלגול מוט ישר באמצעות שורשי כפות הידיים"
+    },
+    "Yoke_Walk": {
+      "slug": "fedb-yoke-walk",
+      "nameHe": "הליכה עם מסגרת יוק על הגב העליון"
+    },
+    "Zottman_Curl": {
+      "slug": "fedb-zottman-curl",
+      "nameHe": "כפיפת זוטמן במשקולות יד"
+    },
+    "Zottman_Preacher_Curl": {
+      "slug": "fedb-zottman-preacher-curl",
+      "nameHe": "כפיפת זוטמן במשקולות על ספסל כומר"
+    }
+  },
+  "missingInstructions": [
+    "Iron_Cross",
+    "One-Arm_Kettlebell_Swings",
+    "Push_Press",
+    "Side_Bridge",
+    "Side_Jackknife"
+  ]
+}

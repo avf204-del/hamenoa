@@ -7,6 +7,7 @@ import { prisma } from "@/lib/db";
 import { muscleGroupList } from "@/lib/muscle-groups";
 import { isRetiredExercise } from "@/lib/retired-exercises";
 import { isBaseTrainingExercise, type TrainingType } from "@/lib/training-types";
+import { isCatalogOnly } from "@/catalog/workout-policy";
 
 type ExerciseRow = Awaited<ReturnType<typeof prisma.exercise.findMany>>[number];
 
@@ -58,8 +59,8 @@ export async function loadExercises(): Promise<{
   const rows = await exercisesCache.get();
   return {
     // The id maps cover every row so stored logs stay readable; only base,
-    // non-retired exercises are offered to a new workout.
-    data: rows.filter((row) => isBaseTrainingExercise(row) && !isRetiredExercise(row.slug)).map(exerciseRowToData),
+    // non-retired exercises supported by hamenoa are offered to a new workout.
+    data: rows.filter((row) => isBaseTrainingExercise(row) && !isRetiredExercise(row.slug) && !isCatalogOnly(row.slug)).map(exerciseRowToData),
     idBySlug: new Map(rows.map((r) => [r.slug, r.id])),
     slugById: new Map(rows.map((r) => [r.id, r.slug])),
   };

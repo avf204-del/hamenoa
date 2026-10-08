@@ -9,6 +9,7 @@ import Sheet from "@/components/Sheet";
 import type { ExerciseInfo } from "@/lib/exercise-info";
 import { useLocale } from "@/i18n/client";
 import { exerciseInstructions, exerciseName } from "@/lib/exercise-names";
+import ExerciseExecutionDetails from "@/components/ExerciseExecutionDetails";
 
 /** The cue-line prefix in each language's instructions ("Note:" in the English text). */
 const CUE_PREFIX = { he: "שים לב", en: "Note" } as const;
@@ -89,6 +90,7 @@ export default function ExerciseInfoSheet({
               {typeLabel}
             </p>
           )}
+          {shown.catalogOnly && <p className="mt-2 text-sm text-fg-2">{t("לעיון במאגר; עדיין לא זמין באימוני האפליקציה.", "Available for catalog review; not yet available in this app's workouts.")}</p>}
 
           {frames.length > 0 && (
             <ol
@@ -140,6 +142,12 @@ export default function ExerciseInfoSheet({
               </ul>
             </div>
           )}
+          {shown.execution && <ExerciseExecutionDetails execution={shown.execution} locale={locale} current={shown.executionMatchesInstructions} />}
+          {shown.sourceInstructionsEn && <details className="mt-4 rounded-(--r-s) border border-line p-3 text-sm text-fg-2">
+            <summary className="cursor-pointer font-bold">{t("הוראות המקור באנגלית", "Archived source instructions in English")}</summary>
+            <p className="mt-2">{t("נוסח המקור נשמר לעיון; הוראות הביצוע שנבדקו מוצגות בעברית למעלה.", "The source text is retained for reference; the reviewed execution instructions appear in Hebrew above.")}</p>
+            <p dir="ltr" lang="en" className="mt-2 whitespace-pre-wrap leading-relaxed">{shown.sourceInstructionsEn}</p>
+          </details>}
           {shown.licenseNote && (
             <details className="mt-4 rounded-(--r-s) border border-line p-3 text-sm text-fg-2">
               <summary className="cursor-pointer font-bold">{t("מקור ורישיון התוכן", "Content source and license")}</summary>

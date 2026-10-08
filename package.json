@@ -13,6 +13,7 @@
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
+    "catalog:parity": "node scripts/catalog-parity.mjs",
     "check:live": "node tests/live/api-check.mjs && node tests/live/browser-check.mjs",
     "db:setup": "prisma generate && prisma migrate deploy && tsx prisma/seed.ts",
     "deploy:prepare": "prisma migrate deploy && tsx scripts/import-exercises.ts",

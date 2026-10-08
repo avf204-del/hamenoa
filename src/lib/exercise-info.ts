@@ -12,6 +12,8 @@ import { WALKING_DRILL, WALKING_INFO_KEY } from "@/lib/walking";
 import { trainingTypeLabel } from "@/lib/training-types";
 import { muscleToGroup, type MuscleGroupSlug } from "@/lib/muscle-groups";
 import type { ExerciseCatalogInfo } from "@/lib/exercise-catalog-info";
+import { isCatalogOnly } from "@/catalog/workout-policy";
+import { exerciseExecution, executionMatchesInstructions } from "@/lib/exercise-execution";
 
 import EXERCISE_TEXT_EN from "../../data/exercise-text-en.json";
 
@@ -28,8 +30,10 @@ export interface ExerciseInfo extends Partial<ExerciseCatalogInfo> {
   nameEn: string;
   /** צעדי ביצוע + שורת "שים לב" — כפי שנכתבו ב-tagging.yaml או בקטלוג הדרילים */
   instructionsHe: string;
-  /** The same instructions in English; empty only if a translation is missing. */
+  /** Reviewed English translation when available; otherwise display Hebrew. */
   instructionsEn?: string;
+  /** Archived source English, separate from the reviewed Hebrew adaptation. */
+  sourceInstructionsEn?: string;
   /** Ordered public image paths, retained for thumbnails and older callers. */
   images: string[];
   /** Optional for compatibility with existing callers; server results include frame metadata. */
@@ -113,6 +117,7 @@ export async function exerciseInfoForSlugs(
         trainingType: true, provenanceId: true, licenseNote: true, equipment: true, primaryMuscles: true },
     });
     for (const row of rows) {
+      const execution = exerciseExecution(row.slug);
       const groups = Array.isArray(row.primaryMuscles)
         ? [...new Set(row.primaryMuscles.map(muscleToGroup).filter((g): g is MuscleGroupSlug => g !== null))]
         : [];
@@ -121,12 +126,16 @@ export async function exerciseInfoForSlugs(
         nameHe: row.nameHe,
         nameEn: row.nameEn,
         instructionsHe: row.instructionsHe,
-        instructionsEn: TEXT_EN.exercises[row.slug] ?? "",
+        instructionsEn: isCatalogOnly(row.slug) ? "" : TEXT_EN.exercises[row.slug] ?? "",
+        sourceInstructionsEn: isCatalogOnly(row.slug) ? TEXT_EN.exercises[row.slug] : undefined,
         trainingType: row.trainingType ?? "base",
         trainingTypeLabel: trainingTypeLabel(row.trainingType),
         provenanceId: row.provenanceId ?? null,
         licenseNote: row.licenseNote,
         equipment: Array.isArray(row.equipment) ? (row.equipment as string[]) : [],
+        execution,
+        executionMatchesInstructions: execution ? executionMatchesInstructions(execution, row.instructionsHe) : undefined,
+        catalogOnly: isCatalogOnly(row.slug),
         ...displayMedia("exercises", row.slug, manifest),
       };
     }

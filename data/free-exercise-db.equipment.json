@@ -1,0 +1,442 @@
+{
+  "press-boards": {
+    "he": "לוחות ללחיצה",
+    "en": "Press boards",
+    "station": "portable"
+  },
+  "paired-rollout-bars": {
+    "he": "זוג מוטות מתגלגלים לצליבת משקל גוף",
+    "en": "Pair of rolling bars for bodyweight flyes",
+    "station": "portable"
+  },
+  "bosu-ball": {
+    "he": "כדור BOSU",
+    "en": "Bosu ball",
+    "station": "portable"
+  },
+  "band-anchors": {
+    "he": "עיגוני גומיות בכלוב",
+    "en": "Rack band anchors",
+    "station": "fixed"
+  },
+  "lifting-chains": {
+    "he": "שרשראות הרמה",
+    "en": "Lifting chains",
+    "station": "portable"
+  },
+  "preacher-bench": {
+    "he": "ספסל כומר עם משטח למרפקים",
+    "en": "Preacher bench with elbow pad",
+    "station": "fixed"
+  },
+  "exercise-stick": {
+    "he": "מקל לתרגיל",
+    "en": "Exercise stick",
+    "station": "portable"
+  },
+  "circus-dumbbell": {
+    "he": "משקולת סירקוס ייעודית",
+    "en": "Dedicated circus dumbbell",
+    "station": "portable"
+  },
+  "lifting-blocks": {
+    "he": "זוג בלוקים יציבים להרמת משקולות",
+    "en": "Pair of stable weightlifting blocks",
+    "station": "portable"
+  },
+  "lifting-platform": {
+    "he": "משטח הרמה נמוך ויציב",
+    "en": "Low stable lifting platform",
+    "station": "portable"
+  },
+  "decline-bench": {
+    "he": "ספסל שיפוע שלילי עם תמיכת רגליים",
+    "en": "Decline bench with secured leg support",
+    "station": "fixed"
+  },
+  "calf-block": {
+    "he": "משטח יציב לאימון עקבים",
+    "en": "Stable calf raise block",
+    "station": "portable"
+  },
+  "foot-anchors": {
+    "he": "עיגון יציב ייעודי לכפות הרגליים",
+    "en": "Dedicated stable foot anchors",
+    "station": "fixed"
+  },
+  "stretching-strap": {
+    "he": "רצועת מתיחה",
+    "en": "Stretching strap",
+    "station": "portable"
+  },
+  "glute-ham-developer": {
+    "he": "מתקן גלוט־האם עם כרית ברכיים ועיגון לרגליים",
+    "en": "Glute-ham developer with knee pad and secured footplate",
+    "station": "fixed"
+  },
+  "muscle-roller": {
+    "he": "רולר עיסוי ידני עם ידיות",
+    "en": "Handheld massage roller with handles",
+    "station": "portable"
+  },
+  "atlas-stone-trainer": {
+    "he": "מתקן קומפקטי לאבן אטלס עם צלחות משקל",
+    "en": "Compact plate-loaded Atlas stone trainer",
+    "station": "portable"
+  },
+  "landmine-anchor": {
+    "he": "עיגון לנדמיין ייעודי למוט",
+    "en": "Dedicated landmine barbell anchor",
+    "station": "fixed"
+  },
+  "landmine-jammer-handle": {
+    "he": "ידית ג׳אמר כפולה למוט מעוגן",
+    "en": "Double jammer handle for anchored barbell",
+    "station": "portable"
+  },
+  "leverage-incline-press-machine": {
+    "he": "מכונת מנופים ללחיצת חזה בשיפוע חיובי",
+    "en": "Leverage incline chest press machine",
+    "station": "fixed"
+  },
+  "leverage-decline-press-machine": {
+    "he": "מכונת מנופים ללחיצת חזה בשיפוע שלילי",
+    "en": "Leverage decline chest press machine",
+    "station": "fixed"
+  },
+  "leverage-high-row-machine": {
+    "he": "מכונת מנופים לחתירה גבוהה עם תמיכת ירכיים",
+    "en": "Leverage high row machine with thigh restraint",
+    "station": "fixed"
+  },
+  "paired-training-boxes": {
+    "he": "זוג תיבות אימון יציבות",
+    "en": "Pair of stable training boxes",
+    "station": "portable"
+  },
+  "cambered-bar": {
+    "he": "מוט קמור ייעודי לחתירה",
+    "en": "Cambered row bar",
+    "station": "portable"
+  },
+  "elevated-flat-bench": {
+    "he": "ספסל שטוח גבוה ויציב להרמה בשכיבה",
+    "en": "High stable flat lifting bench",
+    "station": "fixed"
+  },
+  "lying-leg-curl-machine": {
+    "he": "מכונת כפיפת ברכיים בשכיבה על הבטן",
+    "en": "Prone lying leg curl machine",
+    "station": "fixed"
+  },
+  "chest-supported-t-bar-row-machine": {
+    "he": "מכונת חתירת טי־בר עם תמיכת חזה",
+    "en": "Chest-supported T-bar row machine",
+    "station": "fixed"
+  },
+  "cable-ankle-cuff": {
+    "he": "רצועת קרסול לחיבור כבל",
+    "en": "Cable ankle cuff",
+    "station": "portable"
+  },
+  "lat-pulldown-machine": {
+    "he": "מתקן פולי עליון עם מושב ותמיכת ירכיים",
+    "en": "Seated lat pulldown machine with thigh restraint",
+    "station": "fixed"
+  },
+  "dual-cable-station": {
+    "he": "מתקן כבלים כפול עם שתי גלגלות מתכווננות",
+    "en": "Dual cable station with two adjustable pulleys",
+    "station": "fixed"
+  },
+  "power-stairs-apparatus": {
+    "he": "משקולת עם ידיות ומדרגת העמסה יציבה",
+    "en": "Handled power-stairs implement and stable loading step",
+    "station": "fixed"
+  },
+  "recumbent-exercise-bike": {
+    "he": "אופני כושר עם מושב ומשענת גב",
+    "en": "Recumbent exercise bike with supported seat",
+    "station": "fixed"
+  },
+  "reverse-hyperextension-machine": {
+    "he": "מכונת היפר הפוך עם תמיכת גו ומנוף לרגליים",
+    "en": "Reverse hyperextension machine with torso support and leg lever",
+    "station": "fixed"
+  },
+  "seated-calf-machine": {
+    "he": "מכונת עקבים בישיבה עם כרית ירכיים",
+    "en": "Seated calf raise machine with thigh pad",
+    "station": "fixed"
+  },
+  "seated-cable-row-machine": {
+    "he": "מתקן חתירת כבל בישיבה עם ספסל ותמיכת רגליים",
+    "en": "Seated cable row station with bench and footplate",
+    "station": "fixed"
+  },
+  "skating-protection": {
+    "he": "קסדה ומגיני ברכיים ומרפקים לגלישה",
+    "en": "Skating helmet, knee and elbow pads",
+    "station": "portable"
+  },
+  "sled-pulling-harness": {
+    "he": "רתמת גרירה ייעודית ורצועה למזחלת",
+    "en": "Dedicated sled harness and tow strap",
+    "station": "portable"
+  },
+  "sled-pulling-kit": {
+    "he": "זוג ידיות ורצועות גרירה למזחלת",
+    "en": "Pair of sled pulling handles and straps",
+    "station": "portable"
+  },
+  "sledgehammer-kit": {
+    "he": "פטיש וצמיג אימון",
+    "en": "Sledgehammer and training tire",
+    "station": "portable"
+  },
+  "standing-leg-curl-machine": {
+    "he": "מכונת כפיפת ברך בעמידה עם תמיכת ירך",
+    "en": "Standing leg curl machine with thigh support",
+    "station": "fixed"
+  },
+  "landmine-row-handle": {
+    "he": "ידית D כפולה לחתירת מוט מעוגן",
+    "en": "Double-D row handle for landmine bar",
+    "station": "portable"
+  },
+  "paired-benches": {
+    "he": "זוג ספסלי אימון יציבים",
+    "en": "Pair of stable exercise benches",
+    "station": "portable"
+  },
+  "dip-belt": {
+    "he": "חגורת משקל עם שרשרת מאובטחת",
+    "en": "Dip belt with secured loading chain",
+    "station": "portable"
+  },
+  "cycling-helmet": {
+    "he": "קסדת רכיבה",
+    "en": "Cycling helmet",
+    "station": "portable"
+  },
+  "paired-cable-ankle-cuffs": {
+    "he": "זוג רצועות קרסול לחיבור משותף בכבל",
+    "en": "Paired ankle cuffs for a shared cable connection",
+    "station": "portable"
+  },
+  "car-deadlift-frame": {
+    "he": "מסגרת דדליפט מעוגנת למשא כבד",
+    "en": "Anchored heavy-object deadlift frame",
+    "station": "fixed"
+  },
+  "chain-lifting-handles": {
+    "he": "זוג ידיות עם מחברים מאובטחים לשרשראות",
+    "en": "Paired handles with secured chain connectors",
+    "station": "portable"
+  },
+  "rolling-dumbbell": {
+    "he": "משקולת עגולה מתגלגלת לתמיכת כף רגל",
+    "en": "Round rolling dumbbell for foot support",
+    "station": "portable"
+  },
+  "conan-wheel-apparatus": {
+    "he": "מתקן קונאן עם זרוע נשיאה וציר מרכזי",
+    "en": "Conan carry apparatus with central pivot and loaded arm",
+    "station": "fixed"
+  },
+  "seated-dip-machine": {
+    "he": "מכונת מקבילים בישיבה עם ידיות התנגדות",
+    "en": "Seated dip machine with resistance handles",
+    "station": "fixed"
+  },
+  "donkey-calf-machine": {
+    "he": "מכונת תאומים בכפיפת גו עם מנוף מעל האגן",
+    "en": "Donkey calf machine with loaded pelvic lever",
+    "station": "fixed"
+  },
+  "source-kit-leverage-deadlift": {
+    "he": "מכונת מנופים לדדליפט עם ידיות נמוכות",
+    "en": "Leverage deadlift machine with low handles",
+    "station": "fixed"
+  },
+  "source-kit-leverage-shrug": {
+    "he": "מכונת מנופים להרמת כתפיים",
+    "en": "Leverage shrug machine",
+    "station": "fixed"
+  },
+  "source-kit-lying-machine-squat": {
+    "he": "מכונת סקוואט בשכיבה עם כריות כתפיים",
+    "en": "Lying squat machine with shoulder pads",
+    "station": "fixed"
+  },
+  "source-kit-machine-bicep-curl": {
+    "he": "מכונת כפיפת מרפקים עם כריות לזרועות",
+    "en": "Biceps curl machine with arm pads",
+    "station": "fixed"
+  },
+  "source-kit-machine-preacher-curls": {
+    "he": "מכונת כפיפת מרפקים עם משטח כומר",
+    "en": "Preacher curl machine",
+    "station": "fixed"
+  },
+  "source-kit-machine-triceps-extension": {
+    "he": "מכונת פשיטת מרפקים עם תמיכת זרועות",
+    "en": "Triceps extension machine with arm support",
+    "station": "fixed"
+  },
+  "medicine-ball": {
+    "he": "כדור כוח",
+    "en": "Medicine ball",
+    "station": "portable"
+  },
+  "exercise-ball": {
+    "he": "כדור פיזיו",
+    "en": "Exercise ball",
+    "station": "portable"
+  },
+  "foam-roller": {
+    "he": "גליל עיסוי",
+    "en": "Foam roller",
+    "station": "portable"
+  },
+  "ez-bar": {
+    "he": "מוט EZ",
+    "en": "EZ curl bar",
+    "station": "portable"
+  },
+  "ab-wheel": {
+    "he": "גלגל בטן",
+    "en": "Ab wheel",
+    "station": "portable"
+  },
+  "training-partner": {
+    "he": "עוזר/שותף לתרגיל",
+    "en": "Exercise partner",
+    "station": "none"
+  },
+  "atlas-stones": {
+    "he": "אבני אטלס ומשטח העמסה",
+    "en": "Atlas stones and loading platform",
+    "station": "fixed"
+  },
+  "axle-bar": {
+    "he": "מוט אקסל",
+    "en": "Axle bar",
+    "station": "portable"
+  },
+  "training-sled": {
+    "he": "מזחלת אימון ומסלול",
+    "en": "Training sled and track",
+    "station": "fixed"
+  },
+  "balance-board": {
+    "he": "לוח שיווי משקל",
+    "en": "Balance board",
+    "station": "portable"
+  },
+  "battle-ropes": {
+    "he": "חבלי קרב ועיגון",
+    "en": "Battle ropes and anchor",
+    "station": "fixed"
+  },
+  "bicycle": {
+    "he": "אופניים ומסלול",
+    "en": "Bicycle and route",
+    "station": "portable"
+  },
+  "wall-support": {
+    "he": "קיר תומך פנוי",
+    "en": "Clear supporting wall",
+    "station": "fixed"
+  },
+  "foot-roller": {
+    "he": "גליל עיסוי לכף הרגל",
+    "en": "Foot massage roller",
+    "station": "portable"
+  },
+  "weight-plate": {
+    "he": "צלחת משקל",
+    "en": "Weight plate",
+    "station": "portable"
+  },
+  "heavy-bag": {
+    "he": "שק כבד ועיגון",
+    "en": "Heavy bag and anchor",
+    "station": "fixed"
+  },
+  "training-hurdles": {
+    "he": "משוכות אימון",
+    "en": "Training hurdles",
+    "station": "portable"
+  },
+  "training-keg": {
+    "he": "חבית ומשטח העמסה",
+    "en": "Keg and loading platform",
+    "station": "fixed"
+  },
+  "strongman-log": {
+    "he": "מוט לוג",
+    "en": "Strongman log",
+    "station": "portable"
+  },
+  "rickshaw-frame": {
+    "he": "מסגרת ריקשה",
+    "en": "Rickshaw frame",
+    "station": "portable"
+  },
+  "gym-rings": {
+    "he": "טבעות ועיגון",
+    "en": "Gym rings and anchor",
+    "station": "fixed"
+  },
+  "climbing-rope": {
+    "he": "חבל טיפוס ועיגון",
+    "en": "Climbing rope and anchor",
+    "station": "fixed"
+  },
+  "sandbag": {
+    "he": "שק ומשטח העמסה",
+    "en": "Sandbag and loading platform",
+    "station": "fixed"
+  },
+  "neck-harness": {
+    "he": "רתמת ראש ייעודית",
+    "en": "Neck harness",
+    "station": "portable"
+  },
+  "training-cones": {
+    "he": "קונוסים ומסלול",
+    "en": "Cones and track",
+    "station": "portable"
+  },
+  "skates": {
+    "he": "גלגיליות ומסלול",
+    "en": "Skates and route",
+    "station": "portable"
+  },
+  "exercise-towel": {
+    "he": "מגבת לתרגיל",
+    "en": "Exercise towel",
+    "station": "portable"
+  },
+  "training-tire": {
+    "he": "צמיג אימון",
+    "en": "Training tire",
+    "station": "portable"
+  },
+  "trap-bar": {
+    "he": "מוט טראפ",
+    "en": "Trap bar",
+    "station": "portable"
+  },
+  "wrist-roller": {
+    "he": "גלגלת אמות עם משקולת",
+    "en": "Weighted wrist roller",
+    "station": "portable"
+  },
+  "strongman-yoke": {
+    "he": "מסגרת יוק ומסלול",
+    "en": "Strongman yoke and track",
+    "station": "fixed"
+  }
+}
