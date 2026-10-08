@@ -89,6 +89,30 @@ describe("בניית אימון", () => {
     expect(again).toEqual([]);
   });
 
+  it("משחקון ששוחק בעבר חוזר ראשון בדיוק כפי שהיה, כדי שתהיה תוצאה לנצח", () => {
+    const earlier = planWorkout(request()).stations[1];
+    const recent = planWorkout(request()).stations.flatMap((s) => s.exercises.map((e) => e.slug));
+    const workout = planWorkout(request({ seed: "another-day", rematch: [earlier], recent }));
+    expect(workout.stations).toHaveLength(3);
+    expect(workout.stations[0]).toEqual({ ...earlier, id: "s1" });
+    expect(workout.stations[0].compareKey).toBe(earlier.compareKey);
+    // שאר התחנות חדשות, בלי תרגילים מהמשחקון שחזר
+    const back = new Set(earlier.exercises.map((e) => e.slug));
+    const rest = workout.stations.slice(1).flatMap((s) => s.exercises.map((e) => e.slug));
+    expect(rest.filter((slug) => back.has(slug))).toEqual([]);
+    expect(new Set(rest).size).toBe(6);
+  });
+
+  it("משחקון שהציוד שלו לא זמין היום אינו חוזר", () => {
+    const withChair = planWorkout(request({ equipment: ["chair"], seed: "chair-day" }));
+    const needsChair = withChair.stations.find((s) =>
+      s.exercises.some((e) => exercises.find((x) => x.slug === e.slug)!.equipment.includes("chair")),
+    );
+    expect(needsChair).toBeDefined();
+    const today = planWorkout(request({ equipment: [], rematch: [needsChair!] }));
+    expect(today.stations.map((s) => s.compareKey)).not.toContain(needsChair!.compareKey);
+  });
+
   it("מפתח ההשוואה משתנה כשמשתנים התרגילים או התנאים, ורק אז", () => {
     const [a, b] = [planWorkout(request()), planWorkout(request())];
     expect(a.stations[0].compareKey).toBe(b.stations[0].compareKey);

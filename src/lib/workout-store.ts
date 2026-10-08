@@ -71,7 +71,11 @@ export async function createWorkout(
   // The player may narrow the place's equipment for today, never widen it.
   const equipment = input.equipment ? input.equipment.filter((item) => known.includes(item)) : known;
 
-  const [{ data: exercises }, recent] = await Promise.all([loadExercises(), recentSlugs(userId)]);
+  const [{ data: exercises }, recent, rematch] = await Promise.all([
+    loadExercises(),
+    recentSlugs(userId),
+    rematchCandidates(userId),
+  ]);
 
   let workout: Workout;
   try {
@@ -83,6 +87,7 @@ export async function createWorkout(
       exercises,
       seed: randomUUID(),
       recent,
+      rematch,
     });
   } catch (error) {
     if (error instanceof PlanError) return { ok: false, error: error.code };
@@ -138,6 +143,25 @@ async function recentSlugs(userId: string): Promise<string[]> {
   );
 }
 
+/**
+ * Games the player finished before, the one waiting longest first. The
+ * planner brings one back unchanged so there is an earlier result to beat.
+ */
+async function rematchCandidates(userId: string): Promise<Station[]> {
+  const blocks = await prisma.block.findMany({
+    where: { type: "game", session: { userId, status: "done" } },
+    select: { payload: true },
+  });
+  const lastPlayed = new Map<string, { station: Station; endedAt: number }>();
+  for (const block of blocks) {
+    const { station, compareKey, result } = block.payload as unknown as StationBlock;
+    if (!result) continue;
+    const known = lastPlayed.get(compareKey);
+    if (!known || result.endedAt > known.endedAt) lastPlayed.set(compareKey, { station, endedAt: result.endedAt });
+  }
+  return [...lastPlayed.values()].sort((a, b) => a.endedAt - b.endedAt).map((entry) => entry.station);
+}
+
 /* ---------- Reading ---------- */
 
 export async function loadRun(userId: string, id: string): Promise<RunSnapshot | null> {
@@ -147,14 +171,14 @@ export async function loadRun(userId: string, id: string): Promise<RunSnapshot |
   return { id: session.id, ...run, serverNow: Date.now(), best: await bestResults(userId, session.id, run.workout) };
 }
 
-/** The player's unfinished workout, if there is one. */
-export async function openWorkoutId(userId: string): Promise<string | null> {
+/** The player's unfinished workout, if there is one, and whether it has begun. */
+export async function openWorkout(userId: string): Promise<{ id: string; started: boolean } | null> {
   const session = await prisma.session.findFirst({
     where: { userId, status: { in: ["active", "planned"] }, blocks: { some: { type: "game" } } },
     orderBy: { createdAt: "desc" },
-    select: { id: true },
+    select: { id: true, status: true },
   });
-  return session?.id ?? null;
+  return session ? { id: session.id, started: session.status === "active" } : null;
 }
 
 async function bestResults(userId: string, sessionId: string, workout: Workout): Promise<Record<string, Score>> {
@@ -202,25 +226,27 @@ export async function appendEvent(userId: string, id: string, eventId: string, i
     const added = accepted.events.slice(run.events.length);
     const view = replay(run.workout, accepted.events, now);
 
+    const begins = added.some((e) => e.type === "begin");
+    if (begins) {
+      // One active workout per player (the database enforces it): an older
+      // one that was left open is closed before this one becomes active.
+      await tx.session.updateMany({
+        where: { userId, status: "active", id: { not: session.id } },
+        data: { status: "abandoned", completedAt: new Date(now) },
+      });
+    }
+
     // The revision check makes two simultaneous writes impossible to interleave.
     const updated = await tx.session.updateMany({
       where: { id: session.id, revision: session.revision },
       data: {
         revision: { increment: 1 },
         context: asJson({ run: { workout: run.workout, events: accepted.events } }),
-        ...(added.some((e) => e.type === "begin") ? { status: "active", startedAt: new Date(now) } : {}),
+        ...(begins ? { status: "active", startedAt: new Date(now) } : {}),
         ...(view.phase === "summary" ? { status: "done", completedAt: new Date(now) } : {}),
       },
     });
     if (updated.count === 0) return { ok: false as const, error: "busy" as const };
-
-    if (added.some((e) => e.type === "begin")) {
-      // One active workout per player: an older one that was left open is closed.
-      await tx.session.updateMany({
-        where: { userId, status: "active", id: { not: session.id } },
-        data: { status: "abandoned", completedAt: new Date(now) },
-      });
-    }
 
     for (const event of added) {
       if (event.type !== "report" && event.type !== "station-end") continue;
@@ -258,7 +284,7 @@ export async function appendEvent(userId: string, id: string, eventId: string, i
       }
     }
 
-    return { ok: true as const, began: added.some((e) => e.type === "begin"), finished: view.phase === "summary" && added.some((e) => e.type === "finish") };
+    return { ok: true as const, began: begins, finished: view.phase === "summary" && added.some((e) => e.type === "finish") };
   });
 
   if (!outcome.ok) return outcome;
@@ -267,4 +293,53 @@ export async function appendEvent(userId: string, id: string, eventId: string, i
 
   const snapshot = await loadRun(userId, id);
   return snapshot ? { ok: true, snapshot } : { ok: false, error: "not-found" };
+}
+
+/* ---------- The home screen ---------- */
+
+export interface PlaceOption {
+  kind: LocationKind;
+  equipment: string[];
+}
+
+/** The player's places and what each one has. */
+export async function placesFor(userId: string): Promise<PlaceOption[]> {
+  await ensureLocationProfiles(prisma, userId);
+  const profiles = await prisma.locationProfile.findMany({ where: { userId }, select: { kind: true, equipment: true } });
+  return PLACES.flatMap((kind) => {
+    const profile = profiles.find((p) => p.kind === kind);
+    return profile ? [{ kind, equipment: Array.isArray(profile.equipment) ? (profile.equipment as string[]) : [] }] : [];
+  });
+}
+
+export interface PastWorkout {
+  id: string;
+  /** YYYY-MM-DD, local day. */
+  day: string;
+  minutes: number | null;
+  games: number;
+  rounds: number;
+}
+
+/** The last few finished workouts, newest first. */
+export async function recentWorkouts(userId: string, take = 3): Promise<PastWorkout[]> {
+  const sessions = await prisma.session.findMany({
+    where: { userId, status: "done", blocks: { some: { type: "game" } } },
+    orderBy: { completedAt: "desc" },
+    take,
+    select: { id: true, date: true, startedAt: true, completedAt: true, blocks: { where: { type: "game" }, select: { payload: true } } },
+  });
+  return sessions.map((s) => {
+    const results = s.blocks.flatMap((b) => {
+      const { result } = b.payload as unknown as StationBlock;
+      return result ? [result] : [];
+    });
+    return {
+      id: s.id,
+      day: s.date.toISOString().slice(0, 10),
+      minutes: s.startedAt && s.completedAt ? Math.max(1, Math.round((s.completedAt.getTime() - s.startedAt.getTime()) / 60000)) : null,
+      games: results.length,
+      rounds: results.reduce((sum, r) => sum + r.score.value, 0),
+    };
+  });
 }

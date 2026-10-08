@@ -240,6 +240,10 @@ export function accept(
     case "station-end":
       if (view.phase !== "station" || !station || !MID_GAME.has(station.status)) return reject("not-now");
       if (input.station !== station.id) return reject("wrong-station");
+      // After the bell the clock ended the game, whatever the player then pressed.
+      if (station.status === "last-report") {
+        return { ok: true, events: [...settled, { ...input, reason: "time", id, at: station.clockEndsAt! }] };
+      }
       return done();
 
     case "next":

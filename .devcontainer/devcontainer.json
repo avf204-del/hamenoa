@@ -1,0 +1,39 @@
+{
+  "name": "Hamenoa cloud development",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:5.2.1-22-bookworm",
+  "remoteUser": "node",
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "8gb",
+    "storage": "32gb"
+  },
+  "forwardPorts": [
+    3000
+  ],
+  "portsAttributes": {
+    "3000": {
+      "label": "Hamenoa development",
+      "onAutoForward": "notify"
+    },
+    "5540": {
+      "label": "Development database (internal)",
+      "onAutoForward": "ignore"
+    }
+  },
+  "otherPortsAttributes": {
+    "onAutoForward": "ignore"
+  },
+  "postCreateCommand": "bash scripts/cloud/bootstrap.sh && npm install --global @anthropic-ai/claude-code",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "Prisma.prisma"
+      ],
+      "settings": {
+        "editor.formatOnSave": false,
+        "remote.autoForwardPortsSource": "output"
+      }
+    }
+  }
+}

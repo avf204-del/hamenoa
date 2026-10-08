@@ -105,6 +105,16 @@ describe("מהלך אימון", () => {
     expect(ended.score.rank).toEqual([0, 0, 3]);
   });
 
+  it("אחרי הפעמון, המשך בלי דיווח נרשם כסיום בזמן ולא כבחירה", () => {
+    const events = run([...toStation, [70, { type: "station-start", station: "s1" }]]);
+    const bell = (73 + 300) * SEC;
+    const skipped = accept(workout, events, { type: "station-end", station: "s1", reason: "choice" }, "skip", bell + 4 * SEC);
+    expect(skipped.ok).toBe(true);
+    if (!skipped.ok) return;
+    expect(skipped.events.at(-1)).toMatchObject({ type: "station-end", reason: "time", at: bell });
+    expect(replay(workout, skipped.events, bell + 5 * SEC).station).toMatchObject({ status: "ended", endReason: "time", reports: [] });
+  });
+
   it("הפעמון בזמן מנוחה מסיים את המשחקון, והסיום נרשם במפורש לפני כל אירוע חדש", () => {
     const events = run([
       ...toStation,

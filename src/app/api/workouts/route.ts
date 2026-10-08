@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { userGate, writeGate } from "@/lib/current-user";
 import { isJsonObject, jsonNumber } from "@/lib/json-object";
 import { rateLimit } from "@/lib/rate-limit";
-import { createWorkout, openWorkoutId } from "@/lib/workout-store";
+import { createWorkout, openWorkout } from "@/lib/workout-store";
 
 // GET  — the player's unfinished workout, if any.
 // POST { minutes, place, equipment? } — build a new workout and return its id.
@@ -10,7 +10,7 @@ import { createWorkout, openWorkoutId } from "@/lib/workout-store";
 export async function GET() {
   const gate = await userGate();
   if ("response" in gate) return gate.response;
-  return NextResponse.json({ ok: true, id: await openWorkoutId(gate.userId) });
+  return NextResponse.json({ ok: true, id: (await openWorkout(gate.userId))?.id ?? null });
 }
 
 const MESSAGES: Record<string, string> = {

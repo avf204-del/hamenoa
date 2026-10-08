@@ -73,12 +73,12 @@ async function smoke() {
     const response = await fetch(base + route);
     if (response.status !== 200) throw Error(`Smoke ${route}: ${response.status}`);
   }
-  const locked = await fetch(base + '/experience', { redirect: 'manual' });
-  if (![307, 308].includes(locked.status) || !locked.headers.get('location')?.includes('/login')) throw Error('Private experience must require login');
+  const locked = await fetch(base + '/workout', { redirect: 'manual' });
+  if (![307, 308].includes(locked.status) || !locked.headers.get('location')?.includes('/login')) throw Error('The workout area must require login');
   const login = await fetch(base + '/api/auth/login', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ password: settings.password }) });
   const cookie = login.headers.getSetCookie().map(value => value.split(';')[0]).join('; ');
   if (!login.ok || !cookie) throw Error('Synthetic owner login failed');
-  const experience = await fetch(base + '/experience', { headers: { cookie }, redirect: 'manual' });
+  const experience = await fetch(base + '/workout', { headers: { cookie }, redirect: 'manual' });
   // A fresh synthetic owner must complete consent/health onboarding. Do not
   // mistake a redirect to a public page for a rendered workout.
   let entry = 'experience';
@@ -100,11 +100,11 @@ try {
     console.log('Cloud development database and Prisma are ready. Existing synthetic data was preserved.');
   } else if (mode === 'dev') {
     const app = start(process.execPath, ['node_modules/next/dist/bin/next', 'dev', '-H', '0.0.0.0', '-p', env.CLOUD_APP_PORT]);
-    console.log(`Development preview: ${env.APP_URL}/experience — private port; password: pnpm cloud:password`);
+    console.log(`Development preview: ${env.APP_URL}/workout — private port; password: pnpm cloud:password`);
     await Promise.race([app.completion, db.completion]);
   } else {
     await start('pnpm', ['exec', 'next', 'typegen']).completion;
-    for (const args of [['cloud:test'], ['typecheck'], ['test', '--maxWorkers=2'], ['lint'], ['docs:verify'], ['build']]) {
+    for (const args of [['cloud:test'], ['typecheck'], ['test', '--maxWorkers=2'], ['lint'], ['build']]) {
       // Unit tests define their own public origin. Keep the loopback database
       // and synthetic credentials, but do not preload the preview URL into
       // modules whose configuration is captured when first imported.

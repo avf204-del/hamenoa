@@ -35,6 +35,11 @@ export interface PlanRequest {
   seed: string;
   /** Exercises from the player's recent workouts; chosen last, for variety. */
   recent?: readonly string[];
+  /**
+   * Stations the player has a result on, the one to bring back first. The
+   * first that still fits today opens the workout, so there is a result to beat.
+   */
+  rematch?: readonly Station[];
 }
 
 export type PlanErrorCode = "minutes" | "no-exercises";
@@ -139,7 +144,32 @@ function buildStations(request: PlanRequest, count: number, game: GameId): Stati
   const used = new Set<string>();
   const stations: Station[] = [];
 
-  for (let i = 0; i < count; i++) {
+  // A game played before comes back unchanged: same exercises, quotas and
+  // clock, so today's result can be compared with the earlier one.
+  const eligible = new Set(pool.map((e) => e.slug));
+  const back = (request.rematch ?? []).find(
+    (s) =>
+      s.game === game &&
+      s.ruleVersion === rule.ruleVersion &&
+      s.exercises.length >= rule.exercises.min &&
+      s.exercises.every((e) => eligible.has(e.slug)),
+  );
+  if (back) {
+    const draft = {
+      id: "s1",
+      game: back.game,
+      ruleVersion: back.ruleVersion,
+      exercises: back.exercises,
+      frameSec: back.frameSec,
+      restSec: back.restSec,
+      roundRestSec: back.roundRestSec,
+    };
+    stations.push({ ...draft, compareKey: compareKeyOf(draft) });
+    for (const exercise of back.exercises) used.add(exercise.slug);
+  }
+
+  // The mixes rotate from where the returning game leaves off.
+  for (let i = stations.length; i < count; i++) {
     const mix = STATION_MIXES[i % STATION_MIXES.length];
     const chosen: StationExercise[] = [];
     for (const region of mix) {
