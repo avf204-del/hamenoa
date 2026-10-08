@@ -3,6 +3,7 @@
 אפליקציית ווב לאימוני כושר: בוחרים מקום וזמן, מקבלים אימון של חימום, כמה משחקונים ושחרור. כל משחקון שואל שאלה אחת, רץ מול שעון ונותן תוצאה לנצח בפעם הבאה.
 
 - הוראות עבודה: [CLAUDE.md](CLAUDE.md)
+- מדריך הפעלה למי שלא מגיע מהעולם הטכני: [docs/ops/GETTING-STARTED.md](docs/ops/GETTING-STARTED.md)
 - הצורה של אימון: [docs/CONTRACT.md](docs/CONTRACT.md)
 - מה נעשה ומה נשאר: [docs/PLAN.md](docs/PLAN.md)
 
