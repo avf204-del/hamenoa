@@ -12,6 +12,8 @@ import { MUSCLE_VOCABULARY } from "../src/lib/muscle-groups";
 import { Prisma } from "../src/generated/prisma/client";
 import { isTrainingType, type TrainingType } from "../src/lib/training-types";
 import { isProvenanceId, loadProvenanceManifest, provenanceLicenseNote } from "./exercise-provenance";
+import { isCatalogOnly } from "../src/catalog/workout-policy";
+import SOURCE_CATALOG from "../data/free-exercise-db.catalog.json";
 import type {
   EnvConstraint,
   LoadClass,
@@ -247,7 +249,11 @@ export function validateTagging(
     for (const c of entry.constraints ?? []) {
       if (!CONSTRAINTS.includes(c)) err(`constraint לא מוכר: ${c}`);
     }
-    if (!entry.substitutes?.length) err("substitutes ריק — חייב לפחות תחליף אחד");
+    // The reviewed catalog-only additions can explicitly have no close
+    // alternative. Existing playable entries retain their replacement rule.
+    const sourceLink = (SOURCE_CATALOG.linkedExercises as Record<string, { slug: string }>)[entry.source ?? ""];
+    const reviewedCatalogOnly = isCatalogOnly(slug) && entry.provenanceId === "free-exercise-db" && sourceLink?.slug === slug;
+    if (!entry.substitutes?.length && !reviewedCatalogOnly) err("substitutes ריק — חייב לפחות תחליף אחד");
     for (const sub of entry.substitutes ?? []) {
       if (!slugs.has(sub)) err(`תחליף לא קיים: ${sub}`);
       if (sub === slug) err("תחליף מפנה לעצמו");

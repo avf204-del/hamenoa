@@ -4,9 +4,10 @@
 import type { ExerciseData } from "../src/catalog/types";
 import { muscleGroupList } from "../src/lib/muscle-groups";
 import { exerciseDataFromEntry, loadTagging } from "../scripts/import-exercises";
+import { isCatalogOnly } from "../src/catalog/workout-policy";
 
 export function realCatalog(): ExerciseData[] {
-  return Object.entries(loadTagging()).map(([slug, entry]) => {
+  return Object.entries(loadTagging()).filter(([slug]) => !isCatalogOnly(slug)).map(([slug, entry]) => {
     const row = exerciseDataFromEntry(slug, entry);
     const muscles = (value: unknown) => (Array.isArray(value) ? (value as string[]) : null);
     return {

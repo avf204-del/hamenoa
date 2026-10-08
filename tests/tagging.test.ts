@@ -13,6 +13,7 @@ import {
 } from "../scripts/import-exercises";
 import { GYM_EQUIPMENT, HOME_EQUIPMENT_OPTIONS, SPECIALIST_EQUIPMENT_OPTIONS } from "../src/lib/equipment";
 import type { Pattern } from "../src/catalog/types";
+import { isCatalogOnly } from "../src/catalog/workout-policy";
 
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
 
@@ -21,7 +22,7 @@ const snapshot = loadSnapshot();
 const snapshotIds = new Set(snapshot.exercises.map((e) => e.id));
 // Fixed historical inventory assertions describe the base catalog only. The
 // shared validation above still checks every new training-type fragment.
-const entries = Object.entries(tagging).filter(([, entry]) => (entry.trainingType ?? "base") === "base");
+const entries = Object.entries(tagging).filter(([slug, entry]) => (entry.trainingType ?? "base") === "base" && !isCatalogOnly(slug));
 
 const ALL_PATTERNS: Pattern[] = [
   "squat", "hinge", "pushV", "pushH", "pullV", "pullH",

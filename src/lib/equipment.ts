@@ -1,7 +1,8 @@
 // קטלוג הציוד — סלאגים קנוניים ותוויות עברית לממשק.
 // Exercise.equipment ו-LocationProfile.equipment משתמשים בסלאגים האלה בלבד.
+import SOURCE_EQUIPMENT from "../../data/free-exercise-db.equipment.json";
 
-export type EquipmentSlug =
+export type EquipmentSlug = keyof typeof SOURCE_EQUIPMENT
   | "barbell"
   | "rack"
   | "bench"
@@ -39,6 +40,7 @@ export type EquipmentSlug =
   | "stair-climber";
 
 export const EQUIPMENT_LABELS: Record<EquipmentSlug, string> = {
+  ...Object.fromEntries(Object.entries(SOURCE_EQUIPMENT).map(([slug, entry]) => [slug, entry.he])) as Record<keyof typeof SOURCE_EQUIPMENT, string>,
   barbell: "מוט וצלחות",
   rack: "כלוב סקוואט",
   bench: "ספסל",
@@ -77,6 +79,7 @@ export const EQUIPMENT_LABELS: Record<EquipmentSlug, string> = {
 
 /** English equipment names (C1); same slugs. */
 export const EQUIPMENT_LABELS_EN: Record<EquipmentSlug, string> = {
+  ...Object.fromEntries(Object.entries(SOURCE_EQUIPMENT).map(([slug, entry]) => [slug, entry.en])) as Record<keyof typeof SOURCE_EQUIPMENT, string>,
   barbell: "Barbell & plates",
   rack: "Squat rack",
   bench: "Bench",

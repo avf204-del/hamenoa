@@ -1,7 +1,8 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import { parse } from "yaml";
+import { loadTagging } from "../scripts/import-exercises";
+import { isCatalogOnly } from "../src/catalog/workout-policy";
 import { MOBILITY_DRILLS, STRETCHES } from "../src/catalog/warmup-content";
 import { WALKING_DRILL } from "../src/lib/walking";
 
@@ -12,10 +13,7 @@ const en = JSON.parse(readFileSync(join(__dirname, "../data/exercise-text-en.jso
   drills: Record<string, Entry>;
   stretches: Record<string, Entry>;
 };
-const tagging = parse(readFileSync(join(__dirname, "../data/tagging.yaml"), "utf8")) as Record<
-  string,
-  { instructionsHe: string }
->;
+const tagging = loadTagging();
 
 const HEBREW = /[֐-׿]/;
 const nums = (s: string) => (s.match(/\d+/g) ?? []).sort();
@@ -27,13 +25,16 @@ describe("exercise-text-en.json", () => {
     expect(en.version).toBe(1);
   });
 
-  it("covers exactly the tagging.yaml slugs, with numbers preserved", () => {
+  it("covers the merged catalog and preserves the legacy translation numbers", () => {
     expect(Object.keys(en.exercises)).toEqual(Object.keys(tagging));
     for (const [slug, { instructionsHe }] of Object.entries(tagging)) {
       const text = en.exercises[slug];
       expect(text?.trim(), slug).toBeTruthy();
       expect(HEBREW.test(text), slug).toBe(false);
-      expect(nums(text), slug).toEqual(nums(instructionsHe));
+      // Legacy translations retain their existing exact-number check.
+      // Added rows preserve archived source English, separately from the
+      // reviewed Hebrew adaptation. The parity audit hashes every English row.
+      if (!isCatalogOnly(slug)) expect(nums(text), slug).toEqual(nums(instructionsHe));
     }
   });
 

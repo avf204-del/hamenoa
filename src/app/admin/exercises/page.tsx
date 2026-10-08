@@ -121,7 +121,7 @@ export default async function ExercisesAdminPage() {
         </Link>
       </div>
       <p className="mt-1 text-sm text-fg-2">
-        הנכס של המנוע: <span className="num">{rows.length}</span> תרגילים
+        המאגר המשותף: <span className="num">{rows.length}</span> תרגילים
         מתויגים
         {latestDate && (
           <>
@@ -134,6 +134,7 @@ export default async function ExercisesAdminPage() {
           ? "המאגר כאן לצפייה. עריכה נעשית בסביבת הפיתוח ונשמרת בגרסת התוכן הבאה."
           : "עריכה נשמרת תחילה לקובץ התיוג של התרגיל, ואז מסונכרנת למסד."}
       </p>
+      <p className="mt-2 text-sm text-fg-2">התוספות זמינות לעיון עם פרמטרים ותמונות מקור תחת ״הסבר ותמונות״. שילובן באימון ממתין לתמיכה של משחקי האפליקציה.</p>
       {syncWarning && (
         <div
           role="alert"
